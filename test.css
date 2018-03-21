@@ -22,6 +22,9 @@ background-color : white;
 a {
 	text-decoration: none;
 }
+
+/*-------navigation--------*/
+
 .nav {
 	color: #1c1c1c;
 	margin-left: 59%;
@@ -185,14 +188,18 @@ a {
 	margin-top: 32%;
 }
 .conecting {
-	margin-left: 39%;
+	margin-left: 41%;
 	margin-top: 5%;
 	float: left;
+	background-color: transparent;
 }
 .conecting-text {
 	font-size: 200%;
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-weight: bold;
+	background-color: transparent;
+	color: white;
+
 }
 .conecting-text2 {
 	font-size: 120%;
@@ -201,6 +208,8 @@ a {
 	float: left;
 	font-family: 'Open Sans', sans-serif;
 	white-space: nowrap;
+	background-color: transparent;
+	color: white;
 }
 .conecting-text3 {
 	font-size: 120%;
@@ -209,7 +218,12 @@ a {
 	float: left;
 	font-family: 'Open Sans', sans-serif;
 	white-space: nowrap;
+	background-color: transparent;
+	color: white;
 }
+
+/*--------button2-------*/
+
 .button2 {
 	float: left;
 	width: 14%;
@@ -238,6 +252,7 @@ a {
 .footer .icons {
 	display: block;
 	margin-left: 41%;
+	background-color: transparent;
 }
 .footer i {
 	color: #c9c9c9;
@@ -245,8 +260,10 @@ a {
 	padding: 8px;
 	margin-left: 2%;
 	margin-top: 4%;
+	background-color: transparent;
 }
 .footer .href i {
 	padding-left: 12.5px;
 	padding-right: 12.5px;
+	background-color: transparent;
 }
