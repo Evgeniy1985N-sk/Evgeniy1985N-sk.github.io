@@ -40,6 +40,10 @@ a {
 	text-decoration: none;
 	color: #1c1c1c;
 }
+ .nav li a:hover {
+    color: #2f68fa;
+    text-decoration: underline;
+}
  .nav .active {
  	color: #2f68fa;
  }
@@ -188,7 +192,7 @@ a {
 	margin-top: 32%;
 }
 .conecting {
-	margin-left: 41%;
+	margin-left: 41.5%;
 	margin-top: 5%;
 	float: left;
 	background-color: transparent;
@@ -230,17 +234,41 @@ a {
 	height: 43px;
 	background-color: #2f68fa;
 	clear: left;
-	margin-left: 42%;
+	margin-left: 43.5%;
 	margin-top: 4%;
 }
 .button2__text {
 	background-color: #2f68fa;
-	margin-left: 11.5%;
+	margin-left: 13%;
 	float: left;
 	margin-top: 5.5%;
 	color: #fff;
 	font-size: 110%;
 	font-family: 'Open Sans', sans-serif;
+}
+
+/*--button2-clon--*/
+.button2-clon {
+	position: absolute;
+	width: 14%;
+	height: 43px;
+	display: none;
+	border: 1px solid #2f68fa;
+	background-color: white;
+	z-index: 10;
+	margin: 0;
+    padding: 0;
+}
+.button2-clon__text {
+	margin-left: 13%;
+	margin-top: 5.5%;
+	font-size: 110%;
+	font-family: 'Open Sans', sans-serif;
+	float: left;
+	color: #2f68fa;
+}
+.button2:hover .button2-clon {
+	display: block;
 }
 
 /*-----footer----*/
@@ -251,7 +279,10 @@ a {
 }
 .footer .icons {
 	display: block;
-	margin-left: 41%;
+	margin-left: 43%;
+	background-color: transparent;
+}
+.footer a {
 	background-color: transparent;
 }
 .footer i {
