@@ -22,6 +22,17 @@ background-color : white;
 a {
 	text-decoration: none;
 }
+html {
+	    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+ body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
 
 /*-------navigation--------*/
 
@@ -71,7 +82,7 @@ a {
 
 .button {
 	float: left;
-	width: 14%;
+	width: 184px;
 	height: 43px;
 	background-color: #2f68fa;
 	clear: left;
@@ -138,14 +149,22 @@ a {
 /*-----iphone----*/
 
 .iphone {
-	float: right;
-	margin-right: 16%;
-	margin-top: -7.94%;
+	float: left;
+	margin-left: 34%;
+	margin-top: -7.8%;
+	width: 23%;
 }
+.iphone img {
+	max-width: 100%;
+}
+
+
+/*-----line------*/
+
 .line {
 	min-height: 1px;
 	background: #bebebe;
-	margin-top: 38.2%;
+	margin-top: 517px;
 }
 
 /*-----portpholio------*/
@@ -230,7 +249,7 @@ a {
 
 .button2 {
 	float: left;
-	width: 14%;
+	width: 187px;
 	height: 43px;
 	background-color: #2f68fa;
 	clear: left;
@@ -248,9 +267,10 @@ a {
 }
 
 /*--button2-clon--*/
+
 .button2-clon {
 	position: absolute;
-	width: 14%;
+	width: 187px;
 	height: 43px;
 	display: none;
 	border: 1px solid #2f68fa;
@@ -279,7 +299,7 @@ a {
 }
 .footer .icons {
 	display: block;
-	margin-left: 43%;
+	margin-left: 44%;
 	background-color: transparent;
 }
 .footer a {
@@ -289,12 +309,16 @@ a {
 	color: #c9c9c9;
 	border: 1px solid #c9c9c9;
 	padding: 8px;
-	margin-left: 2%;
+	margin-left: 1%;
 	margin-top: 4%;
 	background-color: transparent;
 }
 .footer .href i {
-	padding-left: 12.5px;
-	padding-right: 12.5px;
+	padding-left: 12px;
+	padding-right: 12px;
 	background-color: transparent;
+}
+.footer .odn i {
+	padding-left: 12px;
+	padding-right: 12px;
 }
