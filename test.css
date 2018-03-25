@@ -22,7 +22,7 @@ background-color : white;
 a {
 	text-decoration: none;
 }
-html {
+/*html {
 	    width: 100%;
     max-width: 100%;
     overflow-x: hidden;
@@ -33,7 +33,7 @@ html {
     overflow-x: hidden;
     overflow-y: hidden;
   }
-
+*/
 /*-------navigation--------*/
 
 .nav {
@@ -185,21 +185,36 @@ html {
 	width: 20%;
 	margin-left: 40%;
 }
+
+/*----portpholio-images----*/
+
 .item1 {
 	float: left;
 	clear: left;
 	margin-top: 3%;
 	margin-left: 7%;
+	width: 26%;
+}
+.item1 img {
+	max-width: 100%;
 }
 .item2 {
 	float: left;
 	margin-top: 3%;
 	margin-left: 3%;
+	width: 26%;
+}
+.item2 img {
+	max-width: 100%;
 }
 .item3 {
 	float: left;
 	margin-top: 3%;
 	margin-left: 3%;
+	width: 26%;
+}
+.item3 img {
+	max-width: 100%;
 }
 
 /*---connecting with me---*/
