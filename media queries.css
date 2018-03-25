@@ -1,5 +1,66 @@
 /*--320 480 768 980 1200 1400 1600--*/
-
+@media screen and (max-width: 320px) {
+.nav {
+	margin-left: 1%;
+}
+.button {
+	margin-left: 20%;
+}
+.text2 {
+	margin-left: -5%;
+}
+.text3 {
+	margin-left: 15%;
+}
+.text4 {
+	margin-left: 28%;
+}
+.iphone {
+	margin-top: 46px;
+	margin-left: 24%;
+	clear: left;
+	width: 50%;
+}
+.line {
+	margin-top: 481px;
+}
+.portpholio a {
+	margin-top: 16%;
+	margin-left: 27%;
+}
+.portpholio__line {
+	margin-top: 36%;
+	width: 30%;
+	margin-left: 35%;
+}
+.item1 {
+	margin-top: 18%;
+	margin-left: -7%;
+}
+.item2 {
+	margin-left: -7%;
+}
+.item3 {
+	margin-left: -7%;
+}
+.conecting-background {
+	margin-top: 900px;
+}
+.conecting {
+	margin-top: 25%;
+	margin-left: 11%;
+}
+.button2 {
+	margin-top: 12%;
+	margin-left: 17%;
+}
+.footer .icons {
+	margin-left: 24%;
+}
+.footer i {
+	margin-top: 12.3%;
+}
+}
 @media screen and (max-width: 480px) {
 .nav {
 	margin-left: 10%;
