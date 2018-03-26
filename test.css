@@ -52,11 +52,11 @@ a {
 	color: #1c1c1c;
 }
  .nav li a:hover {
-    color: #2f68fa;
+    color: #40a8ec;
     text-decoration: underline;
 }
  .nav .active {
- 	color: #2f68fa;
+ 	color: #40a8ec;
  }
 
 /*------about-me-----*/
@@ -84,7 +84,7 @@ a {
 	float: left;
 	width: 184px;
 	height: 43px;
-	background-color: #2f68fa;
+	background-color: #40a8ec;
 	clear: left;
 	margin-left: 12%;
 	margin-top: 4%;
@@ -98,7 +98,7 @@ a {
 	font-size: 100%;
 	font-family: 'Open Sans', sans-serif;
 	float: left;
-	background-color: #2f68fa;
+	background-color: #40a8ec;
 }
 .button .img {
 	margin-top: 8.9%;
@@ -108,7 +108,7 @@ a {
 	background-repeat: no-repeat;
 	width: 14px;
 	height: 16px;
-	background-color: #2f68fa;
+	background-color: #40a8ec;
 }
 
 /*------button-clon-----*/
@@ -118,7 +118,7 @@ a {
 	width: 99%;
 	height: 43px;
 	display: none;
-	border: 1px solid #2f68fa;
+	border: 1px solid #40a8ec;
 	background-color: white;
 	z-index: 10;
 	margin: 0;
@@ -131,7 +131,7 @@ a {
 	font-size: 100%;
 	font-family: 'Open Sans', sans-serif;
 	float: left;
-	color: #2f68fa;
+	color: #40a8ec;
 }
 .button-clon .img-clon {
 	margin-top: 9.9%;
@@ -225,9 +225,29 @@ a {
 	width: 100%;
 	margin-top: 32%;
 }
+
+/*-------rocket----------*/
+
+.rocket {
+	float: right;
+	background-color: red;
+	max-width: 8%;
+	background-color: transparent;
+	margin-top: 16%;
+}
+.rocket:hover {
+	margin-top: 17%;
+}
+.rocket a {
+	background-color: transparent;
+}
+
+
+/*----conecting__texts-----*/
+
 .conecting {
 	margin-left: 41.5%;
-	margin-top: 5%;
+	margin-top: 4%;
 	float: left;
 	background-color: transparent;
 }
@@ -266,13 +286,13 @@ a {
 	float: left;
 	width: 187px;
 	height: 43px;
-	background-color: #2f68fa;
+	background-color: #40a8ec;
 	clear: left;
 	margin-left: 43.5%;
 	margin-top: 4%;
 }
 .button2__text {
-	background-color: #2f68fa;
+	background-color: #40a8ec;
 	margin-left: 13%;
 	float: left;
 	margin-top: 5.5%;
@@ -288,7 +308,7 @@ a {
 	width: 187px;
 	height: 43px;
 	display: none;
-	border: 1px solid #2f68fa;
+	border: 1px solid #40a8ec;
 	background-color: white;
 	z-index: 10;
 	margin: 0;
@@ -319,6 +339,10 @@ a {
 }
 .footer a {
 	background-color: transparent;
+}
+.footer i:hover {
+	color: #8B8B8B;
+	border: 1px inset #8B8B8B;
 }
 .footer i {
 	color: #c9c9c9;
