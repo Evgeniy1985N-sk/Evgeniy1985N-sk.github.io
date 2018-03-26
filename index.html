@@ -11,7 +11,17 @@
 <link rel="shortcut icon" href="">
 </head>
 <body>
-
+<script>
+	var t;
+function up() {
+  var top = Math.max(document.body.scrollTop,document.documentElement.scrollTop);
+  if(top > 0) {
+    window.scrollBy(0,-100);
+    t = setTimeout('up()',20);
+  } else clearTimeout(t);
+  return false;
+}
+</script>
 <!--navigation-->
 	
 <ul class="nav">
@@ -56,13 +66,28 @@
 
 <div class="portpholio"><a id="portpholio">ПОРТФОЛИО</a></div>
 <div class="portpholio__line"></div>
+
+<!--portpholio__images-->
+
+<div class="all-items">
 <div class="item1"><img src="images/portfolio-item-1.png" alt=""></div>
 <div class="item2"><img src="images/portfolio-item-2.png" alt=""></div>
 <div class="item3"><img src="images/portfolio-item-3.png" alt=""></div>
+</div>
 
  <!--conecting with me-->
 
 <div class="conecting-background">
+
+<!--rocket-->
+
+
+<a href="#" onclick="return up()">
+
+<img class="rocket" src="images/rocket.png"></a>
+
+
+<!--conecting__texts-->
 
 <div class="conecting"><span class="conecting-text">СВЯЗАТЬСЯ СО МНОЙ<br>
 </span>
