@@ -1,4 +1,38 @@
 /*--320 480 768 980 1200 1400 1600--*/
+@media screen and (max-width: 1024px) {
+.nav {
+	margin-left: 51%;
+}
+.line {
+	margin-top: 425px;
+}
+.portpholio a {
+	margin-top: 7%;
+	margin-left: 45%;
+}
+.portpholio__line {
+	margin-top: 14%;
+	margin-left: 44.5%;
+	width: 15%;
+}
+.all-items {
+	margin-top: 5%;
+	margin-left: 3%;
+}
+.conecting {
+	margin-top: 10%;
+	margin-left: 40%;
+}
+.button2 {
+	margin-left: 42.5%;
+}
+.footer .icons {
+	margin-left: 43%;
+}
+.footer i {
+	margin-top: 5%;
+}
+}
 @media screen and (max-width: 768px) {
 .nav {
 	margin-left: 51%;
@@ -33,7 +67,7 @@
 	margin-top: 5%;
 }
 }
-@media screen and (max-width: 584px) {
+@media screen and (max-width: 590px) {
 .nav {
 	margin-left: 19%;
 }
@@ -232,6 +266,84 @@
 	margin-top: 10.5%;
 }
 }
+@media screen and (max-width: 425px) {
+.nav {
+	margin-left: 11%;
+}
+.text {
+	margin-left: 1%;
+}
+.text2 {
+	margin-left: 10%;
+}
+.text3 {
+	margin-left: 15%;
+}
+.text4 {
+	margin-left: 28%;
+}
+.button {
+	margin-left: 29%;
+}
+.iphone {
+	margin-top: 46px;
+	margin-left: 31%;
+	clear: left;
+	width: 40%;
+}
+.line {
+	margin-top: 471px;
+}
+.portpholio a {
+	margin-top: 9%;
+	margin-left: 35%;
+}
+.portpholio__line {
+	margin-top: 27%;
+	width: 30%;
+	margin-left: 37.5%;
+}
+.all-items {
+	margin-top: 11%;
+}
+.item1 {
+	margin-top: 3%;
+	margin-left: 3%;
+}
+.item2 {
+	margin-left: 7%;
+}
+.item3 {
+	margin-left: 7%;
+}
+.conecting-background {
+	margin-top: 200px;
+}
+.conecting {
+	margin-top: 10%;
+	margin-left: 23%;
+}
+.button2__text {
+	margin-left: 12.5%;
+}
+.button2 {
+	margin-left: 10%;
+}
+.rocket {
+	float: right;
+	max-width: 15%;
+	margin-top: 5%;
+}
+.button2 {
+	margin-left: 29%;
+}
+.footer .icons {
+	margin-left: 33%;
+}
+.footer i {
+	margin-top: 10.5%;
+}
+}
 @media screen and (max-width: 375px) {
 .nav {
 	margin-left: 5%;
@@ -258,7 +370,7 @@
 	width: 50%;
 }
 .line {
-	margin-top: 486.5px;
+	margin-top: 486px;
 }
 .portpholio a {
 	margin-top: 14%;
@@ -315,12 +427,17 @@
 @media screen and (max-width: 320px) {
 .nav {
 	margin-left: 0%;
+	white-space: normal;
 }
 .text {
-	margin-left: -13%;
+	margin-left: 3%;
+	white-space: normal;
+}
+.text1 {
+	margin-left: 28.7%;
 }
 .text2 {
-	margin-left: -2.5%;
+	margin-left: 1%;
 }
 .text3 {
 	margin-left: 15%;
@@ -338,7 +455,7 @@
 	width: 50%;
 }
 .line {
-	margin-top: 443px;
+	margin-top: 481px;
 }
 .portpholio a {
 	margin-top: 16%;
