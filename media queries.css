@@ -509,4 +509,90 @@
 	margin-top: 12.3%;
 }
 }
+@media screen and (max-width: 304px) {
+.nav {
+	margin-left: 0%;
+	white-space: normal;
+}
+.text {
+	margin-left: 2%;
+	white-space: normal;
+}
+.text1 {
+	margin-left: 28%;
+	white-space: normal;
+}
+.text2 {
+	margin-left: 12%;
+}
+.text3 {
+	margin-left: 0%;
+}
+.text4 {
+	margin-left: 0%;
+}
+.button {
+	margin-left: 22%;
+}
+.iphone {
+	margin-top: 46px;
+	margin-left: 27%;
+	clear: left;
+	width: 50%;
+}
+.line {
+	margin-top: 487px;
+}
+.portpholio a {
+	margin-top: 16%;
+	margin-left: 30%;
+}
+.portpholio__line {
+	margin-top: 36%;
+	width: 30%;
+	margin-left: 38%;
+}
+.item1 {
+	margin-left: 5.5%;
+	width: 90%;
+}
+.item2 {
+	margin-top: 12%;
+	margin-left: 5.5%;
+	width: 90%;
+	float: left;
+	clear: left;
+}
+.item3 {
+	margin-top: 12%;
+	margin-left: 5.5%;
+	width: 90%;
+	float: left;
+	clear: left;
+}
+.conecting-background {
+	margin-top: 800px;
+}
+.conecting {
+	margin-top: -25%;
+	margin-left: 10%;
+}
+.rocket {
+	max-width: 29%;
+	top: 275px;
+	display: block;
+	position: relative;
+
+}
+.button2 {
+	margin-top: 12%;
+	margin-left: 19%;
+}
+.footer .icons {
+	margin-left: 26%;
+}
+.footer i {
+	margin-top: 12.3%;
+}
+}
 
