@@ -11,17 +11,7 @@
 <link rel="shortcut icon" href="">
 </head>
 <body>
-<script>
-	var t;
-function up() {
-  var top = Math.max(document.body.scrollTop,document.documentElement.scrollTop);
-  if(top > 0) {
-    window.scrollBy(0,-100);
-    t = setTimeout('up()',20);
-  } else clearTimeout(t);
-  return false;
-}
-</script>
+
 <!--navigation-->
 	
 <ul class="nav">
@@ -34,7 +24,8 @@ function up() {
 
 <!--about me-->
 
-<div class="about_me"><span class="text">Привет, меня зовут Евгений<br></span>
+<div class="about_me"><span class="text">Привет, меня зовут</span>
+<span class="text1"> Евгений<br></span>
 <span class="text2">Мое призвание - верстка интерфейсов<br><span class="text3"> и этим я занимаюсь уже<br></span><span class="text4">более 1 года</span>
 </span>
 </div>
@@ -81,6 +72,17 @@ function up() {
 
 <!--rocket-->
 
+<script>
+	var t;
+function up() {
+  var top = Math.max(document.body.scrollTop,document.documentElement.scrollTop);
+  if(top > 0) {
+    window.scrollBy(0,-100);
+    t = setTimeout('up()',20);
+  } else clearTimeout(t);
+  return false;
+}
+</script>
 
 <a href="#" onclick="return up()">
 
