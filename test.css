@@ -22,18 +22,7 @@ background-color : white;
 a {
 	text-decoration: none;
 }
-/*html {
-	    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
-}
- body {
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
-    overflow-y: hidden;
-  }
-*/
+
 /*-------navigation--------*/
 
 .nav {
@@ -68,6 +57,11 @@ a {
 	float: left;
 }
 .about_me .text {
+	font-size: 200%;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: bold;
+}
+.about_me .text1 {
 	font-size: 200%;
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-weight: bold;
@@ -183,7 +177,7 @@ a {
 	background-color: #ececec;
 	margin-top: 9%;
 	width: 20%;
-	margin-left: 40%;
+	margin-left: 39%;
 }
 
 /*----portpholio-images----*/
@@ -233,10 +227,10 @@ a {
 	background-color: red;
 	max-width: 8%;
 	background-color: transparent;
-	margin-top: 16%;
+	margin-top: 5%;
 }
 .rocket:hover {
-	margin-top: 17%;
+	margin-top: 4.5%;
 }
 .rocket a {
 	background-color: transparent;
