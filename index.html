@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>test</title>
+	<title>portfolio</title>
 	<link href="test.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" type="text/css" href="media queries.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,110 +10,154 @@
 <script src="https://use.fontawesome.com/791bccb9d3.js"></script>
 <link rel="shortcut icon" href="">
 </head>
+
 <body>
 
-<!--navigation-->
+	<header>
+		<div class="container">
+			<nav>
+				<ul class="menu">
+					<li>
+						<a class="active" href="">Главная</a>
+					</li>
+					<li>
+						<a href="#portfolio">Портфолио</a>
+					</li>
+					<li>
+						<a href="">Обо мне</a>
+					</li>
+					<li>
+						<a href="#conecting">Контакты</a>
+					</li>
+				</ul>
+			</nav>			
+
+		<!--about me-->
+
+		
+			<div class="about_me">
+				<span class="text">Привет, меня зовут</span>
+				<span class="text1"> Евгений<br></span>
+				<span class="text2">Мое призвание - верстка интерфейсов<br>
+					<span class="text3"> и этим я занимаюсь уже<br></span>
+					<span class="text4">более 1 года</span>
+				</span>
+
+		<!--button-->	
+
+				<a href="#portfolio">
+					<div class="button">
+						<span class="button__text">Мое портфолио</span>
+						<img src="images/angle.png" alt="">
+						<div class="button-clon">
+							<span class="button__text-clon">Мое портфолио</span>
+							<img src="images/angle1.png" alt="">
+						</div>
+					</div>
+				</a>
+			</div>
+			
+
+		<!--iphone-->
+
 	
-<ul class="nav">
-	<li><a class="active" href="">Главная</a></li>
-	<li><a href="#portpholio">Портфолио</a></li>
-	<li><a href="">Обо мне</a></li>
-	<li><a href="#conecting">Контакты</a></li>
-</ul>
-	
+				<img class="iphone" src= "images/iphone.png" alt="">
+		</div>
 
-<!--about me-->
+		<div class="line"></div>
 
-<div class="about_me"><span class="text">Привет, меня зовут</span>
-<span class="text1"> Евгений<br></span>
-<span class="text2">Мое призвание - верстка интерфейсов<br><span class="text3"> и этим я занимаюсь уже<br></span><span class="text4">более 1 года</span>
-</span>
-</div>
-	
-<!--button-->
-	
-<a href="#portpholio"><div class="button">
-<span class="button__text">Мое портфолио</span><div class="img">
-</div></a>
-	
-<!--button-clon-->
-	
-<a href="#portpholio">
-<div class="button-clon">
-<span class="button__text-clon">Мое портфолио</span>
-<div class="img-clon"></div>
-</div></div>
-</a>
+	</header>
 
-<!--iphone-->
+		<!--rocket-->
 
-<div class="iphone"><img src= "images/iphone.png" alt=""></div>
-
-<!--line-->
-
-<div class="line"></div>
-
-<!--portpholio-->
-
-<div class="portpholio"><a id="portpholio">ПОРТФОЛИО</a></div>
-<div class="portpholio__line"></div>
-
-<!--portpholio__images-->
-
-<div class="all-items">
-<div class="item1"><img src="images/portfolio-item-1.png" alt=""></div>
-<div class="item2"><img src="images/portfolio-item-2.png" alt=""></div>
-<div class="item3"><img src="images/portfolio-item-3.png" alt=""></div>
-</div>
-
- <!--conecting with me-->
-
-<div class="conecting-background">
-
-<!--rocket-->
-
-<script>
-	var t;
-function up() {
-  var top = Math.max(document.body.scrollTop,document.documentElement.scrollTop);
-  if(top > 0) {
-    window.scrollBy(0,-100);
-    t = setTimeout('up()',20);
-  } else clearTimeout(t);
-  return false;
-}
-</script>
-
-<a href="#" onclick="return up()">
+			<script>
+				var t;
+			function up() {
+			  var top = Math.max(document.body.scrollTop,document.documentElement.scrollTop);
+			  if(top > 0) {
+			    window.scrollBy(0,-22);
+			    t = setTimeout('up()',20);
+			  } else clearTimeout(t);
+			  return false;
+			}
+			</script>
+			<a href="#" onclick="return up()">
 
 <img class="rocket" src="images/rocket.png"></a>
 
 
-<!--conecting__texts-->
 
-<div class="conecting"><span class="conecting-text">СВЯЗАТЬСЯ СО МНОЙ<br>
-</span>
-<span class="conecting-text2">Свяжитесь со мной для бесплатной</span><br>
-<span class="conecting-text3">консультации или заказа верстки</span></div>
 
-<!--button2-->
+		<!--portpholio-->
+		
+		<div class="container">
+			<div class="portpholio">
+				<a id="portfolio">ПОРТФОЛИО</a>
+			</div>
+			<div class="portpholio__line"></div>
 
-<a id="conecting" href="https://m.vk.com/mail?act=show&peer=48078267"><div class="button2"><span class="button2__text">Связаться со мной</span>
+		<!--portpholio__images-->
 
-<div class="button2-clon"><span class="button2-clon__text">Связаться со мной</span></div>
-</div></a>
-</div>
+			<div class="all-items">
+				<div class="item1">
+					<a href="https://boozy-woozy.github.io">
+						<img src="images/Слой-1.png" alt="">
+					</a>
+				</div>
+				<div class="item2">
+					<img src="images/portfolio-item-2.png" alt="">
+				</div>
+				<div class="item3">
+					<img src="images/portfolio-item-3.png" alt="">
+				</div>
+			</div>
+		</div>	
 
-<!--footer-->
+		 <!--conecting with me-->
 
-<div class="footer">
-<div class="icons">
-<a class="odn" href="https://ok.ru/feed"><i class="fa fa-odnoklassniki"></i></a>
-<a class="href" href="https://www.facebook.com/profile.php?id=100002232572228"><i class="fa fa-facebook"></a></i>
-<a href="https://vk.com/evgeny2017novomoskovsk"><i class="fa fa-vk"></a></i>
-<a href="https://twitter.com/EvgLopukhin"><i class="fa fa-twitter"></i></a>
-</div>
-</div>
+		<div class="conecting-with-me">
+			<div class="container">	
+				<div class="conecting-text">СВЯЗАТЬСЯ СО МНОЙ</div>
+				<div class="conecting-text2">Свяжитесь со мной для бесплатной</div>
+				<div class="conecting-text3">консультации или заказа верстки</div>
+				
+
+					<!--button2-->
+
+				<div class="btn-2">
+					<a id="conecting" href="https://m.vk.com/mail?act=show&peer=48078267">
+						<div class="button2">
+							<span class="button2__text">Связаться со мной</span>
+							<div class="button2-clon">
+								<span class="button2-clon__text">Связаться со мной</span>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>	
+
+		<!--footer-->
+
+		<footer>
+			<div class="container">
+				<div class="icons">
+					<a class="odn" href="https://ok.ru/feed">
+						<i class="fa fa-odnoklassniki"></i>
+					</a>
+					<a class="fk" href="https://www.facebook.com/profile.php?id=100002232572228">
+						<i class="fa fa-facebook"></i>
+					</a>
+					<a class="vk" href="https://vk.com/evgeny2017novomoskovsk">
+						<i class="fa fa-vk"></i>
+					</a>
+					<a class="tw" href="https://twitter.com/EvgLopukhin">
+						<i class="fa fa-twitter"></i>
+					</a>
+				</div>
+			</div>
+		</footer>
 
 </body>
+
 </html>
