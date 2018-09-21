@@ -206,10 +206,11 @@ nav {
 .item1 img:hover {
 	border: 1px dashed #bebebe;
 }
-.item2 img {
-	max-width: 100%;
+.item2 a img {
+	width: 360px;
 	margin-left: 22px;
 	margin-right: 22px;
+	height: 253px;
 }
 .item3 img {
 	max-width: 100%;
