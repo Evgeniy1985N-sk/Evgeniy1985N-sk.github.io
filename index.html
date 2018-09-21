@@ -9,10 +9,18 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300,700" rel="stylesheet">
 	<script src="https://use.fontawesome.com/791bccb9d3.js"></script>
 	<link rel="shortcut icon" href="">
+	<script>
+		function move(id) {
+			div=document.getElementById(id);
+			if(parseInt(div.style.left)<100) {
+			div.style.left=parseInt(div.style.left)+5+"px";
+			setTimeout("move('"+id+"')",1);
+			}
+		}
+	</script>
 </head>
 
-<body>
-
+<body onLoad="move('d')">
 	<header>
 		<div class="container">
 			<nav>
@@ -34,8 +42,7 @@
 
 		<!--about me-->
 
-		
-			<div class="about_me">
+			<div class="about_me" id="d" style="position:absolute;left:-310px;">
 				<span class="text">Привет, меня зовут</span>
 				<span class="text1"> Евгений<br></span>
 				<span class="text2">Мое призвание - верстка интерфейсов<br>

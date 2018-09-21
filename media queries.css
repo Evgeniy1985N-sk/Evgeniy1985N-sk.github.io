@@ -1,5 +1,5 @@
 @media screen and (max-width: 1190px) {
-	.container {
+.container {
 		width: 1000px;
 	}
 }
@@ -18,7 +18,7 @@
 	float: right;
 	display: block;
 	margin: 0 auto;
-	margin-top: 70px;
+	margin-top: 129px;
 }
 }
 @media screen and (max-width: 934px) {
@@ -27,6 +27,16 @@
 }
 }
 @media screen and (max-width: 768px) {
+.iphone {
+	margin-top: 400px;
+	margin-left: 0 auto;
+	margin-right: 0 auto;
+	float: none;
+
+	
+	
+	
+}
 .container {
 	width: 650px;
 }

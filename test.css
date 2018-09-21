@@ -63,7 +63,8 @@ nav {
 
 .about_me {
 	color: #1c1c1c;
-	float: left;
+	position:absolute;
+	left:-310px;
 	margin-top: 129px;
 }
 .about_me .text {
@@ -155,7 +156,7 @@ nav {
 	position: fixed;
 	background: transparent;
 	left: 94%;
-	top: 619px;
+	top: 589px;
 }
 .rocket a {
 	background-color: transparent;
