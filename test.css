@@ -208,12 +208,13 @@ nav {
 }
 .item2 a img {
 	width: 360px;
+	height: 253px;
 	margin-left: 22px;
 	margin-right: 22px;
-	height: 253px;
 }
-.item3 img {
-	max-width: 100%;
+.item3 a img {
+	width: 360px;
+	height: 253px;
 }
 .all-items img {
 	border: 1px solid #bebebe;
