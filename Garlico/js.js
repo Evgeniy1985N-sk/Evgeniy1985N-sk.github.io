@@ -33,11 +33,27 @@
     };
 
 
+var modalWindow = document.getElementById('modal__window');
+var modalWindowBg = document.getElementById('modal-window-bg');
+var modalWindowButtonClose = document.getElementById('modal-window__button-close');
+var goodsButton = document.getElementsByClassName('goods__button');
 
-var modalWindow = document.getElementsByClassName('goods__button');
-// console.log(modalWindow)
-for (var i=0; i<modalWindow.length; i++) {
-  modalWindow[i].onclick = function() {
-    alert("ss");
+for (var i=0; i<goodsButton.length; i++) {
+  
+  goodsButton[i].onclick = function() {
+    
+    modalWindow.style.display = 'flex';
+    modalWindowBg.style.display = 'block';
   }
+
+}
+
+modalWindowBg.onclick = function() {
+    modalWindow.style.display = 'none';
+    modalWindowBg.style.display = 'none';
+}
+
+modalWindowButtonClose.onclick = function() {
+    modalWindow.style.display = 'none';
+    modalWindowBg.style.display = 'none';
 }
