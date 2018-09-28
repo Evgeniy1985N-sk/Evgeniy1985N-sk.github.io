@@ -57,3 +57,34 @@ modalWindowButtonClose.onclick = function() {
     modalWindow.style.display = 'none';
     modalWindowBg.style.display = 'none';
 }
+
+// -----------map-------------------
+
+ymaps.ready(init);
+
+
+function init() {
+
+  var map = new ymaps.Map('map', {
+  center: [50.467305, 30.515528],
+  zoom: 11,
+  controls: ['zoomControl'],
+  behaviors: ['drag']
+
+});
+
+var placemark = new ymaps.Placemark([50.467305, 30.515528], {
+
+}, {
+
+  iconLayout: 'default#image',
+  iconImageHref: 'SVG files/map-marker.svg'
+
+  });
+
+    map.geoObjects.add(placemark);
+
+}
+
+
+   
