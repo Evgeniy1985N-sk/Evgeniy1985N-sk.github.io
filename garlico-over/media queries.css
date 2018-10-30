@@ -272,67 +272,6 @@
 	}
 
 }
-@media screen and (max-width: 1205px) {
-	#modal__window {
-		max-width: 480px;
-		flex-direction: column;
-		overflow-y: scroll;
-		overflow-x: hidden;
-		left: 50%;
-		margin-left: -240px;
-		text-align: justify;
-	}
-	.modal-window__img-garlic {
-		width: 100%;
-		max-width: 220px;
-		display: block;
-		margin: 0 auto; 
-		padding-top: 0px;
-		padding-left: 0px;
-	}	
-	.modal-window__text {
-		height: 496px;
-		width: 427px;
-		padding-top: 0px;
-		padding-left: 15px;
-	}
-	.modal-window__text h5 {
-		text-align: center;
-		padding-top: 12px;
-	}
-	#modal-window__button-close {
-		position: relative;
-		top: -520px;
-		left: 422px;
-	}
-}
-@media screen and (max-width: 523px) {
-	#modal__window {
-		max-width: 300px;
-		margin-left: -150px;
-	}
-	.modal-window__text {
-		padding-left: 7px;
-		width: 267px;
-	}
-	#modal-window__button-close {
-		top: -660px;
-		left: 252px;
-		height: 33px;
-		width: 33px;
-	}
-}
-@media screen and (max-width: 336px) {
-	.modal-window__img-garlic {
-		max-width: 200px;
-	}
-	#modal-window__button-close {
-		top: -647px;
-		right: 0px;
-		height: 33px;
-		width: 33px;
-	}	
-}
 
 /*----------SECTION-4---------------*/
 
