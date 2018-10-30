@@ -427,27 +427,31 @@ a:hover {
 	color: black;
 	display: block;
 	padding-top: 22px;
+	height: 60px;
 }
 .goods__button:hover {
 	background: #29b35b; 
 }
 
 /*------------MODAL WINDOW------------*/
-
+#hidden-content2 {
+  display: none;
+  width: 100%;
+  max-width: 600px;
+}
 .modal__window {
 	height: 441px;
 	max-width: 968px;
 	width: 100%;
-	display: inline-block;
 	background: white;
 	z-index: 200;
-	display: none;
 }
 .modal-window__img-garlic {
 	margin: 0 auto;
     display: block;
     max-width: 270px;
     width: 100%;
+    margin-bottom: 10px;
 }
 .modal-window__text {
 	max-width: 827px;
@@ -465,7 +469,11 @@ a:hover {
 	color: black;
 	font-family: 'Montserrat-Regular';
 	padding-bottom: 23px;
+	text-align: justify;
 }
+
+
+
 .slider-markers {
 	width: 35px;
 	margin: 0 auto; 

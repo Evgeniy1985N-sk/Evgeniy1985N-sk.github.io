@@ -349,50 +349,28 @@ function changeImg() {
 
 // ---------modal-window----------
 
-// var modalWindow = document.getElementById('modal__window');
-// var modalWindowBg = document.getElementById('modal-window-bg');
-// var modalWindowButtonClose = document.getElementById('modal-window__button-close');
-// var goodsButton = document.getElementsByClassName('goods__button');
 
-// var h5InMw = document.getElementById('h5-in-mw');
+var goodsButton = document.getElementsByClassName('goods__button');
 
-// for (var i=0; i<goodsButton.length; i++) {
+var h5InMw = document.getElementById('h5-in-mw');
+
+for (var i=0; i<goodsButton.length; i++) {
   
-//   goodsButton[i].onclick = function() {
+  goodsButton[i].onclick = function() {
 
-//     if(position===0) h5InMw.innerHTML="Молодой";
-//     if(position===-1200) h5InMw.innerHTML="Свежий";
-//     if(position===-2400) h5InMw.innerHTML="Сушеный";
-//     if(position===-3600) h5InMw.innerHTML="Консервированный";
-//     if(position===-4800) h5InMw.innerHTML="Стрелка чеснока";
-//     if(position===-6000) h5InMw.innerHTML="Посадочный материал";
+    if(position===0) h5InMw.innerHTML="Молодой";
+    if(position===-1200) h5InMw.innerHTML="Свежий";
+    if(position===-2400) h5InMw.innerHTML="Сушеный";
+    if(position===-3600) h5InMw.innerHTML="Консервированный";
+    if(position===-4800) h5InMw.innerHTML="Стрелка чеснока";
+    if(position===-6000) h5InMw.innerHTML="Посадочный материал";
     
-//     modalWindow.style.display = 'flex';
-//     modalWindowBg.style.display = 'block';
 
 
-//   }
 
-// }
+  }
 
-// modalWindowBg.onclick = function() {
-
-//     modalWindow.style.display = 'none';
-//     modalWindowBg.style.display = 'none';
-// }
-
-// modalWindowButtonClose.onclick = function() {
-
-//     modalWindow.style.display = 'none';
-//     modalWindowBg.style.display = 'none';
-// }
-
-// var goodsButton = document.getElementsByClassName('goods__button');
-// for(var i=0; i<goodsButton.length; i++) {
-//   goodsButton[i].classList.add("")
-// }
-
-
+}
 
 
 
