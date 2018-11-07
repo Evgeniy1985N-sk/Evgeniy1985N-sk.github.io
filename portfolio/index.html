@@ -10,59 +10,71 @@
 		<link rel="shortcut icon" href="">
 		<link rel="stylesheet" type="text/css" href="media queries.css">
 		<link href="style.css" rel="stylesheet" type="text/css">
+		<script src="smooth-scroll.js"></script>
+		<script src="js.js" defer></script>
 	</head>
 
 	<body>
 	
-		<header class="background-img">
+		<header class="background-img" id="header">
 			<div class="background">
 				<div class="cont">
 					<div class="flex-header">
 						<div>
 							<nav class="container-nav">
-								<ul>
-									<li><a href="">Главная</a></li>
-									<li><a href="">Портфолио</a></li>
-									<li><a href="">Контакты</a></li>
+								<ul id="header-ul">
+									<li><a href="#header" class="topLink">Главная</a></li>
+									<li><a href="#portfolio" class="topLink">Портфолио</a></li>
+									<li><a href="#contacts" class="topLink">Контакты</a></li>
 								</ul>
 							</nav>
 						</div>
 						<div class="div-logo">
-							<img src="img/logo.png">
+							<img src="img/world-logo.png">
+							<p class="name-site-p">SITE-Building</p>
 						</div>
-						<div class="name-site-div">
-							<p class="name-site-p">WEB-POWER</p>
+						<div class="div-call" title="tele2">
+							<p class="call-p">+7(953) 968-56-69</p>
 						</div>
 					</div>
 					<div class="text-about-me">
 						<p>Привет, меня зовут Евгений.</p>
-						<p>Я занимаюсь версткой сайтов.</p>
+						<p>Я занимаюсь созданием сайтов.</p>
 					</div>
 					<div class="button">
-						<button>
-							<span>Мое портфолио</span>
-						</button>
+						<a href="#portfolio" class="topLink">
+							<button>
+								<span>Мое портфолио</span>
+							</button>
+						</a>
 					</div>
 					<div class="div">
 						<div class="div-angle">
-							<div class="angle"></div>
+							<a href="#portfolio" class="topLink">
+								<div class="angle"></div>
+							</a>
+						</div>
+					</div>
+					<div class="header-bottom">
+						<a href="https://vk.com/evgeny2017novomoskovsk">
+							<div class="vk">
+								<img src="img/vk.png">
+							</div>
+						</a>
+						<div class="email">
+							evg.lopukhin@yandex.ru
 						</div>
 					</div>
 				</div>
 			</div>	
 		</header>
 
-
-
-
-
-
-
-
-
-
-
-
+		<section id="portfolio" style="height:900px; background: red;">
+			<p>Portfolio</p>
+		</section>
+		<section id="contacts" style="height:900px; background: green;">
+			<p id="contacts">Contacts</p>
+		</section>
 
 
 
@@ -89,7 +101,7 @@
 				</div>
 			</div>
 		</footer> -->
-
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	</body>
 
 </html>

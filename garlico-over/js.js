@@ -17,6 +17,8 @@ window.onload = function() {
     arrowUp.style.display="none";
     }
 }
+
+//--------------smooth scroll--------------------
 $(document).ready(function() {
  
  
