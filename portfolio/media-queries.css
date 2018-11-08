@@ -1,0 +1,22 @@
+@media screen and (max-width: 400px) {
+	.div-call {
+		text-align: center;
+		padding-top: 50px;
+	}
+}
+@media screen and (max-width: 780px) {
+	.text-about-me {
+		padding-top: 80px; 
+	}
+	.header-bottom {
+		flex-direction: column;
+		padding-top: 50px; 
+	}
+	.email {
+		padding-top: 22px;
+	}
+	.div {
+		padding-top: 40px;
+		padding-bottom: 25px;
+	}
+}

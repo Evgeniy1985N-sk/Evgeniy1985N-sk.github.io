@@ -8,35 +8,49 @@
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300,700" rel="stylesheet">
 		<script src="https://use.fontawesome.com/791bccb9d3.js"></script>
 		<link rel="shortcut icon" href="">
-		<link rel="stylesheet" type="text/css" href="media queries.css">
 		<link href="style.css" rel="stylesheet" type="text/css">
 		<script src="smooth-scroll.js"></script>
+		<link rel="stylesheet" type="text/css" href="animate.css">
+		<script src="wow.min.js"></script>
+		<script>
+   		 	new WOW().init();
+  		</script>
 		<script src="js.js" defer></script>
+		<link rel="stylesheet" type="text/css" href="media-queries.css">
+		<meta name="format-detection" content="telephone=no">
 	</head>
 
 	<body>
-	
 		<header class="background-img" id="header">
 			<div class="background">
-				<div class="cont">
-					<div class="flex-header">
-						<div>
-							<nav class="container-nav">
-								<ul id="header-ul">
-									<li><a href="#header" class="topLink">Главная</a></li>
-									<li><a href="#portfolio" class="topLink">Портфолио</a></li>
-									<li><a href="#contacts" class="topLink">Контакты</a></li>
-								</ul>
-							</nav>
+				<div class="container-fluid wow fadeInLeft">
+
+					<div class="row">
+
+						<div class="col-12 col-sm-4 div-call" title="tele2">
+							<p class="call-p">+7(953) 968-56-69</p>
 						</div>
-						<div class="div-logo">
+
+						<div class="col-12 col-sm-4 text-center div-logo">
 							<img src="img/world-logo.png">
 							<p class="name-site-p">SITE-Building</p>
 						</div>
-						<div class="div-call" title="tele2">
-							<p class="call-p">+7(953) 968-56-69</p>
+
+						<div class="col-12 col-sm-4">
+							<nav>
+								<a href="#menu" id="toggle"><span></span></a>
+								<div id="menu">
+								  <ul>
+								    <li><a href="#header" class="topLink">Главная</a></li>
+								    <li><a href="#portfolio" class="topLink">Портфолио</a></li>
+								    <li><a href="#contacts" class="topLink">Контакты</a></li>
+								  </ul>
+								</div>
+							</nav>
 						</div>
+
 					</div>
+
 					<div class="text-about-me">
 						<p>Привет, меня зовут Евгений.</p>
 						<p>Я занимаюсь созданием сайтов.</p>
@@ -48,13 +62,6 @@
 							</button>
 						</a>
 					</div>
-					<div class="div">
-						<div class="div-angle">
-							<a href="#portfolio" class="topLink">
-								<div class="angle"></div>
-							</a>
-						</div>
-					</div>
 					<div class="header-bottom">
 						<a href="https://vk.com/evgeny2017novomoskovsk">
 							<div class="vk">
@@ -65,11 +72,18 @@
 							evg.lopukhin@yandex.ru
 						</div>
 					</div>
+					<div class="div">
+						<div class="div-angle">
+							<a href="#portfolio" class="topLink">
+								<div class="angle"></div>
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>	
 		</header>
 
-		<section id="portfolio" style="height:900px; background: red;">
+		<section id="portfolio" style="height:900px; background: white;">
 			<p>Portfolio</p>
 		</section>
 		<section id="contacts" style="height:900px; background: green;">
