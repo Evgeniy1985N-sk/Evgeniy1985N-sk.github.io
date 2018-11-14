@@ -1,7 +1,20 @@
-@media screen and (max-width: 400px) {
-	.div-call {
+@media screen and (max-width: 664px) {
+	.flex-sect2 {
+		flex-direction: column;
+	}
+	.img-foto {
+		width: 100%;
 		text-align: center;
-		padding-top: 50px;
+	}
+	.left-side {
+		max-width: 1200px;
+	}
+	.bg-right {
+		width: 100%;
+	}
+	.right-side {
+		margin-right: 0;
+		max-width: 1200px;
 	}
 }
 @media screen and (max-width: 780px) {
@@ -18,5 +31,11 @@
 	.div {
 		padding-top: 40px;
 		padding-bottom: 25px;
+	}
+}
+@media screen and (max-width: 400px) {
+	.div-call {
+		text-align: center;
+		padding-top: 50px;
 	}
 }

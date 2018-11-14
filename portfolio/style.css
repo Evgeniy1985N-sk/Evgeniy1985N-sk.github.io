@@ -290,7 +290,7 @@ a:hover {
 	display: flex;
 }
 h2 {
-	padding-top: 75px;
+	padding-top: 65px;
 	font-family: 'Montserrat-Semibold-LightItalick';
 	font-weight: bold;
 }
@@ -309,6 +309,7 @@ h2 {
 	width: 100%;
 	background: rgba(255,255,255, 0.4);
 	color: black;
+	height: 100%;
 }
 .left-side {
 	max-width: 600px;
@@ -350,72 +351,97 @@ h2 {
 	background: white;
 }
 /*--------right-side---------*/
-.bg-sect2 .title {
-	padding-top: 70px;
-	font-family: 'Montserrat-Semibold-LightItalick';
-	font-weight: bold;
-	margin-bottom: 2.5px;
-	font-size: 2rem;
-}
-.bg-sect2 .more-about {
-	color: #4C2405;
-	font-size: 22px;
-	font-family: 'Montserrat-Semibold-LightItalick';
-}
 .bg-right {
 	width: 50%;
 }
-.bg-sect2 {
+.bg-right2 {
 	width: 100%;
-	background: rgba(255,255,255, 0.4);
 	color: black;
 }
 .right-side {
 	max-width: 600px;
-	margin-right: 0;
+	margin-left: 0;
+}
+.title-flex {
+	display: flex;
+	padding-top: 60px;
+	align-items: center;
+}
+.bg-right2 .title {
+	font-family: 'Montserrat-Semibold-LightItalick';
+	font-weight: bold;
+	margin-bottom: 2.5px;
+	font-size: 28px;
+}
+.www {
+	margin-left: 15px;
+	text-align: center;
+	height: 25px;
+	width: 70px;
+	background: #4C2405;
+}
+.www span {
+	color: white;
+    font-family: 'Montserrat-Semibold-ExtraBold';
 }
 .right-side .ul {
 	list-style-type: circle;
 }
 .right-side .ul li {
 	color: #4C2405;
+	padding-bottom: 10px;
+
 }
 .right-side .ul li span {
 	color: black;
+	font-size: 18px;
+	font-family: 'Montserrat-Semibold-LightItalick';
 }
 
-/*.learning {
+.ul-text {
 	padding-top: 5px;
+	font-size: 18px;
+	font-family: 'Montserrat-Semibold-LightItalick';
+	color: gray;
+}
+.verstka {
 	font-size: 28px;
 	font-family: 'Montserrat-Semibold-LightItalick';
 	font-weight: bold;
+	margin-bottom: 0;
 }
-.learn-text {
+.verstka-p {
+	padding-top: 15px;
 	font-size: 18px;
 	font-family: 'Montserrat-Semibold-LightItalick';
-	color: black;
 }
-.my-skills {
-	padding-top: 5px;
-	font-size: 28px;
+.title2-flex {
+	display: flex;
+	align-items: center;
+}
+.html {
+	margin-left: 15px;
+	text-align: center;
+	height: 25px;
+	width: 70px;
+	background: #4C2405;
+}
+.html span {
+	color: white;
+    font-family: 'Montserrat-Semibold-ExtraBold';
+}
+.line {
+	background: gray;
+	padding: 12px 0; 
+	text-align: center;
+	transition-duration: 0.5s;
+}
+.line span {
+	color: white;
+	font-size: 20px;
 	font-family: 'Montserrat-Semibold-LightItalick';
 	font-weight: bold;
 }
-.my-skills2 {
-	font-size: 18px;
-	font-family: 'Montserrat-Semibold-LightItalick';
+.line:hover {
+	background: #737373;;
 }
-.what-I-doing {
-	padding-top: 5px;
-	font-size: 28px;
-	font-family: 'Montserrat-Semibold-LightItalick';
-	font-weight: bold;
-}
-.what-p {
-	font-size: 18px;
-	font-family: 'Montserrat-Semibold-LightItalick';
-	padding-bottom: 20px;
-}
-.about-bg2 {
-	background: white;
-}*/
