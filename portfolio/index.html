@@ -5,15 +5,17 @@
 		<title>My portfolio</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<!-- 		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300,700" rel="stylesheet"> -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300,700" rel="stylesheet">
 		<script src="https://use.fontawesome.com/791bccb9d3.js"></script>
-		<!-- <link rel="shortcut icon" href=""> -->
+		<link rel="shortcut icon" href="">
 		<script src="smooth-scroll.js"></script>
 		<link rel="stylesheet" type="text/css" href="animate.css">
 		<script src="wow.min.js"></script>
 		<script>
    		 	new WOW().init();
   		</script>
+  		<link rel="stylesheet" href="slick/slick.css">
+  		<link rel="stylesheet" href="slick/slick-theme.css">
 		<script src="js.js" defer></script>
 		<link href="style.css" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" type="text/css" href="media-queries.css">
@@ -137,7 +139,7 @@
 								 	</div>
 									<p class="verstka-p wow fadeInLeft">Верстка веб-страниц – это создание структуры html-кода, состоящей из программного кода на языках html, javascript, размещающей элементы веб-страницы (изображения, текст, стили оформления и т. д.) в окне браузера, согласно разработанному макету.</p>
 									<a href="header" class="topLink">
-										<div class="line"><span>связаться со мной</span></div>
+										<div class="section2__button wow fadeInLeft"><span>связаться со мной</span></div>
 									</a>
 								</div>
 							</div>
@@ -147,12 +149,52 @@
 			</div>
 		</section>
 		
-		<section id="portfolio">
-			<h1>Мое портфолио</h1>
-			<p>посмотрите мои последние проекты</p>
+		<!-- =======SECTION-3========= -->
+
+		<section id="portfolio" class="section3">
+			<h1 class="section3__h1 wow fadeInLeft">портфолио</h1>
+			<p class="section3__p wow fadeInLeft">Посмотрите Мои Последние Работы</p>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-12">
+						<div class="section3__line wow fadeInLeft"></div>
+						<div class="div">
+							<div class="div-angle">
+								<a href="#slick" class="topLink wow fadeInLeft">
+									<div class="angle ang"></div>
+								</a>
+							</div>
+						</div>
+						<div id="slick" class="sl wow fadeInLeft">
+							<a data-fancybox data-type="iframe" data-src="https://evgeniy1985n-sk.github.io/garlico-over" href="javascript:;"><div class="sec3__gar"></div></a>
+							<a data-fancybox data-type="iframe" data-src="https://Evgeniy1985N-sk.github.io/portfolio/" href="javascript:;"><div class="sec3__portf"></div></a>
+							<a href="https://boozy-woozy.github.io/"><div class="sec3__guit"></div></a>
+					    </div>
+					</div>
+				</div>
+			</div>
 		</section>
 
 
+	<!-- ============section-4============== -->
+		
+		<section id="contacts" class="sec4">
+			<h3 class="sec4__h3">Контакты</h3>
+			<p class="sec4__p">Свяжитесь со мной для заказа верстки</p>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-12 text-center">
+							<form id="form">
+								<input type="text" name="name" placeholder="Имя" required><br>
+								<input type="text" name="mail" placeholder="Почта"><br>
+								<input type="text" name="tel" placeholder="Телефон" required><br>
+								<textarea placeholder="Сообщение"></textarea><br>
+								<input type="submit" name="">
+							</form>
+						</div>
+					</div>
+				</div>
+		</section>
 
 
 
@@ -177,9 +219,24 @@
 				</div>
 			</div>
 		</footer> -->
+<script type="text/javascript" src="https://vk.com/js/api/openapi.js?159"></script>
+
+<!-- VK Widget -->
+<div id="vk_community_messages"></div>
+<script type="text/javascript">
+VK.Widgets.CommunityMessages("vk_community_messages", 127607773, {expanded: "1",tooltipButtonText: "Есть вопрос?"});
+</script>
+
+
+
+
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  		<script src="slick/slick.min.js"></script>
+  		<!-- fancy-box -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
+		<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
 	</body>
 
 </html>
