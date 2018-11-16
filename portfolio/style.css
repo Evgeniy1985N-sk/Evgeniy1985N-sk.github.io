@@ -10,6 +10,7 @@
     font-family: 'Montserrat-Semibold-ExtraBold';
     src: url('fonts/montserrat-extrabold.ttf');
 }
+
 nav {
 	position: fixed;
 	right: 0;
@@ -233,8 +234,8 @@ a:hover {
 	padding-top: 110px; 
 }
 .header-bottom a {
-	width: 75px;
-	height: 75px;
+	width: 65px;
+	height: 65px;
 }
 .fk {
 	height: 55px;
