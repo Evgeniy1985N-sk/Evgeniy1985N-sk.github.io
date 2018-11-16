@@ -209,7 +209,6 @@ carousel.querySelector('.next').onclick = function() {
 
    
 // ------------JS-HOVER--------------------------
-//906=923
 
 ulSelectLi[0].onmouseover = function() {
 

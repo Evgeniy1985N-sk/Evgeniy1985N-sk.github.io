@@ -33,6 +33,11 @@
 		padding-bottom: 25px;
 	}
 }
+@media screen and (max-width: 494px) {
+	.section3__h1 {
+		font-size: 45px;
+	}
+}
 @media screen and (max-width: 400px) {
 	.div-call {
 		text-align: center;

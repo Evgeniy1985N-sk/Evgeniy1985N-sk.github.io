@@ -19,6 +19,7 @@
 		<script src="js.js" defer></script>
 		<link href="style.css" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" type="text/css" href="media-queries.css">
+		<script src="https://vk.com/js/api/openapi.js?159" type="text/javascript"></script>
 	</head>
 
 	<body>
@@ -67,9 +68,9 @@
 						</a>
 					</div>
 					<div class="header-bottom wow fadeInLeft">
-						<a href="https://vk.com/evgeny2017novomoskovsk">
-							<div class="vk">
-								<img src="img/vk.png" alt="">
+						<a href="https://www.facebook.com/profile.php?id=100002232572228">
+							<div class="fk">
+								<img src="img/fk.png" alt="">
 							</div>
 						</a>
 						<div class="email wow fadeInLeft">
@@ -179,35 +180,32 @@
 	<!-- ============section-4============== -->
 		
 		<section id="contacts" class="sec4">
-			<h3 class="sec4__h3">Контакты</h3>
-			<p class="sec4__p">Свяжитесь со мной для заказа верстки</p>
+			<h3 class="sec4__h3 wow fadeInLeft">Контакты</h3>
+			<p class="sec4__p wow fadeInLeft">Свяжитесь со мной для заказа верстки</p>
 				<div class="container-fluid">
 					<div class="row">
+						<div class="col"></div>
 						<div class="col-12 text-center">
-							<form id="form">
-								<input type="text" name="name" placeholder="Имя" required><br>
-								<input type="text" name="mail" placeholder="Почта"><br>
-								<input type="text" name="tel" placeholder="Телефон" required><br>
-								<textarea placeholder="Сообщение"></textarea><br>
-								<input type="submit" name="">
-							</form>
+							<a href="https://m.vk.com/mail?act=show&peer=48078267"><div class="order wow fadeInLeft"><span>Заказать вертску</span></div></a>
 						</div>
+						<div class="col"></div>
 					</div>
 				</div>
+			<div id="map" class="map"></div>
 		</section>
 
 
-
+	
 
 		<!--footer-->
 
-		<!-- <footer>
-			<div class="container">
-				<div class="icons">
+		<footer>
+			<div class="footer">
+				<div class="footer__i wow fadeInLeft">
 					<a class="odn" href="https://ok.ru/feed">
 						<i class="fa fa-odnoklassniki"></i>
 					</a>
-					<a class="fk" href="https://www.facebook.com/profile.php?id=100002232572228">
+					<a class="f-k" href="https://www.facebook.com/profile.php?id=100002232572228">
 						<i class="fa fa-facebook"></i>
 					</a>
 					<a class="vk" href="https://vk.com/evgeny2017novomoskovsk">
@@ -218,14 +216,16 @@
 					</a>
 				</div>
 			</div>
-		</footer> -->
-<script type="text/javascript" src="https://vk.com/js/api/openapi.js?159"></script>
+		</footer>
 
-<!-- VK Widget -->
-<div id="vk_community_messages"></div>
-<script type="text/javascript">
-VK.Widgets.CommunityMessages("vk_community_messages", 127607773, {expanded: "1",tooltipButtonText: "Есть вопрос?"});
-</script>
+
+		<!-- VK Widget -->
+
+		<div id="vk_community_messages"></div>
+		<script type="text/javascript">
+		VK.Widgets.CommunityMessages("vk_community_messages", 174026773, {expandTimeout: "5000",tooltipButtonText: "Есть вопрос?"});
+		</script>
+
 
 
 
@@ -237,6 +237,8 @@ VK.Widgets.CommunityMessages("vk_community_messages", 127607773, {expanded: "1",
   		<!-- fancy-box -->
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
 		<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
+		<!-- map -->
+		<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 	</body>
 
 </html>

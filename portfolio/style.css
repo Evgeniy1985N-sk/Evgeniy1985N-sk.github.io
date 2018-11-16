@@ -236,7 +236,7 @@ a:hover {
 	width: 75px;
 	height: 75px;
 }
-.vk {
+.fk {
 	height: 55px;
 	width: 55px;
 	padding-bottom: 20px;
@@ -244,13 +244,13 @@ a:hover {
 	border-radius: 50%;
 	margin: 0 auto; 
 }
-.vk:hover {
+.fk:hover {
 	height: 75px;
 	width: 75px;
 	cursor: pointer;
 	animation: btnS 7s cubic-bezier(0.1,0.25,0.1,1) 0s infinite normal both;
 }
-.vk img {
+.fk img {
 	width: 100%;
 }
 @keyframes angleTransform {
@@ -563,4 +563,49 @@ h2 {
 	text-align: center;
 	font-size: 28px;
 	padding-top: 30px;
+}
+.order {
+	background: #4C2405;
+	padding: 12px 0; 
+	text-align: center;
+	transition-duration: 0.5s;
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 50px;
+	max-width: 360px;
+	margin-bottom: 150px;
+}
+.order:hover {
+	background: #381A04;
+}
+.order span {
+	color: white;
+	font-size: 20px;
+	font-family: 'Montserrat-Semibold-LightItalick';
+	font-weight: bold;
+}
+.map {
+	width: 100%;
+	height: 200px;
+}
+
+/*----------footer--------------*/
+
+.footer {
+	width: 100%;
+	background: gray;
+}
+.footer__i {
+	margin: 0 auto;
+	text-align: center;
+}
+.footer__i i {
+	padding: 20px 30px;
+	background: gray;
+	font-size: 32px;
+	color: white;
+	transition-duration: .5s;
+}
+.footer__i i:hover {
+	color: #E1E1E1;
 }

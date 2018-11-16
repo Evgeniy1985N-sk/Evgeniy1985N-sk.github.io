@@ -110,3 +110,31 @@ theToggle.onclick = function() {
 // 		elemA[2].style.borderBottom='none';
 // 	}
 // }
+
+// ----------map-----------------
+
+ymaps.ready(init);
+
+
+function init() {
+
+  var map = new ymaps.Map('map', {
+  center: [54.020674, 38.269386],
+  zoom: 11,
+  controls: ['zoomControl'],
+  behaviors: ['drag']
+
+});
+
+var placemark = new ymaps.Placemark([54.020674, 38.269386], {
+
+}, {
+
+  iconLayout: 'default#image',
+  iconImageHref: 'SVG files/map-marker.svg'
+
+  });
+
+    map.geoObjects.add(placemark);
+
+}
