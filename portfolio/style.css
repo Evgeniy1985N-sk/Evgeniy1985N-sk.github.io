@@ -24,7 +24,7 @@
   top: 0;
   right: -200px;
   transition: right .2s;
-  z-index: 2;
+  z-index: 3;
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   -webkit-backface-visibility: hidden;
@@ -41,7 +41,7 @@
   right: 5px;
   cursor: pointer;
   transition: right .23s;
-  z-index: 3;
+  z-index: 4;
   width: 45px;
   -ms-transform: translateZ(0);
   -webkit-transform: translateZ(0);
@@ -104,7 +104,10 @@ nav .hidden-menu .first-li {
   color: #fff;
   text-decoration: none;
 }
-
+.menu-line {
+	height: 1px;
+	background: white;
+}
 /*---------------*/
 .background-img {
 	background-image: url(img/gadjet.jpg);
@@ -581,6 +584,10 @@ h2 {
 .for-span div {
 	margin: 0 auto;
 }
+.for-span span {
+	margin-bottom: 25px;
+	display: block
+}
 .tg {
 	height: 45px;
 	width: 45px;
@@ -606,7 +613,7 @@ h2 {
 	background-size: cover;
 }
 .viber {
-	height: 45px;
+	height: 47px;
 	width: 45px;
 	background-image: url(img/viber.png);
 	background-size: cover;
@@ -621,8 +628,15 @@ h2 {
 	margin: 0 auto;
 	text-align: center;
 }
+.footer__i a i {
+	border-left: 1px solid white;
+}
+.fa-vk {
+	border-right: 1px solid white;
+
+}
 .footer__i i {
-	padding: 20px 30px;
+	padding: 20px 40px;
 	background: gray;
 	font-size: 32px;
 	color: white;

@@ -48,6 +48,13 @@
 	.section3__h1 {
 		font-size: 45px;
 	}
+	.footer__i a i {
+		border-left: none;
+	}
+	.fa-vk {
+		border-right: none;
+	}	
+
 }
 @media screen and (max-width: 400px) {
 	.div-call {
