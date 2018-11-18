@@ -1,3 +1,30 @@
+@media screen and (max-width: 991px) {
+	.col1 {
+		display: none;
+	}	
+	.col2 {
+		display: none;
+	}
+	.wire {
+		display: block;
+	}
+}
+@media screen and (max-width: 780px) {
+	.text-about-me {
+		padding-top: 80px; 
+	}
+	.header-bottom {
+		flex-direction: column;
+		padding-top: 50px; 
+	}
+	.email {
+		padding-top: 22px;
+	}
+	.div {
+		padding-top: 40px;
+		padding-bottom: 25px;
+	}
+}
 @media screen and (max-width: 664px) {
 	.flex-sect2 {
 		flex-direction: column;
@@ -15,22 +42,6 @@
 	.right-side {
 		margin-right: 0;
 		max-width: 1200px;
-	}
-}
-@media screen and (max-width: 780px) {
-	.text-about-me {
-		padding-top: 80px; 
-	}
-	.header-bottom {
-		flex-direction: column;
-		padding-top: 50px; 
-	}
-	.email {
-		padding-top: 22px;
-	}
-	.div {
-		padding-top: 40px;
-		padding-bottom: 25px;
 	}
 }
 @media screen and (max-width: 494px) {
