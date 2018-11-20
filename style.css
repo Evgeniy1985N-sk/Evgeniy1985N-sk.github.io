@@ -34,8 +34,8 @@
   display: none;
 }
 .btn-menu {
-  color: #fff;
-  padding: 5px;
+  padding-top: 5px;
+  padding-right: 5px;
   position: fixed;
   top: 5px;
   right: 5px;
@@ -54,7 +54,8 @@
 .btn-menu span {
   display: block;
   height: 5px;
-  background-color: #4C2405;
+  background-color: white;
+  background: #4C2405;
   margin: 5px 0 0;
   transition: all .1s linear .23s;
   position: relative;
@@ -110,16 +111,13 @@ nav .hidden-menu .first-li {
 }
 /*---------------*/
 .background-img {
-	/*background-image: url(img/gadjet.jpg);*/
 	background-image: url(img/desc1.png);
-
+	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 100%;
 }
 .background {
-/*	background: #2F2F2F;
-	opacity: 0.6;*/
 	width: 100%;
 }
 .container-fluid {
@@ -170,7 +168,7 @@ nav .hidden-menu .first-li {
 	font-weight: bold;
 }
 .text-about-me .text-gray {
-	color: gray;
+	color: white;
 }
 @keyframes btnTransform {
 	0%  {transform: rotate(0deg); }
@@ -195,7 +193,6 @@ nav .hidden-menu .first-li {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	border: 1px solid gray;
 }
 .button div span {
 	color: white;
@@ -280,7 +277,7 @@ a:hover {
 	transform: rotate(405deg);
 }
 .email {
-	color: white;
+	color: #4C2405;
 	font-size: 20px;
 }
 
@@ -429,6 +426,7 @@ h2 {
 	padding: 12px 0; 
 	text-align: center;
 	transition-duration: 0.5s;
+	margin-bottom: 30px;
 }
 .section2__button:hover {
 	background: #737373;
@@ -445,29 +443,27 @@ h2 {
 
 
 .section3 {
-	/*background-image: url(img/desc.jpg);*/
 	background-image: url(img/desc2.png);
 	background-size: cover;
 	background-repeat: no-repeat;
+	background-position: center;
 	width: 100%;
 }
 .bg-sec3 {
-/*	background: #2F2F2F;
-    opacity: 0.9;*/
     width: 100%;
 }
 .section3__h1 {
-	padding-top: 120px;
+	padding-top: 30px;
 	text-align: center;
 	font-family: 'Montserrat-Semibold-LightItalick';
 	font-weight: bold;
-	color: white;
+	color: black;
 	font-size: 55px;
 }
 .section3__p {
 	font-family: 'Montserrat-Semibold-LightItalick';
 	font-weight: bold;
-	color: white;
+	color: #4C2405;
 	text-align: center;
 	font-size: 28px;
 	padding-top: 20px;
@@ -549,7 +545,7 @@ h2 {
 }
 .sec4__h3 {
 	color: black;
-	padding-top: 120px;
+	padding-top: 70px;
 	text-align: center;
 	font-family: 'Montserrat-Semibold-LightItalick';
 	font-weight: bold;
@@ -578,7 +574,7 @@ h2 {
 	background: #381A04;
 }
 .order span {
-	color: black;
+	color: white;
 	font-size: 20px;
 	font-family: 'Montserrat-Semibold-LightItalick';
 	font-weight: bold;
@@ -632,6 +628,9 @@ h2 {
 .footer {
 	width: 100%;
 	background-image: url(img/desc3.png);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 .footer__i {
 	margin: 0 auto;
@@ -647,9 +646,9 @@ h2 {
 .footer__i i {
 	padding: 20px 40px;
 	font-size: 32px;
-	color: white;
+	color: gray;
 	transition-duration: .5s;
 }
 .footer__i i:hover {
-	color: #E1E1E1;
+	color: #2A2A2A;
 }
