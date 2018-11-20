@@ -111,7 +111,7 @@ nav .hidden-menu .first-li {
 }
 /*---------------*/
 .background-img {
-	background-image: url(img/desc1.png);
+	background-image: url(img/desc1.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -443,7 +443,7 @@ h2 {
 
 
 .section3 {
-	background-image: url(img/desc2.png);
+	background-image: url(img/desc2.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -567,7 +567,6 @@ h2 {
 	width: 100%;
 	margin: 0 auto;
 	margin-top: 50px;
-	max-width: 360px;
 	margin-bottom: 50px;
 }
 .order:hover {
@@ -627,7 +626,7 @@ h2 {
 
 .footer {
 	width: 100%;
-	background-image: url(img/desc3.png);
+	background-image: url(img/desc3.jpg);
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
