@@ -1,176 +1,269 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>portfolio</title>
-	<link href="test.css" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" type="text/css" href="media queries.css">
-  	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300,700" rel="stylesheet">
-	<script src="https://use.fontawesome.com/791bccb9d3.js"></script>
-	<link rel="shortcut icon" href="">
-	<script>
-		function move(id) {
-			div=document.getElementById(id);
-			if(parseInt(div.style.left)<100) {
-			div.style.left=parseInt(div.style.left)+5+"px";
-			setTimeout("move('"+id+"')",1);
-			}
-		}
-	</script>
-</head>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<title>My portfolio</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300,700" rel="stylesheet">
+		<script src="https://use.fontawesome.com/791bccb9d3.js"></script>
+		<link rel="shortcut icon" href="">
+		<script src="smooth-scroll.js"></script>
+		<link rel="stylesheet" type="text/css" href="animate.css">
+		<script src="wow.min.js"></script>
+		<script>
+   		 	new WOW().init();
+  		</script>
+  		<link rel="stylesheet" href="slick/slick.css">
+  		<link rel="stylesheet" href="slick/slick-theme.css">
+		<script src="js.js" defer></script>
+		<link href="style.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="media-queries.css">
+		<script src="https://vk.com/js/api/openapi.js?159" type="text/javascript"></script>
+	</head>
 
-<body onLoad="move('d')">
-	<header>
-		<div class="container">
+	<body>
+		<header class="background-img" id="header">
 			<nav>
-				<ul class="menu">
-					<li>
-						<a class="active" href="">Главная</a>
-					</li>
-					<li>
-						<a href="#portfolio">Портфолио</a>
-					</li>
-					<li>
-						<a href="">Обо мне</a>
-					</li>
-					<li>
-						<a href="#conecting">Контакты</a>
-					</li>
+				<input type="checkbox" id="hmt" class="hidden-menu-ticker">
+				<label class="btn-menu" for="hmt">
+				  <span class="first"></span>
+				  <span class="second"></span>
+				  <span class="third"></span>
+				</label>
+				<ul class="hidden-menu">
+				  <li class="first-li"><a href="#header" class="topLink">Главная</a></li>  
+				  <div class="menu-line"></div>
+				  <li><a href="#about-me" class="topLink">Обо мне</a></li>
+				  <div class="menu-line"></div>
+				  <li><a href="#portfolio" class="topLink">Портфолио</a></li>
+				  <div class="menu-line"></div>
+				  <li><a href="#contacts" class="topLink">Контакты</a></li>
+				  <div class="menu-line"></div>
+				  <li class="li-numb"><a href="tel:+79539685669">+7 (953) 968-56-69</a></li>
 				</ul>
-			</nav>			
+			</nav>
+			<div class="background">
+				<div class="container-fluid">
 
-		<!--about me-->
+					<div class="row">
 
-			<div class="about_me" id="d" style="position:absolute;left:-310px;">
-				<span class="text">Привет, меня зовут</span>
-				<span class="text1"> Евгений<br></span>
-				<span class="text2">Мое призвание - верстка интерфейсов<br>
-					<span class="text3"> и этим я занимаюсь уже<br></span>
-					<span class="text4">более 1 года</span>
-				</span>
+						<div class="col-12 col-sm-4 div-call wow fadeInLeft" title="tele2">
+							<p class="call-p">+7(953) 968-56-69</p>
+						</div>
 
-		<!--button-->	
+						<div class="col-12 col-sm-4 text-center div-logo">
+							<img src="img/world-logo.png" alt="">
+							<p class="name-site-p">SITE-Building</p>
+						</div>
 
-				<a href="#portfolio">
-					<div class="button">
-						<span class="button__text">Мое портфолио</span>
-						<img src="images/angle.png" alt="">
-						<div class="button-clon">
-							<span class="button__text-clon">Мое портфолио</span>
-							<img src="images/angle1.png" alt="">
+						<div class="col-12 col-sm-4">
+					
+						</div>
+
+					</div>
+
+					<div class="text-about-me wow fadeInLeft">
+						<p class="text-gray">Привет, мир.</p>
+						<p>Меня зовут Евгений Лопухин.</p>
+						<p>Я занимаюсь созданием сайтов.</p>
+					</div>
+					<div class="button wow fadeInLeft">
+						<a href="#portfolio" class="topLink">
+							<div>
+								<span>мое портфолио</span>
+							</div>
+						</a>
+					</div>
+					<div class="header-bottom wow fadeInLeft">
+						<a href="https://www.facebook.com/profile.php?id=100002232572228">
+							<div class="fk">
+								<img src="img/fk.png" alt="">
+							</div>
+						</a>
+						<div class="email wow fadeInLeft">
+							evg.lopukhin@yandex.ru
 						</div>
 					</div>
-				</a>
-			</div>
-			
-
-		<!--iphone-->
-
-	
-				<img class="iphone" src= "images/iphone.png" alt="">
-		</div>
-
-		<div class="line"></div>
-
-	</header>
-
-		<!--rocket-->
-
-			<script>
-				var t;
-			function up() {
-			  var top = Math.max(document.body.scrollTop,document.documentElement.scrollTop);
-			  if(top > 0) {
-			    window.scrollBy(0,-22);
-			    t = setTimeout('up()',20);
-			  } else clearTimeout(t);
-			  return false;
-			}
-			</script>
-			<a href="#" onclick="return up()">
-
-<img class="rocket" src="images/rocket.png"></a>
-
-
-
-
-		<!--portpholio-->
-		
-		<div class="container">
-			<div class="portpholio">
-				<a id="portfolio">ПОРТФОЛИО</a>
-			</div>
-			<div class="portpholio__line"></div>
-
-		<!--portpholio__images-->
-
-			<div class="all-items">
-				<div class="item1">
-					<a href="https://boozy-woozy.github.io">
-						<img src="images/guitar-schoool.png" alt="">
-					</a>
+					<div class="div">
+						<div class="div-angle">
+							<a href="#about-me" class="topLink wow fadeInLeft">
+								<div class="angle"></div>
+							</a>
+						</div>
+					</div>
 				</div>
+			</div>	
+		</header>
 
-				<div class="item2">
-					<a href="https://Boozy-Woozy.github.io/portfolio/">
-						<img src="images/jesus.png" alt="">
-					</a>
-				</div>
 
-				<div class="item3">
-					<a href="https://evgeniy1985n-sk.github.io/bootstrap/">
-						<img src="images/bootstrap.png" alt="">
-					</a>
-				</div>
-			</div>
-		</div>	
+		<!-- SECTION-2 -->
 
-		 <!--conecting with me-->
 
-		<div class="conecting-with-me">
-			<div class="container">	
-				<div class="conecting-text">СВЯЗАТЬСЯ СО МНОЙ</div>
-				<div class="conecting-text2">Свяжитесь со мной для бесплатной</div>
-				<div class="conecting-text3">консультации или заказа верстки</div>
-				
+		<section>
+			<div class="flex-sect2">
+				<div id="about-me" class="img-foto">
+					<div class="container-fluid text-left left-side">
+						<h2 class="wow fadeInLeft">Обо мне</h2>
+						<p class="more-about wow fadeInLeft">немного больше.</p>
+						<div class="row">
+							<div class="col-12">
+								<p class="learning wow fadeInLeft">Учеба:</p>
+								<p class="learn-text wow fadeInLeft">2011 институт повышения квалификации <br>
+								уверенный пользователь ПК</p>
+								<p class="learn-text wow fadeInLeft">2017-2018 HTML-Academy, GeekBrains, Smartech<br>верстальщик</p>
+								<p class="my-skills wow fadeInLeft">Мои инструменты:</p>
+								<p class="my-skills2 wow fadeInLeft">HTML, CSS, JavaScript, jQuery, Less, Bootstrap-4, Photoshop</p>
 
-					<!--button2-->
+							 	<p class="what-I-doing wow fadeInLeft">Думаю, что умею:</p>
+								<p class="what-p wow fadeInLeft">Кроссбраузерная адаптивная верстка, дизайн сайта.<br>
 
-				<div class="btn-2">
-					<a id="conecting" href="https://m.vk.com/mail?act=show&peer=48078267">
-						<div class="button2">
-							<span class="button2__text">Связаться со мной</span>
-							<div class="button2-clon">
-								<span class="button2-clon__text">Связаться со мной</span>
+								Верстка из PSD-макетов.<br>
+								Coздание сайта под ключ, размещение в просторах интернета</p>
 							</div>
 						</div>
-					</a>
+					</div>
+				</div>
+				<div class="bg-right">
+					<div class="bg-right2">
+						<div class="container-fluid text-left right-side">
+							<div class="title-flex wow fadeInLeft">
+								<p class="title">Зачем нужен сайт?</p>
+								<div class="www"><span>www</span></div>
+							</div>
+							<p class="more-about wow fadeInLeft">мысли вслух.</p>
+							<div class="row">
+								<div class="col-12">
+									<ul class="ul" type="circle">
+										<li class="wow fadeInLeft"><span>для привлечения клиентов</span></li>
+										<li class="wow fadeInLeft"><span>для информативности</span></li>
+										<li class="wow fadeInLeft"><span>для имиджа компании</span></li>
+									</ul>
+									<p class="ul-text wow fadeInLeft">Наличие собственного сайта существенно повышает имидж компании в глазах потенциальных клиентов и партнеров. Если его нет, к компании будут относиться не только настороженно, но и несерьезно!</p>
+									<div class="title2-flex wow fadeInLeft">
+								 		<p class="verstka wow fadeInLeft">Что такое верстка сайта?</p>
+								 		<div class="html"><span>HTML</span></div>
+								 	</div>
+									<p class="verstka-p wow fadeInLeft">Верстка веб-страниц – это создание структуры html-кода, состоящей из программного кода на языках html, javascript, размещающей элементы веб-страницы (изображения, текст, стили оформления и т. д.) в окне браузера, согласно разработанному макету.</p>
+									<a href="header" class="topLink">
+										<div class="section2__button wow fadeInLeft"><span>связаться со мной</span></div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
-		</div>	
+		</section>
+		
+		<!-- =======SECTION-3========= -->
+
+		<section id="portfolio" class="section3">
+			<h1 class="section3__h1 wow fadeInLeft">портфолио</h1>
+			<p class="section3__p wow fadeInLeft">посмотрите мои последние работы</p>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-12">
+						<div class="section3__line wow fadeInLeft"></div>
+						<div class="div">
+							<div class="div-angle">
+								<a href="#slick" class="topLink wow fadeInLeft">
+									<div class="angle ang"></div>
+								</a>
+							</div>
+						</div>
+						<div id="slick" class="sl wow fadeInLeft">
+							<a href="https://evgeniy1985n-sk.github.io/garlico-over"><div class="sec3__gar"></div></a>
+							<a href="https://Evgeniy1985N-sk.github.io/portfolio/"><div class="sec3__portf"></div></a>
+							<a href="https://boozy-woozy.github.io/"><div class="sec3__guit"></div></a>
+					    </div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+	<!-- ============section-4============== -->
+		
+		<section id="contacts" class="sec4">
+			<h3 class="sec4__h3 wow fadeInLeft">Контакты</h3>
+			<p class="sec4__p wow fadeInLeft">Свяжитесь со мной для заказа верстки</p>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col"></div>
+					<div class="col-12 text-center">
+						<a href="https://vk.com/evgeny2017novomoskovsk"><div class="order wow fadeInLeft"><span>Заказать верcтку</span></div></a>
+					</div>
+					<div class="col"></div>
+				</div>
+				<div class="row for-span wow fadeInLeft">
+					<div class="col col1"></div>
+					<div class="col-6 col-sm-4 col-md-4 col-lg-2 text-center">
+						<a href="tg://resolve?domain=evgeny71RUS"><div class="tg"></div></a><br>
+						<span>evgeny71RUS</span>
+					</div>
+					<div class="col-6 col-sm-4 col-md-4 col-lg-2 text-center">
+						<a href="https://join.skype.com/hiJVThDDlwTC"><div class="sk"></div></a><br>
+						<span>evgeny1092</span>
+					</div>
+					<div class="col-6 col-sm-4 col-md-4 col-lg-2 text-center">
+						<a href="https://api.whatsapp.com/send?phone=79539685669"><div class="wp"></div></a><br>
+						<span>8(953) 968-56-69</span>
+					</div>
+					<div class="col-6 col-sm-6 col-md-6 col-lg-2 text-center">	
+						<a href="viber://chat?number=79539685669" rel="nofollow"><div class="viber"></div></a><br>
+						<span>8(953) 968-56-69</span>
+					</div>
+					<div class="col-12 col-sm-6 col-md-6 col-lg-2 text-center">
+						<a href="https://wire.com/"><div class="wire"></div></a><br>
+						<span>@evgenylopukhin</span>
+					</div>
+					<div class="col col2"></div>
+				</div>
+			</div>
+		</section>
+
+
+	
 
 		<!--footer-->
 
 		<footer>
-			<div class="container">
-				<div class="icons">
+			<div class="footer">
+				<div class="footer__i wow fadeInLeft">
 					<a class="odn" href="https://ok.ru/feed">
 						<i class="fa fa-odnoklassniki"></i>
 					</a>
-					<a class="fk" href="https://www.facebook.com/profile.php?id=100002232572228">
+					<a class="f-k" href="https://www.facebook.com/profile.php?id=100002232572228">
 						<i class="fa fa-facebook"></i>
-					</a>
-					<a class="vk" href="https://vk.com/evgeny2017novomoskovsk">
-						<i class="fa fa-vk"></i>
 					</a>
 					<a class="tw" href="https://twitter.com/EvgLopukhin">
 						<i class="fa fa-twitter"></i>
+					</a>
+					<a class="vk" href="https://vk.com/evgeny2017novomoskovsk">
+						<i class="fa fa-vk"></i>
 					</a>
 				</div>
 			</div>
 		</footer>
 
-</body>
+
+		<!-- VK Widget -->
+
+		<!-- <div id="vk_community_messages"></div>
+		<script>
+		VK.Widgets.CommunityMessages("vk_community_messages", 174026773, {expandTimeout: "5000",tooltipButtonText: "Есть вопрос?"});
+		</script> -->
+
+
+
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<!-- 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+  		<script src="slick/slick.min.js"></script>
+
+	</body>
 
 </html>
