@@ -110,14 +110,16 @@ nav .hidden-menu .first-li {
 }
 /*---------------*/
 .background-img {
-	background-image: url(img/gadjet.jpg);
+	/*background-image: url(img/gadjet.jpg);*/
+	background-image: url(img/desc1.png);
+
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 100%;
 }
 .background {
-	background: #2F2F2F;
-	opacity: 0.6;
+/*	background: #2F2F2F;
+	opacity: 0.6;*/
 	width: 100%;
 }
 .container-fluid {
@@ -443,26 +445,32 @@ h2 {
 
 
 .section3 {
-	background-image: url(img/bg3.png);
+	/*background-image: url(img/desc.jpg);*/
+	background-image: url(img/desc2.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	width: 100%;
+}
+.bg-sec3 {
+/*	background: #2F2F2F;
+    opacity: 0.9;*/
+    width: 100%;
 }
 .section3__h1 {
 	padding-top: 120px;
 	text-align: center;
 	font-family: 'Montserrat-Semibold-LightItalick';
 	font-weight: bold;
-	color: black;
+	color: white;
 	font-size: 55px;
 }
 .section3__p {
 	font-family: 'Montserrat-Semibold-LightItalick';
 	font-weight: bold;
-	color: #4C2405;
+	color: white;
 	text-align: center;
 	font-size: 28px;
-	padding-top: 30px;
+	padding-top: 20px;
 }
 .section3__line {
 	height: 1px;
@@ -537,10 +545,10 @@ h2 {
 /*------------section-4-----------*/
 
 .sec4 {
-	background: black;
+	background-image: url(img/img-pattern.png);
 }
 .sec4__h3 {
-	color: white;
+	color: black;
 	padding-top: 120px;
 	text-align: center;
 	font-family: 'Montserrat-Semibold-LightItalick';
@@ -570,7 +578,7 @@ h2 {
 	background: #381A04;
 }
 .order span {
-	color: white;
+	color: black;
 	font-size: 20px;
 	font-family: 'Montserrat-Semibold-LightItalick';
 	font-weight: bold;
@@ -586,7 +594,8 @@ h2 {
 }
 .for-span span {
 	margin-bottom: 25px;
-	display: block
+	display: block;
+	color: black;
 }
 .tg {
 	height: 45px;
@@ -622,7 +631,7 @@ h2 {
 
 .footer {
 	width: 100%;
-	background: gray;
+	background-image: url(img/desc3.png);
 }
 .footer__i {
 	margin: 0 auto;
@@ -637,7 +646,6 @@ h2 {
 }
 .footer__i i {
 	padding: 20px 40px;
-	background: gray;
 	font-size: 32px;
 	color: white;
 	transition-duration: .5s;
