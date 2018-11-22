@@ -1,4 +1,7 @@
 @media screen and (max-width: 991px) {
+	.p2 {
+		display: block;
+	}
 	.col1 {
 		display: none;
 	}	
