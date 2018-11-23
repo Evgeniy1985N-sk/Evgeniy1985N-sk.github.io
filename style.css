@@ -193,6 +193,7 @@ nav .hidden-menu .first-li {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	background: #2D1941;
 }
 .button div span {
 	color: white;
@@ -488,7 +489,7 @@ h2 {
 	font-family: 'Montserrat-Semibold-LightItalick';
 }
 .sl .sec3__gar {
-	background-image: url(img/garlic.jpg);
+	background-image: url(img/gar.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center top;
@@ -497,7 +498,7 @@ h2 {
 
 }
 .sl .sec3__portf {
-	background-image: url(img/portf.png);
+	background-image: url(img/portf.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center top;
