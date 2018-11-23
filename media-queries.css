@@ -28,6 +28,14 @@
 		padding-bottom: 25px;
 	}
 }
+@media screen and (max-width: 699px) {
+	.prev {
+		left: 11px;
+	}
+	.next {
+		right: 11px;
+	}
+}
 @media screen and (max-width: 664px) {
 	.flex-sect2 {
 		flex-direction: column;
@@ -58,6 +66,11 @@
 		border-right: none;
 	}	
 
+}
+@media screen and (max-width: 494px) {
+	.slick-dots li button:before {
+		top: 95px;
+	}
 }
 @media screen and (max-width: 400px) {
 	.div-call {

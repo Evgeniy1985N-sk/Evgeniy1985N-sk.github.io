@@ -3,7 +3,7 @@ $('.sl').slick({
 prevArrow: '<div class="prev"></div>',
 nextArrow: '<div class="next"></div>',
   arrows: true,
-  dots: false,
+  dots: true,
   infinite: true,
   speed: 500,
   fade: true,
