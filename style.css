@@ -1,17 +1,21 @@
 @font-face {
     font-family: 'Montserrat-Semibold-Black';
-    src: url('fonts/montserrat-black.ttf');
+    src: url('fonts/Blogger Sans-Bold.otf');
 }
  @font-face {
     font-family: 'Montserrat-Semibold-LightItalick';
-    src: url('fonts/montserrat-lightItalic.ttf');
+    src: url('fonts/Blogger Sans-Light.otf');
 } 
 @font-face {
     font-family: 'Montserrat-Semibold-ExtraBold';
-    src: url('fonts/montserrat-extrabold.ttf');
+    src: url('fonts/Blogger Sans-Bold.otf');
 }
 
-/*---------------#1d0c2e-hard---#2D1941-light------------*/
+/*---------------#1d0c2e-hard---------------*/
+
+/*---------------#2D1941-light---------------*/
+
+/*---------------MENU---------------*/
 
 .hidden-menu {
 	display: block;
@@ -20,7 +24,7 @@
 	padding: 10px;
 	margin: 0;
 	box-sizing: border-box;
-	width: 215px;
+	width: 225px;
 	background: #1d0c2e;
 	height: 100%;
 	top: 0;
@@ -33,11 +37,11 @@
 	-ms-backface-visibility: hidden;
 }
 .hidden-menu-ticker {
-  display: none;
+  	display: none;
 }
 .btn-menu {
 	border-radius: 3px;
-	background: #2D1941;
+	background: #1d0c2e;
 	padding: 10px;
 	position: fixed;
 	top: 5px;
@@ -52,66 +56,65 @@
 	-webkit-backface-visibility: hidden;
 }
 .btn-menu:hover {
-	background: #1d0c2e;
+	background: #2D1941;
 }
 .btn-menu:checked {
 	right: 155px;
 }
 .btn-menu span {
-	  display: block;
-	  height: 5px;
-	  background: white;
-	  margin: 5px 0 0;
-	  transition: all .1s linear .23s;
-	  position: relative;
-	  border-radius: 5px;
+	display: block;
+	height: 5px;
+	background: white;
+	margin: 5px 0 0;
+	transition: all .1s linear .23s;
+	position: relative;
+	border-radius: 5px;
 }
 .btn-menu span.first {
-  margin-top: 0;
+	margin-top: 0;
 }
 .hidden-menu-ticker:checked ~ .hidden-menu {
-  right: 0;
+	right: 0;
 }
 .hidden-menu-ticker:checked ~ .btn-menu span.first {
-  -webkit-transform: rotate(45deg);
-   -ms-transform: rotate(45deg);
-  top: 10px;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	top: 10px;
 }
 .hidden-menu-ticker:checked ~ .btn-menu {
-  right: 155px;
+	right: 166px;
 }
 .hidden-menu-ticker:checked ~ .btn-menu span.second {
-  opacity: 0;
+	opacity: 0;
 }
-
 .hidden-menu-ticker:checked ~ .btn-menu span.third {
-  -webkit-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  top: -10px;
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	top: -10px;
 }
 .hidden-menu li {
 	text-align: center;
 }
 .hidden-menu li a {
-  list-style: none;
-  display: block;
-  margin: 0;
-  color: gray;
-  padding: 10px;
-  text-decoration: none;
-  transition: all .2s;
-  font-size: 18px;
-  font-weight: bold;
-  font-family: 'Montserrat-Semibold-LightItalick';
+	list-style: none;
+	display: block;
+	margin: 0;
+	color: gray;
+	padding: 10px;
+	text-decoration: none;
+	transition: all .2s;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: 'Montserrat-Semibold-LightItalick';
 }
 nav .hidden-menu .first-li {
 	margin-top: 45px;
 }
 .hidden-menu li a:hover,
 .hidden-menu li a:focus {
-  background: #2D1941;
-  color: #fff;
-  text-decoration: none;
+  	background: #2D1941;
+  	color: #fff;
+	text-decoration: none;
 }
 .menu-line {
 	height: 1px;
@@ -119,9 +122,11 @@ nav .hidden-menu .first-li {
 }
 .hidden-menu .li-mail a {
 	margin-top: 10px;
-	font-size: 15px;
+	font-size: 17px;
 }
-/*---------------*/
+
+/*---------------HEADER---------------*/
+
 .background-img {
 	background-image: url(img/blacknet.png);
 	width: 100%;
@@ -138,11 +143,12 @@ nav .hidden-menu .first-li {
 	max-width: 1200px;
 	background: #2F2F2F;
 }
-.div-call .call-p {
-	padding-top: 15px;
+.div-call {
+	padding-top: 10px;
+}
+.div-call .call-a {
 	color: white;
 	font-size: 20px;
-	margin-bottom: 0;
 	font-family: 'Montserrat-Semibold-LightItalick';
 }
 .div-logo  {
@@ -167,7 +173,7 @@ nav .hidden-menu .first-li {
 	font-size: 32px;
 	font-weight: bold;
 	margin-bottom: 0;
-	font-family: 'Montserrat-Semibold-ExtraBold';
+	font-family: 'Montserrat-Semibold-Black';
 	font-weight: bold;
 }
 .button {
@@ -180,10 +186,10 @@ nav .hidden-menu .first-li {
 }
 .button div {
 	width: 240px;
-	border: 1px solid white;
+	border: 2px solid white;
 	height: 70px;
-	transition-duration: 2s;
-	border-radius: 5px;
+	transition-duration: .5s;
+	border-radius: 7px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -194,10 +200,6 @@ nav .hidden-menu .first-li {
 	font-family: 'Montserrat-Semibold-LightItalick';
 	font-weight: bold;
 }
-/*@keyframes btnS {
-  0%  { bottom: 0; box-shadow: 10px 10px 5px rgba(0,0,0,0.5); }
-  100% { bottom: 100px; box-shadow: 50px 50px 50px rgba(0,0,0,0.1); }
-}*/
 .button div:hover {
 	cursor: pointer;
 	background: #1d0c2e;
@@ -254,9 +256,6 @@ a:hover {
 	transform: rotate(45deg);
 	transition-duration: 0.5s;
 }
-.angle:hover {
-	transform: rotate(405deg);
-}
 .email {
 	border-radius: 5px;
 	padding: 3px;
@@ -271,7 +270,8 @@ a:hover {
 	color: white;
 }
 
-/*--------------section-2--------------------*/
+/*---------------SECTION-2---------------*/
+
 .flex-sect2 {
 	display: flex;
 }
@@ -333,7 +333,7 @@ h2 {
 .about-bg2 {
 	background: white;
 }
-/*--------right-side---------*/
+/*---------------RIGHT-SIDE---------------*/
 .bg-right {
 	width: 50%;
 }
@@ -388,7 +388,6 @@ h2 {
 	padding-top: 5px;
 	font-size: 18px;
 	font-family: 'Montserrat-Semibold-LightItalick';
-	color: gray;
 }
 .verstka {
 	font-size: 28px;
@@ -433,9 +432,7 @@ h2 {
 	font-weight: bold;
 }
 
-
-/*-----------section-3--------------*/
-
+/*---------------SECTION-3---------------*/
 
 .section3 {
 	background-image: url(img/blacknet.png);
@@ -514,7 +511,6 @@ h2 {
 	background-position: center top;
 	width: 100%;
 	height: 300px;
-
 }
 .prev {
 	width: 35px;
@@ -549,7 +545,7 @@ h2 {
 	border-color: #A9A9A9;
 }
 
-/*------------section-4-----------*/
+/*---------------SECTION-4---------------*/
 
 .sec4 {
 	background-image: url(img/img-pattern.png);
@@ -604,10 +600,10 @@ h2 {
 	color: #2D1941;
 	font-weight: bold;
 }
-.wp{
+.wp {
 	color: #1d9e11;
 }
-.wp:hover{
+.wp:hover {
 	color: #146f0c;
 }
 .vb {
@@ -620,9 +616,13 @@ h2 {
 	height: 55px;
 	width: 55px;
 }
-.wi__span {
+
+.wi-span{
+	display: block;
+	margin-top: 17px;
 }
-/*----------footer--------------*/
+
+/*---------------FOOTER---------------*/
 
 .footer-bg {
 	width: 100%;
