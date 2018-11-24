@@ -128,7 +128,7 @@ nav .hidden-menu .first-li {
 /*---------------HEADER---------------*/
 
 .background-img {
-	background-image: url(img/blacknet.png);
+	background-image: url(img/blacknet-min.png);
 	width: 100%;
 }
 .background {
@@ -436,7 +436,7 @@ h2 {
 /*---------------SECTION-3---------------*/
 
 .section3 {
-	background-image: url(img/blacknet.png);
+	background-image: url(img/blacknet-min.png);
 	width: 100%;
 }
 .sec3-bg {
@@ -489,7 +489,7 @@ h2 {
 	font-family: 'Montserrat-Semibold-LightItalick';
 }
 .sl .sec3__gar {
-	background-image: url(img/gar.jpg);
+	background-image: url(img/gar-min.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center top;
@@ -506,7 +506,7 @@ h2 {
 	height: 300px;
 }
 .sl .sec3__guit {
-	background-image: url(img/guit.jpg);
+	background-image: url(img/guit-min.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center top;
@@ -627,7 +627,7 @@ h2 {
 
 .footer-bg {
 	width: 100%;
-	background-image: url(img/blacknet.png);
+	background-image: url(img/blacknet-min.png);
 }
 .footer-bg2 {
 	width: 100%;
