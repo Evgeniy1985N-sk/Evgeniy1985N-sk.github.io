@@ -124,6 +124,19 @@ nav .hidden-menu .first-li {
 	margin-top: 10px;
 	font-size: 17px;
 }
+.email {
+	border-radius: 5px;
+	padding: 3px;
+	color: white;
+	font-size: 20px;
+	font-family: 'Montserrat-Semibold-LightItalick';
+}
+.email a {
+	color: white;
+}
+.email a:hover {
+	color: white;
+}
 
 /*---------------HEADER---------------*/
 
@@ -179,7 +192,7 @@ nav .hidden-menu .first-li {
 .btn-por {
 	text-align: center;
 	padding-top: 60px;
-	padding-bottom: 200px;
+	padding-bottom: 170px;
 	margin: 0 auto;
 }
 .btn-por__span {
@@ -243,19 +256,6 @@ a:hover {
 	border-top: none;
 	transform: rotate(45deg);
 	transition-duration: 0.5s;
-}
-.email {
-	border-radius: 5px;
-	padding: 3px;
-	color: white;
-	font-size: 20px;
-	font-family: 'Montserrat-Semibold-LightItalick';
-}
-.email a {
-	color: white;
-}
-.email a:hover {
-	color: white;
 }
 
 /*---------------SECTION-2---------------*/
