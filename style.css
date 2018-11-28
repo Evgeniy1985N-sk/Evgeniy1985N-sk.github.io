@@ -357,7 +357,7 @@ a:hover {
 }
 .bg-right2 {
 	width: 100%;
-	background-image: url(img/me.jpg);
+	background-image: url(img/me-min.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position-y: 35%;
@@ -392,7 +392,7 @@ a:hover {
 }
 .sec3-bg-left2 {
 	width: 100%;
-	background-image: url(img/new-world.jpg);
+	background-image: url(img/new-world-min.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 100%;
