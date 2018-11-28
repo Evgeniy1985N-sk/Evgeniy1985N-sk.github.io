@@ -166,6 +166,7 @@ nav .hidden-menu .first-li {
 }
 .div-logo  {
 	padding-top: 15px;
+	text-align: center;
 }
 .div-logo img {
 	height: 50px;
@@ -176,6 +177,7 @@ nav .hidden-menu .first-li {
 	font-size: 20px;
 	margin-bottom: 0;
 	font-family: 'Montserrat-Semibold-LightItalick';
+	text-align: center;
 }
 .text-about-me {
 	padding-top: 112px;
@@ -263,25 +265,45 @@ a:hover {
 .flex-sect2 {
 	display: flex;
 }
-h2 {
-	padding-top: 35px;
-	font-family: 'Montserrat-Semibold-LightItalick';
-	font-weight: bold;
-}
-.more-about {
-	color: #2D1941;
-	font-size: 22px;
-	font-family: 'Montserrat-Semibold-LightItalick';
-}
-.img-foto {
+
+/*------LEFT-SIDE-SEC2------*/
+
+.bg-pattern {
 	width: 50%;
 	background-image: url(img/img-pattern.png);
 	background-repeat: no-repeat;
 	background-size: cover;
+	color: #2D1941;
 }
 .left-side {
 	max-width: 600px;
 	margin-right: 0;
+}
+.sect2__h2 {
+	font-family: 'Montserrat-Semibold-LightItalick';
+	font-weight: bold;
+	text-align: center;
+	font-size: 32px;
+	padding-top: 15px;
+	padding-bottom: 20px;
+	text-decoration: underline;
+}
+.about-me__flex {
+	display: flex;
+	flex-direction: column-reverse;
+	align-items: center;
+	justify-content: space-between;
+}
+.about-me__flex .fa-2x {
+	color: #2D1941;
+}
+.about-me__line {
+	height: 1px;
+	width: 50%;
+	background: #2D1941;
+	margin: 0 auto;
+	margin-bottom: 15px;
+	margin-top: 5px;
 }
 .learning {
 	padding-top: 5px;
@@ -289,13 +311,11 @@ h2 {
 	font-family: 'Montserrat-Semibold-LightItalick';
 	font-weight: bold;
 }
-.p2 {
-	display: none;
-}
 .learn-text {
+	padding-bottom: 25px;
 	font-size: 18px;
 	font-family: 'Montserrat-Semibold-LightItalick';
-	color: black;
+	text-align: center;
 }
 .my-skills {
 	padding-top: 5px;
@@ -304,8 +324,10 @@ h2 {
 	font-weight: bold;
 }
 .my-skills2 {
+	padding-bottom: 25px;
 	font-size: 18px;
 	font-family: 'Montserrat-Semibold-LightItalick';
+	text-align: center;
 }
 .what-I-doing {
 	padding-top: 5px;
@@ -317,17 +339,70 @@ h2 {
 	font-size: 18px;
 	font-family: 'Montserrat-Semibold-LightItalick';
 	padding-bottom: 30px;
+	text-align: center;
 }
-.about-bg2 {
-	background: white;
+.fa-check-circle {
+	padding-bottom: 20px;
+	color: #2D1941;
 }
-/*---------------RIGHT-SIDE---------------*/
+
+/*------RIGHT-SIDE-SEC2------*/
+
 .bg-right {
 	width: 50%;
 }
+.sec2-bg {
+	width: 100%;
+	height: 100%;
+}
 .bg-right2 {
 	width: 100%;
-	color: black;
+	background-image: url(img/me.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position-y: 35%;
+	height: 100%;
+}
+
+
+/*------LINE-BG------*/
+
+.line-bg {
+	width: 100%;
+	height: 90px;
+	background-image: url(img/blacknet-min.png);
+}
+.background {
+	width: 100%;
+	background: rgba(135,50,220,0.2);
+	height: 100%;
+}
+
+/*---------------SECTION-3---------------*/
+
+.flex-sect3 {
+	display: flex;
+}
+
+/*------LEFT-SIDE-SEC3------*/
+
+.sec3-bg-left {
+	width: 50%;
+	height: inherit;
+}
+.sec3-bg-left2 {
+	width: 100%;
+	background-image: url(img/new-world.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100%;
+	background-position: center;
+}
+
+/*------RIGHT-SIDE-SEC3------*/
+
+.sec3-bg-right {
+	width: 50%;
 }
 .right-side {
 	max-width: 600px;
@@ -335,10 +410,10 @@ h2 {
 }
 .title-flex {
 	display: flex;
-	padding-top: 30px;
+	padding-top: 40px;
 	align-items: center;
 }
-.bg-right2 .title {
+.sec3-bg-right2 .title {
 	font-family: 'Montserrat-Semibold-LightItalick';
 	font-weight: bold;
 	margin-bottom: 2.5px;
@@ -358,12 +433,10 @@ h2 {
 .more-about {
 	font-weight: bold;
 } 
-.right-side .ul {
-	list-style-type: circle;
-}
 .right-side .ul li {
 	color: #475776;
 	padding-bottom: 10px;
+	list-style-type: circle;
 
 }
 .right-side .ul li span {
@@ -391,6 +464,7 @@ h2 {
 .title2-flex {
 	display: flex;
 	align-items: center;
+	padding-top: 10px;
 }
 .html {
 	margin-left: 15px;
@@ -403,35 +477,36 @@ h2 {
 	color: white;
     font-family: 'Montserrat-Semibold-ExtraBold';
 }
-.section2__button {
+.section__button {
 	background: #2D1941;
 	padding: 12px 0; 
 	text-align: center;
 	transition-duration: 0.5s;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
+	margin-top: 40px;
 }
-.section2__button:hover {
+.section__button:hover {
 	background: #1d0c2e;
 }
-.section2__button span {
+.section__button span {
 	color: white;
 	font-size: 20px;
 	font-family: 'Montserrat-Semibold-LightItalick';
 	font-weight: bold;
 }
 
-/*---------------SECTION-3---------------*/
+/*---------------SECTION-4---------------*/
 
-.section3 {
+.section4 {
 	background-image: url(img/blacknet-min.png);
 	width: 100%;
 }
-.sec3-bg {
+.sec4-bg {
     width: 100%;
     background: rgba(135,50,220,0.2);
     padding-bottom: 120px;
 }
-.sec3-h3 {
+.sec4-h3 {
 	text-align: center;
 	font-family: 'Montserrat-Semibold-LightItalick';
 	font-weight: bold;
@@ -444,7 +519,7 @@ h2 {
 	padding: 10px;
 	padding-top: 60px;
 }
-.section3__p {
+.section4__p {
 	margin: 0 auto;
 	max-width: 620px;
 	font-family: 'Montserrat-Semibold-LightItalick';
@@ -453,7 +528,7 @@ h2 {
 	text-align: center;
 	font-size: 22px;
 }
-.section3__line {
+.section4__line {
 	height: 1px;
 	width: 120px;
 	background: gray;
@@ -475,7 +550,7 @@ h2 {
 	display: block;
 	font-family: 'Montserrat-Semibold-LightItalick';
 }
-.sl .sec3__gar {
+.sl .sec4__gar {
 	background-image: url(img/gar-min.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -484,7 +559,7 @@ h2 {
 	height: 300px;
 
 }
-.sl .sec3__portf {
+.sl .sec4__portf {
 	background-image: url(img/portf.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -492,7 +567,7 @@ h2 {
 	width: 100%;
 	height: 300px;
 }
-.sl .sec3__guit {
+.sl .sec4__guit {
 	background-image: url(img/guit-min.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -533,12 +608,12 @@ h2 {
 	border-color: #A9A9A9;
 }
 
-/*---------------SECTION-4---------------*/
+/*---------------SECTION-5---------------*/
 
-.sec4 {
+.sec5 {
 	background-image: url(img/img-pattern.png);
 }
-.sec4__h3 {
+.sec5__h3 {
 	color: black;
 	padding-top: 70px;
 	text-align: center;
@@ -546,7 +621,7 @@ h2 {
 	font-weight: bold;
 	font-size: 38px;
 }
-.sec4__p {
+.sec5__p {
 	color: #2D1941;
 	font-family: 'Montserrat-Semibold-LightItalick';
 	font-weight: bold;
@@ -587,9 +662,13 @@ h2 {
 	display: block;
 	color: #2D1941;
 	font-weight: bold;
+}					
+.align {
+	text-align: center;
 }
 .wp {
 	color: #1d9e11;
+	text-align: center;
 }
 .wp:hover {
 	color: #146f0c;

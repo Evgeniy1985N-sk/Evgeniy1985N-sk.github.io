@@ -6,7 +6,8 @@
 		<title>My portfolio</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="bootstrap-reboot.min.css">
+		<link rel="stylesheet" type="text/css" href="bootstrap-grid.min.css">
 
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
@@ -27,20 +28,34 @@
 			<nav>
 				<input type="checkbox" id="hmt" class="hidden-menu-ticker">
 				<label class="btn-menu" for="hmt">
-				  <span class="first"></span>
-				  <span class="second"></span>
-				  <span class="third"></span>
+					<span class="first"></span>
+					<span class="second"></span>
+					<span class="third"></span>
 				</label>
 				<ul class="hidden-menu">
-				  <li class="first-li"><a href="#header" class="topLink">Главная</a>  
-				  <div class="menu-line"></div></li>
-				  <li><a href="#about-me" class="topLink">Обо мне</a>
-				  <div class="menu-line"></div></li>
-				  <li><a href="#portfolio" class="topLink">Портфолио</a>
-				  <div class="menu-line"></div></li>
-				  <li><a href="#contacts" class="topLink">Контакты</a>
-				  <div class="menu-line"></div></li>
-				  <li class="li-mail"><a href="mailto:evg.lopukhin@yandex.ru">evg.lopukhin@yandex.ru</a></li>
+					<li class="first-li">
+						<a href="#header" class="topLink">Главная</a>  
+						<div class="menu-line"></div>
+					</li>
+					<li>
+						<a href="#about-me" class="topLink">Обо мне</a> 
+						<div class="menu-line"></div>
+					</li>
+					<li>
+						<a href="#article" class="topLink">Статья</a>
+						<div class="menu-line"></div>
+					</li>
+					<li>
+						<a href="#portfolio" class="topLink">Портфолио</a>
+						<div class="menu-line"></div>
+					</li>
+					<li>
+						<a href="#contacts" class="topLink">Контакты</a>
+						<div class="menu-line"></div>
+					</li>
+					<li class="li-mail">
+						<a href="mailto:evg.lopukhin@yandex.ru">evg.lopukhin@yandex.ru</a>
+					</li>
 				</ul>
 			</nav>
 			<div class="background">
@@ -52,7 +67,7 @@
 							<a class="call-a" href="tel:+79539685669" title="tele2">+7(953) 968-56-69</a>
 						</div>
 
-						<div class="col-12 col-sm-4 text-center div-logo">
+						<div class="col-12 col-sm-4 div-logo">
 							<img src="img/world-logo.png" alt="">
 							<h1 class="name-site-h1">создание сайтов</h1>
 						</div>
@@ -89,34 +104,64 @@
 
 	<!-- =============== SECTION-2 =============== -->
 
-		<section>
+		<section class="sec2">
 			<div class="flex-sect2">
-				<div id="about-me" class="img-foto">
+				<div id="about-me" class="bg-pattern">
 					<div class="container-fluid text-left left-side">
-						<h2 class="wow fadeInLeft">Обо мне</h2>
-						<p class="more-about">немного больше.</p>
+						<h2 class="sect2__h2">Обо мне</h2>
 						<div class="row">
 							<div class="col-12">
-								<p class="learning">Учеба:</p>
-								<p class="learn-text">2003-2008 НФ НИИ РХТУ Д.И.Менделеева <br>
-								инженер-метролог</p>
-								<p class="learn-text p2">2011 институт повышения квалификации <br>
-								уверенный пользователь ПК</p>
-								<p class="learn-text">2017-2018 HTML-Academy, GeekBrains, Smartech<br>верстальщик</p>
-								<p class="my-skills">Мои инструменты:</p>
+								<div class="about-me__flex">
+									<span class="learning">Учеба:</span>
+									<i class="fas fa-graduation-cap fa-2x"></i>
+								</div>
+								<div class="about-me__line"></div>
+								<p class="learn-text">2017-2018 HTML-Academy, GeekBrains, Smartech<br></p>
+								<div class="about-me__flex">
+									<span class="my-skills">Мои инструменты:</span>
+									<i class="fas fa-wrench fa-2x"></i>
+								</div>
+								<div class="about-me__line"></div>
 								<p class="my-skills2">HTML, CSS, JavaScript, jQuery, Less, Bootstrap-4, Photoshop</p>
-
-							 	<p class="what-I-doing">Думаю, что умею:</p>
-								<p class="what-p">Кроссбраузерная адаптивная верстка, дизайн сайта.<br>
-
-								Верстка из PSD-макетов.<br>
-								Coздание сайта под ключ, размещение в просторах интернета</p>
+								<div class="about-me__flex">
+								 	<span class="what-I-doing">Навыки:</span>
+								 	<i class="fas fa-brain fa-2x"></i>
+							 	</div>
+							 	<div class="about-me__line"></div>
+								<p class="what-p">Кроссбраузерная адаптивная верстка, дизайн сайта.<br></p>
+								<div class="align">
+									<a href="#article" class="topLink"><i class="far fa-check-circle fa-3x"></i></a>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="bg-right">
-					<div class="bg-right2">
+					<div class="sec2-bg">
+						<div class="bg-right2">
+							<a href="#article" class="topLink">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+	<!-- ==== LINE-BG ==== -->
+
+	<div class="line-bg"><div class="background"></div></div>
+
+	<!-- =============== SECTION-3 =============== -->
+
+		<section id="article">
+			<div class="flex-sect3">
+				<div class="sec3-bg-left">
+					<div class="sec3-bg-left2">
+					</div>
+				</div>
+				<div class="sec3-bg-right">
+					<div class="sec3-bg-right2">
 						<div class="container-fluid text-left right-side">
 							<div class="title-flex">
 								<p class="title">Зачем нужен сайт?</p>
@@ -137,7 +182,7 @@
 								 	</div>
 									<p class="verstka-p">Верстка веб-страниц – это создание структуры html-кода, состоящей из программного кода на языках html, javascript, размещающей элементы веб-страницы (изображения, текст, стили оформления и т. д.) в окне браузера, согласно разработанному макету.</p>
 									<a href="#contacts" class="topLink">
-										<div class="section2__button"><span>связаться со мной</span></div>
+										<div class="section__button"><span>связаться со мной</span></div>
 									</a>
 								</div>
 							</div>
@@ -145,28 +190,28 @@
 					</div>
 				</div>
 			</div>
+						
 		</section>
 
+	<!-- =============== SECTION-4 =============== -->
 
-	<!-- =============== SECTION-3 =============== -->
-
-		<section id="portfolio" class="section3">
-			<div class="sec3-bg">
-				<h3 class="sec3-h3">портфолио</h3>
-				<p class="section3__p">посмотрите мои последние работы</p>
+		<section id="portfolio" class="section4">
+			<div class="sec4-bg">
+				<h3 class="sec4-h3">портфолио</h3>
+				<p class="section4__p">посмотрите мои последние работы</p>
 				<div class="container-fluid">
 					<div class="row">
 						<div class="col-12">
-							<div class="section3__line"></div>
+							<div class="section4__line"></div>
 							<div id="slick" class="sl">
 								<div>
-									<a href="https://evgeniy1985n-sk.github.io/garlico-over"><div class="sec3__gar"></div></a><span>адаптивная верстка из psd-макета</span>
+									<a href="https://evgeniy1985n-sk.github.io/garlico-over"><div class="sec4__gar"></div></a><span>адаптивная верстка из psd-макета</span>
 								</div>
 								<div>
-									<a href="https://Evgeniy1985N-sk.github.io"><div class="sec3__portf"></div></a><span>дизайн и адаптивная верстка</span>
+									<a href="https://Evgeniy1985N-sk.github.io"><div class="sec4__portf"></div></a><span>дизайн и адаптивная верстка</span>
 								</div>
 								<div>
-									<a href="https://boozy-woozy.github.io/"><div class="sec3__guit"></div></a><span>фиксированная верстка из psd-макета</span>
+									<a href="https://boozy-woozy.github.io/"><div class="sec4__guit"></div></a><span>фиксированная верстка из psd-макета</span>
 								</div>
 						    </div>
 						</div>
@@ -176,22 +221,22 @@
 		</section>
 
 
-	<!-- =============== SECTION-4 =============== -->
+	<!-- =============== SECTION-5 =============== -->
 		
-		<section id="contacts" class="sec4">
-			<h3 class="sec4__h3">Контакты</h3>
-			<p class="sec4__p">Свяжитесь со мной для заказа верстки</p>
+		<section id="contacts" class="sec5">
+			<h3 class="sec5__h3">Контакты</h3>
+			<p class="sec5__p">Свяжитесь со мной для заказа верстки</p>
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col"></div>
 					<div class="col-12 col-sm-10 col-md-6 col-lg-6 text-center">
-						<a href="https://vk.com/evgeny2017novomoskovsk"><div class="order wow fadeInLeft"><span>Заказать верcтку</span></div></a>
+						<a href="https://vk.com/evgeny2017novomoskovsk"><div class="order"><span>Заказать верcтку</span></div></a>
 					</div>
 					<div class="col"></div>
 				</div>
 				<div class="row for-span">
 					<div class="col col1"></div>
-					<div class="col-6 col-sm-4 col-md-4 col-lg-2 text-center">
+					<div class="col-6 col-sm-4 col-md-4 col-lg-2 align">
 						<div>
 							<a href="tg://resolve?domain=evgeny71RUS">
 								<i class="fab fa-telegram fa-3x"></i>
@@ -199,7 +244,7 @@
 						</div><br>
 						<span>evgeny71RUS</span>
 					</div>
-					<div class="col-6 col-sm-4 col-md-4 col-lg-2 text-center">
+					<div class="col-6 col-sm-4 col-md-4 col-lg-2 align">
 						<div>
 							<a href="https://join.skype.com/hiJVThDDlwTC">
 								<i class="fab fa-skype fa-3x"></i>
@@ -207,7 +252,7 @@
 						</div><br>
 						<span>evgeny1092</span>
 					</div>
-					<div class="col-6 col-sm-4 col-md-4 col-lg-2 text-center">
+					<div class="col-6 col-sm-4 col-md-4 col-lg-2 align">
 						<div>
 							<a class="wp" href="https://api.whatsapp.com/send?phone=79539685669">
 								<i class="fab fa-whatsapp fa-3x"></i>
@@ -215,7 +260,7 @@
 						</div><br>
 						<span>8(953) 968-56-69</span>
 					</div>
-					<div class="col-6 col-sm-6 col-md-6 col-lg-2 text-center">
+					<div class="col-6 col-sm-6 col-md-6 col-lg-2 align">
 						<div>	
 							<a class="vb" href="viber://chat?number=79539685669" rel="nofollow">
 								<i class="fab fa-viber fa-3x"></i>
@@ -223,12 +268,10 @@
 						</div><br>
 						<span>8(953) 968-56-69</span>
 					</div>
-					<div class="col-12 col-sm-6 col-md-6 col-lg-2 text-center">
-					
-							<a class="wi" href="https://app.wire.com/auth/">
-								<img src="img/wire.png" alt="">
-							</a>
-						<br>
+					<div class="col-12 col-sm-6 col-md-6 col-lg-2 align">
+						<a class="wi" href="https://app.wire.com/auth/">
+							<img src="img/wire.png" alt="">
+						</a><br>
 						<span class="wi-span">@evgenylopukhin</span>
 					</div>
 					<div class="col col2"></div>

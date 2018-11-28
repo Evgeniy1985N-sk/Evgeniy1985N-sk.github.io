@@ -1,7 +1,4 @@
 @media screen and (max-width: 991px) {
-	.p2 {
-		display: block;
-	}
 	.col1 {
 		display: none;
 	}	
@@ -36,7 +33,28 @@
 	.flex-sect2 {
 		flex-direction: column;
 	}
-	.img-foto {
+	.flex-sect3 {
+		flex-direction: column-reverse;
+	}
+	.sec3-bg-left {
+		width: 100%;
+	}
+	.sec3-bg-left2 {
+		height: 500px;
+	}
+	.sec3-bg-right {
+		width: 100%;
+	}
+	.bg-right2 {
+		height: 500px;
+	}
+	.section__button {
+		max-width: 500px;
+		width: 100%;
+		margin: 0 auto;
+		margin-bottom: 15px;
+	}
+	.bg-pattern {
 		width: 100%;
 		text-align: center;
 	}
