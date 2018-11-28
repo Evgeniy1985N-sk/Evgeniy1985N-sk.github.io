@@ -23,7 +23,7 @@
 	width: 100%;
 	background: black;
 	z-index: 5;
-	transition: 1s all;
+	/*transition: 1s all;*/
 	opacity: 1;
 	visibility: visible;
 }
