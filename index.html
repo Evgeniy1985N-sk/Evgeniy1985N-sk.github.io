@@ -18,12 +18,6 @@
 	</head>
 
 	<body>
-	<form action="https://formspree.io/evg.lopukhin@yandex.ru" method="POST">
-  <input type="text" name="name">
-  <input type="email" name="_replyto">
-  <input type="submit" value="Send">
-  <input type="text" name="_gotcha" style="display:none" />
-</form>
 
 	<!-- =============== HEADER =============== -->
 
@@ -232,8 +226,12 @@
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col"></div>
-					<div class="col-12 col-sm-10 col-md-6 col-lg-6 text-center">
-						<a href="https://vk.com/evgeny2017novomoskovsk"><div class="order"><span>Заказать верcтку</span></div></a>
+					<div class="col-12 col-sm-10 col-md-6 col-lg-6 align">
+						<form action="https://formspree.io/evg.lopukhin@yandex.ru" method="POST">
+							<input type="text" name="name" placeholder="Ваше имя"><br>
+							<input type="email" name="_replyto" placeholder="Email"><br>
+							<input class="order" type="submit" value="Заказать верcтку">
+						</form>
 					</div>
 					<div class="col"></div>
 				</div>
