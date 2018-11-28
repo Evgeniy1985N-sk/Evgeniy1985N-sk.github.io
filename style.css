@@ -23,7 +23,7 @@
 	width: 100%;
 	background: black;
 	z-index: 5;
-	/*transition: 1s all;*/
+	transition: 1s all;
 	opacity: 1;
 	visibility: visible;
 }
@@ -394,7 +394,7 @@ a:hover {
 }
 .bg-right2 {
 	width: 100%;
-	background-image: url(img/me-min.jpg);
+	background-image: url(img/me-min.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position-y: 35%;
@@ -694,6 +694,17 @@ input[type="email"]  {
 	color: #2D1941;
 }
 input[type="email"] {
+	outline: none;
+}
+textarea {
+	width: 100%;
+	margin-top: 50px;
+	border: none;
+	font-size: 20px;
+	font-family: 'Montserrat-Semibold-LightItalick';
+	font-weight: bold;
+	color: #2D1941;
+	background: white;
 	outline: none;
 }
 input[type="submit"]  {
