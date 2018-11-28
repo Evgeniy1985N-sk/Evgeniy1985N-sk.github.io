@@ -482,7 +482,7 @@ a:hover {
 	padding: 12px 0; 
 	text-align: center;
 	transition-duration: 0.5s;
-	margin-bottom: 20px;
+	margin-bottom: 35px;
 	margin-top: 40px;
 }
 .section__button:hover {
@@ -614,12 +614,13 @@ a:hover {
 	background-image: url(img/img-pattern.png);
 }
 .sec5__h3 {
-	color: black;
+	color: #2D1941;
 	padding-top: 70px;
 	text-align: center;
 	font-family: 'Montserrat-Semibold-LightItalick';
 	font-weight: bold;
 	font-size: 38px;
+	text-decoration: underline;
 }
 .sec5__p {
 	color: #2D1941;
@@ -647,6 +648,11 @@ a:hover {
 	font-size: 20px;
 	font-family: 'Montserrat-Semibold-LightItalick';
 	font-weight: bold;
+}
+.name-mess {
+	text-transform: uppercase;
+	margin-bottom: 5px !important;
+
 }
 .for-span {
 	color: white;
