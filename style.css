@@ -445,9 +445,16 @@ a:hover {
 	max-width: 600px;
 	margin-left: 0;
 }
+h4 {
+	font-family: 'Montserrat-Semibold-LightItalick';
+	font-weight: bold;
+	font-size: 32px;
+	text-decoration: underline;
+	padding-top: 15px;
+}
 .title-flex {
 	display: flex;
-	padding-top: 40px;
+	padding-top: 15px;
 	align-items: center;
 }
 .sec3-bg-right2 .title {
