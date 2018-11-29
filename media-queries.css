@@ -74,6 +74,9 @@
 	.ul-text {
 		text-align: justify;
 	}
+	h4 {
+		text-align: center;
+	}
 }
 @media screen and (max-width: 494px) {
 	.section3__h1 {
