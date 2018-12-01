@@ -1,21 +1,79 @@
-@font-face {
-  font-family: 'Blogger-Medium';
-  src: url('fonts/Blogger Sans-Light.otf');
-}
 body {
-  font-family: 'Blogger-Medium';
+  font-family: 'Montserrat', sans-serif;
+}
+a {
+  color: white;
 }
 a:hover {
   text-decoration: none;
+  color: white;
 }
 .header-bg2 {
   background-image: url(img/picture.png);
-  opacity: 0.8;
+  opacity: 0.9;
   width: 100%;
-  height: 800px;
+  height: 900px;
   background-repeat: no-repeat;
   background-size: 100%;
   position: absolute;
+}
+.bg-menu {
+  background: #f38181;
+  position: fixed;
+  width: 100%;
+  z-index: 6;
+}
+.menu-fixed {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.menu-flex {
+  display: inline-block;
+}
+.logo {
+  font-weight: bold;
+  color: white;
+  font-size: 24px;
+  padding-top: 10px;
+}
+.header__ul {
+  padding-left: 0;
+  padding-top: 17px;
+}
+.header__ul li {
+  display: inline-block;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-right: 43px;
+}
+.header__ul li a {
+  color: white;
+  padding-bottom: 5px;
+  -webkit-transition: 0.5s all ease-out;
+  -moz-transition: 0.5s all ease-out;
+  transition: 0.5s all ease-out;
+  border-bottom: 2px solid #f38181;
+}
+.header__ul li a:hover {
+  text-decoration: none;
+  color: #fce38a;
+}
+.header__ul .li-last {
+  margin-right: 35px;
+}
+.header__ul .shop {
+  text-decoration: none;
+  margin-right: 21px;
+}
+.header__ul .find {
+  text-decoration: none;
+}
+#top-menu li.active a {
+  border-bottom: 2px solid #fce38a;
+  color: #fce38a;
 }
 .header-bg {
   width: 100%;
@@ -29,79 +87,92 @@ a:hover {
   position: relative;
   z-index: 2;
 }
-.header-bg .container-fluid .menu-flex {
-  display: inline-block;
-}
-.header-bg .container-fluid .logo {
-  font-weight: bold;
-  color: white;
-  font-size: 32px;
-  padding-top: 37px;
-}
-.header-bg .container-fluid .header__ul {
-  padding-left: 0;
-  padding-top: 37px;
-}
-.header-bg .container-fluid .header__ul .li-first {
-  margin-left: -28px;
-}
-.header-bg .container-fluid .header__ul li {
-  display: inline-block;
-  font-size: 16px;
-  margin-right: 43px;
-}
-.header-bg .container-fluid .header__ul li a {
-  color: white;
-  padding-bottom: 5px;
-  transition-duration: .5s;
-}
-.header-bg .container-fluid .header__ul li a:hover {
-  text-decoration: none;
-  color: #fce38a;
-  border-bottom: 3px solid #fce38a;
-}
-.header-bg .container-fluid .header__ul .li-last {
-  margin-right: 35px;
-}
-.header-bg .container-fluid .header__ul .find {
-  text-decoration: none;
-  margin-right: 21px;
-}
-.header-bg .container-fluid .header__ul .shop {
-  text-decoration: none;
-}
 .header-bg .container-fluid .header__p {
   text-align: center;
-  font-size: 52px;
+  font-size: 4vw;
   color: white;
-  padding-top: 40px;
+  padding-top: 120px;
   font-family: 'Kaushan Script', cursive;
 }
 .header-bg .container-fluid h1 {
   text-align: center;
-  font-size: 110px;
   color: white;
-  padding-top: 28px;
   text-transform: uppercase;
   line-height: 1;
   font-weight: bold;
+  width: 100%;
+  font-size: 8vw;
 }
 .header-bg .container-fluid .header__line {
   width: 62px;
   background: white;
   height: 2px;
   margin: 0 auto;
-  margin-top: 44px;
+  margin-top: 10px;
 }
 .header-bg .container-fluid .header__btn {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 .header-bg .container-fluid .header__btn a {
   text-transform: uppercase;
   color: white;
   padding: 5px 20px;
-  border: 3px solid white;
+  border: 2px solid white;
   font-weight: bold;
+}
+.header-bg .container-fluid .header__4sec {
+  display: flex;
+  padding-top: 70px;
+  justify-content: space-between;
+}
+.header-bg .container-fluid .header__4sec .sec1,
+.header-bg .container-fluid .header__4sec .sec2,
+.header-bg .container-fluid .header__4sec .sec3,
+.header-bg .container-fluid .header__4sec .sec4 {
+  max-width: 270px;
+  width: 100%;
+  background: transparent;
+}
+.header-bg .container-fluid .header__4sec .sec1:hover,
+.header-bg .container-fluid .header__4sec .sec2:hover,
+.header-bg .container-fluid .header__4sec .sec3:hover,
+.header-bg .container-fluid .header__4sec .sec4:hover {
+  cursor: pointer;
+}
+.header-bg .container-fluid .header__4sec .sec1:hover .lines__red,
+.header-bg .container-fluid .header__4sec .sec2:hover .lines__red,
+.header-bg .container-fluid .header__4sec .sec3:hover .lines__red,
+.header-bg .container-fluid .header__4sec .sec4:hover .lines__red {
+  width: 74px;
+  background: #f38181;
+  height: 2px;
+}
+.header-bg .container-fluid .header__4sec .line1,
+.header-bg .container-fluid .header__4sec .line2,
+.header-bg .container-fluid .header__4sec .line3,
+.header-bg .container-fluid .header__4sec .line4 {
+  height: 2px;
+  background: white;
+  border-radius: 5px;
+}
+.header-bg .container-fluid .header__4sec .text1,
+.header-bg .container-fluid .header__4sec .text2,
+.header-bg .container-fluid .header__4sec .text3,
+.header-bg .container-fluid .header__4sec .text4 {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.header-bg .container-fluid .header__4sec .text1 span,
+.header-bg .container-fluid .header__4sec .text2 span,
+.header-bg .container-fluid .header__4sec .text3 span,
+.header-bg .container-fluid .header__4sec .text4 span {
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  margin-right: 5px;
 }

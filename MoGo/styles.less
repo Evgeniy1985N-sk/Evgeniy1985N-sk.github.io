@@ -1,8 +1,4 @@
-@font-face {
-    font-family: 'Blogger-Medium';
-    src: url('fonts/Blogger Sans-Light.otf');
-}
-@font: 'Blogger-Medium';
+@font: 'Montserrat', sans-serif;
 @colorYellow: #fce38a;
 @colorRed: #f38181;
 @colorGree: #eaffd0;
@@ -12,17 +8,82 @@
 body {
 	 font-family: @font;
 }
+a {
+	color: white;
+}
 a:hover {
 	text-decoration: none;
+	color: white;
 }
 .header-bg2 {
 	background-image: url(img/picture.png);
-	opacity: 0.8;
+	opacity: 0.9;
 	width: 100%;
-	height: 800px;
+	height: 900px;
 	background-repeat: no-repeat;
 	background-size: 100%;
 	position: absolute;
+}
+.bg-menu {
+	background: #f38181;
+	position: fixed;
+	width: 100%;
+	z-index: 6;
+}
+.menu-fixed {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.menu-flex {
+	display: inline-block;
+}
+.logo {
+	font-weight: bold;
+	color: white;
+	font-size: 24px;
+	padding-top: 10px;
+}
+.header__ul {
+	padding-left: 0;
+	padding-top: 17px;
+	.li-first {
+		// margin-left: -28px;
+	}
+	li {
+		display: inline-block;
+		font-size: 14px;
+		text-transform: uppercase;
+		margin-right: 43px;
+		a {
+			color: white;
+			padding-bottom: 5px;
+			-webkit-transition: .5s all ease-out;
+    		-moz-transition: .5s all ease-out;
+   			 transition: .5s all ease-out;
+   			 border-bottom: 2px solid #f38181;
+			}
+		a:hover {
+			text-decoration: none;
+			color: #fce38a;
+		}
+	}
+	.li-last {
+		margin-right: 35px;
+	}
+	.shop {
+		text-decoration: none;
+		margin-right: 21px;
+	}
+	.find {
+		text-decoration: none;
+	}
+}
+#top-menu li.active a {
+    border-bottom: 2px solid #fce38a;
+    color: #fce38a;
 }
 .header-bg {
 width: 100%;
@@ -34,80 +95,75 @@ background-repeat: no-repeat;
 		max-width: 1230px;
 		position: relative;
 		z-index: 2;
-		.menu-flex {
-			display: inline-block;
-		}
-		.logo {
-			font-weight: bold;
-			color: white;
-			font-size: 32px;
-			padding-top: 37px;
-		}
-		.header__ul {
-			padding-left: 0;
-			padding-top: 37px;
-			.li-first {
-				margin-left: -28px;
-			}
-			li {
-				display: inline-block;
-				font-size: 16px;
-				margin-right: 43px;
-				a {
-					color: white;
-					padding-bottom: 5px;
-					transition-duration: .5s;
-					}
-				a:hover {
-					text-decoration: none;
-					color: #fce38a;
-					border-bottom: 3px solid #fce38a;
-				}
-			}
-			.li-last {
-				margin-right: 35px;
-			}
-			.find {
-				text-decoration: none;
-				margin-right: 21px;
-			}
-			.shop {
-				text-decoration: none;
-			}
-		}
 		.header__p {
 			text-align: center;
-			font-size: 52px;
+			font-size: 4vw;
 			color: white;
-			padding-top: 40px;
+			padding-top: 120px;
 			font-family: 'Kaushan Script', cursive;
 		}
 		h1 {
 			text-align: center;
-			font-size: 110px;
 			color: white;
-			padding-top: 28px;
 			text-transform: uppercase;
 			line-height: 1;
 			font-weight: bold;
+			width: 100%;
+			font-size: 8vw;
 		}
 		.header__line {
 			width: 62px;
 			background: white;
 			height: 2px;
 			margin: 0 auto;
-			margin-top: 44px;
+			margin-top: 10px;
 		}
 		.header__btn {
 			display: flex;
 			justify-content: center;
-			margin-top: 50px;
+			margin-top: 30px;
 			a {
 			text-transform: uppercase;
 			color: white;
 			padding: 5px 20px;
-			border: 3px solid white;
+			border: 2px solid white;
 			font-weight: bold;
+			}
+		}
+		.header__4sec {
+			display: flex;
+			padding-top: 70px;
+			justify-content: space-between;
+			.sec1, .sec2, .sec3, .sec4 {
+				max-width: 270px;
+				width: 100%;
+				background: transparent;
+			}
+			.sec1:hover, .sec2:hover, .sec3:hover, .sec4:hover {
+				cursor: pointer;
+				.lines__red {
+					width: 74px;
+					background: #f38181;
+					height: 2px;
+				}
+			}
+			.line1, .line2, .line3, .line4 {
+				height: 2px;
+				background: white;
+				border-radius: 5px;
+			}
+			.text1, .text2, .text3, .text4 {
+				font-size: 14px;
+				text-transform: uppercase;
+				color: white;
+				margin-top: 10px;
+				margin-bottom: 15px;
+			}
+			.text1 span, .text2 span, .text3 span, .text4 span {
+				font-size: 20px;
+				color: white;
+				font-weight: bold;
+				margin-right: 5px;
 			}
 		}
 	}
