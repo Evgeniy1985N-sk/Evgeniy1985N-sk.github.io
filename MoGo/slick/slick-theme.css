@@ -40,6 +40,7 @@
     border: none;
     outline: none;
     background: transparent;
+
 }
 .slick-prev:hover,
 .slick-prev:focus,
@@ -75,6 +76,7 @@
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
 }
 
 .slick-prev
@@ -122,17 +124,21 @@
 .slick-dots
 {
     position: absolute;
-    bottom: -25px;
+    bottom: -75px;
 
     display: block;
 
     width: 100%;
     padding: 0;
     margin: 0;
+    margin-left: -5px;
 
     list-style: none;
 
-    text-align: center;
+    text-align: left;
+
+    z-index: 20;
+
 }
 .slick-dots li
 {
@@ -140,12 +146,18 @@
 
     display: inline-block;
 
-    width: 20px;
-    height: 20px;
+    width: 18%;
+    height: 2px;
     margin: 0 5px;
     padding: 0;
+    margin-right: 7.4%;
+    
+    background: white;
 
     cursor: pointer;
+}
+.slick-dots li:last-child {
+    margin-right: 0;
 }
 .slick-dots li button
 {
@@ -154,8 +166,8 @@
 
     display: block;
 
-    width: 20px;
-    height: 20px;
+    width: 18%;
+    height: 2px;
     padding: 5px;
 
     cursor: pointer;
@@ -163,42 +175,53 @@
     color: transparent;
     border: 0;
     outline: none;
-    background: transparent;
+    background: white;
 }
 .slick-dots li button:hover,
 .slick-dots li button:focus
 {
     outline: none;
 }
+.slick-dots li button:hover 
+{
+    background: #f38181;
+    width: 74px;
+}
+
 .slick-dots li button:hover:before,
 .slick-dots li button:focus:before
 {
-    opacity: 1;
+    /*opacity: 1;*/
+}
+.slick-dots li button:hover:before 
+{
+    background: #f38181;
 }
 .slick-dots li button:before
 {
     font-family: 'slick';
-    font-size: 9px;
+    font-size: 6px;
     line-height: 20px;
 
     position: absolute;
-    top: 65px;
+    top: 0;
     left: 0;
 
-    width: 20px;
-    height: 20px;
+    width: 18%;
+    height: 2px;
 
-    content: '•';
+    content: '';
     text-align: center;
 
-    opacity: .25;
-    color: white;
+    color: black;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+    background: white;
 }
 .slick-dots li.slick-active button:before
 {
-    opacity: .75;
-    color: white;
+    background: #f38181;
+    width: 74px;
 }

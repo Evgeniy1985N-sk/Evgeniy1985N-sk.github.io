@@ -32,6 +32,7 @@ a:hover {
 }
 .menu-flex {
   display: inline-block;
+  width: 100%;
 }
 .logo {
   font-weight: bold;
@@ -124,7 +125,7 @@ a:hover {
 }
 .header-bg .container-fluid .header__4sec {
   display: flex;
-  padding-top: 70px;
+  padding-top: 3%;
   justify-content: space-between;
 }
 .header-bg .container-fluid .header__4sec .sec1,
@@ -134,28 +135,6 @@ a:hover {
   max-width: 270px;
   width: 100%;
   background: transparent;
-}
-.header-bg .container-fluid .header__4sec .sec1:hover,
-.header-bg .container-fluid .header__4sec .sec2:hover,
-.header-bg .container-fluid .header__4sec .sec3:hover,
-.header-bg .container-fluid .header__4sec .sec4:hover {
-  cursor: pointer;
-}
-.header-bg .container-fluid .header__4sec .sec1:hover .lines__red,
-.header-bg .container-fluid .header__4sec .sec2:hover .lines__red,
-.header-bg .container-fluid .header__4sec .sec3:hover .lines__red,
-.header-bg .container-fluid .header__4sec .sec4:hover .lines__red {
-  width: 74px;
-  background: #f38181;
-  height: 2px;
-}
-.header-bg .container-fluid .header__4sec .line1,
-.header-bg .container-fluid .header__4sec .line2,
-.header-bg .container-fluid .header__4sec .line3,
-.header-bg .container-fluid .header__4sec .line4 {
-  height: 2px;
-  background: white;
-  border-radius: 5px;
 }
 .header-bg .container-fluid .header__4sec .text1,
 .header-bg .container-fluid .header__4sec .text2,

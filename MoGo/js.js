@@ -45,12 +45,12 @@ $(window).scroll(function(){
 $('.sl').slick({
     infinite: true,
     slidesToShow: 1,
-  slidesToScroll: 1,
+    slidesToScroll: 1,
     arrows: false,
     dots: true,
     autoplay: true,
-    autoplaySpeed: 2500,
-    dotsClass: 'my-dots-class'
+    autoplaySpeed: 2500
+    // dotsClass: 'lines__red'
 });
 // $('.sl').slick({
 // prevArrow: '<div class="prev"></div>',
