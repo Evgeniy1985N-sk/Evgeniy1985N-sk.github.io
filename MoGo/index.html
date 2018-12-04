@@ -18,26 +18,35 @@
 		<div class="header-bg2"></div>
 		<header id="header" class="header-bg">
 			<div class="bg-menu">
-				<div class="menu-fixed">
-					<div class="logo"><a href="#header">Mogo</a></div>
-					<nav>
-						<ul id="top-menu" class="header__ul menu">
-							<li class="li-first active"><a href="#">home</a></li>
-							<li><a href="#about">about</a></li>
-							<li><a href="#service">service</a></li>
-							<li><a href="#work">work</a></li>
-							<li><a href="#blog">blog</a></li>
-							<li class="li-last"><a href="#contact">contact</a></li>
-							<a  class="shop" href="#"><img src="img/shop.png" alt='shop'></a>
-							<a  class="find" href="#"><img src="img/find.png" alt='find'></a>
-						</ul>
-					</nav>
-				</div>
+				<nav class="nav">
+					<div class="logo">Mogo</div>
+					<input type="checkbox" id="hmt" class="hidden-menu-ticker">
+					<label class="btn-menu" for="hmt">
+						<span class="first"></span>
+						<span class="second"></span>
+						<span class="third"></span>
+					</label>
+					<ul id="top-menu" class="header__ul hidden-menu">
+						<li class="li-first active"><a href="#">home</a></li>
+						<li><a href="#about">about</a></li>
+						<li><a href="#service">service</a></li>
+						<li><a href="#work">work</a></li>
+						<li><a href="#blog">blog</a></li>
+						<li class="li-last"><a href="#contact">contact</a></li>
+					</ul>
+						<a  class="shop" href="#"><img src="img/shop.png" alt='shop'></a>
+						<a  class="find" href="#"><img src="img/find.png" alt='find'></a>
+				</nav>
 			</div>
+					<!-- search -->	
+<!-- 			<form action id="search" class="search">
+				<input type="text" placeholder="Поиск..." class="search__input">
+				
+			</form>	 -->			
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-12">
-				<!-- carousel -->
+					<!-- carousel -->
 						<div id="slick" class="sl">
 						  	<div class="sl-cont">
 						  		<p class="header__p">Creative Template</p>

@@ -1,0 +1,110 @@
+@media screen and (max-width: 1240px) {
+	.logo {
+		margin-left: 15px;
+	}
+	.header-bg .nav .header__ul {
+		margin-left: 457px;
+	}
+}
+@media screen and (max-width: 768px) {
+	.nav {
+		width: 100%;
+		position: relative;
+	}
+	.header-bg .nav .header__ul {
+		padding: 15px;
+		width: 100%;
+	}
+	.header-bg .nav .header__ul li {
+		display: block;
+		position: relative;
+		margin: 0 auto;
+	}
+	.hidden-menu {
+		position: absolute;
+		width: 100%;
+		z-index: 0;
+		display: block;
+		list-style:none;
+		padding: 10px;
+		margin: 0 auto;
+		box-sizing: border-box;
+		background: rgba(46,46,46,.9);
+		top: 0;
+		top: -325px;
+		transition: top .5s;
+		-webkit-transform: translateZ(0);
+		-ms-transform: translateZ(0);
+		-webkit-backface-visibility: hidden;
+		-ms-backface-visibility: hidden;
+	}
+	.btn-menu {
+		position: absolute;
+		display: block;
+		border-radius: 3px;
+		padding: 10px;
+		top: 12px;
+		right: 78px;
+		cursor: pointer;
+		transition: top .23s;
+		width: 42px;
+		-ms-transform: translateZ(0);
+		-webkit-transform: translateZ(0);
+		-ms-backface-visibility: hidden;
+		-webkit-backface-visibility: hidden;
+	}
+	.btn-menu span {
+		display: block;
+		height: 2px;
+		background: white;
+		margin: 4px 0 0;
+		transition: all .1s linear .23s;
+		position: relative;
+		border-radius: 5px;
+	}
+	.btn-menu span.first {
+		margin-top: 0;
+	}
+	.hidden-menu-ticker:checked ~ .hidden-menu {
+		top: 57px;
+	}
+	.hidden-menu li {
+		text-align: center;
+		display: block;
+	}
+	.hidden-menu li a {
+		list-style: none;
+		display: block;
+		margin: 0;
+		color: white;
+		padding: 10px;
+		text-decoration: none;
+		transition: all .2s;
+		font-size: 16px;
+		text-transform: uppercase;
+	}
+	nav .hidden-menu .first-li {
+		margin-top: 45px;
+	}
+	.hidden-menu li a:hover {
+	  	background: #2e2e2e;
+	  	opacity: 1;
+	  	color: #fff;
+		text-decoration: none;
+	}
+	.hidden-menu .li-mail a {
+		margin-top: 10px;
+		font-size: 17px;
+	}
+	#top-menu li.active a {
+	    border-bottom: none;
+	    color: #fce38a;
+	    background: #2e2e2e;
+		}
+	.shop {
+
+	}
+	.find {
+
+	}
+}
