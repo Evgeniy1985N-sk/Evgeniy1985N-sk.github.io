@@ -1,6 +1,20 @@
+var h = $('#header').css('height');
+// var bgMenu = document.getElementById("header");
+// var scrolled = window.pageYOffset;
+// window.onscroll = function() {
+//   if(scrolled>h){
+//     bgMenu.style.background = "#ea6361";
+//     }
+  // if(scrolled<h){
+  //   bgMenu.style.background = "none";
+  //   }
+// }
+
+// ----------------------------------------
+
 var lastId,
     topMenu = $("#top-menu"),
-    topMenuHeight = topMenu.outerHeight()+15,
+    topMenuHeight = topMenu.outerHeight()-23,
     // All list items
     menuItems = topMenu.find("a"),
     // Anchors corresponding to menu items
@@ -42,6 +56,9 @@ $(window).scroll(function(){
          .end().filter("[href='#"+id+"']").parent().addClass("active");
    }                   
 });
+
+// ----------------------------------------
+
 $('.sl').slick({
     infinite: true,
     slidesToShow: 1,

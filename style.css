@@ -143,6 +143,7 @@
 	font-size: 20px;
 	font-weight: bold;
 	font-family: 'Montserrat-Semibold-LightItalick';
+	border-bottom: 1px solid white;
 }
 nav .hidden-menu .first-li {
 	margin-top: 45px;
@@ -160,6 +161,7 @@ nav .hidden-menu .first-li {
 .hidden-menu .li-mail a {
 	margin-top: 10px;
 	font-size: 17px;
+	border-bottom: none;
 }
 .email {
 	border-radius: 5px;

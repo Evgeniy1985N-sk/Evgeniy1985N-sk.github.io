@@ -12,19 +12,20 @@ a:hover {
   background-image: url(img/picture.png);
   opacity: 0.9;
   width: 100%;
-  height: 900px;
+  height: 635px;
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
 }
 .header-bg {
+  height: 635px;
   width: 100%;
   background-image: url(img/layer.png);
-  background-size: 100%;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
 }
 .header-bg .bg-menu {
-  background: #ea6361;
   position: fixed;
   width: 100%;
   z-index: 6;
@@ -66,7 +67,6 @@ a:hover {
   -webkit-transition: 0.5s all ease-out;
   -moz-transition: 0.5s all ease-out;
   transition: 0.5s all ease-out;
-  border-bottom: 2px solid #ea6361;
 }
 .header-bg .nav .header__ul li a:hover {
   text-decoration: none;
@@ -109,9 +109,9 @@ a:hover {
 }
 .header-bg .container-fluid .header__p {
   text-align: center;
-  font-size: 4vw;
+  font-size: 50px;
   color: white;
-  padding-top: 120px;
+  padding-top: 110px;
   font-family: 'Kaushan Script', cursive;
 }
 .header-bg .container-fluid h1 {
@@ -121,7 +121,7 @@ a:hover {
   line-height: 1;
   font-weight: bold;
   width: 100%;
-  font-size: 8vw;
+  font-size: 95px;
 }
 .header-bg .container-fluid .header__line {
   width: 62px;
@@ -142,33 +142,30 @@ a:hover {
   border: 2px solid white;
   font-weight: bold;
 }
-.header-bg .container-fluid .header__4sec {
+.header__4sec {
   display: flex;
   padding-top: 3%;
-  justify-content: space-between;
-}
-.header-bg .container-fluid .header__4sec .sec1,
-.header-bg .container-fluid .header__4sec .sec2,
-.header-bg .container-fluid .header__4sec .sec3,
-.header-bg .container-fluid .header__4sec .sec4 {
-  max-width: 270px;
+  max-width: 1200px;
   width: 100%;
-  background: transparent;
 }
-.header-bg .container-fluid .header__4sec .text1,
-.header-bg .container-fluid .header__4sec .text2,
-.header-bg .container-fluid .header__4sec .text3,
-.header-bg .container-fluid .header__4sec .text4 {
+.text1,
+.text2,
+.text3,
+.text4 {
   font-size: 14px;
   text-transform: uppercase;
   color: white;
   margin-top: 10px;
   margin-bottom: 15px;
+  margin-right: 254px;
 }
-.header-bg .container-fluid .header__4sec .text1 span,
-.header-bg .container-fluid .header__4sec .text2 span,
-.header-bg .container-fluid .header__4sec .text3 span,
-.header-bg .container-fluid .header__4sec .text4 span {
+.text4 {
+  margin-right: 0;
+}
+.text1 span,
+.text2 span,
+.text3 span,
+.text4 span {
   font-size: 20px;
   color: white;
   font-weight: bold;

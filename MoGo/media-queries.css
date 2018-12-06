@@ -1,4 +1,10 @@
 @media screen and (max-width: 1240px) {
+	.header-bg2 {
+		height: 585px;
+	}
+	.header-bg {
+		height: 585px;
+	}
 	.nav {
 		justify-content: center;
 	}
@@ -10,7 +16,45 @@
 	}
 	.find {
 		margin-right: 15px;
-		}
+	}
+	.header-bg .container-fluid .header__p {
+		padding-top: 70px;
+	}
+	.slick-dots {
+		bottom: -85px;
+	}
+	.slick-dots li:first-child {
+		margin-left: 10.8%;
+	}
+	.slick-dots li {
+		margin-right: 2%;
+	}
+	.text1, .text2, .text3, .text4 {
+		display: none;
+	}
+	.slick-dots li:nth-child(1):after {
+	    content: '01 intro';
+	    font-size: 20px;
+		color: white;
+	}
+	.slick-dots li:nth-child(2):after {
+	    content: '02 work';
+	    font-size: 20px;
+		color: white;
+	}
+	.slick-dots li:nth-child(3):after {
+	    content: '03 about';
+	    font-size: 20px;
+		color: white;
+	}
+	.slick-dots li:nth-child(4):after {
+	    content: '04 contacts';
+	    font-size: 20px;
+		color: white;
+	}
+	.slick-dots li:hover {
+		cursor: default;
+	}
 }
 @media screen and (max-width: 768px) {
 	.logo {
@@ -121,5 +165,67 @@
 	.find {
 		position: absolute;
 		right: 0;
+	}
+	.slick-dots li:nth-child(n):after {
+		font-size: 16px;	
+	}
+}
+@media screen and (max-width: 635px) {
+	.header-bg2 {
+		height: 535px;
+	}
+	.header-bg {
+		height: 535px;
+	}
+	.header-bg .container-fluid h1 {
+		font-size: 12vw;
+	}
+	.header-bg .container-fluid .header__p {
+		font-size: 8vw;
+	}
+}
+@media screen and (max-width: 635px) {
+	.header-bg2 {
+		height: 500px;
+	}
+	.header-bg {
+		height: 500px;
+	}
+}
+@media screen and (max-width: 499px) {
+	.header-bg2 {
+		height: 480px;
+	}
+	.header-bg {
+		height: 480px;
+	}
+	.slick-dots li:nth-child(n):after {
+		font-size: 14px;	
+	}
+}
+@media screen and (max-width: 442px) {
+	.header-bg2 {
+		height: 430px;
+	}
+	.header-bg {
+		height: 430px;
+	}
+	.slick-dots {
+    bottom: -55px;
+	}
+	.slick-dots li:nth-child(n):after {
+		display: none;
+	}
+	.slick-dots li.slick-active button:before {
+    	background: #f38181;
+    	width: 100%;
+	}
+}
+@media screen and (max-width: 375px) {
+	.header-bg2 {
+		height: 400px;
+	}
+	.header-bg {
+		height: 400px;
 	}
 }
