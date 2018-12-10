@@ -47,7 +47,7 @@ a:hover {
 .header-bg .nav .hidden-menu-ticker {
   display: none;
 }
-.header-bg .nav #top-menu li.active a {
+.header-bg .nav .top-menu a.active {
   border-bottom: 2px solid #fce38a;
   color: #fce38a;
 }
