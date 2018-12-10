@@ -1,4 +1,4 @@
-var h = $('#header').css('height');
+// var h = $('#header').css('height');
 // var bgMenu = document.getElementById("header");
 // var scrolled = window.pageYOffset;
 // window.onscroll = function() {
@@ -10,6 +10,15 @@ var h = $('#header').css('height');
   //   }
 // }
 
+var search = document.getElementsByClassName('find')[0];
+var searchWindow = document.getElementsByClassName('search')[0];
+var searchClose = document.getElementsByClassName('close')[0];
+search.onclick = function() {
+    searchWindow.style.display = "block";
+}
+searchClose.onclick = function() {
+  searchWindow.style.display = "none";
+}
 // ----------------------------------------
 
 var menu_selector = ".top-menu"; // Переменная должна содержать название класса или идентификатора, обертки нашего меню. 

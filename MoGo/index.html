@@ -14,43 +14,42 @@
 	<link href="styles.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" type="text/css" href="media-queries.css">
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	
 </head>
 	<body>
-		<div class="header-bg2"></div>
-		<header id="header" class="header-bg">
-			<div id="bg-menu" class="bg-menu">
-				<nav class="top-menu nav">
-					<div class="logo">Mogo</div>
+	 	<header class="sticky-header">
+			<div class="bg-menu">
+	            <nav class="top-menu nav">
+	            	<div class="logo">Mogo</div>
 					<input type="checkbox" id="hmt" class="hidden-menu-ticker">
 					<label class="btn-menu" for="hmt">
 						<span class="first"></span>
 						<span class="second"></span>
 						<span class="third"></span>
 					</label>
-					<ul class="header__ul hidden-menu">
-						<li class="li-first"><a class="active" href="#header">home</a></li>
+	                <ul class="header__ul hidden-menu">
+	                    <li class="li-first"><a class="active" href="#home">home</a></li>
 						<li><a href="#about">about</a></li>
 						<li><a href="#service">service</a></li>
 						<li><a href="#work">work</a></li>
 						<li><a href="#blog">blog</a></li>
 						<li class="li-last"><a href="#contact">contact</a></li>
-					</ul>
-						<a  class="shop" href="#"><img src="img/shop.png" alt='shop'></a>
-						<a  class="find" href="#"><img src="img/find.png" alt='find'></a>
-				</nav>
-			</div>
-					<!-- search -->	
-			<!-- <form action id="search" class="search">
+						<div class="div-sh"><img class="shop" src="img/shop.png" alt='shop'></div>
+						<div class="div-fi"><img class="find" src="img/find.png" alt='find'></div>
+	                </ul>
+	            </nav>
+            </div>
+            <form class="search">
+            	<span class="close"></span>
 				<input type="text" placeholder="Поиск..." class="search__input">
-				
-			</form>	 -->	
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-12">
-					<!-- carousel -->
-						<div id="slick" class="sl">
+			</form>
+        </header>
+        <section id="home" class="section section-home">
+	        <div class="container-fluid">
+					<div class="row">
+						<div class="col-12">
+ 						<div id="slick" class="sl">
 						  	<div class="sl-cont">
 						  		<p class="header__p">Creative Template</p>
 								<h1>welcome<br> to mogo</h1>
@@ -101,12 +100,120 @@
 					</div>
 				</div>
 			</div>
-		</header>
-		<section id="about" style="height: 800px; background: black;"></section>
-		<section id="service" style="height: 800px; background: red;"></section>
-		<section id="work" style="height: 800px; background: green;"></section>
+		</section>
+<section id="about" class="section">
+  <h3>About</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium enim, illo architecto ipsum, voluptate nostrum non quo, tempore quisquam itaque autem sit perferendis. Harum iste, illo aperiam ipsum voluptatibus in.</p>
+Здесь любой контент...
+</section>
+<section id="service" class="section">
+  <h3>Service</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium enim, illo architecto ipsum, voluptate nostrum non quo, tempore quisquam itaque autem sit perferendis. Harum iste, illo aperiam ipsum voluptatibus in.</p>
+Здесь любой контент...
+</section>
+<section id="work" class="section"> Здесь любой контент...
+  <h3>Contact</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium enim, illo architecto ipsum, voluptate nostrum non quo, tempore quisquam itaque autem sit perferendis. Harum iste, illo aperiam ipsum voluptatibus in.</p>
+</section>
+<section id="blog" class="section"> Здесь любой контент...
+  <h3>Contact</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium enim, illo architecto ipsum, voluptate nostrum non quo, tempore quisquam itaque autem sit perferendis. Harum iste, illo aperiam ipsum voluptatibus in.</p>
+</section>
+<section id="contact" class="section"> Здесь любой контент...
+  <h3>Contact</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium enim, illo architecto ipsum, voluptate nostrum non quo, tempore quisquam itaque autem sit perferendis. Harum iste, illo aperiam ipsum voluptatibus in.</p>
+</section>
+
+
+
+		<!-- <div class="header-bg2"></div>
+		<header id="header" class="header-bg">
+			<div id="bg-menu" class="bg-menu">
+				<nav class="top-menu nav">
+					<div class="logo">Mogo</div>
+					<input type="checkbox" id="hmt" class="hidden-menu-ticker">
+					<label class="btn-menu" for="hmt">
+						<span class="first"></span>
+						<span class="second"></span>
+						<span class="third"></span>
+					</label>
+					<ul class="header__ul hidden-menu">
+						<li class="li-first"><a class="active" href="#header">home</a></li>
+						<li><a href="#about">about</a></li>
+						<li><a href="#service">service</a></li>
+						<li><a href="#work">work</a></li>
+						<li><a href="#blog">blog</a></li>
+						<li class="li-last"><a href="#contact">contact</a></li>
+					</ul>
+						<a  class="shop" href="#"><img src="img/shop.png" alt='shop'></a>
+						<a  class="find" href="#"><img src="img/find.png" alt='find'></a>
+				</nav>
+			</div> -->
+					<!-- search -->	
+			<!-- <form action id="search" class="search">
+				<input type="text" placeholder="Поиск..." class="search__input">
+				
+			</form>	 -->	
+<!-- 		<div class="container-fluid">
+				<div class="row">
+					<div class="col-12"> -->
+					<!-- carousel -->
+<!-- 						<div id="slick" class="sl">
+						  	<div class="sl-cont">
+						  		<p class="header__p">Creative Template</p>
+								<h1>welcome<br> to mogo</h1>
+								<div class="header__line"></div>
+								<div class="header__btn">
+									<a href="#">learn-more</a>
+								</div>
+						  	</div>
+						 	<div class="sl-cont">
+						  		<p class="header__p">Creative Template</p>
+								<h1>welcome<br> to mogo</h1>
+								<div class="header__line"></div>
+								<div class="header__btn">
+									<a href="#">learn-more</a>
+								</div>
+						  	</div>
+						  	<div class="sl-cont">
+							  	<p class="header__p">Creative Template</p>
+								<h1>welcome<br> to mogo</h1>
+								<div class="header__line"></div>
+								<div class="header__btn">
+									<a href="#">learn-more</a>
+								</div>
+							</div>
+							<div class="sl-cont">
+								<p class="header__p">Creative Template</p>
+								<h1>welcome<br> to mogo</h1>
+								<div class="header__line"></div>
+								<div class="header__btn">
+									<a href="#">learn more</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="header__4sec">
+					<div class="text1">
+						<span>01</span>intro
+					</div>
+					<div class="text2">
+						<span>02</span>work
+					</div>
+					<div class="text3">
+						<span>03</span>about
+					</div>
+					<div class="text4">
+						<span>04</span>contacts
+					</div>
+				</div>
+			</div>-->
+<!-- 		<section id="about"></section>
+		<section id="service"></section>
+		<section id="work"></section>
 		<section id="blog" style="height: 800px; background: yellow;"></section>
-		<section id="contact" style="height: 800px; background: purple;"></section>
+		<section id="contact" style="height: 800px; background: purple;"></section> -->
 
 <!--story about us-->
 
