@@ -154,20 +154,9 @@
 	.header-bg .nav .header__ul li a {
   		border-bottom: none;
 	}
-	.hidden-menu li a:hover {
-	  	background: #2e2e2e;
-	  	opacity: 1;
-	  	color: #fff;
-		text-decoration: none;
-	}
 	.hidden-menu .li-mail a {
 		margin-top: 10px;
 		font-size: 17px;
-	}
-	.nav #top-menu li.active a {
-	    border-bottom: none;
-	    color: #fce38a;
-	    background: #2e2e2e;
 	}
 	.li-sh {
 		text-align: center;
