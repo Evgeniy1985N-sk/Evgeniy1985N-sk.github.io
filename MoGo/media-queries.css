@@ -60,9 +60,11 @@
 	}
 }
 @media screen and (max-width: 768px) {
+	.nav {
+		justify-content: flex-start;
+	}
 	.logo {
-		position: absolute;
-		left: 0;
+		margin-left: 15px;
 	}
 	.nav .header__ul {
 		padding: 15px;
