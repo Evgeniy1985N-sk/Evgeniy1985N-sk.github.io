@@ -76,8 +76,6 @@
 	.nav .header__ul li {
 		display: block;
 		margin: 0 auto;
-		height: 40px;
-
 	}
 	.hidden-menu {
 		position: absolute;
@@ -130,6 +128,11 @@
 	.hidden-menu li {
 		text-align: center;
 		display: block;
+	}
+	.top-menu a:hover,
+	.top-menu a.active {
+    	color: @colorYellow;
+    	border-bottom: none;
 	}
 	.hidden-menu li a {
 		list-style: none;
