@@ -86,7 +86,6 @@
 		display: block;
 		position: absolute;
 		width: 100%;
-		z-index: 0;
 		list-style:none;
 		flex-direction: column;
 		margin: 0 auto;
@@ -101,7 +100,6 @@
 		display: block;
 		border-radius: 3px;
 		padding: 10px;
-		top: 9px;
 		right: 15px;
 		cursor: pointer;
 		transition: top .23s;
@@ -120,7 +118,7 @@
 		margin-top: 0;
 	}
 	.hidden-menu-ticker:checked ~ .hidden-menu {
-		top: 53px;
+		top: 47px;
 	}
 	.hidden-menu li {
 		text-align: center;
