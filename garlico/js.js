@@ -13,7 +13,7 @@ window.onload = function() {
     if(scrolled>50){
     arrowUp.style.display="block";
     }
-  if(scrolled<50){
+    if(scrolled<50){
     arrowUp.style.display="none";
     }
 }

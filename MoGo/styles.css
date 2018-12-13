@@ -8,12 +8,6 @@ a:hover {
   text-decoration: none;
   color: white;
 }
-.section {
-  min-height: 768px;
-  height: 100vh;
-  text-align: center;
-  padding: 70px 20px;
-}
 .sticky-header {
   position: fixed;
   z-index: 3;
@@ -24,13 +18,13 @@ a:hover {
 .top-menu a:hover,
 .top-menu a.active {
   color: #fce38a;
-  border-bottom: 1px solid #fce38a;
+  border-bottom: 2px solid #fce38a;
 }
 .bg-menu {
-  background: #ea6361;
   position: fixed;
   width: 100%;
   z-index: 6;
+  transition-duration: 2s;
 }
 .nav {
   padding: 10px 0;
@@ -47,10 +41,6 @@ a:hover {
 }
 .nav .hidden-menu-ticker {
   display: none;
-}
-.nav .top-menu a.active {
-  border-bottom: 2px solid #fce38a;
-  color: #fce38a;
 }
 .nav .header__ul {
   margin-bottom: 0;
@@ -125,14 +115,21 @@ a:hover {
   font-size: 40px;
 }
 .home-bg2 {
-  background-image: url(img/picture.jpg);
-  opacity: 0.9;
   width: 100%;
   height: 635px;
-  background-repeat: no-repeat;
-  background-size: cover;
   position: absolute;
   z-index: 1;
+  background: linear-gradient(to bottom, rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9));
+  background-image: linear-gradient(rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9));
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: initial;
+  background-repeat-x: initial;
+  background-repeat-y: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: initial;
 }
 .home {
   height: 635px;
@@ -176,11 +173,11 @@ a:hover {
   margin-top: 30px;
 }
 .container-fluid .header__btn a {
+  font-size: 14px;
   text-transform: uppercase;
   color: white;
   padding: 5px 20px;
   border: 2px solid white;
-  font-weight: bold;
 }
 .header__4sec {
   display: flex;
@@ -210,4 +207,118 @@ a:hover {
   color: white;
   font-weight: bold;
   margin-right: 5px;
+}
+.about {
+  max-width: 1230px;
+  padding: 0 15px;
+  width: 100%;
+  margin: 0 auto;
+}
+.about .about__text {
+  text-align: center;
+  padding-top: 91px;
+  font-size: 24px;
+  font-family: 'Kaushan Script', cursive;
+}
+.about .about__h2 {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.about .about__line {
+  height: 3px;
+  width: 60px;
+  background: #f38181;
+  margin: 0 auto;
+  margin-top: 31px;
+}
+.about .about__text2 {
+  font-size: 14px;
+  color: #999999;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 45px;
+  text-align: center;
+}
+.about .gallery {
+  margin-top: 110px;
+  display: flex;
+  justify-content: space-between;
+}
+.about .gallery__item1,
+.about .gallery__item2,
+.about .gallery__item3 {
+  height: 251px;
+  max-width: 382px;
+  width: 100%;
+  background: #95e1d3;
+}
+.about .gallery2 {
+  top: -251px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.about .gallery2__pic1,
+.about .gallery2__pic2,
+.about .gallery2__pic3 {
+  background-size: cover;
+  height: 251px;
+  max-width: 382px;
+  width: 100%;
+  transition-duration: .5s;
+}
+.about .gallery2__pic1 {
+  background-image: url(img/desc.jpg);
+}
+.about .gallery2__bg1 {
+  display: none;
+  background: linear-gradient(to bottom, rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9));
+  background-image: linear-gradient(rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9));
+  height: inherit;
+  width: 100%;
+  transition-duration: .5s;
+}
+.about .gallery2__bg2 {
+  display: none;
+  background: linear-gradient(to bottom, rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9));
+  background-image: linear-gradient(rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9));
+  height: inherit;
+  width: 100%;
+  transition-duration: .5s;
+}
+.about .gallery2__bg3 {
+  display: none;
+  background: linear-gradient(to bottom, rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9));
+  background-image: linear-gradient(rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9));
+  height: inherit;
+  width: 100%;
+  transition-duration: .5s;
+}
+.about .gallery__img {
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.about .gallery__span {
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 12px;
+  position: absolute;
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%, -50%);
+}
+.about .gallery2__pic2 {
+  background-image: url(img/desc2.jpg);
+  background-position: center;
+}
+.about .gallery2__pic3 {
+  background-image: url(img/desc3.jpg);
 }

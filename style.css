@@ -33,9 +33,9 @@
 	border: 10px solid white;
 	border-radius: 50px;
 	border-top-color: #1d0c2e; 
+	position: absolute;
 	left: 50%;
 	top: 50%;
-	position: absolute;
 	transform: translate(-50%, -50%);
 	animation: 2s spin infinite linear;
 }

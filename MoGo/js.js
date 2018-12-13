@@ -1,14 +1,76 @@
-// var h = $('#header').css('height');
-// var bgMenu = document.getElementById("header");
-// var scrolled = window.pageYOffset;
-// window.onscroll = function() {
-//   if(scrolled>h){
-//     bgMenu.style.background = "#ea6361";
-//     }
-  // if(scrolled<h){
-  //   bgMenu.style.background = "none";
-  //   }
-// }
+
+$(".gallery2__pic1").mouseover(function () {
+  $(".gallery2__pic1").css('position','relative').css('top','-9px').css('left','-9px').css('cursor','pointer');
+  $(".gallery2__bg1").css('display', 'block');
+});
+$(".gallery2__bg1").mouseout(function () {
+  $(".gallery2__pic1").css('top','0').css('left','0');
+  $(".gallery2__bg1").css('display','none');
+});
+$(".gallery2__pic1").mouseout(function () {
+  $(".gallery2__pic1").css('top','0').css('left','0');
+  $(".gallery2__bg1").css('display','none');
+});
+
+$(".gallery2__pic2").mouseover(function () {
+  $(".gallery2__pic2").css('position','relative').css('top','-9px').css('left','-9px').css('cursor','pointer');
+  $(".gallery2__bg2").css('display', 'block');
+});
+$(".gallery2__bg2").mouseout(function () {
+  $(".gallery2__pic2").css('top','0').css('left','0');
+  $(".gallery2__bg2").css('display','none');
+});
+$(".gallery2__pic2").mouseout(function () {
+  $(".gallery2__pic2").css('top','0').css('left','0');
+  $(".gallery2__bg2").css('display','none');
+});
+
+$(".gallery2__pic3").mouseover(function () {
+  $(".gallery2__pic3").css('position','relative').css('top','-9px').css('left','-9px').css('cursor','pointer');
+  $(".gallery2__bg3").css('display', 'block');
+});
+$(".gallery2__bg3").mouseout(function () {
+  $(".gallery2__pic3").css('top','0').css('left','0');
+  $(".gallery2__bg3").css('display','none');
+});
+$(".gallery2__pic3").mouseout(function () {
+  $(".gallery2__pic3").css('top','0').css('left','0');
+  $(".gallery2__bg3").css('display','none');
+});
+
+// ----------------------------------------
+var h = $('#home').css('height');
+var bgMenu = document.getElementsByClassName('bg-menu')[0];
+window.onload = function() {
+   var scrolled = window.pageYOffset;
+  if(scrolled>=parseInt(h)) {
+    bgMenu.style.display = "block";
+    bgMenu.style.background = "#ea6361";
+    bgMenu.style.opacity = "0.9";
+    }
+  if(scrolled<parseInt(h)) {
+    bgMenu.style.background = "none";
+    }
+  if (scrolled>0&&scrolled<parseInt(h)) {
+    bgMenu.style.display = "none";
+  }
+  if(scrolled==0) bgMenu.style.display = "block";
+}
+window.onscroll = function() {
+  var scrolled = window.pageYOffset;
+  if(scrolled>=parseInt(h)) {
+    bgMenu.style.display = "block";
+    bgMenu.style.background = "#ea6361";
+    bgMenu.style.opacity = "0.9";
+    }
+  if(scrolled<parseInt(h)) {
+    bgMenu.style.background = "none";
+    }
+  if (scrolled>0&&scrolled<parseInt(h)) {
+    bgMenu.style.display = "none";
+  }
+  if(scrolled==0) bgMenu.style.display = "block";
+}
 
 var search = document.getElementsByClassName('find')[0];
 var searchWindow = document.getElementsByClassName('search')[0];
@@ -19,6 +81,7 @@ search.onclick = function() {
 searchClose.onclick = function() {
   searchWindow.style.display = "none";
 }
+var bgMenu = document.getElementsByClassName('bg-menu')[0];
 // ----------------------------------------
 
 var menu_selector = ".top-menu"; // Переменная должна содержать название класса или идентификатора, обертки нашего меню. 
