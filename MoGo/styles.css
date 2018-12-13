@@ -20,12 +20,6 @@ a:hover {
   color: #fce38a;
   border-bottom: 2px solid #fce38a;
 }
-.bg-menu {
-  position: fixed;
-  width: 100%;
-  z-index: 6;
-  transition-duration: 2s;
-}
 .nav {
   padding: 10px 0;
   display: flex;
@@ -121,15 +115,6 @@ a:hover {
   z-index: 1;
   background: linear-gradient(to bottom, rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9));
   background-image: linear-gradient(rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9));
-  background-position-x: initial;
-  background-position-y: initial;
-  background-size: initial;
-  background-repeat-x: initial;
-  background-repeat-y: initial;
-  background-attachment: initial;
-  background-origin: initial;
-  background-clip: initial;
-  background-color: initial;
 }
 .home {
   height: 635px;
@@ -235,9 +220,9 @@ a:hover {
   margin-top: 31px;
 }
 .about .about__text2 {
-  font-size: 14px;
+  font-size: 15px;
   color: #999999;
-  max-width: 900px;
+  max-width: 950px;
   width: 100%;
   margin: 0 auto;
   margin-top: 45px;
