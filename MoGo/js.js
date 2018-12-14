@@ -62,10 +62,9 @@ search.onclick = function() {
 searchClose.onclick = function() {
   searchWindow.style.display = "none";
 }
-// var bgMenu = document.getElementsByClassName('bg-menu')[0];
 // ----------------------------------------
 
-var menu_selector = ".top-menu"; // Переменная должна содержать название класса или идентификатора, обертки нашего меню. 
+var menu_selector = ".top-menu"; 
 function onScroll(){
   var scroll_top = $(document).scrollTop();
   $(menu_selector + " a").each(function(){

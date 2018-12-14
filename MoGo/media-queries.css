@@ -77,7 +77,6 @@
 		margin: 0 auto;
 	}
 	.hidden-menu {
-		display: block;
 		position: absolute;
 		width: 100%;
 		list-style:none;
@@ -87,17 +86,18 @@
 		box-sizing: border-box;
 		background: rgba(46,46,46,.9);
 		top: -385px;
+		left: 0;
 		transition: top .5s;
 	}
 	.btn-menu {
 		position: absolute;
 		display: block;
 		border-radius: 3px;
-		padding: 10px;
+		padding: 0 10px;
 		right: 15px;
 		cursor: pointer;
-		transition: top .23s;
 		width: 42px;
+		top: 15px;
 	}
 	.btn-menu span {
 		display: block;
@@ -113,6 +113,9 @@
 	}
 	.hidden-menu-ticker:checked ~ .hidden-menu {
 		top: 47px;
+	}
+	.nav .header__ul {
+		margin: 0 auto;
 	}
 	.hidden-menu li {
 		text-align: center;

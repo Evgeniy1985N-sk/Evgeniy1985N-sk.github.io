@@ -17,6 +17,8 @@ a:hover {
 }
 .menu-bg {
   background: #ea6361;
+  transition-duration: 1s;
+  opacity: 0.9;
 }
 .top-menu a:hover,
 .top-menu a.active {
@@ -100,7 +102,7 @@ a:hover {
 }
 .search .search__input {
   left: 50%;
-  top: 50%;
+  top: 43%;
   position: absolute;
   transform: translate(-50%, -50%);
   border: none;
