@@ -1,10 +1,4 @@
 @media screen and (max-width: 1240px) {
-	.header-bg2 {
-		height: 585px;
-	}
-	.header-bg {
-		height: 585px;
-	}
 	.nav {
 		justify-content: center;
 	}
@@ -196,12 +190,6 @@
 	}
 }
 @media screen and (max-width: 635px) {
-	.home-bg2 {
-		height: 535px;
-	}
-	.home {
-		height: 535px;
-	}
 	.home .container-fluid h1 {
 		font-size: 12vw;
 	}
@@ -209,32 +197,12 @@
 		font-size: 8vw;
 	}
 }
-@media screen and (max-width: 635px) {
-	.home-bg2 {
-		height: 580px;
-	}
-	.home {
-		height: 580px;
-	}
-}
 @media screen and (max-width: 499px) {
-	.home-bg2 {
-		height: 480px;
-	}
-	.home {
-		height: 480px;
-	}
 	.slick-dots li:nth-child(n):after {
 		font-size: 14px;	
 	}
 }
 @media screen and (max-width: 442px) {
-	.home-bg2 {
-		height: 430px;
-	}
-	.home {
-		height: 430px;
-	}
 	.slick-dots {
     bottom: -55px;
 	}
@@ -249,12 +217,6 @@
 @media screen and (max-width: 375px) {
 	.nav .logo {
 		font-size: 16px;
-	}
-	.home-bg2 {
-		height: 400px;
-	}
-	.home {
-		height: 400px;
 	}
 	.home .container-fluid .header__p {
 		padding-top: 70px;

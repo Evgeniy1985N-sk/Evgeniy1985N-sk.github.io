@@ -39,39 +39,20 @@ $(".gallery2__pic3").mouseout(function () {
 });
 
 // ----------------------------------------
-var h = $('#home').css('height');
-var bgMenu = document.getElementsByClassName('bg-menu')[0];
-window.onload = function() {
-   var scrolled = window.pageYOffset;
-  if(scrolled>=parseInt(h)) {
-    bgMenu.style.display = "block";
-    bgMenu.style.background = "#ea6361";
-    bgMenu.style.opacity = "0.9";
-    }
-  if(scrolled<parseInt(h)) {
-    bgMenu.style.background = "none";
-    }
-  if (scrolled>0&&scrolled<parseInt(h)) {
-    bgMenu.style.display = "none";
+function classMenu() {
+   var h = $('#home').css('height');
+    var scrolled = $(document).scrollTop();
+    if(scrolled>=parseInt(h)){
+      $('.sticky-header').addClass('menu-bg');
   }
-  if(scrolled==0) bgMenu.style.display = "block";
-}
-window.onscroll = function() {
-  var scrolled = window.pageYOffset;
-  if(scrolled>=parseInt(h)) {
-    bgMenu.style.display = "block";
-    bgMenu.style.background = "#ea6361";
-    bgMenu.style.opacity = "0.9";
+    if(scrolled<parseInt(h)||scrolled==0) {
+      $('.sticky-header').removeClass('menu-bg');
     }
-  if(scrolled<parseInt(h)) {
-    bgMenu.style.background = "none";
-    }
-  if (scrolled>0&&scrolled<parseInt(h)) {
-    bgMenu.style.display = "none";
-  }
-  if(scrolled==0) bgMenu.style.display = "block";
 }
+$(document).ready(classMenu);
+$(document).on("scroll", classMenu);
 
+// ----------------------------------------
 var search = document.getElementsByClassName('find')[0];
 var searchWindow = document.getElementsByClassName('search')[0];
 var searchClose = document.getElementsByClassName('close')[0];
@@ -81,7 +62,7 @@ search.onclick = function() {
 searchClose.onclick = function() {
   searchWindow.style.display = "none";
 }
-var bgMenu = document.getElementsByClassName('bg-menu')[0];
+// var bgMenu = document.getElementsByClassName('bg-menu')[0];
 // ----------------------------------------
 
 var menu_selector = ".top-menu"; // Переменная должна содержать название класса или идентификатора, обертки нашего меню. 
@@ -96,6 +77,7 @@ function onScroll(){
     } else {
       $(this).removeClass("active");
     }
+    classMenu();
   });
 }
 $(document).ready(function () {
@@ -110,6 +92,7 @@ $(document).ready(function () {
     $("html, body").animate({
         scrollTop: target.offset().top
     }, 500, function(){
+      classMenu();
       window.location.hash = hash;
       $(document).on("scroll", onScroll);
     });
@@ -126,15 +109,4 @@ $('.sl').slick({
     dots: true,
     autoplay: true,
     autoplaySpeed: 2500
-    // dotsClass: 'lines__red'
 });
-// $('.sl').slick({
-// prevArrow: '<div class="prev"></div>',
-// nextArrow: '<div class="next"></div>',
-//   arrows: true,
-//   dots: true,
-//   infinite: true,
-//   speed: 500,
-//   fade: true,
-//   cssEase: 'linear'
-// });
