@@ -16,6 +16,9 @@ a:hover {
 	text-decoration: none;
 	color: white;
 }
+div, a {
+	outline: none;
+}
 
 //------------------------- HEADER------------------------- 
 
@@ -206,10 +209,12 @@ a:hover {
 //------------------------- ABOUT-------------------------
 
 .about {
-	max-width: 1230px;
-	padding: 0 15px;
-	width: 100%;
-	margin: 0 auto;
+	.about__container {
+		max-width: 1230px;
+		padding: 0 15px;
+		width: 100%;
+		margin: 0 auto;
+	}
 	.about__text {
 		text-align: center;
 		padding-top: 91px;
@@ -239,6 +244,9 @@ a:hover {
 		margin-top: 45px;
 		text-align: center;
 	}
+	.about__wrapper {
+		position: relative;
+	}
 	.gallery {
 		margin-top: 110px;
 		display: flex;
@@ -251,10 +259,12 @@ a:hover {
 		background: #95e1d3;
 	}
 	.gallery2 {
-		top: -251px;
-		position: relative;
+		position: absolute;
 		display: flex;
 		justify-content: space-between;
+		width: 100%;
+		max-width: 1200px;
+		top: 0;
 	}
 	.gallery2__pic1, .gallery2__pic2, .gallery2__pic3 {
 		background-size: cover;
@@ -266,23 +276,7 @@ a:hover {
 	.gallery2__pic1 {
 		background-image: url(img/desc.jpg);
 	}
-	.gallery2__bg1 {
-		display: none;
-		background: linear-gradient(to bottom, rgba(243,129,129,0.9), rgba(252, 227, 138, 0.9));
-	    background-image: linear-gradient(rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9));
-		height: inherit;
-		width: 100%;
-		transition-duration: .5s;
-	}
-	.gallery2__bg2 {
-		display: none;
-		background: linear-gradient(to bottom, rgba(243,129,129,0.9), rgba(252, 227, 138, 0.9));
-	    background-image: linear-gradient(rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9));
-		height: inherit;
-		width: 100%;
-		transition-duration: .5s;
-	}
-	.gallery2__bg3 {
+	.gallery2__bg1, .gallery2__bg2, .gallery2__bg3 {
 		display: none;
 		background: linear-gradient(to bottom, rgba(243,129,129,0.9), rgba(252, 227, 138, 0.9));
 	    background-image: linear-gradient(rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9));
@@ -314,27 +308,41 @@ a:hover {
 	.gallery2__pic3 {
 		background-image: url(img/desc3.jpg);
 	}
-	// .gallery3 {
-	// 	top: -502px;
-	// 	position: relative;
-	// 	justify-content: space-between;
-	// }
-	// .gallery3__pic1, .gallery3__pic2, .gallery3__pic3 {
-	// 	display: none;
-	// 	background-size: cover;
-	// 	height: 251px;
-	// 	max-width: 382px;
-	// 	width: 100%;
-	// 	opacity: .8;
-	// }
-	// .gallery3__pic1 {
-	// 	background-image: url(img/rec.jpg);
-	// }
-	// .gallery3__pic2 {
-	// 	background-image: url(img/rec.jpg);
-	// 	background-position: center;
-	// }
-	// .gallery3__pic3 {
-	// 	background-image: url(img/rec.jpg);
-	// }
+}
+.facts {
+	width: 100%;
+	background: @colorBlue;
+	margin-top: 120px;
+	.facts__wrapper {
+		width: 100%;
+		max-width: 1230px;
+		padding: 0 15px;
+		display: flex;
+		justify-content: space-around;
+		margin: 0 auto;
+	}
+	.facts__item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		border-left: 1px solid white;
+		height: 270px;
+		padding: 0 59.5px;
+		width: 100%;
+	}
+	.facts__item:last-child {
+		border-right: 1px solid white;
+	}
+	.facts__number {
+		font-size: 72px;
+		color: white;
+		font-weight: bold;
+	}
+	.facts__text {
+		font-size: 14px;
+		color: white;
+		text-transform: uppercase;
+		text-align: center;
+	}
 }

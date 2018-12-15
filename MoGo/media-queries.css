@@ -40,7 +40,7 @@
 	.slick-dots li:hover {
 		cursor: default;
 	}
-/*---------------about---------------*/
+	/*---------------about---------------*/
 	.about .gallery {
 		justify-content: space-around;
 	}
@@ -50,7 +50,6 @@
 	}
 	.about .gallery2 {
 		justify-content: space-around;
-		top: -221px;
 	}
 	.gallery2 .gallery2__pic1, .gallery2 .gallery2__pic2, .gallery2 .gallery2__pic3 {
 		height: 221px;
@@ -63,6 +62,9 @@
 	.gallery3 .gallery3__pic1, .gallery3 .gallery3__pic2, .gallery3 .gallery3__pic3 {
 		height: 221px;
 		max-width: 30vw;
+	}
+	.facts .facts__item {
+		padding: 0 30.5px;
 	}
 }
 @media screen and (max-width: 768px) {
@@ -137,9 +139,6 @@
 		font-size: 16px;
 		text-transform: uppercase;
 	}
-	.nav .hidden-menu .first-li {
-		margin-top: 45px;
-	}
 	.nav .header__ul .li-last {
 		margin: 0 auto;
 	}
@@ -160,7 +159,7 @@
 	.slick-dots li:nth-child(n):after {
 		font-size: 16px;	
 	}
-/*---------------about---------------*/
+	/*---------------about---------------*/
 	.about .gallery {
 		margin-top: 40px;
 		flex-direction: column;
@@ -172,7 +171,6 @@
 		margin-bottom: 15px;
 	}
 	.about .gallery2 {
-		top: -798px;
 		flex-direction: column;
 		align-items: center;
 	}
@@ -180,16 +178,19 @@
 		height: 251px;
 		max-width: 382px;
 		margin-bottom: 15px;
+		position: relative;
 	}
 	.about .gallery3 {
 		top: -1596px;
 		flex-direction: column;
 		align-items: center;
+
 	}
 	.gallery3 .gallery3__pic1, .gallery3 .gallery3__pic2, .gallery3 .gallery3__pic3 {
 		height: 251px;
 		max-width: 382px;
 		margin-bottom: 15px;
+		position: relative;
 	}
 }
 @media screen and (max-width: 635px) {
@@ -218,6 +219,9 @@
 	}
 }
 @media screen and (max-width: 375px) {
+	.hidden-menu-ticker:checked ~ .hidden-menu {
+		top: 44px;
+	}
 	.nav .logo {
 		font-size: 16px;
 	}

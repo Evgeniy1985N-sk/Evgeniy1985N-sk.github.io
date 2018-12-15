@@ -8,6 +8,10 @@ a:hover {
   text-decoration: none;
   color: white;
 }
+div,
+a {
+  outline: none;
+}
 .sticky-header {
   position: fixed;
   z-index: 2;
@@ -193,7 +197,7 @@ a:hover {
   font-weight: bold;
   margin-right: 5px;
 }
-.about {
+.about .about__container {
   max-width: 1230px;
   padding: 0 15px;
   width: 100%;
@@ -228,6 +232,9 @@ a:hover {
   margin-top: 45px;
   text-align: center;
 }
+.about .about__wrapper {
+  position: relative;
+}
 .about .gallery {
   margin-top: 110px;
   display: flex;
@@ -242,10 +249,12 @@ a:hover {
   background: #95e1d3;
 }
 .about .gallery2 {
-  top: -251px;
-  position: relative;
+  position: absolute;
   display: flex;
   justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  top: 0;
 }
 .about .gallery2__pic1,
 .about .gallery2__pic2,
@@ -259,22 +268,8 @@ a:hover {
 .about .gallery2__pic1 {
   background-image: url(img/desc.jpg);
 }
-.about .gallery2__bg1 {
-  display: none;
-  background: linear-gradient(to bottom, rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9));
-  background-image: linear-gradient(rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9));
-  height: inherit;
-  width: 100%;
-  transition-duration: .5s;
-}
-.about .gallery2__bg2 {
-  display: none;
-  background: linear-gradient(to bottom, rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9));
-  background-image: linear-gradient(rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9));
-  height: inherit;
-  width: 100%;
-  transition-duration: .5s;
-}
+.about .gallery2__bg1,
+.about .gallery2__bg2,
 .about .gallery2__bg3 {
   display: none;
   background: linear-gradient(to bottom, rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9));
@@ -306,4 +301,41 @@ a:hover {
 }
 .about .gallery2__pic3 {
   background-image: url(img/desc3.jpg);
+}
+.facts {
+  width: 100%;
+  background: #95e1d3;
+  margin-top: 120px;
+}
+.facts .facts__wrapper {
+  width: 100%;
+  max-width: 1230px;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+.facts .facts__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid white;
+  height: 270px;
+  padding: 0 59.5px;
+  width: 100%;
+}
+.facts .facts__item:last-child {
+  border-right: 1px solid white;
+}
+.facts .facts__number {
+  font-size: 72px;
+  color: white;
+  font-weight: bold;
+}
+.facts .facts__text {
+  font-size: 14px;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
 }
