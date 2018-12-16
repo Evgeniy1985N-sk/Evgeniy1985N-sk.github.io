@@ -28,58 +28,50 @@ div, a {
     top: 0;
     left: 0;
     width: 100%;
+    height: 45px;
 }
 .menu-bg {
 	background: #ea6361;
 	transition-duration: 1s;
 	opacity: 0.9;
 }
-.top-menu a:hover,
-.top-menu a.active {
-    color: @colorYellow;
-    border-bottom: 2px solid @colorYellow;
-}
 .nav {
-	padding: 10px 0;
-	display: flex;
-	align-items: center;
-		max-width: 1200px;
-		width: 100%;
-		margin: 0 auto;
-		.logo {
-			font-weight: bold;
-			color: white;
-			font-size: 22px;
+	.logo {
+		font-weight: bold;
+		color: white;
+		font-size: 22px;
+		height: 45px;
+		display: flex;
+		align-items: center;
 		}
 	.hidden-menu-ticker {
   		display: none;
 	}
 	.header__ul {
-			margin-bottom: 0;
-			margin-left: 497px;
-			display: flex;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		height: 45px;
+
 		li {
-			display: inline-block;
+			list-style-type: none;
 			font-size: 14px;
 			text-transform: uppercase;
-			margin-right: 35px;
+			margin-left: 36px;
 			a {
 				padding-bottom: 5px;
 			}
-			a:hover {
-				text-decoration: none;
-				color: #fce38a;
-			}
-		}
-		.li-last {
-			margin-right: 54px;
 		}
 	}
+}
+.top-menu a:hover,
+.top-menu a.active {
+    color: @colorYellow;
+    border-bottom: 2px solid @colorYellow;
 }
 .li-fi:hover {
 	cursor: pointer;
 }
-
 //---------SEARCH----------
 .search {
 	position: fixed;
