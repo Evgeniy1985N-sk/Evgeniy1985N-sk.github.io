@@ -2,11 +2,11 @@
 	.slick-dots {
 		bottom: -85px;
 	}
-	.slick-dots li:first-child {
-		margin-left: 10.8%;
-	}
 	.slick-dots li {
-		margin-right: 2%;
+		margin-right: 8.6%;
+	}
+	.slick-dots li:last-child {
+		margin-right: 0;
 	}
 	.text1, .text2, .text3, .text4 {
 		display: none;
@@ -55,6 +55,89 @@
 		padding: 0 30.5px;
 	}
 }
+	/*---------------slick-li---------------*/
+@media screen and (max-width: 1152px) {
+	.slick-dots li {
+		margin-right: 8.5%;
+	}
+}
+@media screen and (max-width: 996px) {
+	.slick-dots li {
+		margin-right: 8.4%;
+	}
+}
+@media screen and (max-width: 877px) {
+	.slick-dots li {
+		margin-right: 8.3%;
+	}
+}
+@media screen and (max-width: 784px) {
+	.slick-dots li {
+		margin-right: 8.2%;
+	}
+}
+@media screen and (max-width: 710px) {
+	.slick-dots li {
+		margin-right: 8.1%;
+	}
+}
+@media screen and (max-width: 650px) {
+	.slick-dots li {
+		margin-right: 8%;
+	}
+}
+@media screen and (max-width: 599px) {
+	.slick-dots li {
+		margin-right: 7.9%;
+	}
+}
+@media screen and (max-width: 557px) {
+	.slick-dots li {
+		margin-right: 7.8%;
+	}
+}
+@media screen and (max-width: 521px) {
+	.slick-dots li {
+		margin-right: 7.7%;
+	}
+}
+@media screen and (max-width: 489px) {
+	.slick-dots li {
+		margin-right: 7.6%;
+	}
+}
+@media screen and (max-width: 462px) {
+	.slick-dots li {
+		margin-right: 7.5%;
+	}
+}
+@media screen and (max-width: 437px) {
+	.slick-dots li {
+		margin-right: 7.4%;
+	}
+}
+@media screen and (max-width: 415px) {
+	.slick-dots li {
+		margin-right: 7.2%;
+	}
+}
+@media screen and (max-width: 378px) {
+	.slick-dots li {
+		margin-right: 7%;
+	}
+}
+@media screen and (max-width: 348px) {
+	.slick-dots li {
+		margin-right: 6.8%;
+	}
+}
+@media screen and (max-width: 323px) {
+	.slick-dots li {
+		margin-right: 6.6%;
+	}
+}
+	/*------------------------------*/
+
 @media screen and (max-width: 768px) {
 	.nav {
 		justify-content: flex-start;
@@ -101,10 +184,13 @@
 		margin-top: 0;
 	}
 	.hidden-menu-ticker:checked ~ .hidden-menu {
-		top: 47px;
+		top: 45px;
+		height: inherit;
 	}
 	.nav .header__ul {
 		margin: 0 auto;
+		max-width: 767px;
+		width: 100%;
 	}
 	.hidden-menu li {
 		text-align: center;
@@ -195,7 +281,7 @@
 }
 @media screen and (max-width: 442px) {
 	.slick-dots {
-    bottom: -55px;
+    	bottom: -55px;
 	}
 	.slick-dots li:nth-child(n):after {
 		display: none;
@@ -203,6 +289,12 @@
 	.slick-dots li.slick-active button:before {
     	background: #f38181;
     	width: 100%;
+	}
+	.slick-dots li {
+		height: 3px;
+	}
+	.slick-dots li.slick-active button:before {
+	    height: 3px;
 	}
 }
 @media screen and (max-width: 375px) {
