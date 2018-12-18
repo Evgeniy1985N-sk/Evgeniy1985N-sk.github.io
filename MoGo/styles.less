@@ -4,10 +4,14 @@
 @colorRed2: #ea6361;
 @colorGree: #eaffd0;
 @colorBlue: #95e1d3;
+@colorGray: #999999;
 
-
+html {
+	height: 100%;
+}
 body {
 	 font-family: @font;
+	 height: 100%;
 }
 a {
 	color: white;
@@ -19,8 +23,27 @@ a:hover {
 div, a {
 	outline: none;
 }
-
-//------------------------- HEADER------------------------- 
+.title__text {
+	text-align: center;
+	padding-top: 91px;
+	font-size: 24px;
+	font-family: 'Kaushan Script', cursive;
+}
+.sec__h2 {
+	margin-top: 10px;
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.red__line {
+	height: 3px;
+	width: 60px;
+	background: #f38181;
+	margin: 0 auto;
+	margin-top: 31px;
+}
+//------------------------- HEADER ------------------------- 
 
 .sticky-header {
     position: fixed;
@@ -72,7 +95,6 @@ div, a {
 .li-fi:hover {
 	cursor: pointer;
 }
-//---------SEARCH----------
 .search {
 	position: fixed;
 	height: 100%;
@@ -121,7 +143,7 @@ div, a {
 	}
 }
 
-//------------------------- HOME------------------------- 
+//------------------------- HOME ------------------------- 
 
 .home {
 	width: 100%;
@@ -198,7 +220,7 @@ div, a {
 	margin-right: 5px;
 }
 
-//------------------------- ABOUT-------------------------
+//------------------------- ABOUT -------------------------
 
 .about {
 	.about__container {
@@ -319,7 +341,7 @@ div, a {
 		align-items: center;
 		justify-content: center;
 		border-left: 1px solid white;
-		height: 270px;
+		height: 218px;
 		padding: 0 59.5px;
 		width: 100%;
 	}
@@ -337,4 +359,64 @@ div, a {
 		text-transform: uppercase;
 		text-align: center;
 	}
+}
+
+//------------------------- SERVICE -------------------------
+
+.service {
+	.service__row {
+		margin-top: 66px;
+		margin-bottom: 66px;
+	}
+	.service__flex {
+		display: flex;
+	}
+	.service__flex-img {
+		display: flex;
+		height: 34px;
+		padding-top: 4px;
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+	.service__flex-text {
+		display: flex;
+		flex-direction: column;
+		padding-right: 25px;
+
+	}
+	.service__p {
+		margin-bottom: 0;
+		font-size: 14px;
+		text-transform: uppercase;
+		padding-bottom: 20px;
+	}
+	.service__span {
+		color: @colorGray;
+		font-size: 13px;
+	}
+	.service__line {
+		background: @colorGray;
+		height: 1px;
+		width: 100%;
+		margin-top: 66px;
+		margin-bottom: 66px;
+	}
+	.service__line-hidden {
+		display: none;
+		background: @colorGray;
+		height: 1px;
+		width: 100%;
+		margin-top: 66px;
+		margin-bottom: 66px;
+	}
+	.service__line-hidden2 {
+		display: none;
+		background: @colorGray;
+		height: 1px;
+		width: 100%;
+		margin-top: 66px;
+		margin-bottom: 66px;
+	}
+
+
 }
