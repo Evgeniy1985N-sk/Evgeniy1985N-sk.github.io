@@ -54,9 +54,6 @@
 	.facts .facts__item {
 		padding: 0 30.5px;
 	}
-	.service .service__span {
-		white-space: normal;
-	}
 }
 @media screen and (max-width: 1199px) {
 	.service__line {
@@ -363,5 +360,19 @@
 @media screen and (max-width: 323px) {
 	.slick-dots li {
 		margin-right: 6.6%;
+	}
+}
+	/*---------------IE---------------*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+   /* IE10+ specific styles go here */ 
+    .service .service__flex {
+		/*display: block;*/
+	}
+	.service .service__flex-img {
+		display: block;
+		height: 34px;
+		padding-top: 4px;
+		margin-bottom: 14px;
+		padding-left: 0;
 	}
 }
