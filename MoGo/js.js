@@ -69,33 +69,36 @@ function addClassA() {
   var hBlog = parseInt($('#blog').css('height'));
   var hContact = parseInt($('#contact').css('height'));
   var scrolled2 = $(document).scrollTop();
-  if (scrolled2 === 0 || scrolled2 <= hHome) {
+      console.log("scrolled2: " + scrolled2);
+    console.log("hHome: " + hHome);
+  if (scrolled2 === 0 || scrolled2 < hHome) {
     deleteClassActive();
     $('.a-home').addClass('active');
   }
-  if (scrolled2 > hHome) {
+  if (scrolled2 >= hHome) {
     deleteClassActive();
     $('.a-about').addClass('active');
   }
-  if (scrolled2 > (hHome + hAbout) ) {
+  if (scrolled2 >= (hHome + hAbout) ) {
     deleteClassActive();
     $('.a-service').addClass('active');
   }
-  if (scrolled2 > (hHome + hAbout + hService) ) {
+  if (scrolled2 >= (hHome + hAbout + hService) ) {
     deleteClassActive();
     $('.a-work').addClass('active');
   }
-  if (scrolled2 > (hHome + hAbout + hService + hWork) ) {
+  if (scrolled2 >= (hHome + hAbout + hService + hWork) ) {
     deleteClassActive();
     $('.a-blog').addClass('active');
   }
-  if (scrolled2 > (hHome + hAbout + hService + hWork + hBlog) ) {
+  if (scrolled2 >= (hHome + hAbout + hService + hWork + hBlog) ) {
     deleteClassActive();
     $('.a-contact').addClass('active');
   }
 }
 $(document).ready(addClassA);
 $(document).on("scroll", addClassA);
+
 
 // ----------------------------------------
 
@@ -110,17 +113,17 @@ searchClose.onclick = function() {
 }
 // ----------------------------------------
 
-// $(document).ready(function() {
-//    $("a.topLink").click(function() {
-//       $("html, body").animate({
-//          scrollTop: $($(this).attr("href")).offset().top + "px"
-//       }, {
-//          duration: 999,
-//          easing: "swing"
-//       });
-//       return false;
-//    });
-// });
+$(document).ready(function() {
+   $("a.topLink").click(function() {
+      $("html, body").animate({
+         scrollTop: $($(this).attr("href")).offset().top + "px"
+      }, {
+         duration: 999,
+         easing: "swing"
+      });
+      return false;
+   });
+});
 
 
 // ----------------------------------------
