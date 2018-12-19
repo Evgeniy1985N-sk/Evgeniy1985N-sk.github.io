@@ -62,10 +62,7 @@ function deleteClassActive() {
     $('.a-blog').removeClass('active');
     $('.a-contact').removeClass('active');
   }
-  function ie() {
-    alert('scrolled: ' + scrolled2);
-    alert('hHome: ' + hHome);
-  }
+
 function addClassA() {
   var hHome = parseInt($('#home').css('height'));
   var hAbout = parseInt($('#about').css('height'));
@@ -74,12 +71,15 @@ function addClassA() {
   var hBlog = parseInt($('#blog').css('height'));
   var hContact = parseInt($('#contact').css('height'));
   var scrolled2 = $(document).scrollTop();
-
+ function ie() {
+    alert('scrolled: ' + scrolled2);
+    alert('hHome: ' + hHome);}
   if (scrolled2 === 0 || scrolled2 < hHome) {
     deleteClassActive();
     $('.a-home').addClass('active');
   }
   if (scrolled2 >= hHome) {
+    ie();
     deleteClassActive();
     $('.a-about').addClass('active');
   }
@@ -102,7 +102,7 @@ function addClassA() {
 }
 $(document).ready(addClassA);
 $(document).on("scroll", addClassA);
-$('.a-about').on("click", function() {ie();});
+// $('.a-about').on("click", function() {ie();});
 
 // ----------------------------------------
 
