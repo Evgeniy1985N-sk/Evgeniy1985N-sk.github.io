@@ -5,6 +5,8 @@
 @colorGree: #eaffd0;
 @colorBlue: #95e1d3;
 @colorGray: #999999;
+@colorGray2: #d9d9d9;
+
 
 html {
 	height: 100%;
@@ -42,6 +44,13 @@ div, a {
 	background: #f38181;
 	margin: 0 auto;
 	margin-top: 31px;
+}
+.sec__span {
+	text-align: center;
+	color: @colorGray;
+	font-size: 15px;
+	margin-top: 45px;
+	margin-bottom: 90px;
 }
 //------------------------- HEADER ------------------------- 
 
@@ -419,4 +428,81 @@ div, a {
 		margin-bottom: 66px;
 	}
 }
+.future {
+	background-image: url(img/nature.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 
+	.future__bg {
+		background: rgba(217,217,217,.8);
+	}
+	.future__img {
+		margin-top: 40px;
+		height: 463px;
+		max-width: 380px;
+		width: 100%;
+	}
+	.future__img2 {
+		height: 361px;
+		max-width: 170px;
+	}
+	.text-center {
+		text-align: center;
+	}
+	.rel {
+		position: relative;
+	}
+	.rel__img2 {
+		position: absolute;
+		transform: translate(-50%, -80%);
+		left: 66%;
+		top: 50%;
+	}
+}
+.service__block1 {
+	border: 1px solid @colorGray2;
+	height: 59px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	border-radius: 1px;
+	img {
+		margin-left: 17px;
+	}
+	span {
+		margin-right: 363px;
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 14px;
+	}
+	div {
+		border-radius: 2px;
+		width: 13px;
+		height: 13px;
+		border-right: 3px solid @colorGray2;
+		border-bottom: 3px solid @colorGray2;
+		margin-right: 17px;
+		-webkit-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+		transform: rotate(45deg);
+	}
+	div:hover {
+		cursor: pointer;
+	}
+}
+.service__block2 {
+	padding: 18px 17px;
+	border: 1px solid @colorGray2;
+	border-top: none;
+	height: 180px;
+	overflow-y: scroll;
+
+	span {
+		text-align: justify;
+		font-size: 13px;
+		color: @colorGray2;
+		font-family: 'Kaushan Script', cursive;
+	}
+}
