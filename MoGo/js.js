@@ -71,15 +71,11 @@ function addClassA() {
   var hBlog = parseInt($('#blog').css('height'));
   var hContact = parseInt($('#contact').css('height'));
   var scrolled2 = $(document).scrollTop();
- function ie() {
-    alert('scrolled: ' + scrolled2);
-    alert('hHome: ' + hHome);}
   if (scrolled2 === 0 || scrolled2 < hHome) {
     deleteClassActive();
     $('.a-home').addClass('active');
   }
   if (scrolled2 >= hHome) {
-    ie();
     deleteClassActive();
     $('.a-about').addClass('active');
   }
@@ -102,25 +98,20 @@ function addClassA() {
 }
 $(document).ready(addClassA);
 $(document).on("scroll", addClassA);
-// $('.a-about').on("click", function() {ie();});
-
 // ----------------------------------------
+  $('.find').on("click", function() {
+    $('.search').css('display', 'block');
+  });
+  $('.close').on("click", function() {
+    $('.search').css('display', 'none');
+  });
 
-var search = document.getElementsByClassName('find')[0];
-var searchWindow = document.getElementsByClassName('search')[0];
-var searchClose = document.getElementsByClassName('close')[0];
-search.onclick = function() {
-    searchWindow.style.display = "block";
-}
-searchClose.onclick = function() {
-  searchWindow.style.display = "none";
-}
 // ----------------------------------------
 
 $(document).ready(function() {
    $("a.topLink").click(function() {
       $("html, body").animate({
-         scrollTop: $($(this).attr("href")).offset().top + "px"
+         scrollTop: $($(this).attr("href")).offset().top + 2 + "px"
       }, {
          duration: 999,
          easing: "swing"

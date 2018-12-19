@@ -139,11 +139,11 @@
 		position: absolute;
 		display: block;
 		border-radius: 3px;
-		padding: 0 10px;
+		padding: 10px;
 		right: 5px;
 		cursor: pointer;
 		width: 42px;
-		top: 15px;
+		top: 5px;
 	}
 	.btn-menu span {
 		display: block;
@@ -274,7 +274,7 @@
 	}
 	.facts .facts__item {
 		padding: 0 2px;
-		height: 85px;
+		height: 95px;
 	}
 	.facts .facts__number {
 		font-size: 22px;
