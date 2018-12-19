@@ -111,7 +111,7 @@ $(document).on("scroll", addClassA);
 $(document).ready(function() {
    $("a.topLink").click(function() {
       $("html, body").animate({
-         scrollTop: $($(this).attr("href")).offset().top + 2 + "px"
+         scrollTop: $($(this).attr("href")).offset().top + 1 + "px"
       }, {
          duration: 999,
          easing: "swing"
