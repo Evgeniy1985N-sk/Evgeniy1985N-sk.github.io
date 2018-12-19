@@ -128,12 +128,12 @@ $(document).ready(function() {
 
 // ----------------------------------------
 
-$('.sl').slick({
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    dots: true,
-    autoplay: true,
-    autoplaySpeed: 2500
-});
+// $('.sl').slick({
+//     infinite: true,
+//     slidesToShow: 1,
+//     slidesToScroll: 1,
+//     arrows: false,
+//     dots: true,
+//     autoplay: true,
+//     autoplaySpeed: 2500
+// });
