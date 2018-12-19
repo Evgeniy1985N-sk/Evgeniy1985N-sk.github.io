@@ -62,6 +62,10 @@ function deleteClassActive() {
     $('.a-blog').removeClass('active');
     $('.a-contact').removeClass('active');
   }
+  function ie() {
+    alert('scrolled: ' + scrolled2);
+    alert('hHome: ' + hHome);
+  }
 function addClassA() {
   var hHome = parseInt($('#home').css('height'));
   var hAbout = parseInt($('#about').css('height'));
@@ -76,7 +80,6 @@ function addClassA() {
     $('.a-home').addClass('active');
   }
   if (scrolled2 >= hHome) {
-    alert();
     deleteClassActive();
     $('.a-about').addClass('active');
   }
@@ -99,7 +102,7 @@ function addClassA() {
 }
 $(document).ready(addClassA);
 $(document).on("scroll", addClassA);
-$('.a-about').on("click", function() {addClassA();});
+$('.a-about').on("click", function() {ie();});
 
 // ----------------------------------------
 
