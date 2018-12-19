@@ -53,6 +53,7 @@ $(document).ready(classMenu);
 $(document).on("scroll", classMenu);
 
 // ----------------------------------------
+
 function deleteClassActive() {
     $('.a-home').removeClass('active');
     $('.a-about').removeClass('active');
@@ -69,8 +70,7 @@ function addClassA() {
   var hBlog = parseInt($('#blog').css('height'));
   var hContact = parseInt($('#contact').css('height'));
   var scrolled2 = $(document).scrollTop();
-      console.log("scrolled2: " + scrolled2);
-    console.log("hHome: " + hHome);
+
   if (scrolled2 === 0 || scrolled2 < hHome) {
     deleteClassActive();
     $('.a-home').addClass('active');
@@ -98,6 +98,12 @@ function addClassA() {
 }
 $(document).ready(addClassA);
 $(document).on("scroll", addClassA);
+$('.a-home').on("click", function() {addClassA();});
+$('.a-about').on("click", function() {addClassA();});
+$('.a-service').on("click", function() {addClassA();});
+$('.a-work').on("click", function() {addClassA();});
+$('.a-blog').on("click", function() {addClassA();});
+$('.a-contact').on("click", function() {addClassA();});
 
 
 // ----------------------------------------
@@ -128,12 +134,12 @@ $(document).ready(function() {
 
 // ----------------------------------------
 
-// $('.sl').slick({
-//     infinite: true,
-//     slidesToShow: 1,
-//     slidesToScroll: 1,
-//     arrows: false,
-//     dots: true,
-//     autoplay: true,
-//     autoplaySpeed: 2500
-// });
+$('.sl').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: true,
+    autoplay: true,
+    autoplaySpeed: 2500
+});
