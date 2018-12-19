@@ -78,7 +78,7 @@ a {
 .top-menu a:hover,
 .top-menu a.active {
   color: #fce38a;
-  border-bottom: 2px solid #fce38a;
+  border-bottom: 4px solid #fce38a;
 }
 .li-fi:hover {
   cursor: pointer;

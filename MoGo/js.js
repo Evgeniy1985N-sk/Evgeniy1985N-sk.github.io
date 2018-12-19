@@ -62,7 +62,7 @@ function deleteClassActive() {
     $('.a-contact').removeClass('active');
   }
 function addClassA() {
-  var hHome = parseInt($('#home').css('height'))-1;
+  var hHome = parseInt($('#home').css('height'));
   var hAbout = parseInt($('#about').css('height'));
   var hService = parseInt($('#service').css('height'));
   var hWork = parseInt($('#work').css('height'));
@@ -110,17 +110,17 @@ searchClose.onclick = function() {
 }
 // ----------------------------------------
 
-$(document).ready(function() {
-   $("a.topLink").click(function() {
-      $("html, body").animate({
-         scrollTop: $($(this).attr("href")).offset().top + "px"
-      }, {
-         duration: 999,
-         easing: "swing"
-      });
-      return false;
-   });
-});
+// $(document).ready(function() {
+//    $("a.topLink").click(function() {
+//       $("html, body").animate({
+//          scrollTop: $($(this).attr("href")).offset().top + "px"
+//       }, {
+//          duration: 999,
+//          easing: "swing"
+//       });
+//       return false;
+//    });
+// });
 
 
 // ----------------------------------------
