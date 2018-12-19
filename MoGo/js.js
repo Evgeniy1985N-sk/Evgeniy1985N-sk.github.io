@@ -76,6 +76,7 @@ function addClassA() {
     $('.a-home').addClass('active');
   }
   if (scrolled2 >= hHome) {
+    alert();
     deleteClassActive();
     $('.a-about').addClass('active');
   }
@@ -98,13 +99,7 @@ function addClassA() {
 }
 $(document).ready(addClassA);
 $(document).on("scroll", addClassA);
-$('.a-home').on("click", function() {addClassA();});
 $('.a-about').on("click", function() {addClassA();});
-$('.a-service').on("click", function() {addClassA();});
-$('.a-work').on("click", function() {addClassA();});
-$('.a-blog').on("click", function() {addClassA();});
-$('.a-contact').on("click", function() {addClassA();});
-
 
 // ----------------------------------------
 
