@@ -1,34 +1,34 @@
 $(".gallery2__pic1").mouseover(function () {
   $(this).css('top','-9px').css('left','-9px');
   $(".gallery2__bg1").css('opacity', '.9');
-  $('.gallery__img').css('opacity', '.9');
+  $('.gal__img1').css('opacity', '.9');
 });
 $(".gallery2__bg1").mouseout(function () {
   $(".gallery2__pic1").css('top','0').css('left','0');
   $(this).css('opacity','0');
-  $('.gallery__img').css('opacity','0');
+  $('.gal__img1').css('opacity','0');
 });
 
 $(".gallery2__pic2").mouseover(function () {
   $(this).css('top','-9px').css('left','-9px');
   $(".gallery2__bg2").css('opacity', '.9');
-  $('.gallery__img').css('opacity', '.9');
+  $('.gal__img2').css('opacity', '.9');
 });
 $(".gallery2__bg2").mouseout(function () {
   $(".gallery2__pic2").css('top','0').css('left','0');
   $(this).css('opacity','0');
-   $('.gallery__img').css('opacity','0');
+   $('gal__img2').css('opacity','0');
 });
 
 $(".gallery2__pic3").mouseover(function () {
   $(this).css('top','-9px').css('left','-9px');
   $(".gallery2__bg3").css('opacity', '.9');
-  $('.gallery__img').css('opacity', '.9');
+  $('.gal__img3').css('opacity', '.9');
 });
 $(".gallery2__bg3").mouseout(function () {
   $(".gallery2__pic3").css('top','0').css('left','0');
   $(this).css('opacity','0');
-  $('.gallery__img').css('opacity','0');
+  $('.gal__img3').css('opacity','0');
 });
 
 // ----------------------------------------
