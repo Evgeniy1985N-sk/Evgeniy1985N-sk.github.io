@@ -1,41 +1,28 @@
-
 $(".gallery2__pic1").mouseover(function () {
-  $(".gallery2__pic1").css('position','relative').css('top','-9px').css('left','-9px').css('cursor','pointer');
-  $(".gallery2__bg1").css('display', 'block');
+  $(this).css('top','-9px').css('left','-9px');
+  $(".gallery2__bg1").css('opacity', '.9');
 });
 $(".gallery2__bg1").mouseout(function () {
   $(".gallery2__pic1").css('top','0').css('left','0');
-  $(".gallery2__bg1").css('display','none');
-});
-$(".gallery2__pic1").mouseout(function () {
-  $(".gallery2__pic1").css('top','0').css('left','0');
-  $(".gallery2__bg1").css('display','none');
+  $(this).css('opacity','0');
 });
 
 $(".gallery2__pic2").mouseover(function () {
-  $(".gallery2__pic2").css('position','relative').css('top','-9px').css('left','-9px').css('cursor','pointer');
-  $(".gallery2__bg2").css('display', 'block');
+  $(this).css('top','-9px').css('left','-9px');
+  $(".gallery2__bg2").css('opacity', '.9');
 });
 $(".gallery2__bg2").mouseout(function () {
   $(".gallery2__pic2").css('top','0').css('left','0');
-  $(".gallery2__bg2").css('display','none');
-});
-$(".gallery2__pic2").mouseout(function () {
-  $(".gallery2__pic2").css('top','0').css('left','0');
-  $(".gallery2__bg2").css('display','none');
+  $(this).css('opacity','0');
 });
 
 $(".gallery2__pic3").mouseover(function () {
-  $(".gallery2__pic3").css('position','relative').css('top','-9px').css('left','-9px').css('cursor','pointer');
-  $(".gallery2__bg3").css('display', 'block');
+  $(this).css('top','-9px').css('left','-9px');
+  $(".gallery2__bg3").css('opacity', '.9');
 });
 $(".gallery2__bg3").mouseout(function () {
   $(".gallery2__pic3").css('top','0').css('left','0');
-  $(".gallery2__bg3").css('display','none');
-});
-$(".gallery2__pic3").mouseout(function () {
-  $(".gallery2__pic3").css('top','0').css('left','0');
-  $(".gallery2__bg3").css('display','none');
+  $(this).css('opacity','0');
 });
 
 // ----------------------------------------
@@ -111,7 +98,7 @@ $(document).on("scroll", addClassA);
 $(document).ready(function() {
    $("a.topLink").click(function() {
       $("html, body").animate({
-         scrollTop: $($(this).attr("href")).offset().top + 2 + "px"
+         scrollTop: $($(this).attr("href")).offset().top + "px"
       }, {
          duration: 999,
          easing: "swing"
@@ -131,4 +118,33 @@ $('.sl').slick({
     dots: true,
     autoplay: true,
     autoplaySpeed: 2500
+});
+
+// ----------------------------------------
+
+jQuery(document).ready(function(){
+    jQuery('.scrollbar-rail').scrollbar();
+});
+
+// ----------------------------------------
+
+$('div.block-a').on('click', function(){
+  $( "div.ang-a" ).toggleClass( "service__angle-rotate" );
+  $( "div.block2-a" ).slideToggle("fast");
+  // if ( $( "div.service__block2" ).is( ":show" ) ) {
+  //   $(this).css('margin-bottom','5px');
+  // }
+  // if ( $( "div.service__block2" ).is( ":hidden" ) ) {
+  //   $( "div.service__block2" ).show( "slow" );
+  // } else {
+  //   $( "div.service__block2" ).slideUp();
+  // }
+});
+$('div.block-b').on('click', function(){
+  $( "div.ang-b" ).toggleClass( "service__angle-rotate" );
+  $( "div.block2-b" ).slideToggle("slow");
+});
+$('div.block-c').on('click', function(){
+  $( "div.ang-c" ).toggleClass( "service__angle-rotate" );
+  $( "div.block2-c" ).slideToggle("slow");
 });
