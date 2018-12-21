@@ -1,28 +1,34 @@
 $(".gallery2__pic1").mouseover(function () {
   $(this).css('top','-9px').css('left','-9px');
   $(".gallery2__bg1").css('opacity', '.9');
+  $('.gallery__img').css('opacity', '.9');
 });
 $(".gallery2__bg1").mouseout(function () {
   $(".gallery2__pic1").css('top','0').css('left','0');
   $(this).css('opacity','0');
+  $('.gallery__img').css('opacity','0');
 });
 
 $(".gallery2__pic2").mouseover(function () {
   $(this).css('top','-9px').css('left','-9px');
   $(".gallery2__bg2").css('opacity', '.9');
+  $('.gallery__img').css('opacity', '.9');
 });
 $(".gallery2__bg2").mouseout(function () {
   $(".gallery2__pic2").css('top','0').css('left','0');
   $(this).css('opacity','0');
+   $('.gallery__img').css('opacity','0');
 });
 
 $(".gallery2__pic3").mouseover(function () {
   $(this).css('top','-9px').css('left','-9px');
   $(".gallery2__bg3").css('opacity', '.9');
+  $('.gallery__img').css('opacity', '.9');
 });
 $(".gallery2__bg3").mouseout(function () {
   $(".gallery2__pic3").css('top','0').css('left','0');
   $(this).css('opacity','0');
+  $('.gallery__img').css('opacity','0');
 });
 
 // ----------------------------------------
@@ -128,23 +134,41 @@ jQuery(document).ready(function(){
 
 // ----------------------------------------
 
-$('div.block-a').on('click', function(){
-  $( "div.ang-a" ).toggleClass( "service__angle-rotate" );
+$('.block-a').on('click', function(){
+  $( ".ang-a" ).toggleClass( "ang-a_add-class" );
   $( "div.block2-a" ).slideToggle("fast");
-  // if ( $( "div.service__block2" ).is( ":show" ) ) {
-  //   $(this).css('margin-bottom','5px');
-  // }
-  // if ( $( "div.service__block2" ).is( ":hidden" ) ) {
-  //   $( "div.service__block2" ).show( "slow" );
-  // } else {
-  //   $( "div.service__block2" ).slideUp();
-  // }
+  if ( $( "div.block2-b" ).is( ":visible" ) ) {
+    $( ".block2-b" ).slideUp();
+     $( ".ang-b" ).toggleClass( "service__angle-rotate" );
+  }
+   if ( $( "div.block2-c" ).is( ":visible" ) ) {
+    $( ".block2-c" ).slideUp();
+     $( ".ang-c" ).toggleClass( "service__angle-rotate" );
+  }
 });
-$('div.block-b').on('click', function(){
-  $( "div.ang-b" ).toggleClass( "service__angle-rotate" );
-  $( "div.block2-b" ).slideToggle("slow");
+
+$('.block-b').on('click', function(){
+  $( ".ang-b" ).toggleClass( "service__angle-rotate" );
+  $( "div.block2-b" ).slideToggle("fast");
+   if ( $( "div.block2-a" ).is( ":visible" ) ) {
+    $( ".block2-a" ).slideUp();
+     $( ".ang-a" ).toggleClass( "ang-a_add-class" );
+  }
+   if ( $( "div.block2-c" ).is( ":visible" ) ) {
+    $( ".block2-c" ).slideUp();
+     $( ".ang-c" ).toggleClass( "service__angle-rotate" );
+
+  }
 });
-$('div.block-c').on('click', function(){
-  $( "div.ang-c" ).toggleClass( "service__angle-rotate" );
-  $( "div.block2-c" ).slideToggle("slow");
+$('.block-c').on('click', function(){
+  $( ".ang-c" ).toggleClass( "service__angle-rotate" );
+  $( "div.block2-c" ).slideToggle("fast");
+   if ( $( "div.block2-a" ).is( ":visible" ) ) {
+    $( ".block2-a" ).slideUp();
+     $( ".ang-a" ).toggleClass( "ang-a_add-class" );
+  }
+   if ( $( "div.block2-b" ).is( ":visible" ) ) {
+    $( ".block2-b" ).slideUp();
+    $( ".ang-b" ).toggleClass( "service__angle-rotate" );
+  }
 });

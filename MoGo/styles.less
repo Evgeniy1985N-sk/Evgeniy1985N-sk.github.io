@@ -317,6 +317,7 @@ div, a {
 		top: 45%;
 		transform: translate(-50%, -50%);
 		color: white;
+		opacity: 0;
 	}
 	.gallery__span {
 		color: white;
@@ -464,6 +465,12 @@ div, a {
 		top: 50%;
 	}
 }
+.serv-height {
+	height: 360px;
+}
+.serv__img {
+	width: 100%;
+}
 .service__block1:hover {
 	cursor: pointer;
 }
@@ -492,26 +499,36 @@ div, a {
 	}
 }
 .service__angle {
-		border-radius: 2px;
-		width: 12px;
-		height: 12px;
-		border-right: 3px solid @colorGray2;
-		border-bottom: 3px solid @colorGray2;
-		margin: 0 auto;
-		-webkit-transform: rotate(45deg);
-		-ms-transform: rotate(45deg);
-		transform: rotate(45deg);
+	border-radius: 2px;
+	width: 12px;
+	height: 12px;
+	border-right: 3px solid @colorGray2;
+	border-bottom: 3px solid @colorGray2;
+	margin: 0 auto;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
 }
 .service__angle-rotate {
-		-webkit-transform: rotate(-135deg);
-		-ms-transform: rotate(-135deg);
-		transform: rotate(-135deg);
+	-webkit-transform: rotate(-135deg);
+	-ms-transform: rotate(-135deg);
+	transform: rotate(-135deg);
 }
+.ang-a {
+	-webkit-transform: rotate(-135deg);
+	-ms-transform: rotate(-135deg);
+	transform: rotate(-135deg);
+}
+.ang-a_add-class {
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
 .service__block2 {
 	padding: 5px 12px!important;
 	border: 1px solid @colorGray2;
 	border-top: none;
-	height: 209px;
 	user-select: none;
 	span {
 		text-align: justify;
