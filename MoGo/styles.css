@@ -293,6 +293,13 @@ a {
 .about .gallery2__pic1 {
   background-image: url(img/desc.jpg);
 }
+.about .gallery2__pic2 {
+  background-image: url(img/desc2.jpg);
+  background-position: center;
+}
+.about .gallery2__pic3 {
+  background-image: url(img/desc3.jpg);
+}
 .about .gallery2__bg1,
 .about .gallery2__bg2,
 .about .gallery2__bg3 {
@@ -310,6 +317,7 @@ a {
   transform: translate(-50%, -50%);
   color: white;
   opacity: 0;
+  transition-duration: .5s;
 }
 .about .gallery__span {
   color: white;
@@ -320,13 +328,7 @@ a {
   left: 50%;
   top: 55%;
   transform: translate(-50%, -50%);
-}
-.about .gallery2__pic2 {
-  background-image: url(img/desc2.jpg);
-  background-position: center;
-}
-.about .gallery2__pic3 {
-  background-image: url(img/desc3.jpg);
+  transition-duration: .5s;
 }
 .facts {
   width: 100%;
@@ -451,7 +453,10 @@ a {
   top: 50%;
 }
 .serv__img {
-  width: 100%;
+  background-image: url(img/photo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 397px;
 }
 .service__block1:hover {
   cursor: pointer;
@@ -511,6 +516,7 @@ a {
   border: 1px solid #d9d9d9;
   border-top: none;
   user-select: none;
+  height: 210px;
 }
 .service__block2 span {
   text-align: justify;

@@ -136,39 +136,39 @@ jQuery(document).ready(function(){
 
 $('.block-a').on('click', function(){
   $( ".ang-a" ).toggleClass( "ang-a_add-class" );
-  $( "div.block2-a" ).slideToggle("fast");
+  $( "div.block2-a" ).slideToggle("slow");
   if ( $( "div.block2-b" ).is( ":visible" ) ) {
-    $( ".block2-b" ).slideUp();
+    $( ".block2-b" ).slideUp('fast');
      $( ".ang-b" ).toggleClass( "service__angle-rotate" );
   }
    if ( $( "div.block2-c" ).is( ":visible" ) ) {
-    $( ".block2-c" ).slideUp();
+    $( ".block2-c" ).slideUp('fast');
      $( ".ang-c" ).toggleClass( "service__angle-rotate" );
   }
 });
 
 $('.block-b').on('click', function(){
   $( ".ang-b" ).toggleClass( "service__angle-rotate" );
-  $( "div.block2-b" ).slideToggle("fast");
+  $( "div.block2-b" ).slideToggle("slow");
    if ( $( "div.block2-a" ).is( ":visible" ) ) {
-    $( ".block2-a" ).slideUp();
+    $( ".block2-a" ).slideUp('fast');
      $( ".ang-a" ).toggleClass( "ang-a_add-class" );
   }
    if ( $( "div.block2-c" ).is( ":visible" ) ) {
-    $( ".block2-c" ).slideUp();
+    $( ".block2-c" ).slideUp('fast');
      $( ".ang-c" ).toggleClass( "service__angle-rotate" );
-
   }
 });
+
 $('.block-c').on('click', function(){
   $( ".ang-c" ).toggleClass( "service__angle-rotate" );
-  $( "div.block2-c" ).slideToggle("fast");
+  $( "div.block2-c" ).slideToggle("slow");
    if ( $( "div.block2-a" ).is( ":visible" ) ) {
-    $( ".block2-a" ).slideUp();
+    $( ".block2-a" ).slideUp('fast');
      $( ".ang-a" ).toggleClass( "ang-a_add-class" );
   }
    if ( $( "div.block2-b" ).is( ":visible" ) ) {
-    $( ".block2-b" ).slideUp();
+    $( ".block2-b" ).slideUp('fast');
     $( ".ang-b" ).toggleClass( "service__angle-rotate" );
   }
 });

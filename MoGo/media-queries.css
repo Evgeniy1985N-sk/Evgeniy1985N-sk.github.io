@@ -1,3 +1,8 @@
+@media screen and (max-width: 1254px) {
+	.service__block1 span {
+		margin-right: 0;
+	}
+}
 @media screen and (max-width: 1240px) {
 	.slick-dots {
 		bottom: -85px;
@@ -249,6 +254,11 @@
 	.future .future__img2 {
 		height: 261px;
 		max-width: 170px;
+	}
+}
+@media screen and (max-width: 767px) {
+	.block-a {
+		margin-top: 5px;
 	}
 }
 @media screen and (max-width: 710px) {
