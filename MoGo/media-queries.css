@@ -59,6 +59,9 @@
 	.facts .facts__item {
 		padding: 0 30.5px;
 	}
+	.quote .quote__wrapper {
+   		 margin: 20px 20px 20px 20px; 
+	}
 }
 @media screen and (max-width: 1199px) {
 	.service__line {
@@ -285,6 +288,18 @@
 @media screen and (max-width: 599px) {
 	.slick-dots li {
 		margin-right: 7.9%;
+	}
+}
+@media screen and (max-width: 583px) {
+	.quote .quote__wrapper {
+		flex-direction: column;
+	}
+	.quote .quote__wrapper {
+    	flex-direction: column;
+   		 margin: 20px 0; 
+	}
+	.quote .rectangle {
+	     margin-right:  0; 
 	}
 }
 @media screen and (max-width: 575px) {

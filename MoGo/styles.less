@@ -1,4 +1,7 @@
 @font: 'Montserrat', sans-serif;
+@fontRoboto: Roboto;
+@fontRobotoRegular: Roboto-regular;
+@fontCursive: 'Kaushan Script', cursive;
 @colorYellow: #fce38a;
 @colorRed: #f38181;
 @colorRed2: #ea6361;
@@ -6,7 +9,14 @@
 @colorBlue: #95e1d3;
 @colorGray: #999999;
 @colorGray2: #d9d9d9;
-
+@font-face {
+    font-family: Roboto;
+    src: url(fonts/Roboto-LightItalic.ttf);
+   }
+@font-face {
+    font-family: Roboto-regular;
+    src: url(fonts/Roboto-Regular.ttf);
+   }
 
 html {
 	height: 100%;
@@ -51,6 +61,7 @@ div, a {
 	font-size: 15px;
 	margin-top: 45px;
 	margin-bottom: 90px;
+	font-family: @fontRobotoRegular;
 }
 //------------------------- HEADER ------------------------- 
 
@@ -266,6 +277,7 @@ div, a {
 		margin: 0 auto;
 		margin-top: 45px;
 		text-align: center;
+		font-family: @fontRobotoRegular;
 	}
 	.about__wrapper {
 		position: relative;
@@ -545,4 +557,46 @@ div, a {
 }
 .block2-b, .block2-c {
 	display: none;
+}
+/*====== our team ======*/
+.quote {
+	width: 100%;
+	background: @colorGray2;
+	margin-top: 115px;
+	.quote__wrapper {
+		display: flex;
+		margin: 60px 0 60px 100px;
+	}
+	.rectangle {
+		border: 3px solid @colorBlue;
+		padding: 40px 40px 40px 40px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-right: 50px;
+	}
+}
+.quote__text {
+	.quote__flex {
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-end;
+	}
+	.text-top {
+		font-size: 24px;
+		color: @colorGray;
+		font-family: @fontRoboto;
+	}
+	.red__line {
+		margin: 0;
+		margin-right: 10px;
+		margin-bottom: 15px;
+	}
+	.jon {
+		color: black;
+		font-weight: bold;
+		font-family: @fontCursive;
+		font-size: 24px;
+		margin-top: 14px;
+	}	
 }
