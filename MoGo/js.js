@@ -172,3 +172,10 @@ $('.block-c').on('click', function(){
     $( ".ang-b" ).toggleClass( "service__angle-rotate" );
   }
 });
+
+// ----------------------------------------
+
+$('.single-item').slick({
+  prevArrow: $('.prev'),
+  nextArrow: $('.next')
+});

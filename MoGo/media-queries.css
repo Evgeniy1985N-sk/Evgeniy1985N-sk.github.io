@@ -81,6 +81,25 @@
 		margin-right: 8.5%;
 	}
 }
+@media screen and (max-width: 1026px) {
+	.quote__text .text-top, .quote__text .jon {
+		font-size: 16px;
+	}
+	.quote .rectangle {
+		margin-right: 20px;
+		padding: 25px;
+	}
+	.quote__text .quote__flex {
+		margin-top: 0;
+	}
+	.quote .rectangle {
+		padding: 20px;
+	}
+	.quote .rectangle img {
+		width: 33px;
+		height: 33px;
+	}
+}
 @media screen and (max-width: 996px) {
 	.slick-dots li {
 		margin-right: 8.4%;
@@ -285,21 +304,20 @@
 		left: 74%;
 	}
 }
+@media screen and (max-width: 624px) {
+	.quote .rectangle {
+		padding: 15px;
+	}
+	.quote .rectangle img {
+		width: 30px;
+		height: 30px;
+	}
+	.quote__text .text-top, .quote__text .jon {
+		font-size: 14px;
+	}
 @media screen and (max-width: 599px) {
 	.slick-dots li {
 		margin-right: 7.9%;
-	}
-}
-@media screen and (max-width: 583px) {
-	.quote .quote__wrapper {
-		flex-direction: column;
-	}
-	.quote .quote__wrapper {
-    	flex-direction: column;
-   		 margin: 20px 0; 
-	}
-	.quote .rectangle {
-	     margin-right:  0; 
 	}
 }
 @media screen and (max-width: 575px) {

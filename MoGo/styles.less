@@ -110,7 +110,7 @@ div, a {
 .top-menu a:hover,
 .top-menu a.active {
     color: @colorYellow;
-    border-bottom: 4px solid @colorYellow;
+    border-bottom: 2px solid @colorYellow;
 }
 .li-fi:hover {
 	cursor: pointer;
@@ -558,18 +558,18 @@ div, a {
 .block2-b, .block2-c {
 	display: none;
 }
-/*====== our team ======*/
+/*====== quote ======*/
 .quote {
 	width: 100%;
-	background: @colorGray2;
-	margin-top: 115px;
+	background: #f8f8f8;
+	margin-top: 105px;
 	.quote__wrapper {
 		display: flex;
-		margin: 60px 0 60px 100px;
+		margin: 45px 0 45px 80px;
 	}
 	.rectangle {
-		border: 3px solid @colorBlue;
-		padding: 40px 40px 40px 40px;
+		border: 2px solid @colorBlue;
+		padding: 35px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -577,13 +577,15 @@ div, a {
 	}
 }
 .quote__text {
+	width: 850px;
 	.quote__flex {
 		display: flex;
 		justify-content: flex-start;
 		align-items: flex-end;
+		margin-top: 30px;
 	}
 	.text-top {
-		font-size: 24px;
+		font-size: 20px;
 		color: @colorGray;
 		font-family: @fontRoboto;
 	}
@@ -593,10 +595,46 @@ div, a {
 		margin-bottom: 15px;
 	}
 	.jon {
-		color: black;
-		font-weight: bold;
+		color: @colorGray;
 		font-family: @fontCursive;
-		font-size: 24px;
+		font-size: 20px;
 		margin-top: 14px;
 	}	
+}
+.rec__flex {
+	display: flex;
+	align-items: center;
+}
+.prev {
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	top: 50%;
+	left: 15px;
+	margin-top: -10px;
+	background: transparent;
+	border-left: 2px solid @colorGray2;
+	border-bottom: 2px solid @colorGray2;
+	border-top: none;
+	border-right: none;
+	border-radius: 2px;
+	z-index: 4;
+	cursor: pointer;
+	transform: rotate(45deg);
+}
+.next {
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	top: 50%;
+	right: 15px;
+	margin-top: -10px;
+	background: transparent;
+	z-index: 4;
+	cursor: pointer;
+	border-right: 2px solid @colorGray2;
+	border-top: 2px solid @colorGray2;
+	border-bottom: none;
+	border-left: none;
+	transform: rotate(45deg);
 }
