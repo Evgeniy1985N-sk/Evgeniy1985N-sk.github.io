@@ -48,19 +48,25 @@
 		height: 221px;
 		max-width: 30vw;
 	}
-	.about .gallery3 {
-		justify-content: space-around;
-		top: -442px;
-	}
-	.gallery3 .gallery3__pic1, .gallery3 .gallery3__pic2, .gallery3 .gallery3__pic3 {
-		height: 221px;
-		max-width: 30vw;
-	}
 	.facts .facts__item {
 		padding: 0 30.5px;
 	}
 	.quote .quote__wrapper {
    		 margin: 20px 20px 20px 20px; 
+	}
+
+	/*---------------our team---------------*/
+	.gallery .gallery__i1, .gallery .gallery__i2, .gallery .gallery__i3 {
+		height: 350px;
+		max-width: 30vw;
+	}
+	.gallery2 .gal2__pic1, .gallery2 .gal2__pic2, .gallery2 .gal2__pic3 {
+		height: 350px;
+		max-width: 30vw;
+	}
+	.gallery-wrapper .item-flex {
+    width: 100%;
+    max-width: 30vw;
 	}
 }
 @media screen and (max-width: 1199px) {
@@ -99,6 +105,12 @@
 		width: 33px;
 		height: 33px;
 	}
+	.quote__text .red__line {
+		margin-bottom: 10px;
+		width: 30px;
+	}
+	.quote__text .jon {
+		margin-top: 0;
 }
 @media screen and (max-width: 996px) {
 	.slick-dots li {
@@ -112,6 +124,13 @@
 	.slick-dots li {
 		margin-right: 8.3%;
 	}
+	.gallery-wrapper .bg1-flex div {
+		padding: 10px;
+		width: 44px;
+	}
+	.gallery-wrapper .bg1-flex i {
+			font-size: 20px;
+		}	
 }
 @media screen and (max-width: 835px) {
 	.facts {
@@ -260,12 +279,6 @@
 		margin-bottom: 15px;
 		position: relative;
 	}
-	.gallery3 .gallery3__pic1, .gallery3 .gallery3__pic2, .gallery3 .gallery3__pic3 {
-		height: 251px;
-		max-width: 382px;
-		margin-bottom: 15px;
-		position: relative;
-	}
 	.future .future__img {
 		height: 363px;
 		max-width: 280px;
@@ -276,6 +289,33 @@
 	.future .future__img2 {
 		height: 261px;
 		max-width: 170px;
+	}
+	/*---------------our team---------------*/
+	.our_team .gallery {
+		flex-direction: column;
+		align-items: center;
+	}
+	.gallery .gallery__i1, .gallery .gallery__i2, .gallery .gallery__i3 {
+		height: 401px;
+		max-width: 384px;
+	}
+	.gallery-wrapper .gallery2 {
+		flex-direction: column;
+		align-items: center;
+	}
+	.gallery2 .gal2__pic1, .gallery2 .gal2__pic2, .gallery2 .gal2__pic3 {
+		height: 401px;
+		max-width: 384px;
+		margin-bottom: 65px;
+		position: relative;
+	}
+	.gallery-wrapper .item-flex {
+  	 	height: 401px;
+		max-width: 384px;
+		margin-bottom: 65px;
+	}
+	.gallery-wrapper .text-name {
+		margin-top: 7px;
 	}
 }
 @media screen and (max-width: 767px) {
@@ -405,6 +445,23 @@
 		max-width: 150px;
 	}
 }
+@media screen and (max-width: 425px) {
+	.gallery .gallery__i1, .gallery .gallery__i2, .gallery .gallery__i3 {
+		height: 401px;
+		max-width: 94vw;
+	}
+	.gallery2 .gal2__pic1, .gallery2 .gal2__pic2, .gallery2 .gal2__pic3 {
+		height: 401px;
+		max-width: 94vw;
+		margin-bottom: 65px;
+		position: relative;
+	}
+	.gallery-wrapper .item-flex {
+  	 	height: 401px;
+		max-width: 94vw;
+		margin-bottom: 65px;
+	}
+}
 @media screen and (max-width: 415px) {
 	.slick-dots li {
 		margin-right: 7.2%;
@@ -425,6 +482,14 @@
 	.home .container-fluid .header__p {
 		padding-top: 40px;
 	}
+	.brand .image {
+ 		width: 100px;
+ 		height: 100px;
+ 	}
+ 	.brand .image img {
+		width: 100px;
+ 		height: 100px;	
+ 	}
 }
 @media screen and (max-width: 348px) {
 	.slick-dots li {
@@ -439,9 +504,6 @@
 	/*---------------IE---------------*/
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
    /* IE10+ specific styles go here */ 
-    .service .service__flex {
-		/*display: block;*/
-	}
 	.service .service__flex-img {
 		display: block;
 		height: 34px;

@@ -3,6 +3,7 @@ $(".gallery2__pic1").mouseover(function () {
   $(".gallery2__bg1").css('opacity', '.9');
   $('.gal__img1').css('opacity', '.9');
 });
+
 $(".gallery2__bg1").mouseout(function () {
   $(".gallery2__pic1").css('top','0').css('left','0');
   $(this).css('opacity','0');
@@ -178,4 +179,83 @@ $('.block-c').on('click', function(){
 $('.single-item').slick({
   prevArrow: $('.prev'),
   nextArrow: $('.next')
+});
+
+// ---------------1-block-------------------------
+
+$(".gal2__pic1").mouseover(function () {
+  $(this).css('top','-9px').css('left','-9px');
+  $(".gal2__bg1").css('opacity', '.9');
+  $('.gal__img').css('opacity', '.9');
+});
+
+$(".gal2__bg1").mouseout(function () {
+  $(".gal2__pic1").css('top','0').css('left','0');
+  $(this).css('opacity','0');
+  $('.gal__img').css('opacity','0');
+});
+
+$(".fk").mouseover(function () {
+  $(this).css('background','#f38181');
+  $(".fa-facebook-f").css('color','#fff');
+});
+
+$(".fk").mouseout(function () {
+  $(this).css('background','#fce38a');
+  $(".fa-facebook-f").css('color','#f38181');
+});
+
+$(".twi").mouseover(function () {
+  $(this).css('background','#f38181');
+  $(".fa-twitter").css('color','#fff');
+});
+
+$(".twi").mouseout(function () {
+  $(this).css('background','#fce38a');
+  $(".fa-twitter").css('color','#f38181');
+});
+
+$(".pin").mouseover(function () {
+  $(this).css('background','#f38181');
+  $(".fa-pinterest-p").css('color','#fff');
+});
+
+$(".pin").mouseout(function () {
+  $(this).css('background','#fce38a');
+  $(".fa-pinterest-p").css('color','#f38181');
+});
+
+$(".ins").mouseover(function () {
+  $(this).css('background','#f38181');
+  $(".fa-instagram").css('color','#fff');
+});
+
+$(".ins").mouseout(function () {
+  $(this).css('background','#fce38a');
+  $(".fa-instagram").css('color','#f38181');
+});
+
+// ---------------2-block-------------------------
+$(".gal2__pic2").mouseover(function () {
+  $(this).css('top','-9px').css('left','-9px');
+  $(".gal2__bg2").css('opacity', '.9');
+  $('.gal__img').css('opacity', '.9');
+});
+
+$(".gal2__bg2").mouseout(function () {
+  $(".gal2__pic2").css('top','0').css('left','0');
+  $(this).css('opacity','0');
+  $('.gal__img').css('opacity','0');
+});
+// ---------------3-block-------------------------
+$(".gal2__pic3").mouseover(function () {
+  $(this).css('top','-9px').css('left','-9px');
+  $(".gal2__bg3").css('opacity', '.9');
+  $('.gal__img').css('opacity', '.9');
+});
+
+$(".gal2__bg3").mouseout(function () {
+  $(".gal2__pic3").css('top','0').css('left','0');
+  $(this).css('opacity','0');
+  $('.gal__img').css('opacity','0');
 });

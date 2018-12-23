@@ -579,6 +579,8 @@ a {
   margin: 0;
   margin-right: 10px;
   margin-bottom: 15px;
+  height: 2px;
+  width: 40px;
 }
 .quote__text .jon {
   color: #999999;
@@ -598,8 +600,8 @@ a {
   left: 15px;
   margin-top: -10px;
   background: transparent;
-  border-left: 2px solid #d9d9d9;
-  border-bottom: 2px solid #d9d9d9;
+  border-left: 3px solid #d9d9d9;
+  border-bottom: 3px solid #d9d9d9;
   border-top: none;
   border-right: none;
   border-radius: 2px;
@@ -617,9 +619,137 @@ a {
   background: transparent;
   z-index: 4;
   cursor: pointer;
-  border-right: 2px solid #d9d9d9;
-  border-top: 2px solid #d9d9d9;
+  border-right: 3px solid #d9d9d9;
+  border-top: 3px solid #d9d9d9;
   border-bottom: none;
   border-left: none;
   transform: rotate(45deg);
+}
+/*====== our team ======*/
+.our_team {
+  max-width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.gallery-wrapper {
+  position: relative;
+}
+.gallery-wrapper .gallery {
+  display: flex;
+  justify-content: space-between;
+}
+.gallery-wrapper .gallery__i1,
+.gallery-wrapper .gallery__i2,
+.gallery-wrapper .gallery__i3 {
+  width: 100%;
+  background: #95e1d3;
+  height: 445px;
+  max-width: 380px;
+}
+.gallery-wrapper .item-flex {
+  width: 100%;
+  max-width: 380px;
+}
+.gallery-wrapper .gallery2 {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  top: 0;
+}
+.gallery-wrapper .gal2__pic1,
+.gallery-wrapper .gal2__pic2,
+.gallery-wrapper .gal2__pic3 {
+  background-size: cover;
+  height: 445px;
+  max-width: 380px;
+  width: 100%;
+  transition-duration: .5s;
+  cursor: pointer;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.gallery-wrapper .gal2__pic1 {
+  background-image: url(img/img-1.jpg);
+}
+.gallery-wrapper .gal2__pic2 {
+  background-image: url(img/img-2.jpg);
+  background-position: center;
+}
+.gallery-wrapper .gal2__pic3 {
+  background-image: url(img/img-3.jpg);
+}
+.gallery-wrapper .gal2__bg1,
+.gallery-wrapper .gal2__bg2,
+.gallery-wrapper .gal2__bg3 {
+  background: linear-gradient(to bottom, rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9));
+  background-image: linear-gradient(rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9));
+  height: inherit;
+  width: 100%;
+  transition-duration: .5s;
+  opacity: 0;
+}
+.gallery-wrapper .bg1-flex {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  background: #fce38a;
+}
+.gallery-wrapper .bg1-flex div {
+  border-right: 1px solid #f38181;
+  padding: 20px;
+  width: 64px;
+  display: flex;
+  justify-content: center;
+  transition-duration: .5s;
+}
+.gallery-wrapper .bg1-flex div:last-child {
+  border-right: none;
+}
+.gallery-wrapper .bg1-flex i {
+  color: #f38181;
+  font-size: 26px;
+  text-align: center;
+}
+.gallery-wrapper .text-name {
+  margin-top: 25px;
+  font-size: 14px;
+  text-align: center;
+}
+.gallery-wrapper .work {
+  font-size: 13px;
+  text-align: center;
+  color: #999999;
+  font-family: Roboto;
+}
+/*====== brand ======*/
+.brand {
+  width: 100%;
+  background: #f8f8f8;
+  margin-top: 105px;
+}
+.brand .container-fluid {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.brand .image {
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+}
+.brand .image img {
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+}
+.brand .image img:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  cursor: pointer;
 }
