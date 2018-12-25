@@ -259,3 +259,41 @@ $(".gal2__bg3").mouseout(function () {
   $(this).css('opacity','0');
   $('.gal__img').css('opacity','0');
 });
+
+// ----------------------------------------
+
+$(".col1__img1").mouseover(function () {
+  $(".fa-chess-king").css('opacity', '.9');
+  $('.col1-txt1').css('opacity', '.9');
+  $('.col1-txt2').css('opacity', '.9');
+});
+
+$(".col1__img1").mouseout(function () {
+  $(".fa-chess-king").css('opacity', '0');
+  $('.col1-txt1').css('opacity', '0');
+  $('.col1-txt2').css('opacity', '0');
+});
+
+$(".col1__img2").mouseover(function () {
+  $(".fa-gamepad").css('opacity', '.9');
+  $('.col1-txt1').css('opacity', '.9');
+  $('.col1-txt2').css('opacity', '.9');
+});
+
+$(".col1__img2").mouseout(function () {
+  $(".fa-gamepad").css('opacity', '0');
+  $('.col2-txt1').css('opacity', '0');
+  $('.col2-txt2').css('opacity', '0');
+});
+
+$(".col1__img2").mouseover(function () {
+  $(".fa-gamepad").css('opacity', '.9');
+  $('.col2-txt1').css('opacity', '.9');
+  $('.col2-txt2').css('opacity', '.9');
+});
+
+$(".col1__img2").mouseout(function () {
+  $(".fa-gamepad").css('opacity', '0');
+  $('.col2-txt1').css('opacity', '0');
+  $('.col2-txt2').css('opacity', '0');
+});

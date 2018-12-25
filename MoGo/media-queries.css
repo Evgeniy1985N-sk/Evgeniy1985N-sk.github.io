@@ -111,6 +111,7 @@
 	}
 	.quote__text .jon {
 		margin-top: 0;
+	}
 }
 @media screen and (max-width: 996px) {
 	.slick-dots li {
@@ -393,6 +394,21 @@
 	.future .rel__img2 {
 		left: 78%;
 	}
+	.work .rel__wrapper i {
+		font-size: 16px;
+		top: 32%;
+	}
+	.work .rel__wrapper .rel__text {
+		font-size: 14px;
+	}
+	.work .rel__wrapper .rel__text2 {
+		font-size: 12px;
+		top: 63%;
+	}
+	.work .rel__wrapper .col3 .rel__text2 {
+		top: 58%;
+	}
+
 }
 @media screen and (max-width: 499px) {
 	.slick-dots li:nth-child(n):after {
@@ -490,6 +506,20 @@
 		width: 100px;
  		height: 100px;	
  	}
+ 	.work .rel__wrapper i {
+		font-size: 16px;
+		top: 32%;
+	}
+	.work .rel__wrapper .rel__text {
+		font-size: 12px;
+	}
+	.work .rel__wrapper .rel__text2 {
+		font-size: 12px;
+		top: 63%;
+	}
+	.work .rel__wrapper .col3 .rel__text2 {
+		top: 58%;
+	}
 }
 @media screen and (max-width: 348px) {
 	.slick-dots li {
