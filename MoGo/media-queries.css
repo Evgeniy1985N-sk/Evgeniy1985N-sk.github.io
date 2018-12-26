@@ -131,7 +131,7 @@
 	}
 	.gallery-wrapper .bg1-flex i {
 			font-size: 20px;
-		}	
+	}	
 }
 @media screen and (max-width: 835px) {
 	.facts {
@@ -356,6 +356,7 @@
 	.quote__text .text-top, .quote__text .jon {
 		font-size: 14px;
 	}
+}
 @media screen and (max-width: 599px) {
 	.slick-dots li {
 		margin-right: 7.9%;

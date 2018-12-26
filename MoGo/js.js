@@ -276,24 +276,72 @@ $(".col1__img1").mouseout(function () {
 
 $(".col1__img2").mouseover(function () {
   $(".fa-gamepad").css('opacity', '.9');
-  $('.col1-txt1').css('opacity', '.9');
-  $('.col1-txt2').css('opacity', '.9');
+  $('.col1-txt1a').css('opacity', '.9');
+  $('.col1-txt2b').css('opacity', '.9');
 });
 
 $(".col1__img2").mouseout(function () {
   $(".fa-gamepad").css('opacity', '0');
-  $('.col2-txt1').css('opacity', '0');
-  $('.col2-txt2').css('opacity', '0');
+  $('.col1-txt1a').css('opacity', '0');
+  $('.col1-txt2b').css('opacity', '0');
 });
-
-$(".col1__img2").mouseover(function () {
-  $(".fa-gamepad").css('opacity', '.9');
+// ---------------col2-------------------------
+$(".col2__img1").mouseover(function () {
+  $(".fa-cube").css('opacity', '.9');
   $('.col2-txt1').css('opacity', '.9');
   $('.col2-txt2').css('opacity', '.9');
 });
 
-$(".col1__img2").mouseout(function () {
-  $(".fa-gamepad").css('opacity', '0');
+$(".col2__img1").mouseout(function () {
+  $(".fa-cube").css('opacity', '0');
   $('.col2-txt1').css('opacity', '0');
   $('.col2-txt2').css('opacity', '0');
+});
+
+$(".col2__img2").mouseover(function () {
+  $(".fa-shoe-prints").css('opacity', '.9');
+  $('.col2-txt1a').css('opacity', '.9');
+  $('.col2-txt2b').css('opacity', '.9');
+});
+
+$(".col2__img2").mouseout(function () {
+  $(".fa-shoe-prints").css('opacity', '0');
+  $('.col2-txt1a').css('opacity', '0');
+  $('.col2-txt2b').css('opacity', '0');
+});
+// ---------------col3-------------------------
+$(".col3__img").mouseover(function () {
+  $(".fa-desktop").css('opacity', '.9');
+  $('.col3-txt1').css('opacity', '.9');
+  $('.col3-txt2').css('opacity', '.9');
+});
+
+$(".col3__img").mouseout(function () {
+  $(".fa-desktop").css('opacity', '0');
+  $('.col3-txt1').css('opacity', '0');
+  $('.col3-txt2').css('opacity', '0');
+});
+// ---------------col4-------------------------
+$(".col4__img1").mouseover(function () {
+  $(".fa-pagelines").css('opacity', '.9');
+  $('.col4-txt1').css('opacity', '.9');
+  $('.col4-txt2').css('opacity', '.9');
+});
+
+$(".col4__img1").mouseout(function () {
+  $(".fa-pagelines").css('opacity', '0');
+  $('.col4-txt1').css('opacity', '0');
+  $('.col4-txt2').css('opacity', '0');
+});
+
+$(".col4__img2").mouseover(function () {
+  $(".fa-guitar").css('opacity', '.9');
+  $('.col4-txt1a').css('opacity', '.9');
+  $('.col4-txt2b').css('opacity', '.9');
+});
+
+$(".col4__img2").mouseout(function () {
+  $(".fa-guitar").css('opacity', '0');
+  $('.col4-txt1a').css('opacity', '0');
+  $('.col4-txt2b').css('opacity', '0');
 });
