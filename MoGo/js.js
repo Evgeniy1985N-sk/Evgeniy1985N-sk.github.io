@@ -345,3 +345,8 @@ $(".col4__img2").mouseout(function () {
   $('.col4-txt1a').css('opacity', '0');
   $('.col4-txt2b').css('opacity', '0');
 });
+
+$('.single-item2').slick({
+  prevArrow: $('.prev2'),
+  nextArrow: $('.next2')
+});
