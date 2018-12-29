@@ -2,6 +2,9 @@
 	.service__block1 span {
 		margin-right: 0;
 	}
+	.contacts .text-inst {
+		text-align: right;
+	}
 }
 @media screen and (max-width: 1240px) {
 	.slick-dots {
@@ -103,6 +106,12 @@
     	height: 100px;
     }
 }
+@media screen and (max-width: 1162px) {
+	.contacts input {
+		padding-right: 20px;
+
+	}
+}
 @media screen and (max-width: 1152px) {
 	.slick-dots li {
 		margin-right: 8.5%;
@@ -150,6 +159,15 @@
 	}
 	.future .rel__img2 {
 		left: 70%;
+	}
+}
+@media screen and (max-width: 991px) {
+	.contacts .blogs__inst {
+    	text-align: left;
+	}
+	.contacts .text-inst {
+    	text-align: left;
+    	padding-left: 0;
 	}
 }
 @media screen and (max-width: 877px) {
@@ -360,6 +378,25 @@
 	.block-a {
 		margin-top: 5px;
 	}
+	.blog .content img {
+		width: 60%;
+	}
+	.wrapper-flex {
+		text-align: center;
+	}
+	.blog .date {
+		left: 22%;
+	}
+	.blog .flex-container {
+		justify-content: center;
+		margin-bottom: 30px;
+	}
+	.blog .line-separator {
+		margin: 15px 0;
+	}
+	.contacts .blogs__flex:before {
+		margin-top: 20px;
+	}
 }
 @media screen and (max-width: 710px) {
 	.slick-dots li {
@@ -515,6 +552,13 @@
 		max-width: 94vw;
 		margin-bottom: 65px;
 	}
+	.blog .content img {
+		width: 100%;
+	}
+	.blog .date {
+		left: 5%;
+		top: 81%;
+	}
 }
 @media screen and (max-width: 415px) {
 	.slick-dots li {
@@ -557,6 +601,15 @@
 	}
 	.work .rel__wrapper .col3 .rel__text2 {
 		top: 58%;
+	}
+	.contacts form {
+		display: none;
+	}
+	.contacts .blogs__flex {
+    	width: 200px;
+	}
+	.blogs__title2 span {
+		display: none;
 	}
 }
 @media screen and (max-width: 348px) {

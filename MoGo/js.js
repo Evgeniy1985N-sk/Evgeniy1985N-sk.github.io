@@ -350,3 +350,39 @@ $('.single-item2').slick({
   prevArrow: $('.prev2'),
   nextArrow: $('.next2')
 });
+
+// ---------------map-------------------------
+
+ymaps.ready(init);
+
+
+function init() {
+
+  var map = new ymaps.Map('map', {
+  center: [51.50733,-0.197798,12],
+  zoom: 11,
+  controls: ['zoomControl'],
+  behaviors: ['drag']
+
+});
+
+var placemark = new ymaps.Placemark([51.50733,-0.197798,12], {
+
+}, {
+
+  iconLayout: 'default#image',
+  iconImageHref: 'img/pin.png'
+
+  });
+
+    map.geoObjects.add(placemark);
+
+}
+
+$('.open-close-map').on('click', function() {
+  $('.wrapper__map').toggleClass('open-map');
+  if($('.wrapper__map').is(':visible')) {
+    $('.contacts__text').html('close map');
+  }
+  else $('.contacts__text').html('open map');
+});
