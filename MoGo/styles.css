@@ -1304,7 +1304,7 @@ a {
 }
 .contacts button {
   background: #95e1d3;
-  padding: 11.5px 14px;
+  padding: 12px 14px 11px 14px;
   text-transform: uppercase;
   color: white;
   font-size: 14px;
@@ -1382,7 +1382,7 @@ a {
   text-align: right;
 }
 .contacts .blogs__inst img {
-  margin-bottom: 2px;
+  margin-bottom: 4px;
 }
 .contacts .blogs__inst div a {
   color: #999999;
