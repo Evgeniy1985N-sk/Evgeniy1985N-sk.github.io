@@ -614,8 +614,8 @@ h4 {
 	height: 300px;
 }
 .sl .sec4__guit {
-	background-image: url(img/guit-min.jpg);
-	background-size: cover;
+	background-image: url(img/mogo-min.png);
+	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center top;
 	width: 100%;
