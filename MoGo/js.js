@@ -51,7 +51,7 @@ $(document).on("scroll", classMenu);
 function deleteClassActive() {
     $('.a-home').removeClass('active');
     $('.a-about').removeClass('active');
-    $('.a-products').removeClass('active');
+    $('.a-service').removeClass('active');
     $('.a-work').removeClass('active');
     $('.a-blog').removeClass('active');
     $('.a-contact').removeClass('active');
