@@ -1,0 +1,194 @@
+@media screen and (max-width: 1013px) {
+    .about-details .flex-block {
+        margin-bottom: 20px;
+    }
+    .team .block-content {
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 991px) {
+    .services .flex-block {
+        margin-left: 0;
+    }
+    .services .flex-content2 {
+        max-width: initial;
+        margin-left: 15px;
+    }
+    .services .flex-block2 {
+        justify-content: space-around;
+    }
+    .block_tv {
+        display: flex;
+        justify-content: center;
+    }
+    .team .team-img {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    .team .block-content {
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 911px) {
+    .about .block, .about .img {
+        margin-left: 0;
+    } 
+}
+@media screen and (max-width: 812px) {
+    .team .testim .testim-img {
+        margin-left: 15px;
+    }
+    .team .testim .testim-text2 {
+        margin-left: 15px;
+    }
+    .team .testim .testim-text2 span:nth-child(1) {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 809px) {
+    .nav .flex-block {
+        margin-top: 0;
+        height: 45px;
+    }
+    .nav .logo {
+        font-size: 18px;
+    }
+    .nav .header__ul li {
+        margin: 0 auto;
+    }
+    .hidden-menu {
+        position: absolute;
+        width: 100%;
+        list-style:none;
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 15px;
+        box-sizing: border-box;
+        background: rgba(46,46,46,.9);
+        top: -395px;
+        left: 0;
+        transition: top .5s;
+        z-index: 5;
+        display: block;
+    }
+    .nav .btn-menu {
+        position: absolute;
+        display: block;
+        border-radius: 3px;
+        padding: 10px;
+        right: 5px;
+        cursor: pointer;
+        width: 42px;
+        top: 5px;
+        background: #737373;
+    }
+    .btn-menu span {
+        display: block;
+        height: 2px;
+        background: white;
+        margin: 4px 0 0;
+        transition: all .1s linear .23s;
+        position: relative;
+        border-radius: 5px;
+    }
+    .btn-menu span.first {
+        margin-top: 0;
+    }
+    .hidden-menu li {
+        text-align: center;
+        display: block;
+    }
+    .nav .hidden-menu li a {
+        list-style: none;
+        display: block;
+        margin: 0;
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        transition: all .2s;
+        font-size: 16px;
+        text-transform: uppercase;
+        padding: 3px 17px;
+        margin-bottom: 2px;
+    }
+    .nav .hidden-menu li a:hover {
+        border-radius: 60px;
+    }
+    .active {
+        border-radius: 60px!important;
+    }
+}
+@media screen and (max-width: 767px) {
+    
+    .fold-footer .text {
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+}
+@media screen and (max-width: 613px) {
+    .team .testim .testim-slide {
+        height: 355px;
+    }
+    .team .testim .testim-img {
+        padding-top: 15px;
+    }
+    .team .testim .testim-text2 {
+        margin-top: 15px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .home h2 {
+        margin-top: 80px;
+    }
+    .home .text {
+        margin-bottom: 80px;
+    }
+    .about .block, .about .img {
+        margin-top: 55px;
+    }
+    .about .btn {
+        margin-bottom: 15px;
+    }
+}
+@media screen and (max-width: 575px) {
+    .about-details .flex-block {
+        margin-bottom: 40px;
+    }
+    .about-details .block-text1 {
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 514px) {
+    .featured-projects .works {
+        flex-direction: column;
+    }
+    .featured-projects .a-fancy1 {
+        width: 100%;
+    }
+    .featured-projects .bg-rgba {
+        opacity: 0;
+    }
+}
+@media screen and (max-width: 488px) {
+    .services .flex-block2 {
+        flex-direction: column;
+    }
+    .services .p1, .services .p2 {
+        margin-bottom: 35px;
+    }
+}
+@media screen and (max-width: 450px) {
+     .team .testim .testim-slide {
+        height: 455px;
+    }
+    .team .testim .testim-flex {
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 357px) {
+     .team .testim .testim-slide {
+        height: 495px;
+    }
+}

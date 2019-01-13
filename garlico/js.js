@@ -31,9 +31,8 @@ $(document).ready(function() {
       });
       return false;
    });
- 
- 
 });
+
  // ------------slider--------------
 
 var ulSelect = document.getElementById('ul-s');
