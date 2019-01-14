@@ -130,3 +130,58 @@ $('.single-item2').slick({
   prevArrow: $('.prev'),
   nextArrow: $('.next')
 });
+
+// ----------------------------------------
+
+$('.single-item3').slick({
+  dots: true,
+  prevArrow: $('.prev'),
+  nextArrow: $('.next')
+});
+
+// ----------------------------------------
+
+$('.pr-b1').mouseover(function() {
+  $('.block-prem1').css('top', '236px');
+  $('.block-prem_span1').css('opacity', '0');
+  $('.prem-hover1').css('opacity', '1');
+  $('.text-hover1').css('opacity', '1');
+  $('.block-hover1').css('opacity', '0').css('transition', '0s');
+});
+$('.pr-b1').mouseout(function() {
+  $('.block-prem1').css('top', '0');
+  $('.block-prem_span1').css('opacity', '1');
+  $('.prem-hover1').css('opacity', '0');
+  $('.text-hover1').css('opacity', '0');
+  $('.block-hover1').css('opacity', '1').css('transition', '2s');
+});
+
+$('.pr-b2').mouseover(function() {
+  $('.block-prem2').css('top', '236px');
+  $('.block-prem_span2').css('opacity', '0');
+  $('.prem-hover2').css('opacity', '1');
+  $('.text-hover2').css('opacity', '1');
+  $('.block-hover2').css('opacity', '0').css('transition', '0s');;
+});
+$('.pr-b2').mouseout(function() {
+  $('.block-prem2').css('top', '0');
+  $('.block-prem_span2').css('opacity', '1');
+  $('.prem-hover2').css('opacity', '0');
+  $('.text-hover2').css('opacity', '0');
+  $('.block-hover2').css('opacity', '1').css('transition', '2s');;
+});
+
+$('.pr-b3').mouseover(function() {
+  $('.block-prem3').css('top', '236px');
+  $('.block-prem_span3').css('opacity', '0');
+  $('.prem-hover3').css('opacity', '1');
+  $('.text-hover3').css('opacity', '1');
+  $('.block-hover3').css('opacity', '0').css('transition', '0s');;
+});
+$('.pr-b3').mouseout(function() {
+  $('.block-prem3').css('top', '0');
+  $('.block-prem_span3').css('opacity', '1');
+  $('.prem-hover3').css('opacity', '0');
+  $('.text-hover3').css('opacity', '0');
+  $('.block-hover3').css('opacity', '1').css('transition', '2s');;
+});

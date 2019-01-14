@@ -1,0 +1,32 @@
+@font-face {
+  font-family: OpenSans-Regular;
+  src: url(fonts/OpenSans-Regular.ttf);
+}
+.container-fluid {
+	max-width: 1200px;
+}
+.slide {
+	width: 100%;
+	background-color: #c4cdd6;
+}
+.slide .demonstration {
+	height: 675px;
+	width: 100%;
+	background-color: #c4cdd6;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+}
+.slide .button {
+	height: 44px;
+	width: 248px;
+	background: #ff891e;
+	color: white;
+	text-transform: uppercase;
+	font-family: OpenSans-Regular;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}

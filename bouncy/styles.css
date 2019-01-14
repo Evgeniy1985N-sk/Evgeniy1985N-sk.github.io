@@ -1098,3 +1098,327 @@ a {
   text-transform: uppercase;
   font-size: 14px;
 }
+.blog .blog-bg {
+  background-image: url(img/blog-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.blog .block1 {
+  margin-top: 74px;
+  margin-bottom: 104px;
+  max-width: 460px;
+  width: 100%;
+}
+.blog h2 {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 41px;
+  text-transform: uppercase;
+  font-family: OpenSans-light;
+  letter-spacing: 2px;
+}
+.blog .block1-text {
+  color: #b2b3b3;
+  font-size: 14px;
+}
+.blog .block2 {
+  margin-left: 70px;
+  max-width: 579px;
+  width: 100%;
+}
+.blog .title {
+  font-size: 20px;
+  color: white;
+}
+.blog .block2-text {
+  font-size: 14px;
+  font-family: OpenSans-light;
+  color: #81868e;
+  text-transform: uppercase;
+  font-style: italic;
+  margin-bottom: 19px;
+}
+.blog .block2-text span {
+  color: #19bd9a;
+}
+.blog .block2-text2 {
+  font-size: 14px;
+  font-family: OpenSans-light;
+  color: #81868e;
+  margin-bottom: 60px;
+}
+.blog .block2-text3 {
+  font-size: 14px;
+  color: #81868e;
+  margin-bottom: 55px;
+  max-width: 579px;
+  width: 100%;
+}
+.blog .read-more {
+  color: #b2b3b3;
+  margin-bottom: 100px;
+}
+.blog .block1_sl2 {
+  margin-top: 74px;
+  margin-bottom: 104px;
+  width: 100%;
+}
+.blog .block1_sl2 h2 {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 41px;
+  text-transform: uppercase;
+  font-family: OpenSans-light;
+  letter-spacing: 2px;
+}
+.blog .block1_sl2 .block1-text {
+  color: #b2b3b3;
+  font-size: 14px;
+}
+.blog .block1_sl2 video {
+  max-width: 778px;
+  width: 100%;
+  height: 342px;
+  margin: 0 auto;
+  display: block;
+  background: transparent url("img/loader.png") 50% 50% no-repeat;
+}
+.blog .sl3 {
+  margin-top: 80px;
+}
+.blog .visit-blog_block {
+  max-width: 468px;
+  width: 100%;
+}
+.blog .visit-blog {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.blog .visit-blog_text {
+  color: #b2b3b3;
+  margin-bottom: 100px;
+  font-size: 14px;
+}
+.blog .slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+.blog .our-price {
+  background: #f3f3f3;
+  padding-bottom: 100px;
+}
+.blog .our-price h2 {
+  color: #333b46;
+  font-size: 20px;
+  padding-bottom: 41px;
+  padding-top: 80px;
+  text-transform: uppercase;
+  font-family: OpenSans-light;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 0;
+}
+.blog .our-price .text {
+  max-width: 464px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 14px;
+  color: #333b46;
+  padding-bottom: 62px;
+}
+.blog .our-price .price-flex {
+  display: flex;
+  justify-content: center;
+}
+.blog .our-price .price-block1 {
+  max-width: 235px;
+  width: 100%;
+  height: 303px;
+  background: white;
+  position: relative;
+  z-index: 3;
+  cursor: pointer;
+  margin-right: 0;
+}
+.blog .our-price .block-prem {
+  top: 0;
+  position: absolute;
+  font-size: 20px;
+  font-family: OpenSans-Bold;
+  color: white;
+  text-transform: uppercase;
+  background: #19bd9a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 235px;
+  width: 100%;
+  height: 67px;
+  transition-duration: 1s;
+}
+.blog .our-price .block-prem_span {
+  transition-duration: .5s;
+}
+.blog .our-price .prem-hover {
+  font-size: 16px;
+  font-family: OpenSans-light;
+  position: absolute;
+  opacity: 0;
+  letter-spacing: 2px;
+  transition-duration: .5s;
+}
+.blog .our-price .text-hover {
+  position: absolute;
+  font-size: 14px;
+  color: #81868e;
+  letter-spacing: 1.5px;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition-duration: .5s;
+}
+.blog .our-price .price {
+  padding-top: 131px;
+  color: #19bd9a;
+  font-size: 42px;
+  font-family: OpenSans-Bold;
+  line-height: 1.3;
+  text-align: center;
+  transition-duration: .5s;
+}
+.blog .our-price .month {
+  font-size: 20px;
+  color: #81868e;
+  text-align: center;
+}
+.blog .subscribe {
+  background: url(img/subscribe-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.blog .subscribe h2 {
+  color: white;
+  font-size: 20px;
+  padding-top: 78px;
+  margin-bottom: 41px;
+  text-transform: uppercase;
+  font-family: OpenSans-light;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.blog .subscribe .text {
+  padding-bottom: 53px;
+  max-width: 460px;
+  width: 100%;
+  color: #81868e;
+  text-align: center;
+  margin: 0 auto;
+}
+.blog .subscribe form {
+  padding-bottom: 100px;
+  text-align: center;
+}
+.blog .subscribe input[type="text"]::placeholder {
+  color: white;
+}
+.blog .subscribe input[type="text"] {
+  outline: none;
+  height: 45px;
+  max-width: 361px;
+  width: 100%;
+  padding-left: 21px;
+  background: transparent;
+  border: 1px solid #81868e;
+  color: white;
+  margin-right: 9px;
+}
+.blog .subscribe input[type="submit"] {
+  outline: none;
+  height: 45px;
+  width: 149px;
+  background: #19bd9a;
+  border: 1px solid #81868e;
+  color: white;
+  margin-right: 9px;
+  font-size: 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.contact {
+  background: #f3f3f3;
+}
+.contact .con-fluid2 {
+  padding-bottom: 100px;
+}
+.contact h2 {
+  color: #333b46;
+  font-size: 20px;
+  padding-bottom: 41px;
+  padding-top: 80px;
+  text-transform: uppercase;
+  font-family: OpenSans-light;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 0;
+}
+.contact .text {
+  max-width: 464px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 14px;
+  color: #333b46;
+  padding-bottom: 62px;
+}
+.contact .cont-flex {
+  display: flex;
+  justify-content: center;
+}
+.contact .con-fl1 {
+  justify-content: flex-end;
+}
+.contact .con-fl3 {
+  justify-content: flex-start;
+}
+.contact .block-wrapper {
+  height: 276px;
+  max-width: 284px;
+  width: 100%;
+  background: white;
+}
+.contact .block-img {
+  max-width: 284px;
+  width: 100%;
+  height: 148px;
+  background-size: cover;
+  background-position: center;
+}
+.contact .bl-im1 {
+  background-image: url(img/email-bg.png);
+}
+.contact .bl-im2 {
+  background-image: url(img/our-ofice_bg.png);
+}
+.contact .bl-im3 {
+  background-image: url(img/tel-bg.png);
+}
+.contact .title {
+  text-transform: uppercase;
+  color: #464646;
+  text-align: center;
+  padding: 25px 0 10px 0;
+}
+.contact .block_text {
+  text-align: center;
+  color: #81868e;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.contact .contact-bg2 {
+  background: white;
+}
