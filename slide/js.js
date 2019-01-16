@@ -1,25 +1,20 @@
-$('.single-item_xs').slick({
+
+$('.btn-demonstration').on('click', function() {
+	$('.demonstration-bg').css('opacity', '0');
+	$('.demonstration-bg').css('z-index', '-4');
+});
+
+// _______________________________________________
+
+if(document.documentElement.clientWidth < 992) {
+	$('.single-item_xs').slick({
 
 	arrows: false,
 	infinite: false,
     dots: false
 
 });
-
-// -------- toggle slick
-
-window.addEventListener("resize", function() {
-  if (window.innerWidth <= 992) {
-    $('.single-item_xs').slick('unslick');
-    sliderIsLive = false;
-  }
-  else {
-    if (sliderIsLive) {
-      $('.single-item_xs').slick();
-      sliderIsLive = true;
-    }
-  }
-});
+}
 
 $('.tab-xs1').on('click', function() {
   $('.single-item_xs').slick('slickGoTo', 0);
@@ -61,9 +56,11 @@ $('.single-item_xs').on('afterChange', function(event, slick, currentSlide, next
 
 });
 
-// ______________________________
+// _______________________________________________
 
-$('.single-item').slick({
+if(document.documentElement.clientWidth >= 992 && document.documentElement.clientWidth < 1200) {
+
+$('.single-item_md').slick({
 	prevArrow: $('.prev'),
 	nextArrow: $('.next'),
 	infinite: false,
@@ -71,45 +68,48 @@ $('.single-item').slick({
 
 });
 
+}
+
+
 $('.button-1').on('click', function() {
-  $('.single-item').slick('slickGoTo', 0);
+  $('.single-item_md').slick('slickGoTo', 0);
 });
 
 $('.button-2').on('click', function() {
-  $('.single-item').slick('slickGoTo', 1);
+  $('.single-item_md').slick('slickGoTo', 1);
 });
 
 $('.button-3').on('click', function() {
-  $('.single-item').slick('slickGoTo', 2);
+  $('.single-item_md').slick('slickGoTo', 2);
 });
  
 $('.button-4').on('click', function() {
-  $('.single-item').slick('slickGoTo', 3);
+  $('.single-item_md').slick('slickGoTo', 3);
 });
 
-$('.single-item').on('afterChange', function(event, slick, currentSlide, nextSlide){
+$('.single-item_md').on('afterChange', function(event, slick, currentSlide, nextSlide){
 
       if(currentSlide == 1 || currentSlide == 2 || currentSlide == 3) {
-      	$('.prev').css('background', '#b5bbc4');
+      	$('.prev').css('background', 'rgba(181,187,196,.4)');
       }
 
       else $('.prev').css('background', 'transparent');
 
 });
 
-$('.single-item').on('afterChange', function(event, slick, currentSlide, nextSlide){
+$('.single-item_md').on('afterChange', function(event, slick, currentSlide, nextSlide){
 
 
 	if(currentSlide == 3) {
       	$('.next').css('background', 'transparent');
       }
 
-      else $('.next').css('background', '#b5bbc4');
+      else $('.next').css('background', 'rgba(181,187,196,.4)');
 
  });
 
 
-$('.single-item').on('afterChange', function(event, slick, currentSlide, nextSlide){
+$('.single-item_md').on('afterChange', function(event, slick, currentSlide, nextSlide){
 
 	if(currentSlide == 0) {
 
@@ -144,6 +144,76 @@ $('.single-item').on('afterChange', function(event, slick, currentSlide, nextSli
 	 	$('.button-1').css('background', 'rgba(0,0,0,.2)');
  		$('.button-2').css('background', 'rgba(0,0,0,.2)');
 		$('.button-3').css('background', 'rgba(0,0,0,.2)');
+
+	}
+
+});
+
+
+// _______________________________________________
+
+if(document.documentElement.clientWidth >= 1200) {
+
+$('.single-item_lg').slick({
+	prevArrow: $('.prev'),
+	nextArrow: $('.next'),
+    dots: false
+
+});
+
+}
+
+$('.btn-1').on('click', function() {
+  $('.single-item_lg').slick('slickGoTo', 0);
+});
+
+$('.btn-2').on('click', function() {
+  $('.single-item_lg').slick('slickGoTo', 1);
+});
+
+$('.btn-3').on('click', function() {
+  $('.single-item_lg').slick('slickGoTo', 2);
+});
+ 
+$('.btn-4').on('click', function() {
+  $('.single-item_lg').slick('slickGoTo', 3);
+});
+
+$('.single-item_lg').on('afterChange', function(event, slick, currentSlide, nextSlide){
+
+	if(currentSlide == 0) {
+
+		$('.btn-1').css('background', 'rgba(0,0,0,.5)');
+	 	$('.btn-2').css('background', 'rgba(0,0,0,.2)');
+ 		$('.btn-3').css('background', 'rgba(0,0,0,.2)');
+		$('.btn-4').css('background', 'rgba(0,0,0,.2)');
+
+	}
+
+	if(currentSlide == 1) {
+
+		$('.btn-2').css('background', 'rgba(0,0,0,.5)');
+	 	$('.btn-1').css('background', 'rgba(0,0,0,.2)');
+ 		$('.btn-3').css('background', 'rgba(0,0,0,.2)');
+		$('.btn-4').css('background', 'rgba(0,0,0,.2)');
+
+	}
+
+	if(currentSlide == 2) {
+
+		$('.btn-3').css('background', 'rgba(0,0,0,.5)');
+	 	$('.btn-1').css('background', 'rgba(0,0,0,.2)');
+ 		$('.btn-2').css('background', 'rgba(0,0,0,.2)');
+		$('.btn-4').css('background', 'rgba(0,0,0,.2)');
+
+	}
+
+	if(currentSlide == 3) {
+
+		$('.btn-4').css('background', 'rgba(0,0,0,.5)');
+	 	$('.btn-1').css('background', 'rgba(0,0,0,.2)');
+ 		$('.btn-2').css('background', 'rgba(0,0,0,.2)');
+		$('.btn-3').css('background', 'rgba(0,0,0,.2)');
 
 	}
 
