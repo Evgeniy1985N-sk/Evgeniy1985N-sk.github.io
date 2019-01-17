@@ -596,6 +596,14 @@ h4 {
 	display: block;
 	font-family: 'Montserrat-Semibold-LightItalick';
 }
+.sl .sec4__slide {
+	background-image: url(img/slide.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+	height: 300px;
+}
 .sl .sec4__bouncy {
 	background-image: url(img/Bouncy.png);
 	background-size: cover;

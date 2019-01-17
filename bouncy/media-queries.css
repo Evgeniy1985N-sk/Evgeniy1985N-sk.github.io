@@ -1,3 +1,8 @@
+@media screen and (max-width: 1095px) {
+    .contact .contact-form form {
+        justify-content: center;
+    }
+} 
 @media screen and (max-width: 1013px) {
     .about-details .flex-block {
         margin-bottom: 20px;

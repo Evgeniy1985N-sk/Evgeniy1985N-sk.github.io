@@ -185,3 +185,29 @@ $('.pr-b3').mouseout(function() {
   $('.text-hover3').css('opacity', '0');
   $('.block-hover3').css('opacity', '1').css('transition', '2s');;
 });
+
+ymaps.ready(init);
+
+
+function init() {
+
+  var map = new ymaps.Map('map', {
+  center: [51.50733,-0.197798,12],
+  zoom: 11,
+  controls: ['zoomControl'],
+  behaviors: ['drag']
+
+});
+
+var placemark = new ymaps.Placemark([51.50733,-0.197798,12], {
+
+}, {
+
+  iconLayout: 'default#image',
+  iconImageHref: 'img/pin.png'
+
+  });
+
+    map.geoObjects.add(placemark);
+
+}

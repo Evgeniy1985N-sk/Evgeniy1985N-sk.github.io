@@ -31,7 +31,9 @@ a:hover {
   color: white;
 }
 div,
-a {
+a,
+input,
+textarea {
   outline: none;
 }
 .container-fluid {
@@ -1419,6 +1421,81 @@ a {
   font-size: 14px;
   text-transform: uppercase;
 }
-.contact .contact-bg2 {
+.contact .contact-form {
   background: white;
+}
+.contact .contact-form form {
+  margin-top: 79px;
+  max-width: 938px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.contact .contact-form input[type="text"] {
+  max-width: 286px;
+  width: 100%;
+  height: 41px;
+  border: 1px solid #d8dce0;
+  padding-left: 17px;
+  color: #a9a9a9;
+  font-size: 14px;
+  margin-bottom: 31px;
+}
+.contact .contact-form textarea {
+  width: 100%;
+  height: 189px;
+  border: 1px solid #d8dce0;
+  margin-bottom: 31px;
+}
+.contact .contact-form input[type="submit"] {
+  width: 100%;
+  height: 52px;
+  margin-bottom: 130px;
+  cursor: pointer;
+  background: #19bd9a;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+}
+.contact .map {
+  width: 100%;
+  height: 491px;
+  background: rgba(36, 36, 36, 0.9);
+}
+.contact #map {
+  width: 100%;
+  height: 100%;
+}
+.contact .map-text {
+  color: white;
+  text-transform: uppercase;
+  margin-right: 15px;
+}
+.contact .round {
+  background: #19bd9a;
+  height: 19px;
+  width: 19px;
+  border-radius: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer {
+  background: #f3f3f3;
+}
+.footer .logo {
+  font-size: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: openSansExtraBold;
+  padding-top: 81px;
+  padding-bottom: 25px;
+}
+.footer .text {
+  text-align: center;
+}
+.footer .icons {
+  display: flex;
+  justify-content: center;
 }
