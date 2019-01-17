@@ -1,8 +1,14 @@
 
-$('.btn-demonstration').on('click', function() {
+
+
+  $('.btn-demonstration').on('click', function() {
+		setTimeout(func, 5000);
+});
+
+function func() {
 	$('.demonstration-bg').css('opacity', '0');
 	$('.demonstration-bg').css('z-index', '-4');
-});
+}
 
 // _______________________________________________
 
