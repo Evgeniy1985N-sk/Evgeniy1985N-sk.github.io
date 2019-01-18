@@ -6,9 +6,9 @@
   font-family: OpenSans-Bold;
   src: url(fonts/OpenSans-Bold.ttf);
 }
-body {
+/*body {
   font-family: OpenSans-Regular;
-}
+}*/
 a:active, 
 a:hover,
 a:focus,
@@ -21,7 +21,7 @@ div {
 	outline: none;
 }
 
-.wrapper {
+/*.wrapper {
 	position: relative;
 }
 
@@ -66,7 +66,7 @@ div {
 	    -ms-flex-align: center;
 	        align-items: center;
 	cursor: pointer;
-}
+}*/
 
 /*-----XS-----*/
 
