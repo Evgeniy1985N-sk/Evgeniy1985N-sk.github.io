@@ -2,7 +2,7 @@
 
 
   $('.btn-demonstration').on('click', function() {
-		setTimeout(func, 5000);
+		setTimeout(func, 1500);
 });
 
 function func() {
