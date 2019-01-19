@@ -1,6 +1,7 @@
 @media screen and (max-width: 1095px) {
     .contact .contact-form form {
-        justify-content: center;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
     }
 } 
 @media screen and (max-width: 1013px) {
@@ -20,16 +21,25 @@
         margin-left: 15px;
     }
     .services .flex-block2 {
-        justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
     }
     .block_tv {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
     .team .team-img {
         margin: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         margin-bottom: 30px;
     }
     .team .block-content {
@@ -67,13 +77,19 @@
         position: absolute;
         width: 100%;
         list-style:none;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         margin: 0 auto;
         padding: 15px;
-        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
         background: rgba(46,46,46,.9);
         top: -395px;
         left: 0;
+        -webkit-transition: top .5s;
+        -o-transition: top .5s;
         transition: top .5s;
         z-index: 5;
         display: block;
@@ -94,6 +110,8 @@
         height: 2px;
         background: white;
         margin: 4px 0 0;
+        -webkit-transition: all .1s linear .23s;
+        -o-transition: all .1s linear .23s;
         transition: all .1s linear .23s;
         position: relative;
         border-radius: 5px;
@@ -112,6 +130,8 @@
         color: white;
         padding: 10px;
         text-decoration: none;
+        -webkit-transition: all .2s;
+        -o-transition: all .2s;
         transition: all .2s;
         font-size: 16px;
         text-transform: uppercase;
@@ -134,7 +154,9 @@
         margin-top: 20px;
     }
     .contact .con-fl3 {
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         margin-top: 20px;
     }
 }
@@ -184,7 +206,9 @@
         margin-top: 20px;
     }
     .contact .con-fl1, .contact .con-fl3 {
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
     .contact .con-fl1 {
         margin-bottom: 20px;
@@ -192,7 +216,10 @@
 }
 @media screen and (max-width: 514px) {
     .featured-projects .works {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .featured-projects .a-fancy1 {
         width: 100%;
@@ -203,7 +230,10 @@
 }
 @media screen and (max-width: 488px) {
     .services .flex-block2 {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .services .p1, .services .p2 {
         margin-bottom: 35px;
@@ -214,7 +244,8 @@
         height: 455px;
     }
     .team .testim .testim-flex {
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     }
 }
 @media screen and (max-width: 430px) {

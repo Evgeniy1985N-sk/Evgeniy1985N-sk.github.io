@@ -186,28 +186,29 @@ $('.pr-b3').mouseout(function() {
   $('.block-hover3').css('opacity', '1').css('transition', '2s');;
 });
 
-ymaps.ready(init);
+// ----------------------------------------
 
-
-function init() {
-
-  var map = new ymaps.Map('map', {
-  center: [51.50733,-0.197798,12],
-  zoom: 11,
-  controls: ['zoomControl'],
-  behaviors: ['drag']
-
+$('.map-round').click(function() {
+  $('.map').css('display', 'none');
 });
 
-var placemark = new ymaps.Placemark([51.50733,-0.197798,12], {
+ymaps.ready(function() {
 
-}, {
+    var map = new ymaps.Map('map', {
+            center: [51.50733,-0.197798,12], 
+            zoom: 11,
+            controls: ['zoomControl'],
+            behaviors: ['drag'],
+    });
 
-  iconLayout: 'default#image',
-  iconImageHref: 'img/pin.png'
+    var placemark = new ymaps.Placemark([51.50733,-0.197798,12], {
 
-  });
+    }, {
+
+      iconLayout: 'default#image',
+      iconImageHref: 'img/pin.png'
+
+    });
 
     map.geoObjects.add(placemark);
-
-}
+});
