@@ -190,7 +190,7 @@ $('.pr-b3').mouseout(function() {
 
 $('.map-round').click(function() {
   $('.map').css('display', 'none');
-});
+
 
 ymaps.ready(function() {
 
@@ -211,4 +211,6 @@ ymaps.ready(function() {
     });
 
     map.geoObjects.add(placemark);
+});
+
 });
