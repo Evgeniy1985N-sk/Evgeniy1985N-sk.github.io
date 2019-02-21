@@ -90,6 +90,17 @@ ul {
 		white-space: nowrap;
 		font-family: "book-antiqua";
 		cursor: pointer;
+		background: linear-gradient(to top, #f7e8be, #e8c478, #fff9e0);
+		border: 1px solid #d8c992;
+		height: 24px;
+		width: 176px;
+		border-radius: 5px;
+	}
+	.request span, .resume span {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
 	}
 	.req_modal-window {
 		display: none;
@@ -191,26 +202,6 @@ ul {
 		border-radius: 5px;
 	}
 
-	.request:after {
-		content: 'Оставить заявку';
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-	}
-	.resume:after {
-		content: 'Отправить резюме';
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-	}
-	.request-img2, .resume-img2 {
-		opacity: 0;
-		position: absolute;
-		top: 0;
-		left: 0;
-	}
 	.res-modal {
 		display: none;
 		height: 293px;
