@@ -22,18 +22,12 @@ $('.btn-menu_main').on('click', function() {
 
 
 $('.request').on('click', function() {
-	$(this).css('color', 'white');
-	$('.request-img1').css('opacity', '0');
-	$('.request-img2').css('opacity', '1');
-	$('.request-img2').css('top', '2px');
-	$('.req-modal').css('display', 'block');
+	$(this).toggleClass('block-top__class-click');
+	$('.req-modal').toggleClass('class-click__display-block');
 });
 $('.resume').on('click', function() {
-	$(this).css('color', 'white');
-	$('.resume-img1').css('opacity', '0');
-	$('.resume-img2').css('opacity', '1');
-	$('.resume-img2').css('top', '2px');
-	$('.res-modal').css('display', 'block');
+	$(this).toggleClass('block-top__class-click');
+	$('.res-modal').toggleClass('class-click__display-block');
 });
 
 
