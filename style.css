@@ -17,7 +17,7 @@
 
 /*---------------PRELOADER---------------*/
 
-.preloader {
+/*.preloader {
 	position: fixed;
 	height: 100%;
 	width: 100%;
@@ -39,10 +39,6 @@
 	transform: translate(-50%, -50%);
 	animation: 2s spin infinite linear;
 }
-.done {
-	opacity: 0;
-	visibility: hidden;
-}
 @keyframes spin {
 	from {
 		transform: translate(-50%, -50%) rotate(0deg);
@@ -50,7 +46,7 @@
 	to {	
 		transform: translate(-50%, -50%) rotate(360deg);
 	}
-}
+}*/
 
 /*---------------MENU---------------*/
 

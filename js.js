@@ -2,15 +2,16 @@
 
 window.onload = function () {
   let preloader = document.getElementById('preloader');
-  // preloader.style.display = 'none'; 
-  preloader.style.visibility = 'hidden'; 
-  preloader.style.opasity = '0'; 
+  preloader.style.visibility = 'hidden';
+  preloader.style.opasity = '0';
 };
 
+
 // --------------- slick -----------------
+
 $('.sl').slick({
-prevArrow: '<div class="prev"></div>',
-nextArrow: '<div class="next"></div>',
+  prevArrow: '<div class="prev"></div>',
+  nextArrow: '<div class="next"></div>',
   arrows: true,
   dots: true,
   infinite: true,
@@ -19,7 +20,7 @@ nextArrow: '<div class="next"></div>',
   cssEase: 'linear'
 });
 
- // ---------------- scroll ---------------
+ // ---------------- scroll --------------
 
 $(document).ready(function() {
    $("a.topLink").click(function() {
