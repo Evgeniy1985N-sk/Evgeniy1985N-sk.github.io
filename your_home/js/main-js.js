@@ -36,9 +36,11 @@ $('.resume').on('click', function() {
 
 $('.li2').mouseover(function() {
 	$('.li2-ul').css('display', 'block');
+	$('.btn-menu_search-personal').css('color', '#45250a');
 });
 $('.li2').mouseout(function() {
 	$('.li2-ul').css('display', 'none');
+	$('.btn-menu_search-personal').css('color', '#fff');
 });
 
 // --------------- li-hover -----------------

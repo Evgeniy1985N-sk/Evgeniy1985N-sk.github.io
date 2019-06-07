@@ -15,38 +15,6 @@
 
 /*---------------#2D1941-light---------------*/
 
-/*---------------PRELOADER---------------*/
-
-/*.preloader {
-	position: fixed;
-	height: 100%;
-	width: 100%;
-	background: black;
-	z-index: 5;
-	transition: 1s all;
-	opacity: 1;
-	visibility: visible;
-}
-.loader {
-	width: 75px;
-	height: 75px;
-	border: 10px solid white;
-	border-radius: 50px;
-	border-top-color: #1d0c2e; 
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	animation: 2s spin infinite linear;
-}
-@keyframes spin {
-	from {
-		transform: translate(-50%, -50%) rotate(0deg);
-	}
-	to {	
-		transform: translate(-50%, -50%) rotate(360deg);
-	}
-}*/
 
 /*---------------MENU---------------*/
 

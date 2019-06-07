@@ -1,6 +1,4 @@
 
-
-
   $('.btn-demonstration').on('click', function() {
 		setTimeout(func, 1500);
 });
