@@ -14,4 +14,18 @@ $(document).ready(function(){
 	});
 	$(".owl-dots").wrapAll("<div class='owl-wrap'></div>");
 
+	/* menu */
+
+	$('.btn-menu').on('click', function() {
+		$('.header-menu').toggleClass('active');
+	})
+	$(window).scroll(function(){
+	   if ( $(window).scrollTop() > 220 ){
+			$('.header-top').addClass('active');
+	   }
+	   if ( $(window).scrollTop() < 220 ) {
+			$('.header-top').removeClass('active');
+	   }
+});
+
 });
