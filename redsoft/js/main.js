@@ -20,10 +20,10 @@ $(document).ready(function(){
 		$('.header-menu').toggleClass('active');
 	})
 	$(window).scroll(function(){
-	   if ( $(window).scrollTop() > 220 ){
+	   if ( $(window).scrollTop() > 120 ){
 			$('.header-top').addClass('active');
 	   }
-	   if ( $(window).scrollTop() < 220 ) {
+	   if ( $(window).scrollTop() < 120 ) {
 			$('.header-top').removeClass('active');
 	   }
 });

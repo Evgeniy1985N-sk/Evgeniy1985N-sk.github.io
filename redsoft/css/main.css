@@ -94,7 +94,8 @@ a {
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
-  margin-left: auto; }
+  margin-left: auto;
+  box-sizing: border-box; }
 
 @media screen and (min-width: 576px) {
   .container, .header-top {
@@ -133,10 +134,13 @@ a {
   padding-top: 25px;
   width: 100%;
   padding-left: 15px;
-  padding-right: 15px; }
+  padding-right: 15px;
+  transition: ease 300ms;
+  border-radius: 35px; }
 
 .header-top.active {
-  background: rgba(43, 113, 186, 0.8); }
+  background: rgba(43, 113, 186, 0.9);
+  padding-bottom: 16px; }
 
 .header-menu {
   flex-grow: 1; }
@@ -185,7 +189,6 @@ a {
   border: 2px solid #5489c3; }
 
 .btn-menu {
-  position: relative;
   width: 39px;
   height: 34px;
   background-image: repeating-linear-gradient(to bottom, transparent, transparent 5px, #fafaff 5px, #fafaff 10px);
@@ -260,13 +263,17 @@ a {
 @media screen and (max-width: 1006px) {
   .header-menu {
     position: absolute;
-    top: -216px;
+    opacity: 0;
+    visibility: hidden;
+    top: 100px;
     left: 0;
     width: 100%;
-    background: rgba(43, 113, 186, 0.8);
+    background: rgba(43, 113, 186, 0.9);
     transition: ease 300ms; }
   .header-menu.active {
-    top: 67px; }
+    border-radius: 112px;
+    opacity: 1;
+    visibility: visible; }
   .header-menu ul {
     flex-direction: column;
     padding-top: 30px;
@@ -297,8 +304,6 @@ a {
     min-height: 661px; } }
 
 @media screen and (max-width: 575px) {
-  .header .container {
-    width: initial; }
   .header-top {
     justify-content: space-around; }
   .header-wrap {
@@ -330,6 +335,13 @@ a {
 .diary-wrap {
   display: flex;
   padding: 150px 160px 155px 130px; }
+
+.diary-device {
+  transition: ease 300ms; }
+
+.diary-device:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1); }
 
 .diary-title {
   color: #60759d;
@@ -370,10 +382,6 @@ a {
 @media screen and (max-width: 1006px) {
   .diary-wrap {
     padding: 20px 0; } }
-
-@media screen and (max-width: 586px) {
-  .diary .container {
-    width: initial; } }
 
 @media screen and (max-width: 558px) {
   .diary-wrap {
