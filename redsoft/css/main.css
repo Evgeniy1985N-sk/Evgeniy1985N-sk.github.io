@@ -230,7 +230,6 @@ a {
 
 .header .owl-carousel .owl-item img {
   width: 100%;
-  min-height: 749px;
   height: 100%;
   position: absolute; }
 
@@ -248,17 +247,13 @@ a {
   border-radius: 23px; }
 
 .header .owl-theme .owl-dots .owl-dot span {
-  background: #fafbfd;
+  background: #5489c3;
   border-radius: 0;
   width: 23px;
   height: 4px; }
 
 .header .owl-theme .owl-dots .owl-dot.active span {
-  background: #5489c3; }
-
-@media screen and (max-width: 1206px) {
-  .header .owl-carousel .owl-item img {
-    min-height: 777px; } }
+  background: #fafbfd; }
 
 @media screen and (max-width: 1006px) {
   .header-menu {
@@ -287,8 +282,6 @@ a {
     flex-grow: 1;
     display: flex;
     padding-left: 76px; }
-  .header .owl-carousel .owl-item img {
-    min-height: 561px; }
   .header-title {
     padding-top: 90px;
     line-height: 1.2; }
@@ -297,11 +290,11 @@ a {
   .header-more {
     padding-bottom: 80px; }
   .header .owl-wrap {
-    bottom: 29px; } }
+    bottom: 42px; } }
 
-@media screen and (max-width: 767px) {
-  .header .owl-carousel .owl-item img {
-    min-height: 661px; } }
+@media screen and (max-width: 600px) {
+  .header-top, .header-menu.active {
+    border-radius: 0; } }
 
 @media screen and (max-width: 575px) {
   .header-top {
@@ -328,7 +321,7 @@ a {
   bottom: 0;
   background-image: url(imgs/sprite.png);
   background-position: 0px 0px;
-  background-size: 489px 359px;
+  background-size: 489px 440px;
   width: 489px;
   height: 359px; }
 
@@ -343,7 +336,7 @@ a {
   -webkit-transform: scale(1.1);
           transform: scale(1.1); }
 
-.diary-title {
+.common-title {
   color: #60759d;
   font-size: 34px;
   padding-top: 80px; }
@@ -389,5 +382,25 @@ a {
     justify-content: center; }
   .diary-device img {
     width: 100%; }
-  .diary-title {
+  .common-title {
     padding-top: 0; } }
+
+/* function*/
+.function {
+  background: #f1f3fc; }
+  .function .common-title {
+    text-align: center; }
+
+.function-wrap {
+  padding: 0 60px; }
+
+.function-row {
+  display: flex; }
+
+.function-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.function-item {
+  position: relative; }
