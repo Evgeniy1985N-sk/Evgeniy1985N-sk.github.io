@@ -228,7 +228,8 @@ a {
   padding: 25px 74px; }
 
 .header-slide {
-  position: relative; }
+  position: relative;
+  height: 766px; }
 
 .header .owl-carousel .owl-item img {
   width: 100%;
@@ -284,6 +285,8 @@ a {
     flex-grow: 1;
     display: flex;
     padding-left: 76px; }
+  .header-slide {
+    height: 494px; }
   .header-title {
     padding-top: 90px;
     line-height: 1.2; }
@@ -294,7 +297,9 @@ a {
   .header .owl-wrap {
     display: none; } }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
+  .header-slide {
+    height: 605px; }
   .header-slide:before {
     content: "";
     background: #fafaff;
@@ -302,12 +307,14 @@ a {
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 50px;
+    height: 58px;
     z-index: 1; } }
 
 @media screen and (max-width: 600px) {
   .header-top, .header-menu.active {
     border-radius: 0; }
+  .header-slide {
+    height: 494px; }
   .header-title {
     font-size: 26px; }
   .header-dsc {
@@ -320,6 +327,10 @@ a {
     justify-content: space-around; }
   .header-wrap {
     display: none; } }
+
+@media screen and (max-width: 427px) {
+  .header-slide {
+    height: 594px; } }
 
 /* diary */
 .diary {
@@ -341,22 +352,22 @@ a {
   font-size: 34px;
   padding-top: 80px; }
 
-.diary-info {
+.commmon-info {
   color: #60759d;
   padding-top: 40px; }
 
-.diary-list {
+.items-list {
   padding-top: 30px;
   padding-bottom: 15px; }
 
-.diary-list li {
+.items-list li {
   color: #60759d;
   position: relative;
   padding-left: 15px;
   padding-bottom: 30px;
   line-height: 1.4; }
 
-.diary-list li:before {
+.items-list li:before {
   content: "•";
   position: absolute;
   left: 0;
@@ -627,3 +638,30 @@ a {
     padding-top: 15px; }
   .watch-mob img {
     width: 100%; } }
+
+/* expert */
+.expert {
+  display: none;
+  padding-bottom: 50px;
+  background: #f1f2fa; }
+  .expert .col {
+    flex: 0 0 33.33333%; }
+
+.brief-wrap {
+  position: relative; }
+
+.brief-wrap__img {
+  position: absolute;
+  top: -53px;
+  left: -167px; }
+
+@media screen and (max-width: 1206px) {
+  .expert .col {
+    flex-basis: 100%; }
+  .brief-wrap {
+    text-align: center; }
+  .brief-wrap__img {
+    position: static;
+    width: 100%; }
+  .common-title {
+    padding-top: 20px; } }
