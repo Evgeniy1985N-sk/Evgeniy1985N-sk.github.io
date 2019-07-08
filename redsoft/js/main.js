@@ -10,6 +10,7 @@ $(document).ready(function(){
 	    nav: false,
 	    autoplay: true,
 	    autoplayTimeout: 5000,
+	    animateOut: 'fadeOut',
 	    smartSpeed: 1000
 	});
 	$(".owl-dots").wrapAll("<div class='owl-wrap'></div>");
