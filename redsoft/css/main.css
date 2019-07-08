@@ -146,23 +146,23 @@ a {
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
-  transition: ease 300ms; }
+  transition: ease 300ms;
+  box-sizing: border-box; }
 
-.header-menu {
+.header-nav {
   flex-grow: 1; }
 
-.header-menu ul {
+.main-menu {
   display: flex;
   justify-content: flex-end;
   padding-right: 60px; }
 
-.header-menu li > a, .footer-menu li > a {
+.main-menu li > a {
   font-weight: 600;
   padding: 10px;
   position: relative; }
 
-.header-menu li > a:before,
-.footer-menu li > a:before {
+.main-menu li > a:before {
   content: '';
   position: absolute;
   left: 50%;
@@ -176,12 +176,10 @@ a {
   transition: ease 300ms;
   opacity: 0; }
 
-.header-menu li > a:hover:before,
-.footer-menu li > a:hover:before {
+.main-menu li > a:hover:before {
   opacity: 1; }
 
-.header-menu li > a.active:before,
-.footer-menu li > a.active:before {
+.main-menu li > a.active:before {
   opacity: 1; }
 
 .action-btn {
@@ -267,23 +265,23 @@ a {
   background: #fafbfd; }
 
 @media screen and (max-width: 1006px) {
-  .header-menu {
+  .main-menu {
+    width: 100vw;
+    left: calc(-50vw + 50%);
     position: absolute;
     opacity: 0;
     visibility: hidden;
     top: 92px;
-    left: 0;
-    width: 100%;
     background: rgba(43, 113, 186, 0.98);
     transition: ease 300ms; }
-  .header-menu.active {
+  .main-menu.active {
     opacity: 1;
     visibility: visible; }
-  .header-menu ul {
+  .main-menu {
     flex-direction: column;
     padding-top: 30px;
     padding-right: 0; }
-  .header-menu ul li {
+  .main-menu li {
     padding-bottom: 30px;
     text-align: center; }
   .btn-menu {
@@ -737,11 +735,8 @@ a {
   padding-top: 70px;
   padding-bottom: 53px; }
 
-.footer-menu {
-  display: flex;
-  justify-content: flex-end;
-  flex-grow: 1;
-  padding-right: 60px; }
+.footer .main-menu {
+  flex-grow: 1; }
 
 .footer-company {
   display: flex;
@@ -762,8 +757,14 @@ a {
   border-bottom: 1px solid #e70067; }
 
 @media screen and (max-width: 1006px) {
-  .footer-menu {
-    padding-right: 0; }
+  .footer .main-menu {
+    padding-right: 0;
+    visibility: visible;
+    opacity: 1;
+    position: static;
+    flex-direction: row;
+    background: transparent;
+    width: initial; }
   .company-tel {
     display: block;
     margin-top: 20px;
@@ -772,10 +773,10 @@ a {
 @media screen and (max-width: 767px) {
   .footer-main {
     justify-content: center; }
-  .footer-menu {
-    flex-grow: 0;
+  .footer .main-menu {
+    flex-grow: 1;
     padding-top: 20px;
     flex-wrap: wrap;
     justify-content: center; }
-  .footer-menu li {
+  .footer .main-menu li {
     margin-top: 20px; } }
