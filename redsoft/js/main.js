@@ -19,13 +19,13 @@ $(document).ready(function(){
 
 	$('.btn-menu').on('click', function() {
 		$('.header-menu').toggleClass('active');
-	})
+	});
 	$(window).scroll(function(){
 	   if ( $(window).scrollTop() > 40 ){
-			$('.header-top').addClass('active');
+			$('.wrap-bg').addClass('active');
 	   }
 	   if ( $(window).scrollTop() < 40 ) {
-			$('.header-top').removeClass('active');
+			$('.wrap-bg').removeClass('active');
 	   }
 });
 
