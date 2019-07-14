@@ -912,7 +912,7 @@ button:focus {
     width: 110.9px;
     height: 108.9px; }
   .news-item__link {
-    font-size: 16px; }
+    padding: 0 15px; }
   .news-item.item-8 .news-item__icon {
     top: 45%; }
   .news-item__media {
@@ -953,14 +953,14 @@ button:focus {
     justify-content: center; }
     .social .row .col {
       padding-bottom: 10px; }
-  .news-item__link {
-    font-size: 14px; }
   .news-item__media {
     display: block; } }
 
 @media screen and (max-width: 320px) {
   .news-item__text {
-    text-align: center; } }
+    text-align: center; }
+  .social .col {
+    justify-content: space-between; } }
 
 /* info */
 .info {
