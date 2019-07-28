@@ -1,32 +1,63 @@
 $(document).ready(function(){
-	
-	/* carousel */
 
-	$('.header-carousel_js').owlCarousel({
-	    loop: false,
-	    margin: 0,
-	    items: 1,
-	    dots: true,
-	    nav: false,
-	    autoplay: true,
-	    autoplayTimeout: 5000,
-	    animateOut: 'fadeOut',
-	    smartSpeed: 1000
+	$('.works-carousel').slick({
+	  dots: true,
+	  infinite: true,
+	  speed: 300,
+	  slidesToShow: 2,
+	  centerMode: true,
+	  variableWidth: true,
+	  arrows: false
 	});
-	$(".owl-dots").wrapAll("<div class='owl-wrap'></div>");
 
-	/* menu */
+	$('.works-graphic__carousel').slick({
+	  dots: true,
+	  infinite: true,
+	  speed: 300,
+	  slidesToShow: 4,
+	  arrows: false,
+	   responsive: [
+		    {
+			breakpoint: 992,
+			settings: {
+				slidesToShow: 3
+				}
+		    },
+		    {
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 1
+				}
+		    }
+		]
+	});
 
-	$('.btn-menu').on('click', function() {
-		$('.header-menu').toggleClass('active');
-	})
-	$(window).scroll(function(){
-	   if ( $(window).scrollTop() > 40 ){
-			$('.header-top').addClass('active');
-	   }
-	   if ( $(window).scrollTop() < 40 ) {
-			$('.header-top').removeClass('active');
-	   }
-});
+	$('.works-corporates__carousel').slick({
+	  dots: true,
+	  infinite: true,
+	  speed: 300,
+	  slidesToShow: 5,
+	  arrows: false,
+	  responsive: [
+		    {
+			breakpoint: 1200,
+			settings: {
+				slidesToShow: 4
+				}
+		    },
+		    {
+			breakpoint: 992,
+			settings: {
+				slidesToShow: 3
+				}
+		    },
+		    {
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 1
+				}
+		    }
+		]
+	});
 
 });
