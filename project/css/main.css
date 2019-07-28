@@ -4029,7 +4029,7 @@ input[type="number"]:focus {
   .header-phone {
     width: auto;
     min-width: 174px;
-    text-align: center; }
+    justify-content: center; }
   .header-phone__link {
     color: #fff;
     font-size: 10px; }
@@ -4219,7 +4219,9 @@ input[type="number"]:focus {
     height: 65%; } }
 
 @media screen and (max-height: 528px) {
-  .header-request, .header-carousel {
+  .header-dsc {
+    height: 75%; }
+  .header-carousel {
     display: none; } }
 
 @media screen and (max-height: 558px) {
