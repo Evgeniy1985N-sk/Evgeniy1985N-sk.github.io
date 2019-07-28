@@ -4225,5 +4225,5 @@ input[type="number"]:focus {
     display: none; } }
 
 @media screen and (max-height: 558px) {
-  .ie .header-request, .ie .header-carousel {
+  .ie .header-carousel {
     display: none; } }
