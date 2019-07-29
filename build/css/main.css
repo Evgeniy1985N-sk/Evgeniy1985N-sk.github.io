@@ -4246,17 +4246,32 @@ input[type="number"]:focus {
     height: 84%;
     margin-bottom: 15px; } }
 
-@media screen and (max-height: 490px) {
+@media screen and (max-height: 445px) {
   .ie .header-carousel {
     display: none; } }
 
 @media screen and (max-height: 497px) {
   .header-dsc {
-    height: 55%; }
+    height: 51%; }
   .header-carousel__wrap {
     top: -22px; } }
 
-@media screen and (max-height: 454px) {
+@media screen and (max-height: 485px) {
+  .header-carousel__text:before {
+    display: none; } }
+
+@media screen and (max-height: 467px) {
+  .ie .header-dsc {
+    height: 77%; }
+  .ie .header-request {
+    position: relative;
+    z-index: 3; }
+  .header-carousel {
+    margin-top: 0; }
+  .ie .header-carousel__text:before {
+    display: none; } }
+
+@media screen and (max-height: 444px) {
   .header-title {
     height: 40%; }
   .header-carousel {
