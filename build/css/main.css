@@ -3942,7 +3942,11 @@ input[type="number"]:focus {
     flex-wrap: wrap;
     justify-content: center; }
   .request-form__consent-label {
-    margin-top: 10px; } }
+    margin-top: 10px; }
+  .header-carousel {
+    display: block; }
+  .header-carousel__wrap {
+    top: -270px; } }
 
 @media screen and (max-width: 908px) {
   .header-img {
@@ -4099,6 +4103,8 @@ input[type="number"]:focus {
     height: 44px; }
   .header-menu__link:before {
     top: 24px; }
+  .ie .header-menu__item:before {
+    top: 55%; }
   .header-menu__item:after {
     top: 50%;
     left: -12px; }
