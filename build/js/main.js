@@ -15,6 +15,9 @@ $(document).ready(function(){
 	$('.btn-open').on('click', function() {
 		$('.header-nav').toggleClass('active');
 		$('.btn-open.mob-menu').toggleClass('active');
+		if( $('.header-nav').hasClass('active') ) {
+			$('.btn-open.mob-menu').addClass('active');
+		}
 	});
 	$('.btn-close.menu').on('click', function() {
 		$('.header-nav').removeClass('active');
@@ -31,6 +34,9 @@ $(document).ready(function(){
 	}
 	if (navigator.userAgent.indexOf('Edge') > 0 ) {
 		$('body').addClass('edge');
+	}
+	if (navigator.userAgent.indexOf('SamsungBrowser') > 0 ) {
+		alert("Привет, Надя!")
 	}
 
 });
