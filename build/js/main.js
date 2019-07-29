@@ -36,7 +36,7 @@ $(document).ready(function(){
 		$('body').addClass('edge');
 	}
 	if (navigator.userAgent.indexOf('SamsungBrowser') > 0 ) {
-		alert("Привет, Надя!")
+		$('body').addClass('samsung');
 	}
 
 });
