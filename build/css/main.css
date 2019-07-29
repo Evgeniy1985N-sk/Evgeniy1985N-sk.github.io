@@ -3295,6 +3295,9 @@ input[type="number"]:focus {
   top: 11px;
   left: -155px; }
 
+.header-request {
+  display: flex; }
+
 .header-request__btn {
   font-size: 12px;
   font-family: "Russo One";
@@ -3303,9 +3306,9 @@ input[type="number"]:focus {
   position: relative;
   margin-top: 53px;
   margin-left: 150px;
-  padding: 7px;
+  padding: 10px 0;
   transition: ease .3s;
-  display: inline-block; }
+  min-width: 150px; }
 
 .header-request__btn:hover {
   color: #069DBE; }
@@ -3318,7 +3321,7 @@ input[type="number"]:focus {
   background-size: 114px 104px;
   width: 31px;
   height: 12px;
-  right: -32px; }
+  right: 0; }
 
 .header-request__popup {
   background: #fff;
@@ -3622,7 +3625,7 @@ input[type="number"]:focus {
 
 .header-carousel .slick-next:after {
   left: 79%;
-  top: 50%; }
+  top: 47%; }
 
 .ie .header-carousel .slick-next:after {
   left: 45%; }
@@ -3941,10 +3944,6 @@ input[type="number"]:focus {
   .request-form__consent-label {
     margin-top: 10px; } }
 
-@media screen and (max-width: 1030px) and (max-height: 780px) {
-  .header-carousel {
-    display: none; } }
-
 @media screen and (max-width: 908px) {
   .header-img {
     -webkit-clip-path: polygon(20% 100%, 100% 0, 100% 100%);
@@ -4167,18 +4166,19 @@ input[type="number"]:focus {
     max-width: 282px;
     font-size: 12px;
     padding-left: 30px;
-    line-height: 1.4;
-    height: 57%;
-    margin-bottom: 15px; }
+    line-height: 1.4; }
   .header-dsc:before {
+    top: 4px;
     left: -4px; }
   .header-request {
     margin-left: auto;
     margin-right: auto;
+    margin-top: 10px;
     max-width: 252px;
-    padding-left: 15px; }
+    padding-left: 15px;
+    position: relative;
+    z-index: 2; }
   .header-request__btn {
-    padding: 0;
     margin: 0; }
   .header-carousel {
     display: block;
@@ -4247,29 +4247,27 @@ input[type="number"]:focus {
     height: 84%;
     margin-bottom: 15px; } }
 
-@media screen and (max-height: 468px) {
-  .ie .header-carousel {
-    display: none; } }
-
 @media screen and (max-height: 497px) {
   .header-dsc {
     height: 55%; }
+  .header-request {
+    margin-top: 0; }
   .header-carousel__wrap {
     top: -22px; } }
 
+@media screen and (max-height: 468px) {
+  .header-carousel__text:before {
+    display: none; } }
+
 @media screen and (max-height: 454px) {
-  .header-title {
-    height: 40%; }
-  .samsung .header-title {
-    height: 20%; }
-  .header-carousel {
-    display: none; }
   .ie .header-carosel {
     display: block; }
   .ie .header-dsc {
-    height: 73%; }
-  .ie .header-dsc {
     height: 73%; } }
+
+@media screen and (max-height: 445px) {
+  .header-carousel {
+    display: none; } }
 
 @media screen and (max-height: 432px) {
   .header-menu {
