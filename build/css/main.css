@@ -3267,9 +3267,6 @@ input[type="number"]:focus {
 .header-politic__item.tablet {
   display: none; }
 
-.header-content__block {
-  height: 100%; }
-
 .header-title {
   position: relative;
   z-index: 2; }
@@ -3304,7 +3301,6 @@ input[type="number"]:focus {
   background: transparent;
   border: none;
   position: relative;
-  margin-top: 53px;
   margin-left: 150px;
   padding: 10px 0;
   transition: ease .3s;
@@ -3729,7 +3725,6 @@ input[type="number"]:focus {
   .header-dsc:before {
     left: -119px; }
   .header-request__btn {
-    margin-top: 30px;
     margin-left: 119px; }
   .header-carousel {
     min-height: 150px; }
@@ -3870,14 +3865,11 @@ input[type="number"]:focus {
   .header-dsc:before {
     left: -124px; }
   .header-request__btn {
-    margin-top: 20px;
-    margin-left: 124px;
-    margin-bottom: 70px; }
+    margin-left: 124px; }
   .header-carousel__wrap {
     width: 260px;
     height: 156px;
     bottom: 124px;
-    top: -90px;
     right: 128px; }
   .header-social.tablet {
     display: flex;
@@ -3943,8 +3935,6 @@ input[type="number"]:focus {
     justify-content: center; }
   .request-form__consent-label {
     margin-top: 10px; }
-  .header-carousel {
-    display: block; }
   .header-carousel__wrap {
     top: -270px; } }
 
@@ -3952,10 +3942,6 @@ input[type="number"]:focus {
   .header-img {
     -webkit-clip-path: polygon(20% 100%, 100% 0, 100% 100%);
             clip-path: polygon(20% 100%, 100% 0, 100% 100%); } }
-
-@media screen and (max-width: 807px) and (max-height: 784px) {
-  .header-content .header-contacts_tablet {
-    height: 30%; } }
 
 @media screen and (max-width: 806px) {
   .header-request__btn {
@@ -4163,8 +4149,7 @@ input[type="number"]:focus {
   .header-title {
     text-align: center;
     padding-top: 20px;
-    margin-bottom: 10px;
-    height: 23%; }
+    margin-bottom: 10px; }
   .header-title__img {
     width: 290px; }
   .header-dsc {
@@ -4230,10 +4215,7 @@ input[type="number"]:focus {
     display: block; } }
 
 @media screen and (max-width: 575px) and (min-height: 518px) {
-  .header-title {
-    height: 29%; }
   .header-dsc {
-    height: 54%;
     line-height: 1.5; } }
 
 @media screen and (max-height: 503px) {
@@ -4254,8 +4236,6 @@ input[type="number"]:focus {
     margin-bottom: 15px; } }
 
 @media screen and (max-height: 497px) {
-  .header-dsc {
-    height: 55%; }
   .header-request {
     margin-top: 0; }
   .header-carousel__wrap {
