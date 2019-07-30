@@ -4106,10 +4106,15 @@ input[type="number"]:focus {
     padding: 0 15px;
     margin-bottom: 10px;
     height: 79%; }
+  .ie .header-content__block {
+    height: 73%; }
   .header-title {
     text-align: center;
     padding-top: 20px;
     margin-bottom: 10px; }
+  .ie .header-title {
+    padding-top: 0;
+    margin-bottom: 0; }
   .header-title__img {
     width: 290px; }
   .header-dsc {
