@@ -3131,7 +3131,6 @@ input[type="number"]:focus {
   width: 86.35416666666667%;
   background-image: url(imgs/bg.png);
   background-repeat: repeat;
-  padding-top: 40px;
   padding-bottom: 40px;
   padding-left: 143px;
   position: relative; }
@@ -3163,7 +3162,8 @@ input[type="number"]:focus {
   max-width: 951px;
   position: relative;
   z-index: 1;
-  display: flex; }
+  display: flex;
+  padding-top: 55px; }
 
 .header-block {
   display: none; }
@@ -3477,6 +3477,7 @@ input[type="number"]:focus {
 .request-form__flex {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   width: 100%;
   max-width: 514px;
@@ -3680,11 +3681,14 @@ input[type="number"]:focus {
   text-decoration: underline;
   font-size: 13px; }
 
-@media screen and (max-height: 740px) {
-  .header-title__img {
-    width: 47%; }
-  .header-dsc {
-    margin-top: 25px; } }
+@media screen and (max-height: 740px) and (min-width: 576px) {
+  .header-content__block {
+    padding-top: 30px; }
+  .header-title .header-title__img {
+    width: 67%;
+    max-width: 450px; }
+  .header-content .header-dsc {
+    margin-top: 15px; } }
 
 @media screen and (max-height: 636px) and (min-width: 576px) {
   .header-carousel {
@@ -3700,7 +3704,7 @@ input[type="number"]:focus {
   .header-img {
     -webkit-clip-path: polygon(13% 100%, 70% 0, 100% 0, 100% 100%);
             clip-path: polygon(13% 100%, 70% 0, 100% 0, 100% 100%);
-    width: 29%; }
+    width: calc(100% - 700px); }
   .header-title__img {
     max-width: 770px;
     width: 100%; }
@@ -3771,7 +3775,8 @@ input[type="number"]:focus {
     max-width: 100%;
     min-height: 90px;
     max-height: 90px;
-    z-index: 0; }
+    z-index: 0;
+    padding-top: 0; }
   .ie .header-contacts {
     z-index: 2; }
   .header-contacts:before {
@@ -3897,9 +3902,6 @@ input[type="number"]:focus {
     visibility: hidden;
     position: absolute;
     left: 0; }
-  .request-form__flex {
-    flex-wrap: wrap;
-    justify-content: center; }
   .request-form__consent-label {
     margin-top: 10px; } }
 
@@ -3951,6 +3953,12 @@ input[type="number"]:focus {
     left: -42px; }
   .header-request__btn {
     margin-left: 42px; } }
+
+@media screen and (max-width: 591px) {
+  .request-form__flex {
+    justify-content: center; }
+  .request-form__consent-label {
+    margin-top: 10px; } }
 
 @media screen and (max-width: 575px) {
   .header-content__wrap {
