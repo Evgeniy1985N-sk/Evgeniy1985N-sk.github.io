@@ -15,12 +15,10 @@ $(document).ready(function(){
 	$('.btn-open').on('click', function() {
 		$('.header-nav').toggleClass('active');
 		$('.btn-open.mob-menu').toggleClass('active');
-		if( $('.header-nav').hasClass('active') ) {
-			$('.btn-open.mob-menu').addClass('active');
-		}
 	});
 	$('.btn-close.menu').on('click', function() {
 		$('.header-nav').removeClass('active');
+		$('.btn-open.mob-menu').removeClass('active');
 	});
 
 	/* popup */
