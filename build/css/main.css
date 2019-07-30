@@ -3509,6 +3509,9 @@ input[type="number"]:focus {
 .request-form__consent-label .request-form__text {
   padding-bottom: 0; }
 
+.samsung .request-form__consent-label .request-form__text {
+  font-size: 10px; }
+
 .request-form__consent-label .request-form__text:after {
   display: none; }
 
