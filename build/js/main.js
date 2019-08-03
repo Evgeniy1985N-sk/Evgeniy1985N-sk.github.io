@@ -5,24 +5,21 @@ $(document).ready(function(){
 	NProgress.done();
 
 	/* carousel */
-	$('.header-carousel__wrap').slick({
+	$('.main-carousel__wrap').slick({
 		dots: true,
 		infinite: false,
 		speed: 300,
 		slidesToShow: 1,
 		arrows: true
 	});
-	$('.header-carousel .slick-dots button:contains("1")').addClass('size_big');
-	$('.header-carousel .slick-dots button:contains("2")').addClass('size_middle');
+	$('.main-carousel .slick-dots button:contains("1")').addClass('size_big');
+	$('.main-carousel .slick-dots button:contains("2")').addClass('size_middle');
 
 	/* menu */
 	$('.btn-open').on('click', function() {
-		$('.header-nav').toggleClass('active');
-		$('.btn-open.mob-menu').toggleClass('active');
-	});
-	$('.btn-close.menu').on('click', function() {
-		$('.header-nav').removeClass('active');
-		$('.btn-open.mob-menu').removeClass('active');
+		$('.aside').toggleClass('active');
+		$(this).toggleClass('active');
+		$('.btn-open__burger').toggleClass('active');
 	});
 
 	/* popup */

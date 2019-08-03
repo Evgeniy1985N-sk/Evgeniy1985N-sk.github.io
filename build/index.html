@@ -9,7 +9,6 @@
     <link rel="shortcut icon" href="images/favicon.png" type="image/png">
 	<link rel="stylesheet" href="js/progress-bar/nprogress.css">
 	<link rel="stylesheet" href="js/carousel/slick.css">
-	<link rel="stylesheet" href="js/preloader/js/plugin.js">
 	<link rel="stylesheet" href="js/carousel/slick-theme.css">
 	<link rel="stylesheet" href="js/fb/jquery.fancybox.min.css">
 	<link rel="stylesheet" href="css/main.css">
@@ -19,6 +18,7 @@
 	<script src="js/carousel/slick.min.js"></script>
 	<script src="js/fb/jquery.fancybox.min.js"></script>
 	<script src="js/main.js"></script>
+
 	<style>
 		.preloader {
 			width: 100%;
@@ -47,245 +47,220 @@
 <body>
 	
 	<picture class="preloader">
-		<source  class="preloader__img" media="(min-width:1920px)" srcset="images/logo.png" alt="">
+		<source  class="preloader__img" media="(min-width:1920px)" srcset="images/logo.png">
 		<img class="preloader__img" src="images/logo-tablet.png" alt="">
 	</picture>
 
-	<header class="header">
-		<nav class="header-nav">
-			<div class="header-box">
-				<div class="header-logo"></div>
-				<button class="btn-close menu"></button>
-			</div>
-			<ol class="header-menu">
-				<li class="header-menu__item">
-					<a class="header-menu__link" href="#">
-						Главная
-					</a>
-				</li>
-				<li class="header-menu__item">
-					<a class="header-menu__link" href="#">
-						О компании
-					</a>
-				</li>
-				<li class="header-menu__item">
-					<a class="header-menu__link" href="#">
-						Услуги
-					</a>
-				</li>
-				<li class="header-menu__item">
-					<a class="header-menu__link" href="#">
-						Проекты
-					</a>
-				</li>
-				<li class="header-menu__item">
-					<a class="header-menu__link" href="#">
-						Партнеры
-					</a>
-				</li>
-				<li class="header-menu__item">
-					<a class="header-menu__link" href="#">
-						Пресс-центр
-					</a>
-				</li>
-				<li class="header-menu__item">
-					<a class="header-menu__link" href="#">
-						Контакты
-					</a>
-				</li>
-			</ol>
-			<div class="header-social">
-				<a href="#" class="header-social__item fb"></a>
-				<a href="#" class="header-social__item vk"></a>
-				<a href="#" class="header-social__item in"></a>
-			</div>
-			<div class="header-nav__wrap_mob">
-				<div class="header-email mob">
-					<a class="header-email__link" href="mailto:info@fabslog.ru">
-						info@rusintelcom.ru
-					</a>
+	<div class="wrap">
+		<aside class="aside">
+			<nav class="main-nav">
+				<div class="logo"></div>
+				<ol class="main-menu">
+					<li class="main-menu__item">
+						<a class="main-menu__link" href="#">
+							Главная
+						</a>
+					</li>
+					<li class="main-menu__item">
+						<a class="main-menu__link" href="#">
+							О компании
+						</a>
+					</li>
+					<li class="main-menu__item">
+						<a class="main-menu__link" href="#">
+							Услуги
+						</a>
+					</li>
+					<li class="main-menu__item">
+						<a class="main-menu__link" href="#">
+							Проекты
+						</a>
+					</li>
+					<li class="main-menu__item">
+						<a class="main-menu__link" href="#">
+							Партнеры
+						</a>
+					</li>
+					<li class="main-menu__item">
+						<a class="main-menu__link" href="#">
+							Пресс-центр
+						</a>
+					</li>
+					<li class="main-menu__item">
+						<a class="main-menu__link" href="#">
+							Контакты
+						</a>
+					</li>
+				</ol>
+				<div class="social">
+					<a href="#" class="social-item fb"></a>
+					<a href="#" class="social-item vk"></a>
+					<a href="#" class="social-item in"></a>
 				</div>
-				<div class="header-address mob">
-					<a class="header-address__text" href="#">
-						Москва, МКАД, 104-Й километр, 8А
-					</a>
-				</div>
-			</div>
-			<div class="header-politic mob">
-				<a class="header-politic__item" href="#">
-					Соглашение об обработке персональных данных
-				</a>
-				<a class="header-politic__item" href="#">
-					Политика конфиденциальности
-				</a>
-				<div class="header-politic__item rights">
-					© 2019. ООО "Русинтелком". Все права защищены.
-				</div>
-			</div>
-		</nav>
-		<div class="header-content">
-			<div class="header-content__wrap">
-				<img class="header-img" src="images/img-1.png" alt="">
-				<div class="header-contacts">
-					<div class="header-logo_tablet"></div>
+			</nav>
+		</aside>
+		<div class="side">
+			<header class="header">
+				<div class="contacts">
+					<div class="logo-tablet"></div>
 					<button class="btn-open mob-menu">
-						<span class="header__btn-lines">
-							<span class="header__btn-line"></span>
+						<span class="btn-open__burger">
+							<span class="btn-open__line"></span>
 						</span>
-						<span class="header__btn-text">
+						<span class="btn-open__text">
 							меню
 						</span>
 					</button>
-					<div class="header-politic__item tablet">
+					<div class="info-item tablet">
 						© 2019. ООО "Русинтелком". Все права защищены.
 					</div>
-					<div class="header-phone">
-						<a class="header-phone__link" href="tel:+7(495)638-53-84">
+					<div class="phone">
+						<a class="phone-link" href="tel:+7(495)638-53-84">
 							+7 (495) 638-53-84
 						</a>
 					</div>
-					<div class="header-email">
-						<a class="header-email__link" href="mailto:info@fabslog.ru">
+					<div class="email">
+						<a class="email-link" href="mailto:info@fabslog.ru">
 							info@rusintelcom.ru
 						</a>
 					</div>
-					<div class="header-address">
-						<a class="header-address__text" href="#">
+					<div class="address">
+						<a class="address-link" href="#">
 							Москва, МКАД, 104-Й километр, 8А
 						</a>
 					</div>
 				</div>
-				<div class="header-contacts_tablet">
-					<div class="header-email tablet">
-						<a class="header-email__link" href="mailto:info@fabslog.ru">
+				<div class="contacts-tablet">
+					<div class="email tablet">
+						<a class="email-link" href="mailto:info@fabslog.ru">
 							info@rusintelcom.ru
 						</a>
 					</div>
-					<div class="header-address tablet">
-						<a class="header-address__text" href="#">
+					<div class="address tablet">
+						<a class="address-link" href="#">
 							Москва, МКАД, 104-Й километр, 8А
 						</a>
 					</div>
 				</div>
-				<div class="header-content__block">
-					<h1 class="header-title">
-						<img class="header-title__img" src="images/title.png" alt="">
-					</h1>
-					<p class="header-dsc">
-						Компания «РУСИНТЕЛКОМ» предоставляет полный комплекс инжиниринговых услуг для бизнеса: разработка концепции, проектирование, поставка оборудования, строительно-монтажные и пусконаладочные работы, 
-						ввод в эксплуатацию, сервисное обслуживание объекта.
-					</p>
-					<div class="header-request">
-						 <a data-fancybox data-src="#header-request__popup_big" href="javascript:;" class="header-request__btn">Оставить заявку</a>
-						<div id="header-request__popup_big" class="header-request__popup big">
-							<h2 class="header-request__title">
-								оставить заявку
-							</h2>
-							<button class="btn-close request-popup_big"></button>
-							<form class="request-form">
-								<label class="request-form__label">
-									<input class="request-form__input" type="text" placeholder="Иванов Иван Иванович" required>
-									<span class="request-form__text">
-										ФИО
+			</header>
+			<main class="main">
+				<img class="main-img" src="images/img-1.png" alt="">
+				<div class="main-title">
+					<img class="main-title__img" src="images/title.png" alt="">
+				</div>
+				<p class="main-dsc">
+					Компания «РУСИНТЕЛКОМ» предоставляет полный комплекс инжиниринговых услуг для бизнеса: разработка концепции, проектирование, поставка оборудования, строительно-монтажные и пусконаладочные работы, 
+					ввод в эксплуатацию, сервисное обслуживание объекта.
+				</p>
+				<div class="main-request">
+					 <a data-fancybox data-src="#main-request__popup_big" href="javascript:;" class="main-request__btn">Оставить заявку</a>
+					<div id="main-request__popup_big" class="main-request__popup big">
+						<h2 class="main-request__title">
+							оставить заявку
+						</h2>
+						<button class="btn-close request-popup_big"></button>
+						<form class="request-form">
+							<label class="request-form__label">
+								<input class="request-form__input" type="text" placeholder="Иванов Иван Иванович" required>
+								<span class="request-form__text">
+									ФИО
+								</span>
+							</label>
+							<label class="request-form__label">
+								<input class="request-form__input" type="text" placeholder="Бэст-компани" required>
+								<span class="request-form__text">
+									Компания
+								</span>
+							</label>	
+							<label class="request-form__label">
+								<input class="request-form__input" type="number" placeholder="+7 (___) -___-__-__" required>
+								<span class="request-form__text">
+									Телефон
+								</span>
+							</label>
+							<label class="request-form__label">
+								<input class="request-form__input" type="email" placeholder="ivanov@gmail.com" required>
+								<span class="request-form__text">
+									Email
+								</span>
+							</label>
+							<div class="request-form__wrap-textarea">
+								<span class="request-form__text">
+									Комментарий
+								</span>
+								<textarea class="request-form__textarea" placeholder="Текст комментария ..."></textarea>
+							</div>
+							<div class="request-form__flex">
+								<button class="main-request__btn">
+									Отправить заявку
+								</button>
+								<label class="request-form__consent-label">
+									<input class="request-form__consent-input" type="checkbox" required>
+									<span class="request-form__consent-square"></span>
+									<span class="request-form__text consent">
+										Я соглашаюсь с правилами обработки<br>
+										и хранения моих персональных данных
 									</span>
 								</label>
-								<label class="request-form__label">
-									<input class="request-form__input" type="text" placeholder="Бэст-компани" required>
-									<span class="request-form__text">
-										Компания
-									</span>
-								</label>	
-								<label class="request-form__label">
-									<input class="request-form__input" type="number" placeholder="+7 (___) -___-__-__" required>
-									<span class="request-form__text">
-										Телефон
-									</span>
-								</label>
-								<label class="request-form__label">
-									<input class="request-form__input" type="text" placeholder="ivanov@gmail.com" required>
-									<span class="request-form__text">
-										Email
-									</span>
-								</label>
-								<div class="request-form__wrap-textarea">
-									<span class="request-form__text">
-										Комментарий
-									</span>
-									<textarea class="request-form__textarea" placeholder="Текст комментария ..."></textarea>
-								</div>
-								<div class="request-form__flex">
-									<button class="header-request__btn">
-										Отправить заявку
-									</button>
-									<label class="request-form__consent-label">
-										<input class="request-form__consent-input" type="checkbox">
-										<span class="request-form__consent-square"></span>
-										<span class="request-form__text consent">
-											Я соглашаюсь с правилами обработки<br>
-											и хранения моих персональных данных
-										</span>
-									</label>
-								</div>
-							</form>
-						</div>
-						<div class="header-request__popup small">
-							<h2 class="header-request__title">
-								спасибо!
-							</h2>
-							<button class="btn-close request-popup_small"></button>
-							<p class="header-dsc">
-								Мы свяжемся с вами в ближайшее время
-							</p>
-						</div>
+							</div>
+						</form>
 					</div>
-					<div class="header-carousel">
-						<div class="header-carousel__wrap">
-							<div class="header-carousel__item">
-								<img src="images/img-2.png" alt="">
-								<div class="header-carousel__text">
-									Инжиниринг
-								</div>
-								<div class="header-carousel__spacer"></div>
+					<div class="main-request__popup small">
+						<h2 class="main-request__title">
+							спасибо!
+						</h2>
+						<button class="btn-close request-popup_small"></button>
+						<p class="main-dsc">
+							Мы свяжемся с вами в ближайшее время
+						</p>
+					</div>
+				</div>
+				<div class="main-carousel">
+					<div class="main-carousel__wrap">
+						<div class="main-carousel__item">
+							<img src="images/img-2.png" alt="">
+							<div class="main-carousel__text">
+								Инжиниринг
 							</div>
-							<div class="header-carousel__item">
-								<img src="images/img-3.png" alt="">
-								<div class="header-carousel__text">
-									Инжиниринг
-								</div>
-								<div class="header-carousel__spacer"></div>
+							<div class="main-carousel__spacer"></div>
+						</div>
+						<div class="main-carousel__item">
+							<img src="images/img-3.png" alt="">
+							<div class="main-carousel__text">
+								Инжиниринг
 							</div>
-							<div class="header-carousel__item">
-								<img src="images/img-2.png" alt="">
-								<div class="header-carousel__text">
-									Инжиниринг
-								</div>
-								<div class="header-carousel__spacer"></div>
+							<div class="main-carousel__spacer"></div>
+						</div>
+						<div class="main-carousel__item">
+							<img src="images/img-2.png" alt="">
+							<div class="main-carousel__text">
+								Инжиниринг
 							</div>
+							<div class="main-carousel__spacer"></div>
 						</div>
 					</div>
 				</div>
-				<div class="header-container">
-					<div class="header-social tablet">
-						<a href="#" class="header-social__item fb"></a>
-						<a href="#" class="header-social__item vk"></a>
-						<a href="#" class="header-social__item in"></a>
-					</div>
-					<div class="header-politic">
-						<a class="header-politic__item deal" href="#">
-							Соглашение об обработке персональных данных
-						</a>
-						<a class="header-politic__item politic" href="#">
-							Политика конфиденциальности
-						</a>
-						<div class="header-politic__item rights mob">
-							© 2019. ООО "Русинтелком". Все права защищены.
-						</div>
+			</main>
+			<footer class="footer">
+				<div class="social tablet">
+					<a href="#" class="social-item fb"></a>
+					<a href="#" class="social-item vk"></a>
+					<a href="#" class="social-item in"></a>
+				</div>
+				<div class="info">
+					<a class="info-item deal" href="#">
+						Соглашение об обработке персональных данных
+					</a>
+					<a class="info-item politic" href="#">
+						Политика конфиденциальности
+					</a>
+					<div class="info-item rights mob">
+						© 2019. ООО "Русинтелком". Все права защищены.
 					</div>
 				</div>
-			</div>
+			</footer>
 		</div>
-	</header>
-
+	</div>
 
 </body>
 </html>
