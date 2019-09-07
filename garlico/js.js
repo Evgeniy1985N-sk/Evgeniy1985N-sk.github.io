@@ -364,20 +364,12 @@ for (var i=0; i<goodsButton.length; i++) {
     if(position===-3600) h5InMw.innerHTML="Консервированный";
     if(position===-4800) h5InMw.innerHTML="Стрелка чеснока";
     if(position===-6000) h5InMw.innerHTML="Посадочный материал";
-    
-
-
 
   }
 
 }
 
-
-
-
 // -----------map-------------------
-
-
 
 ymaps.ready(init);
 
