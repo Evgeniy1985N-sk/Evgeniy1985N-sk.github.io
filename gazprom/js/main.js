@@ -1,5 +1,15 @@
 $(document).ready(function() {
 
+	/* menu */
+	$('.header-btn').on('click', function() {
+		$(this).toggleClass('active');
+		$('.header-menu_list').toggleClass('active');
+	});
+	$('.header-menu_list').on('click', 'a:not(.active)', function(){
+		$('.header-menu_list a').removeClass('active');
+		$(this).addClass('active');
+	});
+
 	/* accordion */
 	$('.answers-list_item').eq(1).addClass('active');
 	$('.answers-list_sub').eq(1).slideDown();
