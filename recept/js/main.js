@@ -73,9 +73,12 @@ $(document).ready(function() {
     	'<div class="header-popup buy"><button class="header-popup_close"></button><div class="header-popup_text">Ольга М. только что<br>совершила покупку<br>на сумму 5600 руб.</div></div>'
     ];
 
+    var b;
     setInterval(function(){
     	$('.header-popup').eq(1).remove();
 		var a = (Math.floor(Math.random() * arr.length));
+		if (a == b) return;
+		b = a;
 		$('.header-popups').prepend(arr[a]);
 	},5000);
 

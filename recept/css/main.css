@@ -2918,10 +2918,12 @@ input[type="number"]:focus {
   text-transform: uppercase;
   font-family: "Rubik";
   font-weight: 400;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+  transition: ease .3s; }
 
 .header-request:hover {
-  border: 1px solid #343434; }
+  background: #232323;
+  color: #fff; }
 
 .request-popup {
   display: none;
@@ -2956,10 +2958,7 @@ input[type="number"]:focus {
   letter-spacing: 0.5px;
   line-height: 20px; }
 
-@-webkit-keyframes .header-popup.phone {
-  padding-bottom: 43px; }
-
-@keyframes .header-popup.phone {
+.header-popup.phone {
   padding-bottom: 43px; }
 
 .header-popup.buy {
@@ -3166,6 +3165,9 @@ input[type="number"]:focus {
   font-size: 15px;
   letter-spacing: 1px; }
 
+.header-form input:focus {
+  border: 1px solid #343434; }
+
 .header-form .btn {
   width: 100%;
   min-width: auto;
@@ -3173,6 +3175,10 @@ input[type="number"]:focus {
   background: #232323;
   font-size: 16px;
   color: #fff; }
+
+.header-form .btn:hover {
+  color: #232323;
+  background: #fff; }
 
 .header-content_text {
   color: #474747;
