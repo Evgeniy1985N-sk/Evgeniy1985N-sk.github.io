@@ -34,6 +34,7 @@ h5, .h5 {
 
 h6, .h6 {
   font-size: 1rem; }
+
 hr {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -45,10 +46,6 @@ small,
   font-size: 80%;
   font-weight: 400; }
 
-mark,
-.mark {
-  padding: 0.2em;
-  background-color: #fcf8e3; }
 a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
 button.bg-primary:focus {
@@ -109,7 +106,6 @@ a.bg-dark:hover, a.bg-dark:focus,
 button.bg-dark:hover,
 button.bg-dark:focus {
   background-color: #1d2124 !important; }
-
 /*
 @import "root";
 @import "reboot";
@@ -632,14 +628,17 @@ input[type="number"]:focus {
 
 @media screen and (max-width: 1200px) {
   .aside {
-    min-width: 71px;
-    margin-top: 100px; }
+    min-width: 71px; }
   .aside:hover .aside-menu {
     min-width: 278px; }
   .aside-nav {
     z-index: 20;
     width: 71px;
-    min-width: auto; }
+    min-width: auto;
+    padding-top: 100px;
+    transition: ease .3s; }
+  .aside:hover .aside-nav {
+    width: 278px; }
   .aside-menu {
     position: relative;
     z-index: 1;
@@ -840,6 +839,7 @@ input[type="number"]:focus {
     left: -670px;
     z-index: 2;
     width: auto;
+    padding-top: 0;
     transition: ease 1s; }
   .aside-nav.active {
     left: 50px; }
