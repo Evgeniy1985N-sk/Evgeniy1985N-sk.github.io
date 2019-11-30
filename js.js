@@ -1,13 +1,11 @@
 
+window.onload = function () {
+  let preloader = document.getElementById('preloader');
+  preloader.style.visibility = 'hidden';
+  preloader.style.opasity = '0';
+};
 
 $(document).ready(function() {
-
-
-	window.onload = function () {
-	  let preloader = document.getElementById('preloader');
-	  preloader.style.visibility = 'hidden';
-	  preloader.style.opasity = '0';
-	};
 
    $("a.topLink").click(function() {
       $("html, body").animate({
