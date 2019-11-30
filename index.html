@@ -2,17 +2,19 @@
 <html lang="ru">
 	<head>
 		<meta charset="UTF-8">
-		<meta name="Description" content="Author: E.S.Lopukhin, Category: Site, Price: $50, Length: 4 pages">
-		<title>My portfolio</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>My portfolio</title>
+
 		<link rel="stylesheet" type="text/css" href="bootstrap-reboot.min.css">
 		<link rel="stylesheet" type="text/css" href="bootstrap-grid.min.css">
   		<link rel="stylesheet" href="slick/slick.css">
   		<link rel="stylesheet" href="slick/slick-theme.css">
-  		<script src="js.js" defer></script>
+	    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+	    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 		<link href="style.css" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" type="text/css" href="media-queries.css">
-	    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+
 	    <style>
 		    .preloader {
 				position: fixed;
@@ -23,6 +25,9 @@
 				transition: 1s all;
 				opacity: 1;
 				visibility: visible;
+			}
+			.preloader.hidden {
+				display: none;
 			}
 			.loader {
 				width: 75px;
@@ -49,13 +54,13 @@
 
 	<body>
 
-		<div id="preloader" class="preloader">
+		<div class="preloader">
 			<div class="loader"></div>
 		</div>
 
 	<!-- =============== HEADER =============== -->
 
-		<header class="background-img" id="header">
+		<header class="header" id="header">
 			<nav>
 				<input type="checkbox" id="hmt" class="hidden-menu-ticker">
 				<label class="btn-menu" for="hmt">
@@ -85,35 +90,27 @@
 				</ul>
 			</nav>
 			<div class="background">
-				<div class="container-fluid">
-
+				<div class="container">
 					<div class="row">
-
 						<div class="col-12 col-sm-4 div-call">
 							<a class="call-a" href="tel:+79539685669" title="tele2">+7(953) 968-56-69</a>
 						</div>
 
 						<div class="col-12 col-sm-4 div-logo">
 							<img src="img/world-logo-min.png" alt="">
-							<h1 class="name-site-h1">создание сайтов</h1>
+							<h1 class="name-site-h1">html-верстка</h1>
 						</div>
 
-						<div class="col-12 col-sm-4">
-					
-						</div>
-
+						<div class="col-12 col-sm-4"></div>
 					</div>
-
-					<div class="text-about-me">
-						<p>Привет, мир.</p>
-						<p>Меня зовут Евгений Лопухин.</p>
-						<p>Я занимаюсь созданием сайтов.</p>
-					</div>
-					<div class="btn-por">
-						<a href="#contacts" class="topLink">
-							<div>
-								<span class="btn-por__span">заказать сайт</span>
-							</div>
+					<p class="text-about-me">
+						Привет,<br>
+						меня зовут Евгений,<br>
+						я занимаюсь версткой сайтов.
+					</p>
+					<div class="header__btn-wrap">
+						<a href="#portfolio" class="header__btn topLink">
+							последние работы
 						</a>
 					</div>
 					<div class="wrapper-angle">
@@ -127,12 +124,12 @@
 			</div>	
 		</header>
 
-	<!-- =============== SECTION-2 =============== -->
+	<!-- =============== ABOUT =============== -->
 
 		<section class="sec2">
 			<div class="flex-sect2">
 				<div id="about-me" class="bg-pattern">
-					<div class="container-fluid text-left left-side">
+					<div class="container text-left left-side">
 						<h2 class="sect2__h2">Обо мне</h2>
 						<div class="row">
 							<div class="col-12">
@@ -147,13 +144,13 @@
 									<i class="fas fa-wrench fa-2x"></i>
 								</div>
 								<div class="about-me__line"></div>
-								<p class="my-skills2">HTML5, CSS3, JavaScript, PHP, MySQL, 1c-Битрикс, jQuery, Less, Bootstrap-4, Photoshop</p>
+								<p class="my-skills2">HTML5, CSS3, JavaScript, jQuery,  Pixel Perfect, Less, Bootstrap-4, Photoshop, Figma</p>
 								<div class="about-me__flex">
 								 	<span class="what-I-doing">Навыки:</span>
 								 	<i class="fas fa-brain fa-2x"></i>
 							 	</div>
 							 	<div class="about-me__line"></div>
-								<p class="what-p">Кроссбраузерная адаптивная верстка, дизайн сайта.<br></p>
+								<p class="what-p">Кроссбраузерная адаптивная верстка.<br></p>
 								<div class="align">
 									<a href="#article" class="topLink"><i class="far fa-check-circle fa-3x"></i></a>
 								</div>
@@ -184,7 +181,7 @@
 				</div>
 				<div class="sec3-bg-right">
 					<div class="sec3-bg-right2">
-						<div class="container-fluid text-left right-side">
+						<div class="container text-left right-side">
 							<h4>Статья</h4>
 							<div class="title-flex">
 								<p class="title">Зачем нужен сайт?</p>
@@ -220,7 +217,7 @@
 			<div class="sec4-bg">
 				<h3 class="sec4-h3">портфолио</h3>
 				<p class="section4__p">посмотрите мои последние работы</p>
-				<div class="container-fluid">
+				<div class="container">
 					<div class="row">
 						<div class="col-12">
 							<div class="section4__line"></div>
@@ -304,7 +301,7 @@
 		<section id="contacts" class="sec5">
 			<h3 class="sec5__h3">Контакты</h3>
 			<p class="sec5__p">Свяжитесь со мной для заказа верстки</p>
-			<div class="container-fluid">
+			<div class="container">
 				<div class="row">
 					<div class="col"></div>
 					<div class="col-12 col-sm-10 col-md-6 col-lg-6 align">
@@ -390,15 +387,8 @@
 				</div>
 			</div>
 		</footer>
-
-
-
-
-		
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   		<script src="slick/slick.min.js"></script>
-
+  		<script src="js.js"></script>
 	</body>
-
 </html>

@@ -1,8 +1,6 @@
 
 window.onload = function () {
-  let preloader = document.getElementById('preloader');
-  preloader.style.visibility = 'hidden';
-  preloader.style.opasity = '0';
+  $('.preloader').addClass('hidden');
 };
 
 $(document).ready(function() {
@@ -17,15 +15,13 @@ $(document).ready(function() {
       return false;
    });
 
-
 	$('.sl').slick({
 	  prevArrow: '<div class="prev"></div>',
 	  nextArrow: '<div class="next"></div>',
 	  arrows: true,
 	  dots: true,
 	  infinite: true,
-	  speed: 500,
-	  fade: true,
+	  speed: 100,
 	  cssEase: 'linear'
 	});
 
