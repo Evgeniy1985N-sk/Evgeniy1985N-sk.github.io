@@ -22,7 +22,6 @@
 
 .demo {
 	position: relative;
-	height: 100vh;
 	font-family: 'Open Sans', sans-serif;
     font-weight: 400;
 }
@@ -66,6 +65,10 @@
 /* preview ================================================ */
 
 .demo .preview {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 100;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -76,6 +79,7 @@
 	transition-duration: .2s;
 }
 .demo .preview.disabled {
+	z-index: -1;
 	opacity: 0;
 }
 
