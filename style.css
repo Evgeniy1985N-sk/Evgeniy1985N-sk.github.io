@@ -140,7 +140,7 @@ nav .hidden-menu .first-li {
 	color: white;
 }
 
-/*---------------HEADER---------------*/
+/*--------------- HEADER ---------------*/
 
 .header {
 	background-image: url(img/blacknet-min.png);
@@ -180,15 +180,13 @@ nav .hidden-menu .first-li {
 	font-family: 'Montserrat-Semibold-LightItalick';
 	text-align: center;
 }
-.text-about-me {
+.header__text {
+	margin-bottom: 0;
 	padding-top: 112px;
 	text-align: center;
-}
-.text-about-me { 
 	color: white;
 	font-size: 32px;
 	font-weight: bold;
-	margin-bottom: 0;
 	font-family: 'Montserrat-Semibold-Black';
 	font-weight: bold;
 }
@@ -231,55 +229,58 @@ a:hover {
 .fk:hover {
 	cursor: pointer;
 }
-.wrapper-angle {
-	display: flex;
-	padding-bottom: 20px;
-	padding-top: 10px;
-}
-@keyframes angleTransform {
-	0%  { bottom: 0px; }
-  100% { bottom: 20px; }
-}
-.div-angle {
-	animation: angleTransform 0.9s cubic-bezier(0.1,0.25,0.1,1) 0s infinite alternate both;
+.header__angle {
 	position: relative;
-	left: 50%;
-	margin-left: -10px;
-	-ms-user-select: none; 
-    -moz-user-select: none; 
-    -webkit-user-select: none; 
-    user-select: none; 
+	padding-top: 10px;
+	padding-bottom: 20px;
+	text-align: center;
 }
-.angle {
+.header__angle-link {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	padding: 30px;
+	-ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+	animation: angleTransform 0.9s cubic-bezier(0.1,0.25,0.1,1) 0s infinite alternate both;
+}
+.header__angle-link:before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%) rotate(45deg);
 	border: 3px solid white;
 	height: 20px;
 	width: 20px;
 	border-left: none;
 	border-top: none;
-	transform: rotate(45deg);
 	transition-duration: 0.5s;
 }
-
-/*---------------SECTION-2---------------*/
-
-.flex-sect2 {
-	display: flex;
+@keyframes angleTransform {
+	0%  { bottom: 0px; }
+  100% { bottom: 20px; }
 }
 
-/*------LEFT-SIDE-SEC2------*/
+/*--------------- About ---------------*/
 
-.bg-pattern {
+.about {
+	display: flex;
+}
+.about__content {
 	width: 50%;
 	background-image: url(img/img-pattern.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	color: #2D1941;
 }
-.left-side {
+.about__content-inner {
 	max-width: 600px;
 	margin-right: 0;
 }
-.sect2__h2 {
+.about__title {
 	font-family: 'Montserrat-Semibold-LightItalick';
 	font-weight: bold;
 	text-align: center;
@@ -288,16 +289,16 @@ a:hover {
 	padding-bottom: 20px;
 	text-decoration: underline;
 }
-.about-me__flex {
+.about__flex {
 	display: flex;
 	flex-direction: column-reverse;
 	align-items: center;
 	justify-content: space-between;
 }
-.about-me__flex .fa-2x {
+.about__flex .fa-2x {
 	color: #2D1941;
 }
-.about-me__line {
+.about__line {
 	height: 1px;
 	width: 50%;
 	background: #2D1941;
@@ -346,12 +347,12 @@ a:hover {
 	color: #2D1941;
 }
 
-/*------RIGHT-SIDE-SEC2------*/
+/*------RIGHT-SIDE-about------*/
 
 .bg-right {
 	width: 50%;
 }
-.sec2-bg {
+.about-bg {
 	width: 100%;
 	height: 100%;
 }

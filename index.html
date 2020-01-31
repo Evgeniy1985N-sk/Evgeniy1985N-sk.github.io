@@ -61,64 +61,57 @@
 	<!-- =============== HEADER =============== -->
 
 		<header class="header" id="header">
-			<nav>
-				<input type="checkbox" id="hmt" class="hidden-menu-ticker">
-				<label class="btn-menu" for="hmt">
-					<span class="first"></span>
-					<span class="second"></span>
-					<span class="third"></span>
-				</label>
-				<ul class="hidden-menu">
-					<li class="first-li">
-						<a href="#header" class="topLink">Главная</a>  
-					</li>
-					<li>
-						<a href="#about-me" class="topLink">Обо мне</a> 
-					</li>
-					<li>
-						<a href="#article" class="topLink">Статья</a>
-					</li>
-					<li>
-						<a href="#portfolio" class="topLink">Портфолио</a>
-					</li>
-					<li>
-						<a href="#contacts" class="topLink">Контакты</a>
-					</li>
-					<li class="li-mail">
-						<a href="mailto:evg.lopukhin@yandex.ru">evg.lopukhin@yandex.ru</a>
-					</li>
-				</ul>
-			</nav>
-			<div class="background">
+			<div class="header__wrap background">
 				<div class="container">
 					<div class="row">
 						<div class="col-12 col-sm-4 div-call">
 							<a class="call-a" href="tel:+79539685669" title="tele2">+7(953) 968-56-69</a>
 						</div>
-
 						<div class="col-12 col-sm-4 div-logo">
 							<img src="img/world-logo-min.png" alt="">
 							<h1 class="name-site-h1">html-верстка</h1>
 						</div>
-
-						<div class="col-12 col-sm-4"></div>
+						<nav class="col-12 col-sm-4">
+							<input type="checkbox" id="hmt" class="hidden-menu-ticker">
+							<label class="btn-menu" for="hmt">
+								<span class="first"></span>
+								<span class="second"></span>
+								<span class="third"></span>
+							</label>
+							<ul class="hidden-menu">
+								<li class="first-li">
+									<a href="#header" class="topLink">Главная</a>  
+								</li>
+								<li>
+									<a href="#about" class="topLink">Обо мне</a> 
+								</li>
+								<li>
+									<a href="#article" class="topLink">Статья</a>
+								</li>
+								<li>
+									<a href="#portfolio" class="topLink">Портфолио</a>
+								</li>
+								<li>
+									<a href="#contacts" class="topLink">Контакты</a>
+								</li>
+								<li class="li-mail">
+									<a href="mailto:evg.lopukhin@yandex.ru">evg.lopukhin@yandex.ru</a>
+								</li>
+							</ul>
+						</nav>
 					</div>
-					<p class="text-about-me">
+					<p class="header__text">
 						Привет,<br>
 						меня зовут Евгений,<br>
 						я занимаюсь версткой сайтов.
 					</p>
 					<div class="header__btn-wrap">
-						<a href="#portfolio" class="header__btn topLink">
+						<a class="header__btn topLink" href="#portfolio">
 							последние работы
 						</a>
 					</div>
-					<div class="wrapper-angle">
-						<div class="div-angle">
-							<a href="#about-me" class="topLink">
-								<div class="angle"></div>
-							</a>
-						</div>
+					<div class="header__angle">
+						<a href="#about" class="header__angle-link topLink"></a>
 					</div>
 				</div>
 			</div>	
@@ -126,44 +119,42 @@
 
 	<!-- =============== ABOUT =============== -->
 
-		<section class="sec2">
-			<div class="flex-sect2">
-				<div id="about-me" class="bg-pattern">
-					<div class="container text-left left-side">
-						<h2 class="sect2__h2">Обо мне</h2>
-						<div class="row">
-							<div class="col-12">
-								<div class="about-me__flex">
-									<span class="learning">Учеба:</span>
-									<i class="fas fa-graduation-cap fa-2x"></i>
-								</div>
-								<div class="about-me__line"></div>
-								<p class="learn-text">2017-2018 HTML-Academy, GeekBrains, Smartech<br></p>
-								<div class="about-me__flex">
-									<span class="my-skills">Мои инструменты:</span>
-									<i class="fas fa-wrench fa-2x"></i>
-								</div>
-								<div class="about-me__line"></div>
-								<p class="my-skills2">HTML5, CSS3, JavaScript, jQuery,  Pixel Perfect, Less, Bootstrap-4, Photoshop, Figma</p>
-								<div class="about-me__flex">
-								 	<span class="what-I-doing">Навыки:</span>
-								 	<i class="fas fa-brain fa-2x"></i>
-							 	</div>
-							 	<div class="about-me__line"></div>
-								<p class="what-p">Кроссбраузерная адаптивная верстка.<br></p>
-								<div class="align">
-									<a href="#article" class="topLink"><i class="far fa-check-circle fa-3x"></i></a>
-								</div>
+		<section class="about" id="about">
+			<div class="about__content">
+				<div class="about__content-inner container">
+					<h2 class="about__title">Обо мне</h2>
+					<div class="row">
+						<div class="col-12">
+							<div class="about__flex">
+								<span class="learning">Учеба:</span>
+								<i class="fas fa-graduation-cap fa-2x"></i>
+							</div>
+							<div class="about__line"></div>
+							<p class="learn-text">2017-2018 HTML-Academy, GeekBrains, Smartech<br></p>
+							<div class="about__flex">
+								<span class="my-skills">Мои инструменты:</span>
+								<i class="fas fa-wrench fa-2x"></i>
+							</div>
+							<div class="about__line"></div>
+							<p class="my-skills2">HTML5, CSS3, JavaScript, jQuery,  Pixel Perfect, Less, Bootstrap-4, Photoshop, Figma</p>
+							<div class="about__flex">
+							 	<span class="what-I-doing">Навыки:</span>
+							 	<i class="fas fa-brain fa-2x"></i>
+						 	</div>
+						 	<div class="about__line"></div>
+							<p class="what-p">Кроссбраузерная адаптивная верстка.<br></p>
+							<div class="align">
+								<a href="#article" class="topLink"><i class="far fa-check-circle fa-3x"></i></a>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="bg-right">
-					<div class="sec2-bg">
-						<div class="bg-right2">
-							<a href="#article" class="topLink">
-							</a>
-						</div>
+			</div>
+			<div class="bg-right">
+				<div class="about-bg">
+					<div class="bg-right2">
+						<a href="#article" class="topLink">
+						</a>
 					</div>
 				</div>
 			</div>
