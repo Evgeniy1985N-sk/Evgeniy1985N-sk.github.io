@@ -74,7 +74,6 @@
 	background: #c4cdd6;
 	transition-delay: 5s;
 	transition-duration: .2s;
-	display: none;
 }
 .demo .preview.disabled {
 	opacity: 0;
