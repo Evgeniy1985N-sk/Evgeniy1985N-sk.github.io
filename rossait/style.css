@@ -22,6 +22,7 @@
 
 .demo {
 	position: relative;
+	min-height: 595px;
 	font-family: 'Open Sans', sans-serif;
     font-weight: 400;
 }
@@ -65,15 +66,15 @@
 /* preview ================================================ */
 
 .demo .preview {
-	position: absolute;
+	position: fixed;
 	top: 0;
+	right: 0;
+	bottom: 0;
 	left: 0;
 	z-index: 100;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 100vw;
-	height: 100vh;
 	background: #c4cdd6;
 	transition-delay: 5s;
 	transition-duration: .2s;
@@ -85,17 +86,9 @@
 
 /* carousel ================================================ */
 
-.demo .carousel {
-	height: 100vh;
-	min-height: 565px;
-}
-.demo .slick-list {
-	height: 100vh;
-	min-height: 565px;
-}
 .demo .slide {
 	height: 100vh;
-	min-height: 565px;
+	min-height: 595px;
 	background-size: cover;
 }
 .demo .slide-1 {
@@ -113,7 +106,6 @@
 .demo .content {
 	max-width: 563px;
 	width: 100%;
-	min-height: 565px;
 	margin-top: 222px;
 	margin-right: 105px;
 	margin-left: auto;
@@ -165,7 +157,7 @@
 	transform: translate(-50%, -50%) rotate(-136deg);
 }
 .demo .container-switch {
-	position: fixed;
+	position: absolute;
 	bottom: 19px;
 	left: 50%;
 	transform: translateX(-50%);
@@ -219,14 +211,11 @@
 	}
 }
 @media (max-width: 768px) {
-	.demo .carousel {
+	.demo {
 		min-height: initial;
 	}	
-	.demo .slick-list {
-		min-height: initial;
-	}
 	.demo .slide {
-		min-height: initial;
+		min-height: 400px;
 		background-position: center;
 	}	
 	.demo .slide-1 {
@@ -286,5 +275,14 @@
 	.demo .switch-img,
 	.demo .swicth-content {
 		display: none;
+	}
+}
+@media (max-width: 425px) {
+	.demo .slide {
+		display: flex !important;
+		align-items: center;
+	}
+	.demo .content {
+		margin-top: 0;
 	}
 }
