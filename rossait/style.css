@@ -76,8 +76,8 @@
 	justify-content: center;
 	align-items: center;
 	background: #c4cdd6;
-	transition-delay: 5s;
-	transition-duration: .2s;
+	transition-delay: 1s;
+	transition-duration: 1s;
 }
 .demo .preview.disabled {
 	z-index: -1;
@@ -106,7 +106,7 @@
 .demo .content {
 	max-width: 563px;
 	width: 100%;
-	margin-top: 222px;
+	padding-top: 222px;
 	margin-right: 105px;
 	margin-left: auto;
 }
@@ -130,6 +130,10 @@
 	width: 77px;
 	height: 77px;
 	background: hsla(216, 7%, 50%, .5);
+	transition: all .2s;
+}
+.demo .slick-arrow:hover {
+	background: hsla(216, 7%, 50%, .9);
 }
 .demo .slick-arrow:before {
 	content: '';
@@ -234,7 +238,7 @@
 	.demo .content {
 		max-width: 463px;
 		min-height: initial;
-		margin-top: 120px;
+		padding-top: 120px;
 		margin-right: auto;
 		text-align: center;
 	}	
@@ -284,6 +288,6 @@
 		align-items: center;
 	}
 	.demo .content {
-		margin-top: 0;
+		padding-top: 0;
 	}
 }
