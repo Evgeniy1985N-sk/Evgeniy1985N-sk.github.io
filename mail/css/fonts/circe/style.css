@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Circe';
+    src: local('Circe ExtraBold'), local('Circe-ExtraBold'),
+        url('Circe-ExtraBold.woff2') format('woff2'),
+        url('Circe-ExtraBold.woff') format('woff'),
+        url('Circe-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+  }

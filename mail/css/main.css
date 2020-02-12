@@ -1,0 +1,206 @@
+@font-face {
+  font-family: 'Circe';
+  src: url("fonts/circe/Circe-ExtraBold.woff2") format("woff2"), url("fonts/circe/Circe-ExtraBold.woff") format("woff"), url("fonts/circe/Circe-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'HelveticaNeueCyr';
+  src: url("fonts/helvetica/HelveticaNeueCyr-Light.otf") format("truetype");
+  font-style: normal; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+.email {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  color: #000; }
+
+/* ========================================================================= */
+/* email-header */
+.email-header {
+  table-layout: fixed;
+  width: 100%;
+  padding-top: 17px;
+  background-image: url("../images/bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: pink;
+  text-align: center; }
+
+.email-header__cell_logo_1 {
+  text-align: right; }
+
+.email-header__cell_logo_2 {
+  text-align: left; }
+
+.email-header__link_logo {
+  display: inline-block;
+  padding: 0 10px;
+  outline: none;
+  border: none; }
+
+.email-header__img_spim {
+  width: 74px;
+  height: 40px; }
+
+.email-header__img_meb {
+  width: 91px;
+  height: 18px; }
+
+.email-header__title {
+  margin: 0;
+  padding-top: 40px;
+  font-size: 42px;
+  font-size: 235%;
+  line-height: 40px;
+  text-transform: uppercase;
+  font-family: 'Circe'; }
+
+.email-header__cell_melon {
+  height: 60px;
+  padding-top: 30px; }
+
+.email-header__img_melon_1 {
+  max-width: 117px;
+  width: 100%; }
+
+.email-header__img_melon_2 {
+  max-width: 106px;
+  width: 100%; }
+
+.email-header__img_melon_3 {
+  max-width: 70px;
+  width: 100%; }
+
+.email-header__dsc {
+  margin: 0;
+  color: #2E2E2E;
+  font-family: Circe;
+  font-size: 220%; }
+
+.email-header__dsc-time {
+  display: block;
+  font-size: 16px;
+  font-family: Arial, sans-serif; }
+
+.email-header__cell_promo_text {
+  padding-top: 15px;
+  padding-bottom: 18px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #2E2E2E; }
+
+.email-header__cell_promo_code {
+  font-size: 28px;
+  color: #2E2E2E;
+  text-transform: uppercase;
+  font-weight: bold; }
+
+.email-header__cell_promo_code span {
+  padding: 9px 20px;
+  border: 1px dashed #000; }
+
+.email-header__cell_discount {
+  padding-top: 30px;
+  padding-bottom: 139px; }
+
+.email__link_btn {
+  display: inline-block;
+  padding: 19px 46px 18px;
+  background: #2ABE80;
+  border-radius: 50px;
+  font-size: 20px;
+  line-height: 23px;
+  color: #fff;
+  text-decoration: none; }
+
+/* ========================================================================= */
+/* email-body */
+.email-body {
+  padding: 0 50px;
+  table-layout: fixed;
+  width: 100%;
+  box-shadow: 0px 2px 24px rgba(138, 128, 106, 0.2); }
+
+.email-body__title {
+  padding-top: 54px;
+  font-size: 18px;
+  line-height: 28px; }
+
+.email-body__dsc {
+  padding-top: 30px;
+  font-size: 18px;
+  line-height: 28px; }
+
+.email-body__link {
+  color: #476FC6; }
+
+.email-body__cell_item {
+  padding-top: 30px;
+  text-align: center; }
+
+.email-body__img {
+  display: block;
+  max-width: 150px;
+  width: 100%;
+  height: 113px;
+  padding-bottom: 15px; }
+
+.email-body__btn {
+  padding-top: 16px;
+  text-align: center; }
+
+.email-body__info {
+  padding-top: 68px;
+  padding-bottom: 50px;
+  text-align: center;
+  color: #C4C4C4;
+  font-family: HelveticaNeueCyr;
+  font-size: 14px;
+  line-height: 20px; }
+
+/* ========================================================================= */
+/* email-footer */
+.email-footer {
+  padding-top: 40px;
+  table-layout: fixed;
+  width: 100%;
+  text-align: center; }
+
+.email-footer__img_social {
+  max-width: 245px;
+  width: 100%;
+  height: 25px; }
+
+.email-footer__link_phone {
+  text-decoration: none;
+  color: #2ABE80; }
+
+.email-footer__dsc {
+  padding-top: 29px;
+  color: #A3A3A3;
+  font-size: 14px;
+  line-height: 16px; }
+
+.email-footer__link {
+  display: inline-block;
+  padding-top: 25px;
+  padding-bottom: 23px;
+  color: #A3A3A3;
+  font-size: 14px;
+  line-height: 16px;
+  text-decoration: none; }
+
+.email-footer__img_describe {
+  width: 12px;
+  height: 12px; }
+
+.email-footer__img_web {
+  width: 14px;
+  height: 14px; }
