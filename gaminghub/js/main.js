@@ -1,12 +1,15 @@
 
 $(document).ready(function() {
 
+	let categoryTextHidden = 'Cкрыть';
+	let categoryTextAll = 'Все категории';
+
 	$('.main-header__category').on('click', function() {
 		$(this).toggleClass('active');
 		if ( $(this).hasClass('active') ) {
-			$(this).html('Cкрыть');
+			$(this).html(categoryTextHidden);
 		} else {
-			$(this).html('Все категории');
+			$(this).html(categoryTextAll);
 		}
 
 		$('.main-header__menu').toggleClass('active');
