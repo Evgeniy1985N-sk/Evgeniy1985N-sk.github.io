@@ -36,14 +36,14 @@ function showContent() {
 	localStorage.setItem('arr', JSON.stringify(arr));
 }
 
-document.addEventListener('keydown', function(e) {
+document.addEventListener('keydown', function() {
 	if (event.code === 'Enter') {
 		createTodo();
 		showContent();
 	}
 });
 
-btnAdd.addEventListener('click', function(e) {
+btnAdd.addEventListener('click', function() {
 	if (inpHead.value === '') return alert('Заполните поле');
 	createTodo();
 	showContent();
@@ -52,11 +52,12 @@ btnAdd.addEventListener('click', function(e) {
 
 body.addEventListener('click', function(e) {
 	const target = event.target;
+	const parent = target.parentNode.parentNode;
 
 	if (target.classList.contains('btn-delete')) {
-		let idRow = target.parentNode.parentNode.id;
+		let idRow = parent.id;
 		arr.splice(idRow, 1);
-		target.parentNode.parentNode.remove();
+		parent.remove();
 		showContent();
 	}
 
@@ -66,7 +67,6 @@ body.addEventListener('click', function(e) {
 		target.parentNode.querySelector('.inp-body').classList.add('completed');
 		let idRow = target.parentNode.id;
 		arr[idRow].checked = true;
-
 	}
 	else if (target.classList.contains('check-yes')) {
 		target.classList.remove('check-yes');
@@ -83,13 +83,13 @@ body.addEventListener('click', function(e) {
 
 		target.parentNode.querySelector('.btn-delete').classList.add('hidden');
 
-		let inpBody = target.parentNode.parentNode.querySelector('.inp-body');
+		let inpBody = parent.querySelector('.inp-body');
 		inpBody.removeAttribute('disabled', '');
 		inpBody.focus();
 		inpBody.setSelectionRange(inpBody.value.length,inpBody.value.length);
 		inpBody.classList.add('active');
 
-		target.parentNode.parentNode.querySelector('.check').classList.add('hidden');
+		parent.querySelector('.check').classList.add('hidden');
 	}
 	else if (target.classList.contains('btn-edit_active')) {
 		target.classList.remove('btn-edit_active');
@@ -98,10 +98,10 @@ body.addEventListener('click', function(e) {
 
 		target.parentNode.querySelector('.btn-delete').classList.remove('hidden');
 
-		target.parentNode.parentNode.querySelector('.inp-body').setAttribute('disabled', '');
-		target.parentNode.parentNode.querySelector('.inp-body').classList.remove('active');
+		parent.querySelector('.inp-body').setAttribute('disabled', '');
+		parent.querySelector('.inp-body').classList.remove('active');
 
-		target.parentNode.parentNode.querySelector('.check').classList.remove('hidden');
+		parent.querySelector('.check').classList.remove('hidden');
 	}
 
 	localStorage.setItem('arr', JSON.stringify(arr));
@@ -113,8 +113,3 @@ body.addEventListener('change', function(e) {
 	arr[idRow].text = event.target.value;
 	localStorage.setItem('arr', JSON.stringify(arr));
 });
-
-
-fetch('https://github.com/typicode/demo/edit/master/db.json')
-  .then(response => response.json())
-  .then(json => console.log(json))

@@ -52,7 +52,7 @@ body {
   border-radius: 3px; }
 
 .btn {
-  min-width: 9.7rem;
+  min-width: 10rem;
   padding: 1rem;
   font-size: 1.6rem;
   color: #696f6d;
@@ -68,7 +68,7 @@ body {
   .btn-delete {
     color: #fff;
     background: #c92f63; }
-  .btn-double {
+  .btn-edit {
     background: #eee; }
 
 /* ========================================================================= */
@@ -129,7 +129,7 @@ body {
     font-size: 1.3rem;
     font-weight: bold;
     opacity: 0; }
-  .check.active:before {
+  .check-yes:before {
     opacity: 1;
     color: #6a6a6a; }
   .check.hidden {
