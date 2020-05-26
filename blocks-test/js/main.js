@@ -1,72 +1,67 @@
 
 let 
-	json = 	{
-		"array" : 
+	json = 	
 		[
-			{
-				"arrayInner" : 
-				[
-					{
-						"text" : "obj-0"
-					},
-					{
-						"text" : "obj-1",
-						"display" : "block"
-					},
-					{
-						"text" : "obj-2"
-					},
-					{
-						"text" : "obj-3"
-					},
-					{
-						"text" : "obj-4"
-					},
-					{
-						"text" : "obj-5",
-						"display" : "block"
-					},
-					{
-						"text" : "obj-6"
-					},{
-						"text" : "obj-7"
-					},
-					{
-						"text" : "obj-8",
-						"display" : "block"
-					},
-					{
-						"text" : "obj-9"
-					},
-					{
-						"text" : "obj-10"
-					},
-					{
-						"text" : "obj-11",
-						"display" : "block"
-					},
-					{
-						"text" : "obj-12"
-					},
-					{
-						"text" : "obj-13",
-					},
-					{
-						"text" : "obj-14"
-					},
-					{
-						"text" : "obj-15",
-					},
-					{
-						"text" : "obj-16",
-					},
-					{
-						"text" : "obj-17",
-					},
-				]
-			}
-		]
-	},
+			[
+				{
+					"text" : "obj-0"
+				},
+				{
+					"text" : "obj-1",
+					"display" : "block"
+				},
+				{
+					"text" : "obj-2"
+				},
+				{
+					"text" : "obj-3"
+				},
+				{
+					"text" : "obj-4"
+				},
+				{
+					"text" : "obj-5",
+					"display" : "block"
+				},
+				{
+					"text" : "obj-6"
+				},{
+					"text" : "obj-7"
+				},
+				{
+					"text" : "obj-8",
+					"display" : "block"
+				},
+				{
+					"text" : "obj-9"
+				},
+				{
+					"text" : "obj-10"
+				},
+				{
+					"text" : "obj-11",
+					"display" : "block"
+				},
+				{
+					"text" : "obj-12"
+				},
+				{
+					"text" : "obj-13",
+				},
+				{
+					"text" : "obj-14"
+				},
+				{
+					"text" : "obj-15",
+				},
+				{
+					"text" : "obj-16",
+				},
+				{
+					"text" : "obj-17",
+				},
+			]
+		],
 
 	table = document.querySelector('.table'),
 	tr, td;
@@ -75,7 +70,7 @@ if ( JSON.parse(localStorage.getItem('newJson')) ) {
 	json = JSON.parse(localStorage.getItem('newJson'));
 }
 
-json.array[0].arrayInner.forEach(function(item, i) {
+json[0].forEach(function(item, i) {
 	if (i === 0 || i % 6 === 0 ) {
 		tr = document.createElement('tr');
 		table.append(tr);
@@ -127,12 +122,12 @@ const dragAndDrop = () => {
     	cells[indexCell].append(this.firstChild);
         this.append(cards[idCard]);
 
-        json.array[0].arrayInner.forEach(function(item, i) {
+        json[0].forEach(function(item, i) {
          	let td = table.querySelectorAll('.draggable');
-	    	json.array[0].arrayInner[i].text = td[i].innerHTML;
+	    	json[0][i].text = td[i].innerHTML;
 			localStorage.setItem('newJson', JSON.stringify(json));
 	    });
-			console.log(json);
+
     };
 
     cells.forEach(cell => {
