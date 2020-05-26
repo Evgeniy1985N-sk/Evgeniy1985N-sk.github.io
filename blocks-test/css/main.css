@@ -1,0 +1,73 @@
+/* ========================================================================= */
+/* variables */
+/* ========================================================================= */
+/* fonts */
+@font-face {
+  font-family: 'Roboto';
+  src: url("fonts/roboto/Robotolight.woff2") format("woff2"), url("fonts/roboto/Robotolight.woff") format("woff"), url("fonts/roboto/Robotolight.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("fonts/roboto/Roboto.woff2") format("woff2"), url("fonts/roboto/Roboto.woff") format("woff"), url("fonts/roboto/Roboto.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("fonts/roboto/Robotomedium.woff2") format("woff2"), url("fonts/roboto/Robotomedium.woff") format("woff"), url("fonts/roboto/Robotomedium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap; }
+
+/* ========================================================================= */
+/* reboot */
+html {
+  font-size: 10px; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400; }
+
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+/* ========================================================================= */
+/* common */
+.title {
+  text-align: center; }
+
+/* ========================================================================= */
+/* block table */
+.table {
+  max-width: 50rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: .5rem;
+  border: 2px solid green; }
+  .table td {
+    min-width: 7.8rem;
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid green;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none; }
+  .table span {
+    padding: .5rem;
+    cursor: pointer;
+    background: #eee; }
+  .table span.block {
+    color: #fff;
+    background: #f96363;
+    cursor: default; }
+
+.hide {
+  display: none; }
