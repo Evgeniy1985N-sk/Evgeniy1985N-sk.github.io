@@ -127,6 +127,7 @@ const dragAndDrop = () => {
 	    	json[0][i].text = td[i].innerHTML;
 			localStorage.setItem('newJson', JSON.stringify(json));
 	    });
+	    console.log(json)
 
     };
 
