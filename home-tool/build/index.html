@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="css/main.css">
 
-	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/main.js" defer></script>
 </head>
 <body>
 
@@ -172,9 +172,37 @@
 						</p>
 					</div>
 					<div class="col">
-						<a class="btn btn-primary" href="#">
+						<a class="btn btn-primary btn-open home-discuss__btn" href="#">
 							Let’s Talk
 						</a>
+						<div class="modal-window">
+							<form class="form-talk">
+								<h3 class="title title-contact">
+									send us message
+								</h3>
+								<label class="form-talk__label">
+									<span class="form-talk__title">
+										Full Name
+									</span>
+									<input class="form-talk__input" type="text" placeholder="Your Name" required>
+								</label>
+								<label class="form-talk__label">
+									<span class="form-talk__title">
+										Email
+									</span>
+									<input class="form-talk__input" type="email" placeholder="Your Email" required>
+								</label>
+								<label class="form-talk__label">
+									<span class="form-talk__title">
+										Message
+									</span>
+									<textarea class="form-talk__input _textarea" placeholder="Your Message"></textarea>
+								</label>
+								<button class="btn btn-primary form-talk__btn">
+									submit
+								</button>
+							</form>
+						</div>
 					</div>
 				</div>
 			</div>
