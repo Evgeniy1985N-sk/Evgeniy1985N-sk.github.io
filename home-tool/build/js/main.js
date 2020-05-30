@@ -1,30 +1,33 @@
 
-$(document).ready(function() {
+/* modal-window */
 
-	/* menu */
-	$('.header .btn-menu').on('click', function() {
-		$(this).toggleClass('active');
-		$('.header .nav').slideToggle();
-	});
+let body = document.querySelector('body');
+let page = body.querySelector('.page');
+let btnOpen = page.querySelectorAll('.btn-open');
+let modaWindow = page.querySelectorAll('.modal-window');
 
-	/* carousel */
-	$('.main-carousel').owlCarousel({
-	    loop: true,
-	    margin: 0,
-	    items: 1,
-	    dots: false,
-	    nav: true,
-	    navText:false,
-	    autoplay: true,
-	    autoplayTimeout: 5000,
-	    smartSpeed: 1000,
-	});	
+page.addEventListener('click', function(e) {
+	let target = e.target;
 
-	/* faq */
-
-	$('.faq .btn-link').on('click', function() {
-		$('.faq .btn-link').not(this).removeClass('active');
-		$(this).toggleClass('active');
-	});
-
+	if( target.classList.contains('btn-open') ) {
+		body.classList.add('open-modal');
+		target.nextElementSibling.classList.add('active')
+	}
+	if( target.classList.contains('modal-window') ) {
+		body.classList.remove('open-modal');
+		target.classList.remove('active');
+	}
 });
+
+
+// const requestURL = 'https://jsonplaceholder.typicode.com/users';
+
+// let xhr = new XMLHttpRequest();
+
+// xhr.open('GET', requestURL);
+
+// xhr.onload = () => {
+// 	console.log(xhr.response)
+// }
+
+// xhr.send();

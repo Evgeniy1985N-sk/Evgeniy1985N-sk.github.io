@@ -330,6 +330,9 @@ html {
   html {
     font-size: 8px; } }
 
+body.open-modal {
+  overflow-y: hidden; }
+
 .page {
   font-size: 1.6rem;
   letter-spacing: 0.05em; }
@@ -351,6 +354,8 @@ html {
   transition: all .15s; }
   .btn:hover {
     text-decoration: none; }
+  .btn:focus {
+    outline: none; }
   .btn-primary {
     display: inline-block;
     padding: 1.5rem 4.8rem;
@@ -381,6 +386,11 @@ html {
     font-weight: 400;
     line-height: 4.6rem;
     color: #316099; }
+  .title-contact {
+    font-size: 2rem;
+    line-height: 3rem;
+    color: #1F3F68;
+    text-transform: uppercase; }
 
 .text {
   margin-bottom: 0;
@@ -550,7 +560,7 @@ html {
     margin-bottom: 2rem; } }
 
 /* ======================================================== */
-/* block logos */
+/* block client */
 .home-client {
   padding-top: 9.6rem;
   padding-bottom: 12.5rem;
@@ -622,7 +632,7 @@ html {
     border: none; } }
 
 /* ======================================================== */
-/* block logos */
+/* block discuss */
 .home-discuss {
   position: relative;
   padding-top: 9.2rem;
@@ -651,10 +661,77 @@ html {
     width: 100%;
     margin-top: 3.2rem;
     color: #fff; }
-  .home-discuss .btn-primary {
+  .home-discuss__btn {
     margin-right: 5rem;
     margin-left: 1rem;
     min-width: 22rem; }
+
+.modal-window {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background: rgba(128, 128, 128, 0.7); }
+  .modal-window.active {
+    display: flex;
+    cursor: pointer; }
+
+.form-talk {
+  width: 54rem;
+  padding: 5.6rem;
+  background: #fff;
+  box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
+  border-radius: 10px;
+  cursor: default; }
+  .form-talk .title-contact {
+    margin-bottom: 4.8rem; }
+  .form-talk__label {
+    display: block;
+    margin-bottom: 3.2rem; }
+  .form-talk__title {
+    display: block;
+    margin-bottom: .8rem;
+    line-height: 3rem;
+    color: #1F3F68;
+    opacity: .8;
+    cursor: pointer; }
+  .form-talk__input {
+    width: 100%;
+    min-height: 7.2rem;
+    padding-left: 4.2rem;
+    border: 1px solid #356EAD;
+    border-radius: 10px; }
+  .form-talk__input:focus {
+    outline: none;
+    border: 1px solid #1F3F68; }
+  .form-talk__input::-webkit-input-placeholder {
+    line-height: 3rem;
+    color: #1F3F68;
+    opacity: 0.2; }
+  .form-talk__input:-ms-input-placeholder {
+    line-height: 3rem;
+    color: #1F3F68;
+    opacity: 0.2; }
+  .form-talk__input::-ms-input-placeholder {
+    line-height: 3rem;
+    color: #1F3F68;
+    opacity: 0.2; }
+  .form-talk__input::placeholder {
+    line-height: 3rem;
+    color: #1F3F68;
+    opacity: 0.2; }
+  .form-talk__input._textarea {
+    height: 14.4rem;
+    padding-top: 2.1rem; }
+  .form-talk__btn {
+    width: 100%;
+    min-height: 7.2rem;
+    margin-top: 4rem;
+    text-transform: uppercase; }
 
 @media (max-width: 768px) {
   .home-discuss {
@@ -670,7 +747,7 @@ html {
       justify-content: center; }
     .home-discuss .title-second {
       margin: 0 auto; }
-    .home-discuss .btn-primary {
+    .home-discuss__btn {
       margin: 0;
       margin-top: 2rem; } }
 
