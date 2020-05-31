@@ -1,33 +1,60 @@
 
+
+let 
+	body = document.querySelector('body'),
+	page = body.querySelector('.page'),
+	btnOpen = page.querySelectorAll('.btn-open'),
+	modalWindow = page.querySelector('.modal-window'),
+	formTalk = page.querySelector('.form-talk'),
+	formTalkInputName = page.querySelector('.form-talk__input._name'),
+	formTalkInputEmail = page.querySelector('.form-talk__input._email'),
+	formTalkInputTextarea = page.querySelector('.form-talk__input._textarea'),
+	popup = page.querySelector('.popup'),
+	formTalkData = {};
+
 /* modal-window */
 
-let body = document.querySelector('body');
-let page = body.querySelector('.page');
-let btnOpen = page.querySelectorAll('.btn-open');
-let modaWindow = page.querySelectorAll('.modal-window');
-
-page.addEventListener('click', function(e) {
+page.addEventListener('click', (e) => {
 	let target = e.target;
 
-	if( target.classList.contains('btn-open') ) {
+	if ( target.classList.contains('btn-open') ) {
 		body.classList.add('open-modal');
-		target.nextElementSibling.classList.add('active')
+		target.nextElementSibling.classList.add('active');
+		formTalkInputName.focus()
 	}
-	if( target.classList.contains('modal-window') ) {
+	if ( target.classList.contains('modal-window') ) {
 		body.classList.remove('open-modal');
 		target.classList.remove('active');
 	}
 });
 
+/* form-talk data */
 
-// const requestURL = 'https://jsonplaceholder.typicode.com/users';
+formTalk.addEventListener('submit', (e) => {
+	formTalkData.name = formTalkInputName.value;
+	formTalkData.email = formTalkInputEmail.value;
+	formTalkData.text = formTalkInputTextarea.value;
 
-// let xhr = new XMLHttpRequest();
+	sendRequest('POST', requestURL, formTalkData);
 
-// xhr.open('GET', requestURL);
+});
 
-// xhr.onload = () => {
-// 	console.log(xhr.response)
-// }
+const requestURL = 'https://jsonplaceholder.typicode.com/users';
 
-// xhr.send();
+function sendRequest(method, url, formTalkData = null) {
+	return new Promise((resolve, reject) => {
+		const xhr = new XMLHttpRequest()
+
+		xhr.open(method, url);
+
+		xhr.onerror = () => {
+			console.log('error');
+		}
+
+		xhr.send(JSON.stringify(formTalkData));
+
+		body.classList.remove('open-modal');
+		modalWindow.classList.remove('active');
+		popup.classList.add('active');
+	});
+}

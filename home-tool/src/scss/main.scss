@@ -121,6 +121,7 @@ body.open-modal {
 .btn {
 	outline: none;
 	border: none;
+	cursor: pointer;
 	@include transition;
 	&:hover {
 		text-decoration: none;
@@ -181,6 +182,39 @@ body.open-modal {
 	display: block;
 	max-width: 100%;
 	margin: 0 auto;
+}
+.popup {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: none;
+	justify-content: center;
+	align-items: center;
+	padding: 10rem;
+	background: $white;
+	border-radius: 5px;
+	animation-name: remove;
+	animation-duration: 3s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+
+	&.active {
+		display: flex;
+		animation-name: remove;
+		animation-duration: 1s;
+	}
+	&__text {
+		font-size: 3.5rem;
+	}
+}
+@keyframes remove {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
 }
 
 /* ======================================================================================================= */
@@ -478,10 +512,8 @@ body.open-modal {
 .home-discuss {
 	position: relative;
 	padding-top: 9.2rem;
-	padding-bottom: 9.6rem;
 	background: $blue2;
 	border-radius: 0px 200px 0px 0px;
-	border-bottom: 1px solid $white;
 	&:before {
 		content: '';
 		position: absolute;
@@ -491,6 +523,18 @@ body.open-modal {
 		left: 0;
 		z-index: -1;
 		background: $blue4;
+	}
+	.container {
+		position: relative;
+		padding-bottom: 9.6rem;
+	}
+	.container:after {
+		content: '';
+		position: absolute;
+		right: 55px;
+		bottom: 0;
+		left: -10000px;
+		border-bottom: 1px solid $white;
 	}
 	&__row {
 		align-items: center;
@@ -517,9 +561,10 @@ body.open-modal {
 .modal-window {
 	position: fixed;
 	top: 0;
-	right: 0;
-	bottom: 0;
 	left: 0;
+	z-index: 1000;
+	width: 100%;
+	height: 100%;
 	display: none;
 	justify-content: center;
 	align-items: center;
@@ -586,8 +631,11 @@ body.open-modal {
 }
 @media (max-width: 500px) {
 	.home-discuss {
-		padding: 3rem 0;
+		padding-top: 3rem;
 		text-align: center;
+		.container {
+			padding-bottom: 3rem;
+		}
 		&__row {
 			flex-wrap: wrap;
 			flex-direction: column;
