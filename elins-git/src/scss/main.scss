@@ -348,6 +348,51 @@ $blue3: #122162;
   }
 }
 
+.item-pointer {
+  position: relative;
+  max-width: 580px;
+  width: 50%;
+  padding-left: 40px;
+  &:hover {
+    .item-pointer__arrow {
+      width: 24px;
+      transition-delay: 0s;
+    }
+    .item-pointer__arrow:before {
+      transform: rotate(45deg);
+      opacity: 1;
+    }
+    .item-pointer__arrow:after {
+      transform: rotate(-45deg);
+      opacity: 1;
+    }
+  }
+  &__arrow {
+    position: absolute;
+    top: 22px;
+    right: 566px;
+    width: 0;
+    height: 2px;
+    background: #192c85;
+    transition: linear 0.3s;
+    transition-delay: 0.3s;
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: -57%;
+      transform: rotate(0deg);
+      width: 28px;
+      height: 2px;
+      background: linear-gradient(to right, #192c85 50%, rgba(0,0,0,0) 50%);
+      opacity: 0;
+      transition: ease 0.4s;
+      transition-delay: 0.2s;
+    }
+  }
+}
+
 /* ========================================================================= */
 /* page-main */
 
@@ -448,15 +493,9 @@ $blue3: #122162;
       display: flex;
       align-items: center;
       &:hover {
-          .header-nav__link {
-          opacity: 1 !important;
-        }
         .header-nav__submenu {
           visibility: visible;
           opacity: 1;
-        }
-        .header-nav__submenu:before {
-          height: 100%;
         }
       }
       &-arrow,
@@ -468,11 +507,9 @@ $blue3: #122162;
       display: block;
       padding: 10px 0;
       transition: ease 0.2s;
-      &:hover,
-      &.active {
+      &:hover {
         color: #192c85;
         text-decoration: none;
-        opacity: 1 !important;
       }
     }
     &__submenu {
@@ -483,9 +520,11 @@ $blue3: #122162;
       visibility: hidden;
       opacity: 0;
       width: 100%;
+      display: flex;
+      flex-wrap: wrap;
       padding-top: 137px;
       padding-bottom: 263px;
-      padding-left: 360px;
+      padding-left: 555px;
       transition: ease .5s;
       &:before {
         content: "";
@@ -494,34 +533,37 @@ $blue3: #122162;
         right: 0;
         bottom: 0;
         left: 0;
-        height: 0;
+        height: 100%;
         background: #fff;
-        transition: ease .5s;
       }
-      &-container {
+      &-item {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        max-width: 100%;
+        align-items: center;
+        max-width: 46%;
+        width: 100%;
+        margin-right: 40px;
+        margin-bottom: 30px;
       }
       &-link {
-        position: relative;
-        max-width: 580px;
-        width: 50%;
-        margin-bottom: 30px;
-        padding-left: 40px;
+        width: 100%;
+        padding-left: 0;
         font-size: 28px;
-        font-weight: 400;
+        font-weight: 300;
         line-height: 46px;
         color: #192c85;
         transition: ease 0.2s;
         &:hover {
           color: #192c85;
           text-decoration: none;
-          opacity: 1 !important;
         }
       }
+      &-arrow {
+        right: 600px;
+      }
     }
+  }
+  &__wrapper-nav {
+    display: none;
   }
   &__btn-menu {
     position: relative;
@@ -648,51 +690,6 @@ $blue3: #122162;
   }
 }
 
-.item-pointer {
-  position: relative;
-  max-width: 580px;
-  width: 50%;
-  padding-left: 40px;
-  &:hover {
-    .item-pointer__arrow {
-      width: 24px;
-      transition-delay: 0s;
-    }
-    .item-pointer__arrow:before {
-      transform: rotate(45deg);
-      opacity: 1;
-    }
-    .item-pointer__arrow:after {
-      transform: rotate(-45deg);
-      opacity: 1;
-    }
-  }
-  &__arrow {
-    position: absolute;
-    top: 22px;
-    right: 566px;
-    width: 0;
-    height: 2px;
-    background: #192c85;
-    transition: linear 0.3s;
-    transition-delay: 0.3s;
-    &:before,
-    &:after {
-      content: '';
-      position: absolute;
-      top: 0;
-      right: -57%;
-      transform: rotate(0deg);
-      width: 28px;
-      height: 2px;
-      background: linear-gradient(to right, #192c85 50%, rgba(0,0,0,0) 50%);
-      opacity: 0;
-      transition: ease 0.4s;
-      transition-delay: 0.2s;
-    }
-  }
-}
-
 .form-search {
   position: relative;
   width: 100%;
@@ -804,10 +801,7 @@ $blue3: #122162;
         top: 107px;
         padding-top: 52px;
         padding-bottom: 108px;
-        padding-left: 0;
-        &-container {
-          margin-left: -40px;
-        }
+        padding-left: 119px;
       }
     }
     &-carousel img {
@@ -927,7 +921,14 @@ $blue3: #122162;
         top: 114px;
       }
     }
+    &__wrapper-nav {
+      display: block;
+      .header-nav {
+        display: flex;
+      }
+    }
     &-nav {
+      display: none;
       flex-wrap: wrap;
       justify-content: flex-start;
       align-items: flex-start;
@@ -947,28 +948,12 @@ $blue3: #122162;
         }
       }
       &__item {
-        position: relative;
         display: flex;
         justify-content: space-between;
         width: 40%;
         margin-bottom: 40px;
         opacity: 0;
         transition: ease .5s;
-        &:nth-child(1) {
-          order: 1;
-        }        
-        &:nth-child(2) {
-          order: 3;
-        } 
-        &:nth-child(3) {
-          order: 5;
-        }        
-        &:nth-child(4) {
-          order: 4;
-        } 
-        &:nth-child(5) {
-          order: 1;
-        }
         &:hover {
           .header-nav__item-arrow {
             width: 0;
@@ -977,11 +962,15 @@ $blue3: #122162;
             width: 27px;
             margin-right: 20px;
           }
+          .header-nav__link {
+            z-index: 1102;
+          }
         }
         &-arrow {
           position: absolute;
-          right: 90px;
-          display: block;
+          top: 7px;
+          right: 0;
+          display: inline-block;
           width: 27px;
           transition: ease .3s;
         }
@@ -994,35 +983,30 @@ $blue3: #122162;
         }
       }
       &__link {
+        position: relative;
+        min-width: 288px;
         padding: 0;
         font-size: 26px;
         line-height: 28px;
       }
       &__submenu {
-        top: 30px;
-        left: -128px;
-        width: 100vw;
-        &-container {
-          justify-content: flex-start;
-          margin-left: 0;
-          padding: 0 111px;
-          padding-top: 23px;
-          padding-left: 132px;
-          &:before {
-            content: "";
-            position: absolute;
-            top: 25px;
-            left: 111px;
-            right: 111px;
-            height: 1px;
-            background: #F0F0F0;
-          }
+        right: 0;
+        &:after {
+          content: "";
+          position: absolute;
+          top: 30px;
+          right: 111px;
+          left: 111px;
+          height: 1px;
+          background: #F0F0F0;
         }
-        &-link {
+        &-item {
           max-width: 100%;
           width: 44%;
           margin-right: 20px;
           margin-bottom: 14px;
+        }
+        &-link {
           padding-left: 0;
           font-size: 18px;
           line-height: 26px;
@@ -1119,7 +1103,7 @@ $blue3: #122162;
       top: 75px;
       right: 0;
       left: 0;
-      z-index: 1001;
+      z-index: 1002;
       width: 100%;
       padding-top: 30px;
       padding-bottom: 80px;
@@ -1144,7 +1128,7 @@ $blue3: #122162;
     &__btn-close {
       top: 90px;
       right: 105px;
-      z-index: 1001;
+      z-index: 1002;
     }
   }
 }
@@ -1161,6 +1145,16 @@ $blue3: #122162;
       }
       &__wrapper-round {
         top: 240px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .header-nav {
+    &__submenu {
+      &-item {
+        max-width: 380px;
       }
     }
   }
@@ -1196,14 +1190,15 @@ $blue3: #122162;
       padding-left: 81px;
       &__item {
         width: 50%;
-        &-arrow {
-          right: 93px;
-        }
+      }
+      &__link {
+        min-width: 250px;
       }
       &__submenu {
-        left: -98px;
-        &-container {
-          padding-left: 94px;
+        padding-left: 94px;
+        &:after {
+          right: 94px;
+          left: 94px;
         }
       }
     }
@@ -1285,6 +1280,7 @@ $blue3: #122162;
     &-nav {
       top: 20px;
       padding-top: 35px;
+      padding-bottom: 270px;
       padding-left: 30px;
       &.active {
         top: 48px;
@@ -1293,28 +1289,26 @@ $blue3: #122162;
         min-width: 250px;
         margin-bottom: 34px;
         &-arrow {
-          right: 55px;
+          top: 2px;
         }
       }
       &__link {
+        min-width: 200px;
         font-size: 20px;
         line-height: 20px;
       }
       &__submenu {
-        top: 20px;
-        left: -47px;
-        &-container {
-          padding-right: 30px;
-          padding-left: 52px;
-          &:before {
-            top: 16px;
-            right: 30px;
-            left: 30px;
-          }
+        justify-content: space-between;
+        padding-left: 30px;
+        &:after {
+          right: 30px;
+          left: 30px;
+        }
+        &-item {
+          max-width: 310px;
+          margin-right: 10px;
         }
         &-link {
-          max-width: 260px;
-          margin-right: 10px;
           font-size: 15px;
         }
       }
@@ -1375,11 +1369,22 @@ $blue3: #122162;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .header {
+    padding-top: 48px;
+    &-top {
+      top: 0;
+      right: 0;
+      left: 0;
+      position: fixed;
+      z-index: 1100;
+      background: #fff;
+    }
     &-nav {
+      position: fixed;
       &__submenu {
-        &-link {
+        position: fixed;
+        &-item {
           max-width: 100%;
           width: 100%;
         }
@@ -1415,6 +1420,8 @@ $blue3: #122162;
 /* start block media */
 
 .page-main__media {
+  position: relative;
+  z-index: 1;
   margin-top: 295px;
 }
 
@@ -1649,9 +1656,7 @@ $blue3: #122162;
   }
   .we {
     &__numb {
-      right: auto;
-      left: 218px;
-      max-width: 596px;
+      max-width: 540px;
     }
     &__texture {
       left: -380px;
@@ -1674,8 +1679,7 @@ $blue3: #122162;
     padding-bottom: 200px;
     &__numb {
       bottom: -200px;
-      left: 147px;
-      max-width: 438px;
+      max-width: 368px;
     }
     &__texture {
       bottom: -230px;
@@ -1706,7 +1710,6 @@ $blue3: #122162;
     &__numb {
       right: 0;
       bottom: -134px;
-      left: auto;
       max-width: 220px;
     }
     &__texture {
@@ -1999,14 +2002,22 @@ $blue3: #122162;
   background: rgba(25, 44, 133, 0);
   transition: linear 1s;
   &-carousel {
+    .slick-slide {
+      & > div {
+        height: 832px;
+      }
+    }
     &__slider {
+      position: relative;
       display: inline-flex !important;
     }
     &__wrapper-caption {
       position: absolute;
+      top: 0;
+      left: 0;
       flex-shrink: 0;
       width: 152px;
-      height: 832px;
+      height: 100%;
       background: rgba(25, 44, 133, .85);
       animation-delay: 1s;
     }
@@ -2029,7 +2040,7 @@ $blue3: #122162;
     .slick-arrow {
       position: absolute;
       right: calc(978px - 146px);
-      bottom: -86px;
+      bottom: -94px;
       z-index: 1000;
       width: 94px;
       height: 94px;
@@ -2088,9 +2099,13 @@ $blue3: #122162;
   .project {
     padding-bottom: 120px;
     &-carousel {
+      .slick-slide {
+        & > div {
+          height: 660px;
+        }
+      }
       &__wrapper-caption {
         width: 134px;
-        height: 660px;
       }
       &__caption {
         left: -173px;
@@ -2136,10 +2151,9 @@ $blue3: #122162;
     &-carousel {
       &__wrapper-caption {
         width: 152px;
-        height: 660px;
       }
       &__caption {
-        left: -200px;
+        left: -207px;
         width: 560px;
         &-line {
           max-width: 290px;
@@ -2147,7 +2161,7 @@ $blue3: #122162;
       }
       .slick-arrow {
         right: calc(833px - 111px);
-        bottom: -60px;
+        bottom: -70px;
         width: 70px;
         height: 70px;
       }
@@ -2183,7 +2197,6 @@ $blue3: #122162;
     &-carousel {
       .slick-arrow {
         right: calc(603px - 111px);
-        bottom: -60px;
       }
       .slick-prev {
         right: calc(603px - 111px + 70px);
@@ -2195,7 +2208,7 @@ $blue3: #122162;
     &-block {
       max-width: 603px;
       min-height: 615px;
-      padding: 90px 137px 103px 87px;
+      padding: 90px 87px 103px 87px;
     }
   }
 }
@@ -2215,7 +2228,6 @@ $blue3: #122162;
       }
       .slick-arrow {
         right: calc(480px - 90px);
-        bottom: -60px;
       }
       .slick-prev {
         right: calc(480px - 90px + 70px);
@@ -2240,6 +2252,11 @@ $blue3: #122162;
   .project {
     padding-bottom: 70px;
     &-carousel {
+      .slick-slide {
+        & > div {
+          height: 288px;
+        }
+      }
       img {
         height: 288px;
       }
@@ -2249,7 +2266,7 @@ $blue3: #122162;
       .slick-arrow {
         right: auto;
         left: 60px;
-        bottom: 6px;
+        bottom: 0;
         width: 60px;
         height: 60px;
       }
@@ -2259,7 +2276,7 @@ $blue3: #122162;
       }
     }
     &__block {
-      margin-top: -6px;
+      margin-top: 0;
       margin-right: auto;
       margin-left: 0;
     }
@@ -2284,7 +2301,7 @@ $blue3: #122162;
 /* start block quote */
 
 .page-main__quote {
-  margin-top: -1px;
+  margin-top: -2px;
 }
 
 .quote {
@@ -2334,16 +2351,23 @@ $blue3: #122162;
       width: 100%;
     }
     &__title {
-      position: relative;
       display: inline;
       margin-bottom: 0;
       font-size: 42px;
       line-height: 64px;
       font-weight: 500;
+      span {
+        position: relative;
+        white-space: nowrap;
+      }
       &-hooks {
         position: absolute;
-        top: -3px;
-        left: -26px;
+        top: -15px;
+        left: -30px;
+        &_right {
+          margin-top: -45px;
+          margin-right: -8px;
+        }
       }
     }
     &__subtitle {
@@ -2357,6 +2381,8 @@ $blue3: #122162;
         width: 660px;
         margin-left: -80px;
         background: #fff;
+        color: #fff;
+        opacity: .8;
       }
       &-text {
         position: absolute;
@@ -2435,6 +2461,9 @@ $blue3: #122162;
         width: 100%;
         font-size: 36px;
         line-height: 56px;
+        span {
+
+        }
       }
       &__subtitle-hr {
         width: calc(100% + 80px);
@@ -2466,6 +2495,16 @@ $blue3: #122162;
       &__title {
         font-size: 30px;
         line-height: 44px;
+        &-hooks {
+          top: -10px;
+          width: 20px;
+          height: 20px;
+          &_right {
+            width: 20px;
+            height: 20px;
+            margin-top: -30px;
+          }
+        }
       }
       &__text {
         font-size: 18px;
@@ -2572,9 +2611,14 @@ $blue3: #122162;
         font-size: 22px;
         line-height: 34px;
         &-hooks {
-          left: -18px;
-          &:nth-child(2) {
-            right: -18px;
+          top: -7px;
+          left: -22px;
+            width: 15px;
+            height: 15px;
+          &_right {
+            width: 15px;
+            height: 15px;
+            margin-top: -20px;
           }
         }
       }
@@ -2779,7 +2823,6 @@ $blue3: #122162;
       width: 180px;
     }
     &__numb {
-      right: 24px;
       bottom: -126px;
       max-width: 208px;
     }
@@ -2848,11 +2891,6 @@ $blue3: #122162;
     &__number {
       color: #F0F0F0;
       line-height: 0;
-      &:after {
-        top: 10px;
-        right: 0;
-        display: block;
-      }
     }
   } 
   &-circle {
@@ -2892,20 +2930,12 @@ $blue3: #122162;
       &__number {
         font-size: 50px;
         line-height: 68px;
-        &:after {
-          top: -5px;
-          right: -5px;
-        }
       }
     }
     &-circle {
       &__number {
         font-size: 79.1388px;
         line-height: 54px;
-        &:after {
-          width: 14px;
-          height: 14px;
-        }
       }
     }
   }
@@ -2929,10 +2959,6 @@ $blue3: #122162;
       &__number {
         font-size: 41.6208px;
         line-height: 53px;
-        &:after {
-          width: 14px;
-          height: 14px;
-        }
       }
     }
     &-circle {
@@ -2969,13 +2995,8 @@ $blue3: #122162;
         line-height: 46px;
       }
       &__number {
-          font-size: 36px;
-          line-height: 46px;
-        &:after {
-          top: 0;
-          width: 12.71px;
-          height: 12.71px;
-        }
+        font-size: 36px;
+        line-height: 46px;
       }
     }
     &-circle {
@@ -3021,11 +3042,6 @@ $blue3: #122162;
       &__number {
         font-size: 28px;
         line-height: 38px;
-        &:after {
-          width: 6px;
-          height: 6px;
-          border-width: 1.5px;
-        }
       }
     }
     &-circle {
@@ -3070,11 +3086,6 @@ $blue3: #122162;
       &__number {
         font-size: 14px;
         line-height: 20px;
-        &:after {
-          width: 6px;
-          height: 6px;
-          border-width: 1.5px;
-        }
       }
     }
     &-circle {
@@ -3131,7 +3142,6 @@ $blue3: #122162;
     }
     .team__numb {
       bottom: -362px;
-      right: 0;
     }
   }
 }
@@ -3156,7 +3166,6 @@ $blue3: #122162;
     }
     .team__numb {
       bottom: -362px;
-      right: 0;
     }
   }
 }
@@ -3177,8 +3186,6 @@ $blue3: #122162;
     }
     .team__numb {
       bottom: -247px;
-      right: auto;
-      left: 86px;
       max-width: 608px;
     }
   }
@@ -3199,7 +3206,6 @@ $blue3: #122162;
     }
     .team__numb {
       bottom: -163px;
-      left: 176px;
       max-width: 375px;
     }
   }
@@ -3222,7 +3228,6 @@ $blue3: #122162;
     .team__numb {
       bottom: -125px;
       right: 0;
-      left: auto;
       max-width: 208px;
     }
   }
