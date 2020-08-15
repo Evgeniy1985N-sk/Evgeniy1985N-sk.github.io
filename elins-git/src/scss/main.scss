@@ -210,6 +210,19 @@ $blue3: #122162;
     }
   }
 }
+@media (max-width: 750px) {
+  .caption {
+    position: static;
+    top: auto;
+    right: auto;
+    left: auto;
+    transform: none;
+    width: 100%;
+    &__line {
+      max-width: 100%;
+    }
+  }
+}
 
 .title {
   margin-bottom: 0;
@@ -1819,7 +1832,7 @@ $blue3: #122162;
       display: flex;
       flex-direction: column-reverse;
       max-width: 100%;
-      padding: 30px 37px 12px 33px;
+      padding: 30px 37px 25px 33px;
       margin-left: 0;
       &-text {
         margin-top: 10px;
@@ -1830,7 +1843,11 @@ $blue3: #122162;
       position: static;
       left: 0;
       transform: none;
-      max-width: 200px;
+      max-width: 100%;
+      width: 100%;
+      &-line {
+        max-width: 100%;
+      }
     } 
     &__caption-text {
       font-size: 14px;
@@ -2387,12 +2404,6 @@ $blue3: #122162;
   }
 }
 
-@media (max-width: 600px) {
-  .project {
-    padding-bottom: 0;
-  }
-}
-
 /* ========================================================================= */
 /* start block quote */
 
@@ -2915,8 +2926,8 @@ $blue3: #122162;
       padding: 48px 33px 42px 31px;
     }
     &__caption {
-      right: -40px;
-      width: 180px;
+      right: auto;
+      width: 100%;
     }
     &__numb {
       bottom: -126px;
@@ -3314,6 +3325,10 @@ $blue3: #122162;
       top: -70px;
       left: -70px;
       max-width: 321px;
+    }
+    &__caption {
+      right: auto;
+      max-width: 100%;
     }
     &__info {
       max-width: 100%;
@@ -3735,8 +3750,9 @@ $blue3: #122162;
 
 @media (max-width: 750px) {
   .contact {
-    padding: 96px 0 51px;
+    padding: 46px 0 51px;
     &__title {
+      margin-top: 18px;
       font-size: 26px;
       line-height: 38px;
     }
@@ -3744,11 +3760,12 @@ $blue3: #122162;
       margin-top: 44px;
     }
     &__caption {
-      top: -50px;
+      position: static;
+      top: auto;
       right: auto;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 256px;
+      left: auto;
+      transform: none;
+      width: 100%;
     }
   }
 }
@@ -4106,16 +4123,13 @@ $blue3: #122162;
     }
     &-news {
       &__container {
-        padding: 94px 28px 49px;
+        padding: 51px 28px 49px;
       }
       &__caption {
-        top: 50px;
-        right: auto;
-        left: 50%;
-        transform: translateX(-50%);
         display: flex;
         flex-direction: row-reverse;
-        width: 250px;
+        transform: none;
+        width: 100%;
         &-text {
           margin-right: 0;
           margin-left: 20px;
@@ -4123,6 +4137,7 @@ $blue3: #122162;
       }
       &__title {
         max-width: 400px;
+        margin-top: 20px;
       }
       &__img {
         top: 223px;

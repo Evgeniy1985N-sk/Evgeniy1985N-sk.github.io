@@ -169,6 +169,18 @@
   .caption__text {
     font-size: 16px; } }
 
+@media (max-width: 750px) {
+  .caption {
+    position: static;
+    top: auto;
+    right: auto;
+    left: auto;
+    -webkit-transform: none;
+            transform: none;
+    width: 100%; }
+    .caption__line {
+      max-width: 100%; } }
+
 .title {
   margin-bottom: 0;
   font-weight: bold;
@@ -1435,7 +1447,7 @@
     display: flex;
     flex-direction: column-reverse;
     max-width: 100%;
-    padding: 30px 37px 12px 33px;
+    padding: 30px 37px 25px 33px;
     margin-left: 0; }
     .block__info-text {
       margin-top: 10px;
@@ -1445,7 +1457,10 @@
     left: 0;
     -webkit-transform: none;
             transform: none;
-    max-width: 200px; }
+    max-width: 100%;
+    width: 100%; }
+    .block__caption-line {
+      max-width: 100%; }
   .block__caption-text {
     font-size: 14px; } }
 
@@ -1836,10 +1851,6 @@
       .project-block__link-more {
         margin-top: 18px; } }
 
-@media (max-width: 600px) {
-  .project {
-    padding-bottom: 0; } }
-
 /* ========================================================================= */
 /* start block quote */
 .page-main__quote {
@@ -2214,8 +2225,8 @@
       width: 100%;
       padding: 48px 33px 42px 31px; }
     .create__caption {
-      right: -40px;
-      width: 180px; }
+      right: auto;
+      width: 100%; }
     .create__numb {
       bottom: -126px;
       max-width: 208px; } }
@@ -2516,6 +2527,9 @@
       top: -70px;
       left: -70px;
       max-width: 321px; }
+    .team__caption {
+      right: auto;
+      max-width: 100%; }
     .team__info {
       max-width: 100%;
       padding-right: 33px;
@@ -2820,19 +2834,21 @@
 
 @media (max-width: 750px) {
   .contact {
-    padding: 96px 0 51px; }
+    padding: 46px 0 51px; }
     .contact__title {
+      margin-top: 18px;
       font-size: 26px;
       line-height: 38px; }
     .contact__link-more {
       margin-top: 44px; }
     .contact__caption {
-      top: -50px;
+      position: static;
+      top: auto;
       right: auto;
-      left: 50%;
-      -webkit-transform: translateX(-50%);
-              transform: translateX(-50%);
-      width: 256px; } }
+      left: auto;
+      -webkit-transform: none;
+              transform: none;
+      width: 100%; } }
 
 /* ========================================================================= */
 /* start block information */
@@ -3087,21 +3103,19 @@
   .information-job__link-more {
     margin-top: 27px; }
   .information-news__container {
-    padding: 94px 28px 49px; }
+    padding: 51px 28px 49px; }
   .information-news__caption {
-    top: 50px;
-    right: auto;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
     display: flex;
     flex-direction: row-reverse;
-    width: 250px; }
+    -webkit-transform: none;
+            transform: none;
+    width: 100%; }
     .information-news__caption-text {
       margin-right: 0;
       margin-left: 20px; }
   .information-news__title {
-    max-width: 400px; }
+    max-width: 400px;
+    margin-top: 20px; }
   .information-news__img {
     top: 223px;
     right: -220px; }
