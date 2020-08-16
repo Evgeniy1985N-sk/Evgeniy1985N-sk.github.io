@@ -792,7 +792,6 @@ $blue3: #122162;
 }
 /* end min-width */
 
-
 @media (max-width: 1800px) {
   .header {
     &:before {
@@ -1419,17 +1418,12 @@ $blue3: #122162;
       background: #fff;
       transition: ease .2s;
     }
-    &__nav::-webkit-scrollbar {
-      display: none;
-    }
     &-nav {
       position: fixed;
       z-index: 1002;
       padding-left: 0;
       max-height: 100vh;
-      overflow-y: scroll;
       overflow-x: hidden;
-      -ms-overflow-style: none;
       &__item {
         position: relative;
         width: 100%;
@@ -1450,7 +1444,6 @@ $blue3: #122162;
         max-height: 60vh;
         overflow-y: scroll;
         overflow-x: hidden;
-        -ms-overflow-style: none;
         padding-top: 38px;
         padding-right: 30px;
         background: #fff;
@@ -1465,9 +1458,6 @@ $blue3: #122162;
           max-width: 100%;
           width: 100%;
         }
-      }
-      &__submenu::-webkit-scrollbar {
-        display: none;
       }
     }
     &__foreground {

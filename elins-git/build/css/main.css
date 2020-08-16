@@ -1151,16 +1151,12 @@
       z-index: 1100;
       background: #fff;
       transition: ease .2s; }
-    .header__nav::-webkit-scrollbar {
-      display: none; }
     .header-nav {
       position: fixed;
       z-index: 1002;
       padding-left: 0;
       max-height: 100vh;
-      overflow-y: scroll;
-      overflow-x: hidden;
-      -ms-overflow-style: none; }
+      overflow-x: hidden; }
       .header-nav__item {
         position: relative;
         width: 100%;
@@ -1178,7 +1174,6 @@
         max-height: 60vh;
         overflow-y: scroll;
         overflow-x: hidden;
-        -ms-overflow-style: none;
         padding-top: 38px;
         padding-right: 30px;
         background: #fff; }
@@ -1189,8 +1184,6 @@
         .header-nav__submenu-item {
           max-width: 100%;
           width: 100%; }
-      .header-nav__submenu::-webkit-scrollbar {
-        display: none; }
     .header__foreground {
       top: 0; } }
 
