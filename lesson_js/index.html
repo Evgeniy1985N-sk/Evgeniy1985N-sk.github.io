@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<body>
+
+  <div id="app">
+    <input v-model="text" type="text" placeholder="write a task">
+    <button v-on:click="addTodo">ADD</button>
+    <ul></ul>
+  </div>
+  
+  <script>
+
+    let arr = [];
+    let count = 0;
+
+    function createTodo() {
+      let ul = document.querySelector("ul");
+      let li = document.createElement("li");
+      ul.appendChild(li);
+    };
+
+    let app = new Vue({
+      el: "#app",
+      data: {
+        text: "",
+      },
+      methods: {
+        addTodo: function() {
+          count += 1;
+
+          createTodo();
+
+          li.innerHTML = this.text;
+          li.setAttribute("id", count);
+
+
+          let obj = {};
+          obj.text = this.text;
+          obj.id = count;
+
+          arr.push(obj);
+
+          localStorage.setItem("arr", JSON.stringify(arr));
+
+        }
+      }
+    });
+
+    parseStorage();
+    function parseStorage() {
+      let arr2 =  JSON.parse(localStorage.getItem("arr"));
+      arr2.forEach((el,i) => {
+
+        createTodo();
+
+        li.innerHTML = el.text;
+        li.setAttribute("id", el.id);
+
+        arr.push(el);
+
+        count = el.id;
+
+      });
+      
+    }
+
+  
+  </script>
+
+</body>
+</html>
