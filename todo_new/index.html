@@ -31,14 +31,14 @@
   <script>
 
     let 
-      inp = document.querySelector(".inp-head");
+      input = document.querySelector(".inp-head");
       list = document.querySelector(".todo-list");
       btnAdd = document.querySelector(".btn-add");
     
     list.innerHTML = localStorage.getItem("tasks");
 
     function createTodo() {
-      if (inp.value === '') {
+      if (input.value === '') {
         alert('Заполните поле'); 
         return;
       }
@@ -46,7 +46,7 @@
       let
         todo = `
           <span class="check"></span>
-          <input class="inp inp-task no-event" value="${inp.value}" type="text">
+          <input class="inp inp-task no-event" value="${input.value}" type="text">
           <button class="btn btn-del">delete</button>
           <button class="btn btn-edit _active">edit</button>
         `;
@@ -68,12 +68,12 @@
       let 
         el = e.target;
         parent = el.parentElement;
-        inpTask = parent.querySelector(".inp-task");
+        inputTask = parent.querySelector(".inp-task");
         check = parent.querySelector(".check");
         btnEdit = parent.querySelector(".btn-edit");
      
       if (el.classList.contains("check")) {
-        inpTask.classList.toggle("_completed");
+        inputTask.classList.toggle("_completed");
         check.classList.toggle("_active");
       }
 
@@ -83,19 +83,19 @@
 
       if (el.classList.contains("btn-edit")) {
 
-        inpTask.classList.toggle("_active");
+        inputTask.classList.toggle("_active");
 
         btnEdit.classList.toggle("_active");
-        inpTask.classList.toggle("no-event");
+        inputTask.classList.toggle("no-event");
 
         if (btnEdit.innerHTML === "edit") {
           btnEdit.innerHTML = "save";
-          inpTask.focus();
+          inputTask.focus();
         }
 
         else {
           btnEdit.innerHTML = "edit";
-          inpTask.setAttribute("value", inpTask.value);
+          inputTask.setAttribute("value", inputTask.value);
         }
 
       }
