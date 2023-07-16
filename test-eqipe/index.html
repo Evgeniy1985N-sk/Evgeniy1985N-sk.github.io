@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>test-eqipe</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<!-- start page -->
+<div class="page">
+
+  <!-- start header -->
+  <header class="header">
+
+    <div class="header__pad">
+      <div class="container">
+
+        <div class="header__row">
+
+          <a class="header__lk" href="#">
+            <svg class="icon">
+              <use xlink:href="#icon_user"></use>
+            </svg>
+          </a>
+
+          <a class="header__logo" href="#">
+            <img class="header__logo-img" src="img/logo.png" alt="logo">
+          </a>
+
+          <div class="header__links">
+
+            <a class="item" href="#">
+              <svg class="icon">
+                <use xlink:href="#icon_user"></use>
+              </svg>
+              Вход
+            </a>
+            <a class="item" href="#">
+              Регистрация
+            </a>
+
+          </div>
+
+          <button class="header__burger burger">
+            <i class="burger__line"></i>
+          </button>
+
+        </div>
+      </div>
+    </div>
+
+    <nav class="header__nav nav">
+      <div class="nav__container container">
+
+        <button class="nav__close close"></button>
+
+        <div class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                аренда
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                заявки
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                поставщики
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                информация
+              </a>
+
+              <ul class="menu__sub menu-sub">
+                <li class="menu-sub__item">
+                  <a class="menu-sub__link" href="#">
+                    О площадке
+                  </a>
+                </li>
+                <li class="menu-sub__item">
+                  <a class="menu-sub__link" href="#">
+                    Контакты
+                  </a>
+                </li>
+                <li class="menu-sub__item">
+                  <a class="menu-sub__link" href="#">
+                    Политика конфиденциальности
+                  </a>
+                </li>
+              </ul>
+
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav__box-event box-event">
+
+          <button class="box-event__button button">
+            Разместить объявление
+          </button>
+
+          <ul class="box-event__menu-sub menu-sub">
+            <li class="menu-sub__item">
+              <a class="menu-sub__link" href="#">
+                Разместить технику в аренду
+              </a>
+            </li>
+            <li class="menu-sub__item">
+              <a class="menu-sub__link" href="#">
+                Разместить заявку на технику
+              </a>
+            </li>
+          </ul>
+
+        </div>
+
+        <p class="nav__info">
+          СтройТех - портал для поставщиков, арендодателей и арендаторов спецтехники
+        </p>
+
+        <div class="nav__contacts contacts">
+          <a class="contacts-item" href="#">
+            <svg class="contacts-item__icon">
+              <use xlink:href="#icon_user"></use>
+            </svg>
+            info@rit.group
+          </a>
+          <a class="contacts-item" href="#">
+            <svg class="contacts-item__icon">
+              <use xlink:href="#icon_user"></use>
+            </svg>
+            +7 985 360 08 02
+          </a>
+        </div>
+
+        <a class="nav__button button button_accent" href="#">
+          написать нам
+        </a>
+
+    </nav>
+
+  </header>
+  <!-- end header -->
+
+  <!-- start intro -->
+  <div class="intro">
+    <div class="container">
+
+      <form class="form">
+
+        <div class="form__ad form-box">
+          <p class="form-title">
+            Объявления
+          </p>
+          <div class="form-field dropdown">
+            <div class="dropdown-btn">
+              <span class="dropdown-btn__value">
+                Тип объявления
+              </span>
+              <svg class="dropdown-btn__icon">
+                <use xlink:href="#icon_ang"></use>
+              </svg>
+            </div>
+            <div class="dropdown__items">
+              <p class="dropdown-item">
+                Техника в аренду
+              </p>
+              <p class="dropdown-item">
+                Заявки на технику
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="form__who form-box">
+          <div class="form-field dropdown">
+            <div class="dropdown-btn">
+              <span class="dropdown-btn__value">
+                От всех
+              </span>
+              <svg class="dropdown-btn__icon">
+                <use xlink:href="#icon_ang"></use>
+              </svg>
+            </div>
+            <div class="dropdown__items">
+              <p class="dropdown-item">
+                От организаций
+              </p>
+              <p class="dropdown-item">
+                От частных лиц
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="form__city form-box">
+          <p class="form-title">
+            Город
+          </p>
+          <div class="form-field dropdown">
+            <div class="dropdown-btn">
+              <span class="dropdown-btn__value">
+                Выберите город
+              </span>
+              <svg class="dropdown-btn__icon">
+                <use xlink:href="#icon_ang"></use>
+              </svg>
+            </div>
+            <div class="dropdown__items">
+              <p class="dropdown-item">
+                Волгоград
+                <span class="dropdown-item__info">Россия, Волгоградская обл.</span>
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="form__type form-box">
+          <p class="form-title">
+            Тип техники
+          </p>
+          <div class="form-field dropdown">
+            <div class="dropdown-btn">
+              <span class="dropdown-btn__value">
+                Тип техники
+              </span>
+              <svg class="dropdown-btn__icon">
+                <use xlink:href="#icon_ang"></use>
+              </svg>
+            </div>
+            <div class="dropdown__items">
+              <p class="dropdown-item">
+                Асфальтобетонное оборудование
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="form__price form-box">
+          <p class="form-title">
+            Цена за час, ₽
+          </p>
+          <div class="form-field form-field_grid">
+            <input class="form-input" type="text" value="50">
+            <div class="slider">
+              <span class="slider-handle"></span>
+              <div class="slider__line"></div>
+              <span class="slider-handle"></span>
+            </div>
+            <input class="form-input" type="text" value="120">
+          </div>
+        </div>
+
+        <div class="form__search form-box">
+          <p class="form-title">
+            Поиск в названии объявления
+          </p>
+          <input class="form-field form-input form-input_padding" type="text" placeholder="Например, «экскаватор»">
+        </div>
+
+        <button class="form__btn button button_accent">
+          Искать
+        </button>
+
+      </form>
+
+    </div>
+  </div>
+  <!-- end intro -->
+
+  <!-- start main -->
+  <main class="main">
+
+    <!-- start section-->
+    <section class="section">
+      <div class="container">
+
+        <div class="section__row">
+
+          <div class="section__content">
+            <div class="section__cards">
+
+              <div class="cards-item">
+                <div class="cards-item__picture">
+                  <img src="https://eqipe.ru/media/GalleryRentMachine/2023/07/06/99e702ce55944e56b3de2ffaf4591210.png" alt="Штукатурные станции ABAC (ABAC Formula 5.508), Абаза">
+                </div>
+                <div class="cards-item__main">
+                  <div class="cards-item__top">
+                    <a class="cards-item__title" href="#">
+                      Штукатурные станции ABAC (ABAC Formula 5.508), Абаза
+                    </a>
+                    <div class="cards-item__date"> Объявление #90
+                      <br> 06.07.23 15:03
+                    </div>
+                  </div>
+                  <div class="cards-item__info">
+                    <div class="cards-item__info-owner">
+                      <a class="item item_gray" href="#">
+                        <svg class="icon icon_gray">
+                          <use xlink:href="#icon_user"></use>
+                        </svg>
+                        Илья Кобзарь
+                      </a>
+                      <div class="cards-item__info-geo">
+                        <svg class="icon icon_gray icon_min">
+                          <use xlink:href="#icon_pin"></use>
+                        </svg>
+                        <div>Республика Хакасия, Абаза, улица Ленина, 57</div>
+                      </div>
+                    </div>
+                    <div class="cards-item__prices">
+                      <div class="cards-item__price">
+                        <div class="cards-item__price-tariff">14 000 ₽</div>
+                        <div class="cards-item__price-unit">/ смена (7 часов)</div>
+                      </div>
+                      <div class="cards-item__price">
+                        <div class="cards-item__price-tariff --m-light">2 000 ₽</div>
+                        <div class="cards-item__price-unit">/ час</div>
+                      </div>
+                    </div>
+                    <div class="cards-item__date m--mobile"> Объявление #90 13.07.23 10:29</div>
+                    <div class="cards-item__buttons">
+                      <button class="button cards-item__button m--phone">
+                        <svg class="icon icon_gray">
+                          <use xlink:href="#icon_phone"></use>
+                        </svg> 
+                        Позвонить
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cards-item">
+                <div class="cards-item__picture">
+                  <img src="https://eqipe.ru/media/GalleryRentMachine/2023/07/06/99e702ce55944e56b3de2ffaf4591210.png" alt="Штукатурные станции ABAC (ABAC Formula 5.508), Абаза">
+                </div>
+                <div class="cards-item__main">
+                  <div class="cards-item__top">
+                    <a class="cards-item__title" href="#">
+                      Штукатурные станции ABAC (ABAC Formula 5.508), Абаза
+                    </a>
+                    <div class="cards-item__date"> Объявление #90
+                      <br> 06.07.23 15:03
+                    </div>
+                  </div>
+                  <div class="cards-item__info">
+                    <div class="cards-item__info-owner">
+                      <a class="item item_gray" href="#">
+                        <svg class="icon icon_gray">
+                          <use xlink:href="#icon_user"></use>
+                        </svg>
+                        Илья Кобзарь
+                      </a>
+                      <div class="cards-item__info-geo">
+                        <svg class="icon icon_gray icon_min">
+                          <use xlink:href="#icon_pin"></use>
+                        </svg>
+                        <div>Республика Хакасия, Абаза, улица Ленина, 57</div>
+                      </div>
+                    </div>
+                    <div class="cards-item__prices">
+                      <div class="cards-item__price">
+                        <div class="cards-item__price-tariff">14 000 ₽</div>
+                        <div class="cards-item__price-unit">/ смена (7 часов)</div>
+                      </div>
+                      <div class="cards-item__price">
+                        <div class="cards-item__price-tariff --m-light">2 000 ₽</div>
+                        <div class="cards-item__price-unit">/ час</div>
+                      </div>
+                    </div>
+                    <div class="cards-item__date m--mobile"> Объявление #90 13.07.23 10:29</div>
+                    <div class="cards-item__buttons">
+                      <button class="button cards-item__button m--phone">
+                        <svg class="icon icon_gray">
+                          <use xlink:href="#icon_phone"></use>
+                        </svg> 
+                        Позвонить
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cards-item">
+                <div class="cards-item__picture">
+                  <img src="https://eqipe.ru/media/GalleryRentMachine/2023/07/06/99e702ce55944e56b3de2ffaf4591210.png" alt="Штукатурные станции ABAC (ABAC Formula 5.508), Абаза">
+                </div>
+                <div class="cards-item__main">
+                  <div class="cards-item__top">
+                    <a class="cards-item__title" href="#">
+                      Штукатурные станции ABAC (ABAC Formula 5.508), Абаза
+                    </a>
+                    <div class="cards-item__date"> Объявление #90
+                      <br> 06.07.23 15:03
+                    </div>
+                  </div>
+                  <div class="cards-item__info">
+                    <div class="cards-item__info-owner">
+                      <a class="item item_gray" href="#">
+                        <svg class="icon icon_gray">
+                          <use xlink:href="#icon_user"></use>
+                        </svg>
+                        Илья Кобзарь
+                      </a>
+                      <div class="cards-item__info-geo">
+                        <svg class="icon icon_gray icon_min">
+                          <use xlink:href="#icon_pin"></use>
+                        </svg>
+                        <div>Республика Хакасия, Абаза, улица Ленина, 57</div>
+                      </div>
+                    </div>
+                    <div class="cards-item__prices">
+                      <div class="cards-item__price">
+                        <div class="cards-item__price-tariff">14 000 ₽</div>
+                        <div class="cards-item__price-unit">/ смена (7 часов)</div>
+                      </div>
+                      <div class="cards-item__price">
+                        <div class="cards-item__price-tariff --m-light">2 000 ₽</div>
+                        <div class="cards-item__price-unit">/ час</div>
+                      </div>
+                    </div>
+                    <div class="cards-item__date m--mobile"> Объявление #90 13.07.23 10:29</div>
+                    <div class="cards-item__buttons">
+                      <button class="button cards-item__button m--phone">
+                        <svg class="icon icon_gray">
+                          <use xlink:href="#icon_phone"></use>
+                        </svg> 
+                        Позвонить
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cards-item">
+                <div class="cards-item__picture">
+                  <img src="https://eqipe.ru/media/GalleryRentMachine/2023/07/06/99e702ce55944e56b3de2ffaf4591210.png" alt="Штукатурные станции ABAC (ABAC Formula 5.508), Абаза">
+                </div>
+                <div class="cards-item__main">
+                  <div class="cards-item__top">
+                    <a class="cards-item__title" href="#">
+                      Штукатурные станции ABAC (ABAC Formula 5.508), Абаза
+                    </a>
+                    <div class="cards-item__date"> Объявление #90
+                      <br> 06.07.23 15:03
+                    </div>
+                  </div>
+                  <div class="cards-item__info">
+                    <div class="cards-item__info-owner">
+                      <a class="item item_gray" href="#">
+                        <svg class="icon icon_gray">
+                          <use xlink:href="#icon_user"></use>
+                        </svg>
+                        Илья Кобзарь
+                      </a>
+                      <div class="cards-item__info-geo">
+                        <svg class="icon icon_gray icon_min">
+                          <use xlink:href="#icon_pin"></use>
+                        </svg>
+                        <div>Республика Хакасия, Абаза, улица Ленина, 57</div>
+                      </div>
+                    </div>
+                    <div class="cards-item__prices">
+                      <div class="cards-item__price">
+                        <div class="cards-item__price-tariff">14 000 ₽</div>
+                        <div class="cards-item__price-unit">/ смена (7 часов)</div>
+                      </div>
+                      <div class="cards-item__price">
+                        <div class="cards-item__price-tariff --m-light">2 000 ₽</div>
+                        <div class="cards-item__price-unit">/ час</div>
+                      </div>
+                    </div>
+                    <div class="cards-item__date m--mobile"> Объявление #90 13.07.23 10:29</div>
+                    <div class="cards-item__buttons">
+                      <button class="button cards-item__button m--phone">
+                        <svg class="icon icon_gray">
+                          <use xlink:href="#icon_phone"></use>
+                        </svg> 
+                        Позвонить
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cards-item">
+                <div class="cards-item__picture">
+                  <img src="https://eqipe.ru/media/GalleryRentMachine/2023/07/06/99e702ce55944e56b3de2ffaf4591210.png" alt="Штукатурные станции ABAC (ABAC Formula 5.508), Абаза">
+                </div>
+                <div class="cards-item__main">
+                  <div class="cards-item__top">
+                    <a class="cards-item__title" href="#">
+                      Штукатурные станции ABAC (ABAC Formula 5.508), Абаза
+                    </a>
+                    <div class="cards-item__date"> Объявление #90
+                      <br> 06.07.23 15:03
+                    </div>
+                  </div>
+                  <div class="cards-item__info">
+                    <div class="cards-item__info-owner">
+                      <a class="item item_gray" href="#">
+                        <svg class="icon icon_gray">
+                          <use xlink:href="#icon_user"></use>
+                        </svg>
+                        Илья Кобзарь
+                      </a>
+                      <div class="cards-item__info-geo">
+                        <svg class="icon icon_gray icon_min">
+                          <use xlink:href="#icon_pin"></use>
+                        </svg>
+                        <div>Республика Хакасия, Абаза, улица Ленина, 57</div>
+                      </div>
+                    </div>
+                    <div class="cards-item__prices">
+                      <div class="cards-item__price">
+                        <div class="cards-item__price-tariff">14 000 ₽</div>
+                        <div class="cards-item__price-unit">/ смена (7 часов)</div>
+                      </div>
+                      <div class="cards-item__price">
+                        <div class="cards-item__price-tariff --m-light">2 000 ₽</div>
+                        <div class="cards-item__price-unit">/ час</div>
+                      </div>
+                    </div>
+                    <div class="cards-item__date m--mobile"> Объявление #90 13.07.23 10:29</div>
+                    <div class="cards-item__buttons">
+                      <button class="button cards-item__button m--phone">
+                        <svg class="icon icon_gray">
+                          <use xlink:href="#icon_phone"></use>
+                        </svg> 
+                        Позвонить
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cards-item">
+                <div class="cards-item__picture">
+                  <img src="https://eqipe.ru/media/GalleryRentMachine/2023/07/06/99e702ce55944e56b3de2ffaf4591210.png" alt="Штукатурные станции ABAC (ABAC Formula 5.508), Абаза">
+                </div>
+                <div class="cards-item__main">
+                  <div class="cards-item__top">
+                    <a class="cards-item__title" href="#">
+                      Штукатурные станции ABAC (ABAC Formula 5.508), Абаза
+                    </a>
+                    <div class="cards-item__date"> Объявление #90
+                      <br> 06.07.23 15:03
+                    </div>
+                  </div>
+                  <div class="cards-item__info">
+                    <div class="cards-item__info-owner">
+                      <a class="item item_gray" href="#">
+                        <svg class="icon icon_gray">
+                          <use xlink:href="#icon_user"></use>
+                        </svg>
+                        Илья Кобзарь
+                      </a>
+                      <div class="cards-item__info-geo">
+                        <svg class="icon icon_gray icon_min">
+                          <use xlink:href="#icon_pin"></use>
+                        </svg>
+                        <div>Республика Хакасия, Абаза, улица Ленина, 57</div>
+                      </div>
+                    </div>
+                    <div class="cards-item__prices">
+                      <div class="cards-item__price">
+                        <div class="cards-item__price-tariff">14 000 ₽</div>
+                        <div class="cards-item__price-unit">/ смена (7 часов)</div>
+                      </div>
+                      <div class="cards-item__price">
+                        <div class="cards-item__price-tariff --m-light">2 000 ₽</div>
+                        <div class="cards-item__price-unit">/ час</div>
+                      </div>
+                    </div>
+                    <div class="cards-item__date m--mobile"> Объявление #90 13.07.23 10:29</div>
+                    <div class="cards-item__buttons">
+                      <button class="button cards-item__button m--phone">
+                        <svg class="icon icon_gray">
+                          <use xlink:href="#icon_phone"></use>
+                        </svg> 
+                        Позвонить
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cards-item">
+                <div class="cards-item__picture">
+                  <img src="https://eqipe.ru/media/GalleryRentMachine/2023/07/06/99e702ce55944e56b3de2ffaf4591210.png" alt="Штукатурные станции ABAC (ABAC Formula 5.508), Абаза">
+                </div>
+                <div class="cards-item__main">
+                  <div class="cards-item__top">
+                    <a class="cards-item__title" href="#">
+                      Штукатурные станции ABAC (ABAC Formula 5.508), Абаза
+                    </a>
+                    <div class="cards-item__date"> Объявление #90
+                      <br> 06.07.23 15:03
+                    </div>
+                  </div>
+                  <div class="cards-item__info">
+                    <div class="cards-item__info-owner">
+                      <a class="item item_gray" href="#">
+                        <svg class="icon icon_gray">
+                          <use xlink:href="#icon_user"></use>
+                        </svg>
+                        Илья Кобзарь
+                      </a>
+                      <div class="cards-item__info-geo">
+                        <svg class="icon icon_gray icon_min">
+                          <use xlink:href="#icon_pin"></use>
+                        </svg>
+                        <div>Республика Хакасия, Абаза, улица Ленина, 57</div>
+                      </div>
+                    </div>
+                    <div class="cards-item__prices">
+                      <div class="cards-item__price">
+                        <div class="cards-item__price-tariff">14 000 ₽</div>
+                        <div class="cards-item__price-unit">/ смена (7 часов)</div>
+                      </div>
+                      <div class="cards-item__price">
+                        <div class="cards-item__price-tariff --m-light">2 000 ₽</div>
+                        <div class="cards-item__price-unit">/ час</div>
+                      </div>
+                    </div>
+                    <div class="cards-item__date m--mobile"> Объявление #90 13.07.23 10:29</div>
+                    <div class="cards-item__buttons">
+                      <button class="button cards-item__button m--phone">
+                        <svg class="icon icon_gray">
+                          <use xlink:href="#icon_phone"></use>
+                        </svg> 
+                        Позвонить
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cards-item">
+                <div class="cards-item__picture">
+                  <img src="https://eqipe.ru/media/GalleryRentMachine/2023/07/06/99e702ce55944e56b3de2ffaf4591210.png" alt="Штукатурные станции ABAC (ABAC Formula 5.508), Абаза">
+                </div>
+                <div class="cards-item__main">
+                  <div class="cards-item__top">
+                    <a class="cards-item__title" href="#">
+                      Штукатурные станции ABAC (ABAC Formula 5.508), Абаза
+                    </a>
+                    <div class="cards-item__date"> Объявление #90
+                      <br> 06.07.23 15:03
+                    </div>
+                  </div>
+                  <div class="cards-item__info">
+                    <div class="cards-item__info-owner">
+                      <a class="item item_gray" href="#">
+                        <svg class="icon icon_gray">
+                          <use xlink:href="#icon_user"></use>
+                        </svg>
+                        Илья Кобзарь
+                      </a>
+                      <div class="cards-item__info-geo">
+                        <svg class="icon icon_gray icon_min">
+                          <use xlink:href="#icon_pin"></use>
+                        </svg>
+                        <div>Республика Хакасия, Абаза, улица Ленина, 57</div>
+                      </div>
+                    </div>
+                    <div class="cards-item__prices">
+                      <div class="cards-item__price">
+                        <div class="cards-item__price-tariff">14 000 ₽</div>
+                        <div class="cards-item__price-unit">/ смена (7 часов)</div>
+                      </div>
+                      <div class="cards-item__price">
+                        <div class="cards-item__price-tariff --m-light">2 000 ₽</div>
+                        <div class="cards-item__price-unit">/ час</div>
+                      </div>
+                    </div>
+                    <div class="cards-item__date m--mobile"> Объявление #90 13.07.23 10:29</div>
+                    <div class="cards-item__buttons">
+                      <button class="button cards-item__button m--phone">
+                        <svg class="icon icon_gray">
+                          <use xlink:href="#icon_phone"></use>
+                        </svg> 
+                        Позвонить
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <aside class="section__aside aside">
+            <div class="aside__inner">
+
+              <div class="aside__banners">
+                <div class="banners-item">
+                  <a href="https://flexites.org/" target="_blank">
+                    <img src="https://eqipe.ru/media/banners/2023/06/23/1635227467_84-hdpic-club-p-ekskavator-na-telefon-107.jpg" alt="Первый баннер">
+                  </a>
+                </div>
+                <div class="banners-item">
+                  <a href="https://tenders.flexites.org/" target="_blank">
+                    <img src="https://eqipe.ru/media/banners/2023/06/23/pic_8-1024x683.jpg" alt="Второй баннер">
+                  </a>
+                </div>
+                <div class="banners-item">
+                  <a href="https://flexites.org/" target="">
+                    <img src="https://eqipe.ru/media/banners/2023/06/23/gusenichnye-ekskavatory-ecr145el-volvo-1-.jpg" alt="Третий баннер">
+                  </a>
+                </div>
+              </div>
+
+              <div class="aside__promo">
+                <div class="aside__promo-title">Популярные марки</div>
+                <div class="aside__promo-inner">
+                  <ul>
+                    <li>
+                      <a href="/offers/brand/avtodor" class="aside__promo-link m--uppercase">АВТОДОР</a>
+                    </li>
+                    <li>
+                      <a href="/offers/brand/amkodor" class="aside__promo-link m--uppercase">АМКОДОР</a>
+                    </li>
+                    <li>
+                      <a href="/offers/brand/belaz" class="aside__promo-link m--uppercase">БЕЛАЗ</a>
+                    </li>
+                    <li>
+                      <a href="/offers/brand/vgtz" class="aside__promo-link m--uppercase">ВГТЗ</a>
+                    </li>
+                    <li>
+                      <a href="/offers/brand/vtz" class="aside__promo-link m--uppercase">ВТЗ</a>
+                    </li>
+                    <li>
+                      <a href="/offers/brand/gaz" class="aside__promo-link m--uppercase">ГАЗ</a>
+                    </li>
+                    <li>
+                      <a href="/offers/brand/galichanin" class="aside__promo-link m--uppercase">ГАЛИЧАНИН</a>
+                    </li>
+                    <li>
+                      <a href="/offers/brand/doneks" class="aside__promo-link m--uppercase">ДОНЭКС</a>
+                    </li>
+                    <li>
+                      <a href="/offers/brand/elaz" class="aside__promo-link m--uppercase">ЕЛАЗ</a>
+                    </li>
+                    <li>
+                      <a href="/offers/brand/zil" class="aside__promo-link m--uppercase">ЗИЛ</a>
+                    </li>
+                    <li>
+                      <a href="/offers/brand/zmz" class="aside__promo-link m--uppercase">ЗМЗ</a>
+                    </li>
+                    <li>
+                      <a href="/offers/brand/ivanovets" class="aside__promo-link m--uppercase">ИВАНОВЕЦ</a>
+                    </li>
+                  </ul>
+                </div>
+                <a href="/offers/brands" class="aside__promo-more"> Все марки → </a>
+              </div>
+            
+            </div>
+          </aside>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- end section-->
+
+  </main>
+  <!-- end main -->
+
+  <!-- start footer -->
+  <footer class="footer">
+
+    <div class="footer__top">
+      <div class="footer__top-inner container">
+        <div class="footer__top-block m--contacts">
+          <a href="/" class="is-subactive is-active footer__logo" aria-current="page"></a>
+          <div class="footer__top-content"> 
+            СтройТех - портал для поставщиков, арендодателей и арендаторов спецтехники 
+          </div>
+          <div class="footer__top-contacts">
+            <a class="item item_light" href="#">
+              <svg class="icon icon_accent">
+                <use xlink:href="#icon_mail"></use>
+              </svg>
+              info@rit.group
+            </a>
+            <a class="item item_light" href="#">
+              <svg class="icon icon_accent">
+                <use xlink:href="#icon_phone"></use>
+              </svg>
+              +7 985 360 08 02
+            </a>
+          </div>
+        </div>
+        <div class="footer__top-block m--offers">
+          <a href="/offers" class="footer__top-block-title">
+            Техника в аренду
+          </a>
+          <div class="footer__menu footer__menu_mob">
+            <a href="/offers/category/asfaltobetonnoe-oborudovanie" class="footer__menu-link">
+              Асфальтобетонное оборудование
+            </a>
+            <a href="/offers/category/burovoe-oborudovanie" class="footer__menu-link">
+              Буровое оборудование
+            </a>
+            <a href="/offers/category/gruzoviki-i-kuzova" class="footer__menu-link">
+              Грузовики и кузова
+            </a>
+            <a href="/offers/category/navesnoe-oborudovanie" class="footer__menu-link">
+              Навесное оборудование
+            </a>
+            <a href="/offers/category/passazhirskij-transport" class="footer__menu-link">
+              Пассажирский транспорт
+            </a>
+            <a href="/offers/category/polupritsepyi" class="footer__menu-link">
+              Полуприцепы
+            </a>
+            <a href="/offers/category/pritsepyi" class="footer__menu-link">
+              Прицепы
+            </a>
+            <a href="/offers/category/spetsialnyie-avtomobili" class="footer__menu-link">
+              Специальные автомобили
+            </a>
+            <a href="/offers/categories" class="footer__menu-link m--more">
+              Все типы техники →
+            </a>
+          </div>
+        </div>
+        <div class="footer__top-block m--requests">
+          <a href="/requests" class="footer__top-block-title">
+            Запросы на аренду
+          </a>
+          <div class="footer__menu footer__menu_mob">
+            <a href="/requests/category/asfaltobetonnoe-oborudovanie" class="footer__menu-link">
+              Асфальтобетонное оборудование
+            </a>
+            <a href="/requests/category/burovoe-oborudovanie" class="footer__menu-link">
+              Буровое оборудование
+            </a>
+            <a href="/requests/category/gruzoviki-i-kuzova" class="footer__menu-link">
+              Грузовики и кузова
+            </a>
+            <a href="/requests/category/navesnoe-oborudovanie" class="footer__menu-link">
+              Навесное оборудование
+            </a>
+            <a href="/requests/category/passazhirskij-transport" class="footer__menu-link">
+              Пассажирский транспорт
+            </a>
+            <a href="/requests/category/polupritsepyi" class="footer__menu-link">
+              Полуприцепы
+            </a>
+            <a href="/requests/category/pritsepyi" class="footer__menu-link">
+              Прицепы
+            </a>
+            <a href="/requests/category/spetsialnyie-avtomobili" class="footer__menu-link">
+              Специальные автомобили
+            </a>
+            <a href="/requests/categories" class="footer__menu-link m--more">
+              Все типы техники →
+            </a>
+          </div>
+        </div>
+        <div class="footer__top-block m--navigate">
+          <div class="footer__menu m--menu">
+            <a href="/providers" class="footer__menu-link m--title">
+              Поставщики
+            </a>
+            <a href="/info/company" class="footer__menu-link m--title">
+              О площадке
+            </a>
+            <a href="/auth" class="footer__menu-link m--title">
+              Вход / Регистрация
+            </a>
+            <a href="/info/contacts" class="footer__menu-link m--title">
+              Контакты
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+  <!-- end footer -->
+
+
+</div>
+<!-- end page -->
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none;">
+  <defs>
+
+    <symbol id="icon_user" viewBox="0 0 21 21">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5 10.5C8.1837 10.5 6.3 8.6163 6.3 6.3C6.3 3.9837 8.1837 2.1 10.5 2.1C12.8163 2.1 14.7 3.9837 14.7 6.3C14.7 8.6163 12.8163 10.5 10.5 10.5ZM14.4459 11.2066C15.8802 10.0527 16.8 8.2845 16.8 6.3C16.8 2.8203 13.9797 0 10.5 0C7.0203 0 4.2 2.8203 4.2 6.3C4.2 8.2845 5.1198 10.0527 6.5541 11.2066C2.71215 12.6504 0 16.2172 0 21H2.1C2.1 15.75 5.86845 12.6 10.5 12.6C15.1315 12.6 18.9 15.75 18.9 21H21C21 16.2172 18.2878 12.6504 14.4459 11.2066Z" fill=""/>
+    </symbol>
+
+    <symbol id="icon_ang" viewBox="0 0 11 6">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M0.171753 0L5.28901 5.11726L5.62519 4.78109L5.62928 4.78518L10.4145 0H7.58604L5.29311 2.29293L3.00018 0H0.171753Z" fill=""/>
+    </symbol>
+
+    <symbol id="icon_pin" viewBox="0 0 16 22">
+      <path d="M15.5748 6.21276C14.8172 2.54516 11.6968 0 8.02917 0C7.51286 0 6.99932 0.0617301 6.483 0.151519C4.45136 0.544375 2.72561 1.69772 1.5723 3.42346C0.421789 5.15205 -0.00473711 7.21173 0.421789 9.27143C0.69399 10.6352 1.24117 11.9092 1.75471 12.9699C2.7537 15.0913 4.05853 17.2436 5.84603 19.7888C6.23889 20.3332 6.63455 20.8804 7.05827 21.4247C7.05827 21.4247 7.05827 21.4247 7.05827 21.4556L7.14806 21.5763L7.17893 21.6071C7.3922 21.8793 7.69524 22 7.99831 22C8.21158 22 8.57358 21.9102 8.90748 21.5145C10.1197 19.9375 11.1496 18.3941 12.1205 16.848C13.2121 15.0913 14.545 12.7566 15.3644 10.1497C15.7853 8.81685 15.847 7.48393 15.5748 6.21276ZM14.27 9.81861C13.4815 12.3048 12.1794 14.5469 11.1496 16.2446C10.2095 17.7599 9.17971 19.2444 8.0292 20.7905C8.0292 20.7905 8.0292 20.8214 7.99834 20.8214L7.96747 20.7597C7.96747 20.7597 7.96747 20.7288 7.9366 20.7288C7.54375 20.1844 7.14809 19.6372 6.75523 19.0929C4.99859 16.6066 3.72463 14.5161 2.7537 12.4564C2.26825 11.4574 1.75471 10.2732 1.51059 9.00204C1.1458 7.2454 1.51059 5.45508 2.48152 4.00154C3.45245 2.54799 4.96776 1.54617 6.6935 1.21227C7.14809 1.12248 7.57181 1.09161 8.02642 1.09161C11.1777 1.09161 13.8155 3.27478 14.4805 6.42604C14.7246 7.51479 14.6348 8.6653 14.27 9.81861ZM7.93658 4.06046C5.96669 4.06046 4.36157 5.66556 4.36157 7.63547C4.36157 9.60539 5.96666 11.2105 7.93658 11.2105C9.90649 11.2105 11.5116 9.60539 11.5116 7.63547C11.5116 5.66556 9.90647 4.06046 7.93658 4.06046ZM7.93658 10.0908C6.57279 10.0908 5.48121 8.99923 5.48121 7.63545C5.48121 6.27166 6.57279 5.18008 7.93658 5.18008C9.30036 5.18008 10.3919 6.27166 10.3919 7.63545C10.3919 8.99923 9.30033 10.0908 7.93658 10.0908Z" fill=""/>
+    </symbol>
+    
+    <symbol id="icon_phone" viewBox="0 0 16 22">
+      <path d="M5.09721 7.04762L5.09722 7.04757C5.15698 6.64223 5.29328 6.31489 5.50638 6.05235C5.71619 5.79384 5.97075 5.63529 6.20286 5.52103C6.31789 5.46441 6.43424 5.41549 6.53933 5.37217C6.56031 5.36352 6.58074 5.35513 6.60075 5.34692C6.68546 5.31215 6.7625 5.28052 6.84037 5.24578C7.02852 5.16183 7.1812 5.07654 7.31101 4.96158C7.46736 4.82311 7.55548 4.57766 7.43725 4.10876C7.31956 3.64196 7.01998 3.08196 6.60924 2.52809C6.20258 1.97975 5.7145 1.47447 5.26027 1.11397C5.03304 0.933631 4.82484 0.797955 4.64889 0.710638C4.46335 0.618559 4.35825 0.602596 4.32307 0.603465C4.24462 0.605444 4.11313 0.638523 3.92327 0.740787C3.73855 0.840279 3.53178 0.987169 3.3116 1.17187C2.8726 1.54013 2.42675 2.01909 2.05552 2.45494C1.63553 2.97146 1.26324 3.65689 1.15118 5.0164C1.08669 6.95949 1.6643 9.36184 4.87577 13.0266L4.92896 13.0862L4.9311 13.0886C4.94335 13.1026 4.94863 13.1084 4.95485 13.1153L5.09721 7.04762ZM5.09721 7.04762C4.87705 8.5418 5.58096 10.2505 6.74867 11.5695L6.74878 11.5696C7.92735 12.9 9.44789 13.6892 10.9458 13.6515L10.9458 13.6515C11.3554 13.6412 11.6968 13.5455 11.9832 13.3657C12.2651 13.1886 12.4533 12.9551 12.5948 12.7385C12.6649 12.6312 12.7275 12.5216 12.7832 12.4225C12.7943 12.4027 12.8051 12.3835 12.8157 12.3646C12.8604 12.2847 12.9011 12.212 12.9451 12.1389C13.0511 11.9623 13.1542 11.8211 13.2841 11.7061C13.4404 11.5676 13.6948 11.5098 14.1459 11.6838C14.5951 11.8571 15.1148 12.2221 15.6149 12.6968C16.1101 13.1668 16.5527 13.7124 16.8556 14.2068C17.0072 14.4542 17.1167 14.6773 17.1821 14.8625C17.2511 15.0579 17.2542 15.1641 17.2491 15.1989C17.2376 15.2766 17.1889 15.4031 17.0644 15.5792C16.9434 15.7505 16.7726 15.938 16.5626 16.1342C16.144 16.5255 15.6147 16.9102 15.1371 17.226C14.5736 17.5805 13.8484 17.8672 12.4852 17.8142C10.5486 17.6433 8.23389 16.7791 4.98391 13.1478L5.09721 7.04762Z" stroke="" stroke-width="1.1"/>
+    </symbol>
+
+    <symbol id="icon_mail" viewBox="0 0 27 20">
+      <path d="M23.1648 0.477295H3.73657C1.92477 0.477295 0.450684 1.95138 0.450684 3.76319V16.2363C0.450684 18.0481 1.92477 19.5222 3.73657 19.5222H23.1648C24.9766 19.5222 26.4507 18.0481 26.4507 16.2363V3.76319C26.4507 1.95138 24.9766 0.477295 23.1648 0.477295ZM22.6514 2.59686L13.4507 9.70433L4.24993 2.59686H22.6514ZM23.1648 17.4027H3.73657C3.0935 17.4027 2.57025 16.8795 2.57025 16.2364V3.97769L12.8028 11.8823C12.9936 12.0296 13.2222 12.1033 13.4507 12.1033C13.6792 12.1033 13.9078 12.0296 14.0986 11.8823L24.3311 3.97769V16.2363C24.3311 16.8795 23.8079 17.4027 23.1648 17.4027Z" fill=""/>
+    </symbol>
+
+  </defs>
+</svg>
+
+
+</body>
+</html>
