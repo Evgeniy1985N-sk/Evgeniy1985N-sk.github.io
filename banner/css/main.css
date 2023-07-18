@@ -1172,8 +1172,6 @@ button.bg-dark:focus {
     align-items: center !important; }
   .align-items-sm-baseline {
     align-items: baseline !important; }
-  .align-items-sm-stretch {
-    align-items: stretch !important; }
   .align-content-sm-start {
     align-content: flex-start !important; }
   .align-content-sm-end {
