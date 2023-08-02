@@ -1,0 +1,23 @@
+/* ====== start header ====== */
+
+.header {
+  position: relative;
+  z-index: 1;
+}
+
+.header__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 20px 0;
+}
+
+/* ====== end header ====== */
+
+@media (min-width: 768px) {
+  .header__row {
+    justify-content: space-between;
+  }
+}
