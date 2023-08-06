@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>form-quiz</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<!-- start page -->
+<div class="page">
+
+
+  <!-- start main -->
+  <main class="main">
+
+    <form class="form" novalidate>
+
+      <div class="form__container">
+
+        <div class="form-js form__body" id="psycholog-for">
+
+          <div class="form__title">
+            Для кого подбираете психолога?
+          </div>
+
+          <div class="form__inner">
+
+            <label class="label">
+              <input class="label__input input-js" type="radio" name="психолог для" value="для себя">
+              <i class="label__check label__check_rounded"></i>
+              <p class="label__text">
+                Для себя
+              </p>
+            </label>
+            <label class="label">
+              <input class="label__input input-js" type="radio" name="психолог для" value="Для ребенка">
+              <i class="label__check label__check_rounded"></i>
+              <p class="label__text">
+                Для ребенка
+              </p>
+            </label>
+            <label class="label">
+              <input class="label__input input-js" type="radio" name="психолог для" value="Для пары">
+              <i class="label__check label__check_rounded"></i>
+              <p class="label__text">
+                Для пары
+              </p>
+            </label>
+          </div>
+
+          <div class="form__progress progress">
+            <p class="progress-info">
+              Пройдено:
+              <span class="progress-info__value">0%</span>
+            </p>
+            <span class="progress-indicator">
+              <i class="progress-indicator__runner"></i>
+            </span>
+          </div>
+
+          <div class="form__buttons">
+            <div class="button-dir">
+              <svg class="icon-arrowL">
+                <use xlink:href="#icon-arrow"></use>
+              </svg>
+            </div>
+            <div class="button-js-next button-primary button-primary_disabled">
+              Далее
+              <svg class="icon-ang">
+                <use xlink:href="#icon-ang"></use>
+              </svg>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="form-js form__body form__body_hidden" id="my-worries">
+
+          <div class="form__title">
+            Что Вас беспокоит?
+          </div>
+
+          <div class="form__inner">
+
+            <label class="label">
+              <input class="label__input input-js" type="checkbox" name="беспокойство" value="Депрессия, апатия">
+              <i class="label__check"></i>
+              <p class="label__text">
+                Депрессия, апатия
+              </p>
+            </label>
+          
+            <label class="label">
+              <input class="label__input input-js" name="беспокойство" type="checkbox" value="Горе, утрата, обида">
+              <i class="label__check"></i>
+              <p class="label__text">
+                Горе, утрата, обида
+              </p>
+            </label>
+          
+            <label class="label">
+              <input class="label__input input-js" name="беспокойство" type="checkbox" value="Отношения с детьми">
+              <i class="label__check"></i>
+              <p class="label__text">
+                Отношения с детьми
+              </p>
+            </label>
+            <label class="label">
+              <input class="label__input input-js" name="беспокойство" type="checkbox" value="Ссоры, конфликты">
+              <i class="label__check"></i>
+              <p class="label__text">
+                Ссоры, конфликты
+              </p>
+            </label>
+            <label class="label">
+              <input class="label__input input-js" name="беспокойство" type="checkbox" value="Тревога, беспокойство">
+              <i class="label__check"></i>
+              <p class="label__text">
+                Тревога, беспокойство
+              </p>
+            </label>
+            <label class="label">
+              <input class="label__input input-js" name="беспокойство" type="checkbox" value="Потеря доходов, работы">
+              <i class="label__check"></i>
+              <p class="label__text">
+                Потеря доходов, работы
+              </p>
+            </label>
+            <label class="label">
+              <input class="label__input input-js" name="беспокойство" type="checkbox" value="Комплексы">
+              <i class="label__check"></i>
+              <p class="label__text">
+                Комплексы
+              </p>
+            </label>
+            <label class="label">
+              <input class="label__input input-js" name="беспокойство" type="checkbox" value="Потенциал, способности">
+              <i class="label__check"></i>
+              <p class="label__text">
+                Потенциал, способности
+              </p>
+            </label>
+            <label class="label">
+              <input class="label__input input-js" name="беспокойство" type="checkbox" value="Комплексы">
+              <i class="label__check"></i>
+              <p class="label__text">
+                Комплексы
+              </p>
+            </label>
+            <label class="label">
+              <input class="label__input input-js" name="беспокойство" type="checkbox" value="Вредные привычки">
+              <i class="label__check"></i>
+              <p class="label__text">
+                Вредные привычки
+              </p>
+            </label>
+            <label class="label">
+              <input class="label__input input-js" name="беспокойство" type="checkbox" value="Детские травы">
+              <i class="label__check"></i>
+              <p class="label__text">
+                Детские травы
+              </p>
+            </label>
+
+          </div>
+
+          <div class="form__progress progress">
+            <p class="progress-info">
+              Пройдено:
+              <span class="progress-info__value">0%</span>
+            </p>
+            <span class="progress-indicator">
+              <i class="progress-indicator__runner"></i>
+            </span>
+          </div>
+
+          <div class="form__buttons">
+            <div class="button-js-prev button-dir">
+              <svg class="icon-arrowL">
+                <use xlink:href="#icon-arrow"></use>
+              </svg>
+            </div>
+            <div class="button-js-next button-primary button-primary_disabled">
+              Далее
+              <svg class="icon-ang">
+                <use xlink:href="#icon-ang"></use>
+              </svg>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="form-js form__body form__body_hidden" id="about-self">
+
+          <div class="form__title">
+            Расскажите о себе:
+          </div>
+
+          <div class="form__inner">
+
+            <label class="label-box label">
+              <p class="label__info">
+                Имя или псевдоним *
+              </p>
+              <input class="input input-js" id="name" name="name" type="text" placeholder="Иван" required>
+            </label>
+
+            <label class="label-box label">
+              <p class="label__info">
+                Телефон *
+              </p>
+              <input class="input" id="phone" name="phone" type="tel" placeholder="+7 (___) ___-__-__" required>
+            </label>
+          
+            <label class="label-box label">
+              <p class="label__info">
+                E-mail *
+              </p>
+              <input class="input input-js" name="email" id="email" type="email" placeholder="example@gmail.com" required>
+            </label>
+
+            <label class="label label_check">
+              <input class="label__input input-js" type="checkbox" name="agreement" id="check" value="Я даю согласие на обработку моих персональных данных">
+              <i class="label__check"></i>
+              <p class="label__text">
+                Я даю согласие на обработку моих персональных данных, а также <a class="label__link" href="#">с условиями и политикой </a>
+                их обработки ознакомлен
+              </p>
+            </label>
+
+          </div>
+
+          <div class="form__progress progress">
+            <p class="progress-info">
+              Пройдено:
+              <span class="progress-info__value">0%</span>
+            </p>
+            <span class="progress-indicator">
+              <i class="progress-indicator__runner"></i>
+            </span>
+          </div>
+
+          <div class="form__buttons">
+            <div class="button-js-prev button-dir">
+              <svg class="icon-arrowL">
+                <use xlink:href="#icon-arrow"></use>
+              </svg>
+            </div>
+            <div class="button-js-submit button-primary button-primary_disabled">
+              Далее
+              <svg class="icon-ang">
+                <use xlink:href="#icon-ang"></use>
+              </svg>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="form__body form__body_hidden" id="popup">
+          <span class="form__cross cross">
+            <i class="cross__line"></i>
+          </span>
+          <div class="form__title">
+            Заявка принята!
+          </div>
+          <p class="form__text">
+            В ближайшее время с вами свяжется менеджер и проконсльтируюет по вашему вопросу
+          </p>
+          <img class="form__img" src="img/Frame.svg" alt="">
+        </div>
+
+      </div>
+
+    </form>
+
+  </main>
+  <!-- end main -->
+
+</div>
+<!-- end page -->
+
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none;">
+    <defs>
+
+      <symbol id="icon-arrow" viewBox="0 0 30 16">
+        <path d="M0.664475 7.29289C0.273951 7.68342 0.273951 8.31658 0.664475 8.70711L7.02844 15.0711C7.41896 15.4616 8.05213 15.4616 8.44265 15.0711C8.83317 14.6805 8.83317 14.0474 8.44265 13.6569L2.7858 8L8.44265 2.34315C8.83317 1.95262 8.83317 1.31946 8.44265 0.928931C8.05212 0.538407 7.41896 0.538407 7.02844 0.928932L0.664475 7.29289ZM1.37158 9L29.3716 9L29.3716 7L1.37158 7L1.37158 9Z" fill=""/>
+      </symbol>
+
+      <symbol id="icon-ang" viewBox="0 0 9 12">
+        <path d="M8.55805 5.3454L2.53194 0.242594C1.90106 -0.291619 0.871583 0.114257 0.871583 0.897195L0.871582 11.1028C0.871582 11.8857 1.90106 12.2916 2.53193 11.7574L8.55805 6.6546C8.97609 6.30061 8.97609 5.69939 8.55805 5.3454Z" fill=""/>
+      </symbol>
+
+    </defs>
+  </svg>
+
+  <script src="https://unpkg.com/imask"></script>
+
+  <script src="common.js"></script>
+
+
+</body>
+</html>
