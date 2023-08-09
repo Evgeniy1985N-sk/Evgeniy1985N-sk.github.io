@@ -197,7 +197,9 @@ function formQuiz() {
   checkName()
   function checkName() {
     function onInputText() {
-      if (inputName.value) {
+      let letters = /^[А-ЯЁ][а-яё]+$/;
+
+      if (inputName.value.match(letters)) {
 
         inputName.parentElement.classList.remove('label_error');
         inputName.parentElement.classList.add('label_success');
