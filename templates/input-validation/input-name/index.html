@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>REG EXP</title>
+
+  <style>
+    form {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .label {
+      position: relative;
+    }
+    .label__text {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      font-weight: 600;
+    }
+    .label__text_error {
+      color: red;
+    }
+    .label__text_success {
+      color: blue;
+    }
+    p {
+      margin: 0 0 10px 0;
+    }
+    input {
+      padding: 4px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+
+  <form>
+    <h3>Форма 1</h3>
+    <label class="label">
+      <p>Name</p>
+      <input maxlength="14" class="input-name-js" type="text" value="" placeholder="Vanya" autofocus>
+    </label>
+
+    <button>SEND</button>
+  </form>
+
+  <form>
+    <h3>Форма 2</h3>
+    <label class="label">
+      <p>Name</p>
+      <input class="input-name-js" type="text" value="" placeholder="Vanya">
+    </label>
+
+    <button>SEND</button>
+  </form>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
