@@ -1,0 +1,30 @@
+const blocks = document.querySelectorAll('.animated-js');
+
+window.onscroll = function() {
+
+  blocks.forEach(function(item) {
+
+    let coords = getCoords(item);
+    let scroll = pageYOffset;
+    let heightWindow = document.documentElement.clientHeight;
+  
+    if (scroll >= coords.top - heightWindow) {
+      item.classList.add('start-anim');
+    }
+
+    else {
+      item.classList.remove('start-anim');
+    }
+
+  });
+
+}
+
+function getCoords(elem) {
+  let box = elem.getBoundingClientRect();
+
+  return {
+    top: box.top + pageYOffset
+  }
+
+}
