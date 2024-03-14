@@ -6,9 +6,9 @@ window.onscroll = function() {
 
     let coords = getCoords(item);
     let scroll = pageYOffset;
-    let heightWindow = document.documentElement.clientHeight;
+    let screen = document.documentElement.clientHeight;
   
-    if (scroll >= coords.top - heightWindow) {
+    if (scroll >= coords.top - screen) {
       item.classList.add('start-anim');
     }
 
