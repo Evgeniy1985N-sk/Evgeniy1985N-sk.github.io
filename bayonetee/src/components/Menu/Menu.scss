@@ -1,0 +1,16 @@
+@import '/src/scss/vars';
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+@media (min-width: $tablet) {
+
+  .menu {
+    flex-direction: row;
+    gap: var(--spacing7);
+  }
+  
+}

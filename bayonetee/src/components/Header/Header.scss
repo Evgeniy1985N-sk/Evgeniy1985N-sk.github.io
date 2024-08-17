@@ -1,0 +1,66 @@
+@import '/src/scss/vars';
+
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  padding: var(--spacing4) 0;
+
+
+&_active + .main {
+  filter: brightness(0.2);
+}
+
+&__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+&_active .header__wrap-menu {
+  z-index: 1;
+  opacity: 1;
+  pointer-events: unset;
+}
+
+}
+
+@media (max-width: $mob) {
+  .header {
+    &__wrap-menu {
+      position: absolute;
+      top: 76px;
+      left: 0;
+      z-index: -1;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      padding: var(--spacing4);
+      opacity: 0;
+      transition: var(--transition);
+      pointer-events: none;
+    }
+  }
+  
+}
+
+@media (min-width: $tablet) {
+  .header {
+    &__button-menu {
+      display: none;
+    }
+  }
+
+
+}
+
+@media (min-width: $desktop) {
+
+  .header {
+    padding: 20px 0;
+  }
+
+}

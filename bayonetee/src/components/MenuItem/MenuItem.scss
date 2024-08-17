@@ -1,0 +1,14 @@
+@import '/src/scss/vars';
+
+.menu-item {
+  padding: var(--spacing1);
+}
+
+@media (min-width: $laptop) {
+  .menu-item {
+    transition: var(--transition);
+    &:hover {
+      color: var(--color3);
+    }
+  }
+}

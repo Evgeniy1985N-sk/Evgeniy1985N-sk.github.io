@@ -1,0 +1,26 @@
+@import '/src/scss/vars';
+
+.social-item {
+  display: flex;
+
+  &__img {
+    width: 32px;
+    height: 32px;
+  }
+
+}
+
+@media (min-width: $desktop) {
+
+  .social-item__img {
+    width: 40px;
+    height: 40px;
+    transition: var(--transition);
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+  }
+
+}
