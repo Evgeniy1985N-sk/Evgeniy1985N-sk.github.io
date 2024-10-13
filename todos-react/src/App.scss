@@ -1,0 +1,25 @@
+@import './assets/scss/vars.scss';
+
+.App {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  min-height: 100vh;
+  padding: 80px 16px;
+  background-color: var(--color-1);
+
+  &__title {
+    font-size: 70px;
+    line-height: 1;
+    color: var(--color-2);
+    text-align: center;
+  }
+
+}
+
+@media (max-width: $mobile) {
+  .App {
+    padding-top: 40px;
+  }
+}

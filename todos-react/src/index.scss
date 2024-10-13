@@ -1,0 +1,90 @@
+@font-face {
+  font-family: 'font-1';
+  src: url('./assets/fonts/HelveticaNeueThin.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --color-1: #F5F5F5;
+  --color-2: #E8D9D8;
+  --color-3: #4F4F4F;
+  --color-4: #82C5B0;
+  --color-5: #CDDFDB;
+  --color-6: #D9D9D9;
+  --color-7: #EEDCDD;
+
+  --font-1: 'font-1', sans-serif;
+
+  --text-1: 28px;
+  --line-height-1: 33px;
+
+  --transition: .2s;
+}
+
+body, html{
+  height: 100%; 
+  font-family: var(--font-1);
+  font-size: var(--text-1);
+  line-height: var(--line-height-1);
+  color: var(--color-3);
+  scroll-behavior: smooth;
+}
+
+*, *::before, *::after{
+  box-sizing: border-box; 
+}
+
+*{
+  margin: 0; 
+  padding: 0; 
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+ul[role='list'], ol[role='list']{
+  list-style: none; 
+}
+
+html:focus-within{
+  scroll-behavior: smooth; 
+}
+
+a:not([class]){
+  text-decoration-skip-ink: auto; 
+}
+
+img, picture, svg, video, canvas{
+  max-width: 100%;
+  height: auto; 
+  vertical-align: middle; 
+  font-style: italic; 
+  background-repeat: no-repeat; 
+  background-size: cover;
+}
+
+input, button, textarea, select{
+  font: inherit; 
+}
+
+input {
+  border: 0;
+  outline: 0;
+}
+
+button {
+  background: 0;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+@media (max-width:576px) {
+  :root {
+    --text-1: 20px;
+    --line-height-1: 39px;
+  }
+}
